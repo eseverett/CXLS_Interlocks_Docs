@@ -13,12 +13,37 @@ Welcome to CXLS Interlock System Documentation's documentation!
 About This Documentation
 ------------------------
 
-The purpose of this documentation is to provide a complete reference to the CXLS interlock system. 
+The purpose of this documentation is to provide a complete guide to the CXLS interlock system. 
 This documentent will outline user guides to all interlock subsystems, as well as provide documentation on testing and troubleshooting the system.
 
-Indices and tables
-==================
+CXLS Facility Overview
+----------------------
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+.. image:: images/CXLS_FACILITIES.png
+   :align: center
+   :scale: 50%
+
+
+Ionzing Radiation Hazards
+-------------------------
+
+Laser Hazards
+-------------
+
+.. toctree::
+   :maxdepth: 2
+   :caption: User Documentation:
+   :hidden:
+
+   user_documentation/laser_safety_systems_modules
+   user_documentation/protocase_control_panels
+   user_documentation/interlock_area_indicators
+   user_documentation/Vault-1_ionizing_radiation
+   user_documentation/Vault-1_laser
+
+.. Indices and tables
+.. ==================
+
+.. * :ref:`genindex`
+.. * :ref:`modindex`
+.. * :ref:`search`
