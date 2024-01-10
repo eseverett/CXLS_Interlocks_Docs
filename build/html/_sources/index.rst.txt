@@ -40,6 +40,9 @@ Laser Hazards
    user_documentation/interlock_area_indicators
    user_documentation/Vault-1_ionizing_radiation
    user_documentation/Vault-1_laser
+   user_documentation/Hutch-1_ionizing_radiation
+   user_documentation/Hutch-1_laser
+   user_documentation/Laser-1
 
 .. Indices and tables
 .. ==================
