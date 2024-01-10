@@ -10,7 +10,11 @@ Welcome to CXLS Interlock System Documentation's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+About This Documentation
+------------------------
 
+The purpose of this documentation is to provide a complete reference to the CXLS interlock system. 
+This documentent will outline user guides to all interlock subsystems, as well as provide documentation on testing and troubleshooting the system.
 
 Indices and tables
 ==================
