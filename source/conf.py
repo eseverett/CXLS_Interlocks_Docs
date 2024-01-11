@@ -14,6 +14,10 @@
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 
+### these imports are need for support for custom css file
+from docutils.parsers.rst import roles
+from docutils import nodes
+
 
 # -- Project information -----------------------------------------------------
 
@@ -61,3 +65,43 @@ pygments_style = 'friendly' ### Added style
 
 # This is the correct place for html_add_permalinks configuration
 html_permalinks = False  ### Disable ¶ symbols next to headings
+
+# -- added definitions for custom roles --------------------------------------
+
+def colored_text(name, rawtext, text, lineno, inliner, options={}, content=[]):
+    """ This function is used to add colored text into the documentation.
+
+    Args:
+        name (_type_): _description_
+        rawtext (_type_): _description_
+        text (_type_): _description_
+        lineno (_type_): _description_
+        inliner (_type_): _description_
+        options (dict, optional): _description_. Defaults to {}.
+        content (list, optional): _description_. Defaults to [].
+
+    Returns:
+        _type_: _description_
+    """
+    
+    node = nodes.inline(rawtext, text, classes=[name])
+    return [node], []
+
+roles.register_local_role('red', colored_text)
+roles.register_local_role('green', colored_text) 
+
+
+
+def colored_cell_role(role, rawtext, text, lineno, inliner, options={}, content=[]):
+    
+    """ This function is used to add colored cells to tabels.
+
+    Returns:
+        _type_: _description_
+    """
+    
+    node = nodes.inline(rawtext, text, classes=[role])
+    return [node], []
+
+roles.register_local_role('red-cell', colored_cell_role)
+roles.register_local_role('blue-cell', colored_cell_role)

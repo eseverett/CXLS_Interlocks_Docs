@@ -47,6 +47,7 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Vault-1 Ionzing Radiation Interlock System User Manual</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#vault-1-control-protocase">Vault-1 Control Protocase</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#viewmarq-displays">VIEWMARQ displays</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#beacons">Beacons</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Hutch-1_ionizing_radiation.html">Hutch-1 Ionzing Radiation Interlock System User Manual</a></li>
@@ -108,7 +109,8 @@ If the shield door is opened with the accelerator and/or transmitters armed, the
 <p>The AREA MONITORS section of the protocase shows the status of RADIATION, OXYGEN, and MICROWAVE.
 These lamps will turn red if any of the radiation, oxygen, or microwave meters in the CXLS suite alarms.
 If any of these meter’s alarm and the lamps turn red, then the interlock system will trip, and the accelerator will be put into a safe state.</p>
-<p>The ACCELERATOR section of the protocase shows if the accelerator is armed. If the lamp is green, then the accelerator is armed. The accelerator being armed does not have any meaning besides enabling the transmitters to be armed. The accelerator can only be armed when Vault-1 is secured. Once the accelerator is armed, under the TRANSMITTERS section of the protocase, if the lamps are green then that specific transmitter is armed.</p>
+<p>The ACCELERATOR section of the protocase shows if the accelerator is armed. If the lamp is green, then the accelerator is armed. The accelerator being armed does not have any meaning besides enabling the transmitters to be armed.
+The accelerator can only be armed when Vault-1 is secured. Once the accelerator is armed, under the TRANSMITTERS section of the protocase, if the lamps are green then that specific transmitter is armed.</p>
 <figure class="align-center" id="id1">
 <a class="reference internal image-reference" href="../_images/Vault-1_protocase.jpg"><img alt="../_images/Vault-1_protocase.jpg" src="../_images/Vault-1_protocase.jpg" style="width: 604.8000000000001px; height: 604.8000000000001px;" /></a>
 <figcaption>
@@ -119,6 +121,55 @@ If any of these meter’s alarm and the lamps turn red, then the interlock syste
 <section id="viewmarq-displays">
 <h2>VIEWMARQ displays</h2>
 <p>There are two VIEWMARQ displays that share information on Vault-1 ionizing radiation hazard status. There is one in the Accelerator Lab and one in Vault-1 Control.</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>VIEWMAEQ Display Notes</p></th>
+<th class="head"><p>VIEWMARQ Display Text</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>The VIEWMARQ display in Vault-1 Control shows LASER SAFE</p>
+<p>under safe conditions because this display also displays</p>
+<p>laser hazards present in Vault-1. The display in Accelerator</p>
+<p>Lab displays RF SAFE under safe conditions.</p>
+</td>
+<td><p><span class="green">Laser Safe</span> / <span class="green">RF Safe</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>Both VIEWMARQ displays show VAULT SECURE - RF ARMED once</p>
+<p>Vault-1 is searched, secured, the accelerator is armed,</p>
+<p>and either one or both transmitters are armed.</p>
+<p>Additional laser hazards will appear here as well. See Vault-1</p>
+<p>laser system manual for hazards.</p>
+</td>
+<td><p><span class="red">Vault-1 Secure - RF Armed</span></p></td>
+</tr>
+<tr class="row-even"><td><p>Both VIEWMARQ displays IONIZING RADIATION E-STOP ACTIVED</p>
+<p>when any ionizing radiation e-stop in the CXLS suite is pressed.</p>
+</td>
+<td><p><span class="red">Ionizing Radiation</span></p>
+<p><span class="red">E-Stop Activated</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<div><figure class="align-center" id="id2">
+<a class="reference internal image-reference" href="../_images/Vault-1_Control_VIEWMARQ.jpg"><img alt="../_images/Vault-1_Control_VIEWMARQ.jpg" src="../_images/Vault-1_Control_VIEWMARQ.jpg" style="width: 604.8000000000001px; height: 604.8000000000001px;" /></a>
+<figcaption>
+<p><span class="caption-text"><strong>Figure 2:</strong> This is the Vault-1 Control VIEWMARQ display.</span></p>
+</figcaption>
+</figure>
+</div></blockquote>
+<figure class="align-center" id="id3">
+<a class="reference internal image-reference" href="../_images/Accelerator_lab_VIEWMARQ.jpg"><img alt="../_images/Accelerator_lab_VIEWMARQ.jpg" src="../_images/Accelerator_lab_VIEWMARQ.jpg" style="width: 604.8000000000001px; height: 604.8000000000001px;" /></a>
+<figcaption>
+<p><span class="caption-text"><strong>Figure 3:</strong> This is the Accelerator Lab VIEWMARQ display.</span></p>
+</figcaption>
+</figure>
+</section>
+<section id="beacons">
+<h2>Beacons</h2>
+<p>There is individual blue, red, and orange beacons next to both VIEWMARQs that correspond to hazards.</p>
 </section>
 </section>
 
