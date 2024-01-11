@@ -10,7 +10,6 @@
     <div style="margin-bottom: 25px;"></div>   
 
 
-
 Welcome to CXLS Interlock System Documentation's documentation!
 ===============================================================
 
@@ -91,6 +90,10 @@ Because of these high power lasers through the facility, laser enclosures have b
    troubleshooting_documentation/viewmarq
    troubleshooting_documentation/laser_safety_systems
 
+.. note:: 
+   This documentation is a work in progress. 
+   User Documentation is under development.
+   Testing and Troubleshooting Documentation is pending development.
 
 
 .. Indices and tables
