@@ -78,20 +78,137 @@ Beacons
 
 There is individual blue, red, and orange beacons next to both VIEWMARQs that correspond to hazards. 
 
-.. This is the testing for adding colored cells to tabled to attempt to color code the beacons.
 
-.. .. list-table::
-..    :header-rows: 1
+.. This role was added beacuse the file was not recognizing the custom.css orange-cell class without it.
+.. role:: orange-cell
 
-..    * - Header 1
-..      - Header 2
-..    * - :red-cell:`Red Cell`
-..      - Normal Cell
-..    * - Normal Cell
-..      - :blue-cell:`Blue Cell`
+.. list-table::
+    :header-rows: 1
 
+    * - Status
+      - Beacon Color
+    * - The blue beacon indicates that RF has been enabled into the Vault-1 structures.
+      - :blue-cell:`Beacon Color`
+    * - The red beacon indicated that an ionizing radiation emergency stop button had been
 
+        pressed. This beacon is also on the Vault-1 Control protocase.
+      - :red-cell:`Beacon Color`
+    * - The orange beacon indicates that one of the O2 meters isreading below 19% oxygen
 
+        levels.
+      - :orange-cell:`Beacon Color`
 
+Refernce figures 1, 2, and 3 for the location of the beacons. 
+The green, orange, white, blue beacon stack in Vault-1 Control is part of the laser interlock system and is not covered here.
 
+O2 Main and Remote Units
+------------------------
 
+Thereare two O2 sensorsin the Accelerator Lab area, one inside of Vault-1and one inside of RF-1. 
+These units will have an audible alarm and flash one of the AL# LEDs depending on the alarm setpoint it passed. 
+Any O2 reading below 19% will cause the sensors to alarm. 
+The O2 sensors that are inside of Hutch-1 are the main units, which export their status to remote units in Hutch-1 Control for monitoring.
+
+.. figure:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_O2_main.jpg
+    :scale: 20 %
+    :align: center
+
+    **Figure 4:** This is the O2 main unit.
+
+.. figure:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_O2_remote.jpg
+    :scale: 20 %
+    :align: center
+
+    **Figure 5:** This is the O2 remote unit.
+
+Ionizing Radiation Emergency Stop Buttons
+-----------------------------------------
+
+Throughout the CXLS suite there are ionizing radiation emergency stop buttons. 
+These should be used if there is a reason to emergency shut down the accelerator. 
+These e-stop buttons will cut power to the transmitters, putting the accelerator in a safe state.
+
+It is important to note that only the ionizing radiation emergency stop buttons will put the accelerator into a safe state. 
+There is also laser emergency stop buttons that will only cut power to their specific laser if armed and do not affect thetransmitters.
+
+.. figure:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_estop_off.jpg
+    :scale: 20 %
+    :align: center
+
+    **Figure 6:** This is the ionizing radiation emergency stop button when not engaged.
+
+.. figure:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_estop_on.jpg
+    :scale: 20 %
+    :align: center
+
+    **Figure 7:** This is the ionizing radiation emergency stop button when engaged.
+
+Search Procedure for Securing Vault-1
+-------------------------------------
+
+To arm the accelerator and transmitters, Vault-1 mustbe secured. 
+To secure Vault-1, it must be cleared, searched, and the Vault-1 search buttons need to be pressed in the correct sequence. 
+Starting in the back of Vault-1 while verifying the vault is empty, press the search button labeled 1. 
+As you continue to search press 2 then 3 as you're working your way towards the front of the vault. 
+Once the 3rd search button is pressed, a chime will be audible and a # timer will start. 
+If the shield door is not completely closed by the end of the timer, the search buttons will reset, and Vault-1 will need to be researched.
+
+.. figure:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_searched.jpg
+    :scale: 20 %
+    :align: center
+
+    **Figure 8:** This is the Vault-1 Control Ionizng Radiation Protocase when all searched buttons have been pressed in the correct order.
+
+Once Vaut-1 is searched and all the search buttons have been pressed in the correct sequence, all the SECURE PEREIMETER SEARCH lamps on the Vault-1 Control IONZING RADIATION INTERLOCK protocase will be green. 
+Using the close button to the right of the protocase, close the shield door till up to the yellow and black stripped tape. 
+Once the door is fully closed and actuating the door switches the SHEILD DOOR lamp on the Vault-1 Control IONIZING RAIDTION INTERLOCK protocase will be green.
+
+.. figure:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_door.jpg
+    :scale: 20 %
+    :align: center
+
+    **Figure 9:** This is the Vault-1 Control Ionizng Radiation Protocase when the shield door is closed.
+
+Arming the Accelerator and Transmitters
+---------------------------------------
+
+Unarmable States
+^^^^^^^^^^^^^^^^
+
+Besides Vault-1 not being secured, if any ofthe area monitors are alarming or failing then the accelerator will not arm. 
+The area monitors that will cause this are the Narda Smarts ii microwave monitor, Apantec ratemeter gamma and neutron monitor, and the O2 monitor. 
+If any of these meters are alarming or failing, their lamp under AREA MONITORS on the protocase will turn red.
+
+Arming Procedure
+^^^^^^^^^^^^^^^^
+
+Once Vault-1 is secured the accelerator can be armed. 
+To arm the accelerator, turn the ACCELERATOR ENABLE key on the Vault-1 IONZING RADIATION INTERLOCK protocase. 
+The STATUS lamp will turn green. Now that the accelerator is armed, the transmitters can be armed.
+
+.. Add figure
+
+Like the accelerator, to arm the individual transmitters turn the TRANMISTTER ENABLE key on the Vault-1 Control IONZING RADIATION INTERLOCK protocase. 
+The STATUS lamp will turn green for the transmitter you armed. 
+Once either of the transmitters are armed the VIEWMARQ displays in Vault-1 Control and Accelerator Lab will display VAULT SECURE - RF ARMED and the blue beacons next to the display will be on.
+
+The accelerator and transmitters can be disarmed by pressing the ACCELERATOR RESET button on the Vault-1 Control IONZING RADIATION INTERLOCK protocase.
+
+.. Add figure
+
+Overriding the Transmitters to Work in an Armed State
+-----------------------------------------------------
+
+When the transmitters are armed, they cannot have work done on them. 
+Attempting to remove the side panels will cause the transmitters to lose power. 
+If work needs to be done on the transmitters in an armed state, you must override the interlocks on the transmitters. 
+To do this, With the accelerator and transmitters armed, turn the OVERRIDE key on the Vault-1 Control IONZING RADIATION INTERLOCK protocase. 
+The STATUS lamp for the transmitter in override will turn orange. 
+In this state, working on the armed transmitters will not cause the interlocks to trip.
+
+.. Add figure
+
+Putting Vault-1 into a Non-Secure State
+---------------------------------------
+
+Once work with the accelerator is completed and is no longer required to be in a secure state, press the ACCELERATOR RESET button on the Vault-1 Control IONIZING RADIATION INTERLOCK protocase and open the shield door.
