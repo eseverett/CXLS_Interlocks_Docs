@@ -63,6 +63,7 @@ Because of these high power lasers through the facility, laser enclosures have b
    user_documentation/Hutch-1_ionizing_radiation
    user_documentation/Hutch-1_laser
    user_documentation/Laser-1
+   user_documentation/Vault-1_Hutch-1_ionizing_radiation_search
    user_documentation/radiation_data
 
 .. toctree::

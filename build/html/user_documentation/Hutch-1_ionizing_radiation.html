@@ -1,29 +1,27 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" data-content_root="../">
+<html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hutch-1 Ionzing Radiation Interlock System User Manual &mdash; CXLS Interlock System Documentation 2024 documentation</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=649a27d8" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
-      <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=9524e6f5" />
-
-  
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../_static/jquery.js?v=5d32c60e"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../_static/documentation_options.js?v=6fefd858"></script>
-        <script src="../_static/doctools.js?v=888ff710"></script>
-        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Hutch-1 Laser Interlock System User Manual" href="Hutch-1_laser.html" />
-    <link rel="prev" title="Vault-1 Ionzing Radiation Interlock System User Manual" href="Vault-1_ionizing_radiation.html" /> 
+    <link rel="prev" title="Vault-1 Laser Interlock System User Manual" href="Vault-1_laser.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -31,15 +29,11 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-
-          
-          
-          <a href="../index.html" class="icon icon-home">
-            CXLS Interlock System Documentation
+            <a href="../index.html" class="icon icon-home"> CXLS Interlock System Documentation
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -51,9 +45,19 @@
 <li class="toctree-l1"><a class="reference internal" href="protocase_control_panels.html">Protocase Control Panels Reference</a></li>
 <li class="toctree-l1"><a class="reference internal" href="interlock_area_indicators.html">Interlock Area Indicators Reference</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Vault-1_ionizing_radiation.html">Vault-1 Ionzing Radiation Interlock System User Manual</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Hutch-1 Ionzing Radiation Interlock System User Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Vault-1_laser.html">Vault-1 Laser Interlock System User Manual</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Hutch-1 Ionzing Radiation Interlock System User Manual</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#protocase">Protocase</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#o2-main-and-remote-units">O2 Main and Remote Units</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#beacons">Beacons</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ionizing-radiation-emergency-stop-buttons">Ionizing Radiation Emergency Stop Buttons</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#controlling-the-beam-status-in-hutch-1">Controlling the Beam Status in Hutch-1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#putting-hutch-1-into-a-non-secure-state">Putting Hutch-1 into a Non-Secure State</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="Hutch-1_laser.html">Hutch-1 Laser Interlock System User Manual</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Laser-1.html">Laser-1 Interlock System User Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Vault-1_Hutch-1_ionizing_radiation_search.html">Vault-1 and Hutch-1 Radiation Surveys</a></li>
 <li class="toctree-l1"><a class="reference internal" href="radiation_data.html">Ionizing Radiation Surveys and Results</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Testing Documentation:</span></p>
@@ -65,6 +69,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../testing_documentation/narda_testing.html">Narda Smarts II Mircowave Sensor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../testing_documentation/O2_testing.html">O2 Sensor Testing Protocol</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../testing_documentation/Laser-1.html">Laser-1 Interlock System Testing Protocol</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../testing_documentation/Vault-1_laser.html">Vault-1 Laser Interlock System Testing Protocol</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../testing_documentation/Hutch-1_laser.html">Hutch-1 Laser Interlock System Testing Protocol</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Troubleshooting Documentation:</span></p>
@@ -88,7 +93,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li><a href="../index.html" class="icon icon-home"></a></li>
       <li class="breadcrumb-item active">Hutch-1 Ionzing Radiation Interlock System User Manual</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../_sources/user_documentation/Hutch-1_ionizing_radiation.rst.txt" rel="nofollow"> View page source</a>
@@ -101,13 +106,159 @@
              
   <section id="hutch-1-ionzing-radiation-interlock-system-user-manual">
 <h1>Hutch-1 Ionzing Radiation Interlock System User Manual</h1>
+<p>Unlike the Vault-1 ionizing radiation interlocks system, the VIEWMARQ display in Hutch-1 Control only shows the status of the Hutch-1 laser interlocks system.</p>
+<section id="protocase">
+<h2>Protocase</h2>
+<p>The Hutch-1 Control IONIZING RADIATION INTERLOCK protocase shows multiple different hazards in Hutch-1.</p>
+<p>The SERCURE PERIMETER section of the protocase shows the status of Hutch-1 being searched and secured.
+If all the lamps are green, then Hutch-1 is in a secure state. This means that Hutch-1 is armed as a radiation work area.
+While this alone does not mean there is an elevated radiation field inside of Hutch-1, an elevated radiation field can be enabled through the shutters opening.
+Once Hutch-1 is secured the allowed dose rate on the Hutch-1 ratemeters changes from the non-radiation facility user setpoint of 50 µS/hr to the radiation worker setpoint of 500 µS/hr.</p>
+<p>The AREA MONITOR section of the protocase shows if any ratemeter in the CXLS suite is alarming.
+If the RADIATION lamp is red, then there is either an alarm or fail status from one of the ratemeters.
+If any of the radiation meters alarm then the interlocks will trip, and the accelerator will be put into a safe state.</p>
+<p>The BEAM STOP section of the protocase shows if the beam stop is open.
+If the lamp is green, then the beam stop is open, and beam is being imported into Hutch-1.
+Above that are the BEAM STATUS AND BEAM SELECT lamps, which show if the divergent or collimated beam is being imported into Hutch-1.
+While these lamps should show the same thing, BEAM SELECT shows what the user has selected and BEAM STATUS shows the actual positions of the shutters, green being open.</p>
+<figure class="align-center" id="id1">
+<a class="reference internal image-reference" href="../_images/Hutch-1_protocase.jpg"><img alt="../_images/Hutch-1_protocase.jpg" src="../_images/Hutch-1_protocase.jpg" style="width: 604.8000000000001px; height: 604.8000000000001px;" /></a>
+<figcaption>
+<p><span class="caption-text"><strong>Figure 1:</strong> This is the Hutch-1 Control IONIZING RADIATION INTERLOCK protocase.</span></p>
+</figcaption>
+</figure>
+</section>
+<section id="o2-main-and-remote-units">
+<h2>O2 Main and Remote Units</h2>
+<p>Inside of Hutch-1 there are two O2 sensors, one inside of the Astrella enclosure and one on the west wall of the hutch.
+These units will have an audible alarm and flash one of the AL# LEDs depending on the alarm setpoint it passed.
+Any O2 reading below 19% will cause the sensors to alarm.
+The O2 sensors that are inside of Hutch-1 are the main units, which export their status to remote units in Hutch-1 Control for monitoring.</p>
+<figure class="align-center" id="id2">
+<a class="reference internal image-reference" href="../_images/Vault-1_O2_main.jpg"><img alt="../_images/Vault-1_O2_main.jpg" src="../_images/Vault-1_O2_main.jpg" style="width: 604.8000000000001px; height: 604.8000000000001px;" /></a>
+<figcaption>
+<p><span class="caption-text"><strong>Figure 2:</strong> This is the O2 main unit.</span></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id3">
+<a class="reference internal image-reference" href="../_images/Vault-1_O2_remote.jpg"><img alt="../_images/Vault-1_O2_remote.jpg" src="../_images/Vault-1_O2_remote.jpg" style="width: 604.8000000000001px; height: 604.8000000000001px;" /></a>
+<figcaption>
+<p><span class="caption-text"><strong>Figure 3:</strong> This is the O2 remote unit.</span></p>
+</figcaption>
+</figure>
+</section>
+<section id="beacons">
+<h2>Beacons</h2>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Status</p></th>
+<th class="head"><p>Beacon Color</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>The red beacon indicated that an ionizing radiation emergency stop button had been</p>
+<p>pressed. This beacon is also on the Vault-1 Control protocase.</p>
+</td>
+<td><p><span class="red-cell">Beacon Color</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>The orange beacon indicates that one of the O2 meters isreading below 19% oxygen</p>
+<p>levels.</p>
+</td>
+<td><p><span class="orange-cell">Beacon Color</span></p></td>
+</tr>
+</tbody>
+</table>
+<figure class="align-center" id="id4">
+<a class="reference internal image-reference" href="../_images/Hutch-1_protocase_beacon.jpg"><img alt="../_images/Hutch-1_protocase_beacon.jpg" src="../_images/Hutch-1_protocase_beacon.jpg" style="width: 604.8000000000001px; height: 604.8000000000001px;" /></a>
+<figcaption>
+<p><span class="caption-text"><strong>Figure 4:</strong> This is the Hutch-1 Control beacon that corresponds to the ionizing radiation emergency stop.</span></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id5">
+<a class="reference internal image-reference" href="../_images/Hutch-1_O2_beacon.jpg"><img alt="../_images/Hutch-1_O2_beacon.jpg" src="../_images/Hutch-1_O2_beacon.jpg" style="width: 267.8px; height: 267.8px;" /></a>
+<figcaption>
+<p><span class="caption-text"><strong>Figure 6:</strong> This is the Hutch-1 Control O2 beacon that corresponds to both Hutch-1 O2 sensors.</span></p>
+</figcaption>
+</figure>
+</section>
+<section id="ionizing-radiation-emergency-stop-buttons">
+<h2>Ionizing Radiation Emergency Stop Buttons</h2>
+<p>Throughout the CXLS suite there are ionizing radiation emergency stop buttons.
+These should be used if there is any reason to emergency shut down the accelerator.
+These e-stop buttons will cut power to the transmitters, putting the accelerator in a safe state.
+It is important to note that only the ionizing radiation emergency stop buttons will put the accelerator into a safe state.
+There are also laser emergency stop buttons that will only cut power to their specific laser if armed and do not affect the transmitters.</p>
+<figure class="align-center" id="id6">
+<a class="reference internal image-reference" href="../_images/Vault-1_estop_off.jpg"><img alt="../_images/Vault-1_estop_off.jpg" src="../_images/Vault-1_estop_off.jpg" style="width: 604.8000000000001px; height: 604.8000000000001px;" /></a>
+<figcaption>
+<p><span class="caption-text"><strong>Figure 7:</strong> This is the ionizing radiation emergency stop button when not engaged.</span></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id7">
+<a class="reference internal image-reference" href="../_images/Vault-1_estop_on.jpg"><img alt="../_images/Vault-1_estop_on.jpg" src="../_images/Vault-1_estop_on.jpg" style="width: 604.8000000000001px; height: 604.8000000000001px;" /></a>
+<figcaption>
+<p><span class="caption-text"><strong>Figure 8:</strong> This is the ionizing radiation emergency stop button when engaged.</span></p>
+<div class="legend">
+<p>To be able to import a beam from Vault-1 into Hutch-1, Hault-1 must be secured. To secure Hutch-1, it must be cleared, searched, and the Hutch-1 search buttons need to be pressed in the correct sequence.
+Starting in the back of Hutch-1 while verifying the hutch is empty, press the search button labeled 1.
+As you continue to search press 2 then 3 as you’re working your way towards the front of Hutch-1.
+Once the 3rd search button is pressed, a chime will be audible and a # timer will start.
+If the shield door is not completely closed by the end of the timer, the search buttons will reset, and Hutch-1 will need to be researched.</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/Vault-1_search_off.jpg"><img alt="../_images/Vault-1_search_off.jpg" src="../_images/Vault-1_search_off.jpg" style="width: 604.8000000000001px; height: 604.8000000000001px;" /></a>
+</figure>
+<p><strong>Figure 8:</strong> This one of the search buttons in Vault-1 when not pressed.</p>
+</div>
+</figcaption>
+</figure>
+<figure class="align-center" id="id8">
+<a class="reference internal image-reference" href="../_images/Vault-1_search_on.jpg"><img alt="../_images/Vault-1_search_on.jpg" src="../_images/Vault-1_search_on.jpg" style="width: 604.8000000000001px; height: 604.8000000000001px;" /></a>
+<figcaption>
+<p><span class="caption-text"><strong>Figure 9:</strong> This one of the search buttons in Vault-1 when pressed.</span></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id9">
+<a class="reference internal image-reference" href="../_images/Hutch-1_searched.jpg"><img alt="../_images/Hutch-1_searched.jpg" src="../_images/Hutch-1_searched.jpg" style="width: 604.8000000000001px; height: 604.8000000000001px;" /></a>
+<figcaption>
+<p><span class="caption-text"><strong>Figure 10:</strong> This is the Hutch-1 Control IONIZING RADIATION INTERLOCK protocase when Hutch-1 is searched.</span></p>
+</figcaption>
+</figure>
+<p>Once Hutch-1 is searched and all the search buttons have been pressed in the correct sequence, all the SECURE PEREIMETER SEARCH lamps on the Hutch-1 Control IONZING RADIATION INTERLOCK protocase will be green.
+Unlike the Vault-1 door, this door is closed manually.
+Once the door is fully closed and actuating the door switches the SECURE PERIMETER SHEILD DOOR lamp on the Hutch-1 Control IONIZING RAIDTION INTERLOCK protocase will be green.</p>
+<figure class="align-center" id="id10">
+<a class="reference internal image-reference" href="../_images/Hutch-1_door.jpg"><img alt="../_images/Hutch-1_door.jpg" src="../_images/Hutch-1_door.jpg" style="width: 604.8000000000001px; height: 604.8000000000001px;" /></a>
+<figcaption>
+<p><span class="caption-text"><strong>Figure 11:</strong> This is the Hutch-1 Control IONIZING RADIATION INTERLOCK protocase when Hutch-1 is secured.</span></p>
+</figcaption>
+</figure>
+</section>
+<section id="controlling-the-beam-status-in-hutch-1">
+<h2>Controlling the Beam Status in Hutch-1</h2>
+<p>The beam stop can only be opened once Hutch-1 is searched and secured.
+Once secured, the beam stop can be opened by turning the BEAM STOP OPEN key on the Hutch-1 Control IONIZING RADIATION INTERLOCK protocase.</p>
+<p>Note that Hutch-1 is a controlled area, and once the beam is allowed into Hutch-1 if you are not already inside then there is no access until the shutters are closed.
+If the shield door is opened with the beam stop open, then the shutters will close, and Hutch-1 will no longer be secure.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Images need to be added showing the stages of using the BEAM STOP and BEAM SELEC sections.</p>
+</div>
+<p>At any point, the shutters can be closed again by hitting BEAM STOP RESET on the Hutch-1 IONIZING RADIATION INTERLOCK protocase.</p>
+<p>When the beam stop is open, the shutters will only allow either the collimated or divergent beam into Hutch-1.
+To select which beam is allowed into Hutch-1 use the BEAM SELECT key on the Hutch-1 Control IONIZING RADIATION INTERLOCK protocase.
+The BEAM SELECT lamp will show to you what has been selected, and the BEAM STATUS lamp will show to you what the status of the shutters is.</p>
+</section>
+<section id="putting-hutch-1-into-a-non-secure-state">
+<h2>Putting Hutch-1 into a Non-Secure State</h2>
+<p>Once work in Hutch-1 is completed and is no longer required to be in a secure state, press the BEAM STOP RESET button on the Hutch-1 IONIZING RADIATION INTERLOCK protocase and open the shield door.</p>
+</section>
 </section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="Vault-1_ionizing_radiation.html" class="btn btn-neutral float-left" title="Vault-1 Ionzing Radiation Interlock System User Manual" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Vault-1_laser.html" class="btn btn-neutral float-left" title="Vault-1 Laser Interlock System User Manual" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="Hutch-1_laser.html" class="btn btn-neutral float-right" title="Hutch-1 Laser Interlock System User Manual" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 

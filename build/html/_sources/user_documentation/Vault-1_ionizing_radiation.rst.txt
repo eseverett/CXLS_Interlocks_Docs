@@ -1,8 +1,3 @@
-.. html command to create a small space after images
-.. |small_space| raw:: html
-
-    <div style="margin-bottom: 25px;"></div>   
-
 Vault-1 Ionzing Radiation Interlock System User Manual
 ======================================================
 
@@ -153,11 +148,23 @@ As you continue to search press 2 then 3 as you're working your way towards the 
 Once the 3rd search button is pressed, a chime will be audible and a # timer will start. 
 If the shield door is not completely closed by the end of the timer, the search buttons will reset, and Vault-1 will need to be researched.
 
+.. figure:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_search_off.jpg
+    :scale: 20 %
+    :align: center
+
+    **Figure 8:** This one of the search buttons in Vault-1 when not pressed.
+
+.. figure:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_search_on.jpg
+    :scale: 20 %
+    :align: center
+
+    **Figure 9:** This one of the search buttons in Vault-1 when pressed.
+
 .. figure:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_searched.jpg
     :scale: 20 %
     :align: center
 
-    **Figure 8:** This is the Vault-1 Control Ionizng Radiation Protocase when all searched buttons have been pressed in the correct order.
+    **Figure 10:** This is the Vault-1 Control Ionizng Radiation Protocase when all searched buttons have been pressed in the correct order.
 
 Once Vaut-1 is searched and all the search buttons have been pressed in the correct sequence, all the SECURE PEREIMETER SEARCH lamps on the Vault-1 Control IONZING RADIATION INTERLOCK protocase will be green. 
 Using the close button to the right of the protocase, close the shield door till up to the yellow and black stripped tape. 
@@ -167,7 +174,7 @@ Once the door is fully closed and actuating the door switches the SHEILD DOOR la
     :scale: 20 %
     :align: center
 
-    **Figure 9:** This is the Vault-1 Control Ionizng Radiation Protocase when the shield door is closed.
+    **Figure 11:** This is the Vault-1 Control Ionizng Radiation Protocase when the shield door is closed.
 
 Arming the Accelerator and Transmitters
 ---------------------------------------
@@ -186,7 +193,11 @@ Once Vault-1 is secured the accelerator can be armed.
 To arm the accelerator, turn the ACCELERATOR ENABLE key on the Vault-1 IONZING RADIATION INTERLOCK protocase. 
 The STATUS lamp will turn green. Now that the accelerator is armed, the transmitters can be armed.
 
-.. Add figure
+.. figure:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_protocase_accelerator_armed.jpg
+    :scale: 20 %
+    :align: center
+
+    **Figure 12:** This is the Vault-1 Control Ionizng Radiation Protocase when the accelerator is armed.
 
 Like the accelerator, to arm the individual transmitters turn the TRANMISTTER ENABLE key on the Vault-1 Control IONZING RADIATION INTERLOCK protocase. 
 The STATUS lamp will turn green for the transmitter you armed. 
@@ -194,7 +205,11 @@ Once either of the transmitters are armed the VIEWMARQ displays in Vault-1 Contr
 
 The accelerator and transmitters can be disarmed by pressing the ACCELERATOR RESET button on the Vault-1 Control IONZING RADIATION INTERLOCK protocase.
 
-.. Add figure
+.. figure:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_protocase_transmitter_armed.jpg
+    :scale: 20 %
+    :align: center
+
+    **Figure 13:** This is the Vault-1 Control Ionizng Radiation Protocase when a transmitter is armed.
 
 Overriding the Transmitters to Work in an Armed State
 -----------------------------------------------------
@@ -206,7 +221,11 @@ To do this, With the accelerator and transmitters armed, turn the OVERRIDE key o
 The STATUS lamp for the transmitter in override will turn orange. 
 In this state, working on the armed transmitters will not cause the interlocks to trip.
 
-.. Add figure
+.. figure:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_protocase_transmitter_override.jpg
+    :scale: 20 %
+    :align: center
+
+    **Figure 14:** This is the Vault-1 Control Ionizng Radiation Protocase when a transmitter is in override.
 
 Putting Vault-1 into a Non-Secure State
 ---------------------------------------
