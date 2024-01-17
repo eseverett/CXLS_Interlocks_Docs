@@ -105,3 +105,23 @@ def colored_cell_role(role, rawtext, text, lineno, inliner, options={}, content=
 
 roles.register_local_role('red-cell', colored_cell_role)
 roles.register_local_role('blue-cell', colored_cell_role)
+
+
+def subscript_role(role, rawtext, text, lineno, inliner, options={}, content=[]):
+    """This function is used to add subscript text to the documentation.
+
+    Args:
+        role (_type_): _description_
+        rawtext (_type_): _description_
+        text (_type_): _description_
+        lineno (_type_): _description_
+        inliner (_type_): _description_
+        options (dict, optional): _description_. Defaults to {}.
+        content (list, optional): _description_. Defaults to [].
+
+    Returns:
+        _type_: _description_
+    """
+    return [nodes.subscript(text=text)], []
+
+roles.register_local_role('sub', subscript_role)

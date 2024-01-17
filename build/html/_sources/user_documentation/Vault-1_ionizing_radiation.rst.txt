@@ -4,74 +4,78 @@ Vault-1 Ionzing Radiation Interlock System User Manual
 Vault-1 Control Protocase
 -------------------------
 
-The Vault-1 Control IONIZING RADIATION INTERLOCK protocase shows multiple different hazards in Vault-1.
+The Vault-1 Control IONIZING RADIATION INTERLOCK protocase is an interface to view if Vault-1 is secure, arm the accelerator and transmitters, and view the status of the area monitors. 
+This panel is located on the east wall in Vault-1 Control next to the Vault-1 door. 
+See Figure 1 for Refernce.
 
-The SERCURE PERIMETER section of the protocase shows the shows the status of Vault-1 being searched and secured. 
-If all the lamps are green, then Vault-1 is in a secure state. When Vault-1 is secure the vault cannot be entered until the accelerator is put into a safe state. 
+The SERCURE PERIMETER section of the protocase shows the status of search buttons being engaged and if the sheild door is open. 
+If all the lamps are :green:`green`, then Vault-1 is in a secure state. When Vault-1 is secure the vault cannot be entered until the accelerator is put into an unarmed state.
 If the shield door is opened with the accelerator and/or transmitters armed, then the interlock system will trip and put them into a safe state. 
 
-The AREA MONITORS section of the protocase shows the status of RADIATION, OXYGEN, and MICROWAVE. 
-These lamps will turn red if any of the radiation, oxygen, or microwave meters in the CXLS suite alarms. 
-If any of these meter's alarm and the lamps turn red, then the interlock system will trip, and the accelerator will be put into a safe state. 
+The AREA MONITORS section of the protocase shows the status of RADIATION, OXYGEN, and MICROWAVE area monitors. 
+These lamps will turn red if any of the ionizing radiation, O :sub:`2`, or microwave monitors in the CXLS suite alarms. 
+If any of these monitors alarm the corresponding lamp will turn red,  and then the interlock system will trip, and the accelerator will be put into an unarmed state. 
 
-The ACCELERATOR section of the protocase shows if the accelerator is armed. If the lamp is green, then the accelerator is armed. The accelerator being armed does not have any meaning besides enabling the transmitters to be armed. 
-The accelerator can only be armed when Vault-1 is secured. Once the accelerator is armed, under the TRANSMITTERS section of the protocase, if the lamps are green then that specific transmitter is armed.
+The ACCELERATOR section of the protocase is to be able to view and chaning the arming status of the accelerator and both transmitters.
+The accerlerator cannot be armed until Vault-1 is secured, and the transmitters cannot be armed until the accerlerator is armed.
+
 
 .. figure:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_protocase.jpg
     :scale: 20 %
     :align: center
 
-    **Figure 1:** This is the Vault-1 Control Ionzing Radiation Interlock Protocase.
+    **Figure 1:** This is the Vault-1 Control Ionzing Radiation Interlock Protocase. In this state Vault-1 is not secured, the accelerator is not armed, and the transmitters are not armed. 
+    As well, there are no area monitors alarming or failing.
 
 
 VIEWMARQ displays
 -----------------
 
 There are two VIEWMARQ displays that share information on Vault-1 ionizing radiation hazard status. There is one in the Accelerator Lab and one in Vault-1 Control. 
+See Figure 2 and 3 for the Vault-1 Control and Accelerator Lab VIEWMARQ displays respectively.
 
 +-----------------------------------------------------------------------------------------------------------------------+------------------------------------------+
 | VIEWMAEQ Display Notes                                                                                                | VIEWMARQ Display Text                    |
 +=======================================================================================================================+==========================================+
-| The VIEWMARQ display in Vault-1 Control shows LASER SAFE                                                              | :green:`Laser Safe` / :green:`RF Safe`   |
+| The VIEWMARQ display in Vault-1 Control shows :green:`LASER SAFE`                                                     | :green:`Laser Safe` / :green:`RF Safe`   |
 |                                                                                                                       |                                          |
-| under safe conditions because this display also displays                                                              |                                          |
+| because this display also displays laser hazards present in Vault-1.                                                  |                                          |
 |                                                                                                                       |                                          |
-| laser hazards present in Vault-1. The display in Accelerator                                                          |                                          |
+| The display in Accelerator Lab displays RF SAFE when neither.                                                         |                                          |
 |                                                                                                                       |                                          |
-| Lab displays RF SAFE under safe conditions.                                                                           |                                          |
+| transmitter is armed.                                                                                                 |                                          |
 +-----------------------------------------------------------------------------------------------------------------------+------------------------------------------+
-| Both VIEWMARQ displays show VAULT SECURE - RF ARMED once                                                              | :red:`Vault-1 Secure - RF Armed`         |
+| Both VIEWMARQ displays show :red:`VAULT SECURE - RF ARMED` once                                                       | :red:`Vault-1 Secure - RF Armed`         |
 |                                                                                                                       |                                          |
-| Vault-1 is searched, secured, the accelerator is armed,                                                               |                                          |
+| Vault-1 is searched, secured, the accelerator is armed, and either one                                                |                                          |
 |                                                                                                                       |                                          |
-| and either one or both transmitters are armed.                                                                        |                                          |
+| or both transmitters are armed. Additional laser hazards will appear                                                  |                                          |
 |                                                                                                                       |                                          |
-| Additional laser hazards will appear here as well. See Vault-1                                                        |                                          |
-|                                                                                                                       |                                          |
-| laser system manual for hazards.                                                                                      |                                          |
+| here as well. See Vault-1 laser system manual for hazards.                                                            |                                          |
 +-----------------------------------------------------------------------------------------------------------------------+------------------------------------------+
-| Both VIEWMARQ displays IONIZING RADIATION E-STOP ACTIVED                                                              | :red:`Ionizing Radiation`                |
+| Both VIEWMARQ displays :red:`IONIZING RADIATION E-STOP ACTIVED`                                                       | :red:`Ionizing Radiation`                |
 |                                                                                                                       |                                          |
 | when any ionizing radiation e-stop in the CXLS suite is pressed.                                                      | :red:`E-Stop Activated`                  |
 +-----------------------------------------------------------------------------------------------------------------------+------------------------------------------+
+
 
  .. figure:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_Control_VIEWMARQ.jpg
     :scale: 20 %
     :align: center
 
-    **Figure 2:** This is the Vault-1 Control VIEWMARQ display.
+    **Figure 2:** This is the Vault-1 Control VIEWMARQ display. In this state there are no ionizing radiation or laser hazards.
 
 .. figure:: /images/user_docs/Vault-1_ionizing_radiation/Accelerator_lab_VIEWMARQ.jpg
     :scale: 20 %
     :align: center
 
-    **Figure 3:** This is the Accelerator Lab VIEWMARQ display.
+    **Figure 3:** This is the Accelerator Lab VIEWMARQ display. In this state there are no ionizing radiation hazards.
 
 
 Beacons
 -------
 
-There is individual blue, red, and orange beacons next to both VIEWMARQs that correspond to hazards. 
+There are blue, red, and orange beacons in Vault-1 Control and Accelerator Lab to the left of the VIEWMARQ displays.
 
 
 .. This role was added beacuse the file was not recognizing the custom.css orange-cell class without it.
