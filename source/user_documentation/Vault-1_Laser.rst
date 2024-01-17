@@ -102,14 +102,193 @@ There is a VIEWMARQ display in Vault-1 Control that states the status of potenti
 This display will notify you if Vault-1, the Pharos, or the Dira is armed. 
 Also, it will notify you if the Pharos, the Dira, or both laser enclosures are in administrative override. 
 
-+------------------------------------------------------------------+----------------------------------------------------+
-| VIEWMARQ Display Notes                                           | VIEWMARQ Display Text                              |
-+==================================================================+====================================================+
-| This line states if Vault-1 is armed as a laser lab or not.      | :green:`LASER SAFE` / :green:`DANGER LASER HAZARD` |
-+------------------------------------------------------------------+----------------------------------------------------+
-| This line states which laser is armed.                           | :red:`PHAROS ARMED            DIRA ARMED`          |
-+------------------------------------------------------------------+----------------------------------------------------+
-| This line states if the Dira is in administrative override.      | :red:`DIRA ADMIN OVERRIDE`                         |
-+------------------------------------------------------------------+----------------------------------------------------+
-| This line states you if the Pharos is in administrative override.| :red:`PHAROS ADMIN OVERRIDE`                       |
-+------------------------------------------------------------------+----------------------------------------------------+
++-------------------------------------------------------------+----------------------------------------------------+
+| VIEWMARQ Display Notes                                      | VIEWMARQ Display Text                              |
++=============================================================+====================================================+
+| This states if Vault-1 is armed as a laser lab or not.      | :green:`LASER SAFE` / :green:`DANGER LASER HAZARD` |
++-------------------------------------------------------------+----------------------------------------------------+
+| This states which laser is armed.                           | :red:`PHAROS ARMED            DIRA ARMED`          |
++-------------------------------------------------------------+----------------------------------------------------+
+| This states if the Dira is in administrative override.      | :red:`DIRA ADMIN OVERRIDE`                         |
++-------------------------------------------------------------+----------------------------------------------------+
+| This states you if the Pharos is in administrative override.| :red:`PHAROS ADMIN OVERRIDE`                       |
++-------------------------------------------------------------+----------------------------------------------------+
+
+The top line always will either display LASER SAFE or DANGER LASER HAZARD. 
+All other possible states will only appear on the display when the hazard is presented. 
+See Figure 3.
+
+Laser Warming module
+--------------------
+
+There are laser warning modules throughout the Vault-1 laser interlocks system. 
+The location of the warning module dictates what the safe or danger status is indicating. 
+
+.. figure:: /images/user_docs/laser_safety_systems/warning_module.gif
+    :align: center
+
+    Laser Safety Systems laser area warning module. 
+
+.. list-table::
+  :header-rows: 1
+
+  * - Module Location
+    - Module Meaning
+  * - | **General Area Module**
+      | Vault-1 Control
+      | Vault-1 Entry
+    - | These are warning modules tell you if Vault-1 is armed as a laser lab. 
+      | :red:`DANGER LASER ON` = ARMED
+  * - | **Enclosure Modules**
+      | Pharos enclosure south wall
+      | Pharos enclosure west wall
+    - | These warning modules tell you if the enclosure is armed.
+      | There is no indication on if the laser is armed. 
+      | :red:`DANGER LASER ON` = ARMED
+  * - | **Protocase Modules**
+      | Pharos enclosure protocase
+      | Dira enclosure protocase
+    - | These warning modules tell you if the enclosure is forced to a safe state. 
+      | :red:`DANGER LASER HAZARD` = SAFE STATE IS NOT FORCED
+
+The Vault-1 entry module looks slightly different, being square instead of rectangular. 
+That module is the laser interlock control module; however, it serves as a warning module as well. 
+
+Laser Emergency Stop Buttons
+----------------------------
+
+All the laser enclosures are equipped with laser emergency stop buttons. 
+The e-stops on an enclosure can only crash that specific laser. 
+
+Additionally, there are ionizing radiation emergency stop buttons in Vault-1 and Vault-1 Control. 
+Those only serve the purpose of crashing the transmitters and are not located on the laser enclosures.
+
+.. figure:: /images/user_docs/Vault-1_laser/laser_e-stop_off.jpg
+    :scale: 20 %
+    :align: center
+
+    **Figure 5:** This is a laser emergency stop button in the off state.
+
+.. figure:: /images/user_docs/Vault-1_laser/laser_e-stop_on.jpg 
+    :scale: 20 %
+    :align: center
+
+    **Figure 6:** This is a laser emergency stop button in the on state.
+
+Arming Vault-1 Laser Systems
+----------------------------
+
+In Vault-1, the laser systems that can be armed are Vault-1, the Pharos enclosure, and the Pharos. 
+The Dira is in Laser-1 and must be armed from Laser-1. 
+The arming of the Dira is discussed in User Documentation: Laser-1.
+
+Arming the Pharos Enclosure and Laser
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Because the Pharos is contained in an enclosure, Vault-1 does not need to be armed to arm the Pharos enclosure and laser. 
+To arm the Pharos enclosure and laser, press arm on the room interlock module on the south wall of the Pharos enclosure. 
+The room interlock module arms the enclosure. 
+For the Pharos system only, the local interlock module arms the Pharos laser underneath the room interlock module auto-arms with the room interlock module. 
+
+Once the Pharos system is armed the following will change in the interlock system:
+* Light is now on the tabels in the Pharos and Dira enclosures.
+* Beacon stack blue LEDs will tuen on, indicating the Pharos
+* The VIEWMARQ display will show PHAROS ARMED.
+* The laser warning modules on the Pharos enclosure will show DANGER LASER ON.
+* Pharos enclosure e-stop buttons will turn on, shown by the LED in the center. The e-stops are now functional and will crash the Pharos is pressed.
+
+.. figure:: /images/user_docs/Vault-1_laser/Pharos_enclosure_unarmed.jpg
+    :scale: 20 %
+    :align: center
+
+    **Figure 7:** This is the Pharos enclosure before it is armed.
+
+.. figure:: /images/user_docs/Vault-1_laser/Pharos_enclosure_armed.jpg
+    :scale: 20 %
+    :align: center
+
+    **Figure 8:** This is the Pharos enclosure after it is armed.
+
+Arming Vault-1 as a Laser Lab
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+If work on armed lasers needs to be performed in Vault-1, then Vault-1 must be armed as a laser lab. 
+To arm Vault-1 as a laser lab, press arm on the room interlock module in the Vault-1 entry. 
+There is no local interlock module that is part of arming Vault-1, once the room module is armed Vault-1 is secured. 
+Once Vault-1 is armed, the laser curtain door must be closed. The curtain door is not interlocked. 
+
+.. figure:: /images/user_docs/Vault-1_laser/Vault-1_unarmed.jpg
+    :scale: 20 %
+    :align: center
+
+    **Figure 9:** This is Vault-1 before it is armed.
+
+.. figure:: /images/user_docs/Vault-1_laser/Vault-1_armed.jpg
+    :scale: 20 %
+    :align: center
+
+    **Figure 10:** This is Vault-1 after it is armed.
+
+Once Vault-1 is armed as a laser lab the following will change in the interlock system:
+* Beacon stack LEDs will turn off, indicating that Vault-1 is not longer laser safe.
+* The VIEWMARQ display will show DANGER LASER HAZARD.
+* The laser warning modules in Vault-1 Control and Vault-1 entry will show DANGER LASER ON.
+* The push to exit button will turn on, shown by the LED in the center.
+* The Vault-1 door will be magnetically locked. 
+
+Once Vault-1 is armed the door is magnetically locked. 
+To get into Vault-1, you must type the Vault-1 laser pin into the keypad in Vault-1 Control. 
+Once it is entered the door will be temporarily unlocked. 
+To exit Vault-1, you must push the push to exit button. Once pressed the door will be temporarily unlocked. 
+It is important to note that Vault-1 will disarm itself and shutter all exposed laser hazards if the Vault-1 door is open for too long. 
+
+.. figure:: /images/user_docs/Vault-1_laser/Vault-1_entry_armed.jpg
+    :scale: 20 %
+    :align: center
+
+    **Figure 11:** This is the Vault-1 entry after it is armed.
+
+
+User Laser Enclosure Interlock Protocases for Overriding Interlocks and Manual Shutter Control
+----------------------------------------------------------------------------------------------
+
+The shutters in the laser enclosures can be armed for manual control by the protocase LOCAL INTERLOCK CONTRACT CONTROL local interlock modules. 
+However, when the laser enclosures are interlocked, regardless of the arming status of the enclosure and Vault-1, if someone attempts to open the rolling enclosure doors the shutters will close.
+
+What you will see happen on the enclosure protocase if the rolling door is opned when interlocked is:
+* Laser warning modules will show LASER SAFE.
+* Door monitor module will be blank, meaning open.
+* LOCAL INTERLOCK CONTACT CONTROL local interlock modules will be disarmed if armed, automatically closing the shutters.
+
+Interlock to Override
+^^^^^^^^^^^^^^^^^^^^^
+
+The only way to work in the laser enclosures with light on the table is to change the enclosures interlocks to administrative override. 
+In administrative override the interlocks system sees the rolling doors and closed even if they are opened, bypassing the interlocks.  
+
+For a laser enclosure to be put into administrative override, both Vault-1 and the enclosure must be armed. 
+Specifically for the working with the Dira, both the Pharos and Dira enclosures must be set to administrative override. 
+This is because the Pharos exports a beam into the Dira enclosure, so both enclosure interlocks need to be bypassed. 
+
+ The controls for the administrative overrides are on the enclosures LASER ENCLOSURE INTERLOCK protocase. 
+ Turn the key on the protocase under INERLOCK OVERRIDE from INTERLOCK TO OVERRIDE. 
+
+ Once the enclosure is put into override the following will change in the interlock system:
+ * The administrative override orange LED on the enclosure specific protocase will turn on.
+ * The Vault-1 Control and Vault-1 entry eat wall administrative override orange LEDs will turn on.
+ * The enclosure specific protocase STATUS LED will turn red. 
+ * If you open the enclosure, the laser warning module will still show LASER DANGER ON, the door monitor module will show CLOSED, and the local interlock modules for arming shutter manula control will not disarm. 
+
+ At this point, the LOCAL INTERLOCK CONTACT CONTROL interlock modules can be armed, and the shutters can be controlled manually without the interlocks disarming manual usage. 
+
+ .. figure:: /images/user_docs/Vault-1_laser/Pharos_protocase_override.jpg
+     :scale: 20 %
+     :align: center
+
+     **Figure 12:** This is the Pharos enclosure protocase after it is set to administrative override.
+
+Disarming the Laser Interlock System
+------------------------------------
+
+To take either enclosures out of administrative override, simply change the INTERLOCK OVERRIDE key on the LASER ENCLOSURE INTERLOCK protocase back from OVERRIDE to INTERLOCK. 
+Also, all the arming laser modules have disarming buttons where you can either disarm specific modules you no longer need, or you can disarm the room modules to auto-disarm their local modules. 
