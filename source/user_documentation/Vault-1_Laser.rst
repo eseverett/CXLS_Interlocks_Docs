@@ -124,7 +124,7 @@ Laser Warming module
 There are laser warning modules throughout the Vault-1 laser interlocks system. 
 The location of the warning module dictates what the safe or danger status is indicating. 
 
-.. figure:: /images/user_docs/laser_safety_systems/warning_module.gif
+.. figure:: /images/laser_safety_systems/warning_module.gif
     :align: center
 
     Laser Safety Systems laser area warning module. 

@@ -233,7 +233,8 @@ The STATUS lamp will turn green. Now that the accelerator is armed, the transmit
 
 Like the accelerator, to arm the individual transmitters turn the TRANMISTTER ENABLE key on the Vault-1 Control IONZING RADIATION INTERLOCK protocase. 
 The STATUS lamp will turn green for the transmitter you armed. 
-Once either of the transmitters are armed the VIEWMARQ displays in Vault-1 Control and Accelerator Lab will display VAULT SECURE - RF ARMED and the blue beacons next to the display will be on.
+Once either of the transmitters are armed the VIEWMARQ displays in Vault-1 Control and Accelerator Lab will display :red:`VAULT SECURE - RF ARMED` and the blue beacons next to the display will be on.
+At this state the transmitters can be set to trig and power can be enabled into the RF structures.
 
 The accelerator and transmitters can be disarmed by pressing the ACCELERATOR RESET button on the Vault-1 Control IONZING RADIATION INTERLOCK protocase.
 
@@ -243,13 +244,46 @@ The accelerator and transmitters can be disarmed by pressing the ACCELERATOR RES
 
     **Figure 15:** This is the Vault-1 Control Ionizng Radiation Protocase when a transmitter is armed.
 
+
+
+Putting Vault-1 into a Non-Secure State
+---------------------------------------
+
+Once the transmitters are no longer triggering, the accelerator and transmitters can be disarmed.
+This can be done by pressing the ACCELERATOR RESET button on the Vault-1 Control IONZING RADIATION INTERLOCK protocase, or simply opening the sheild door will disarm the system.
+However, 2 minute must pass from the transmitters being brought to a safe state an the accelerator being disarmed before the Vault-1 door can be opened.
+
+Vault-1 Radiation Survey Procedure
+----------------------------------
+
+To enter Vault-1 after the accelerator has been running, the vault must be scanned for ionizing radiation.
+Once the 2 minute time has elapsed, the Vault-1 door can be opened to perform the survey.
+
+
+.. figure:: /images/radiation_survey/dosimeter.png
+    :align: center
+
+    **Figure 16:** This is your personal dosimeter. This is to be worn at all times when in the CXLS suite. 
+
+.. figure:: /images/radiation_survey/Ludlum_9DP.png
+    :align: center
+
+    **Figure 17:** This is the Ludlum 9DP pressurized ion gas chamber gamma detector. 
+
+.. figure:: /images/radiation_survey/Ludlum_23.png
+    :align: center
+
+    **Figure 18:** This is the Ludlum 23 electronic personal dosimeter.
+
+
+
+
 Overriding the Transmitters to Work in an Armed State
 -----------------------------------------------------
 
-When the transmitters are armed, they cannot have work done on them. 
-Attempting to remove the side panels will cause the transmitters to lose power. 
+When the transmitters are armed, attempting to remove the side panels for maintance will cause the transmitters to lose power. 
 If work needs to be done on the transmitters in an armed state, you must override the interlocks on the transmitters. 
-To do this, With the accelerator and transmitters armed, turn the OVERRIDE key on the Vault-1 Control IONZING RADIATION INTERLOCK protocase. 
+To do this turn the OVERRIDE key on the Vault-1 Control IONZING RADIATION INTERLOCK protocase. 
 The STATUS lamp for the transmitter in override will turn orange. 
 In this state, working on the armed transmitters will not cause the interlocks to trip.
 
@@ -257,9 +291,4 @@ In this state, working on the armed transmitters will not cause the interlocks t
     :scale: 20 %
     :align: center
 
-    **Figure 16:** This is the Vault-1 Control Ionizng Radiation Protocase when a transmitter is in override.
-
-Putting Vault-1 into a Non-Secure State
----------------------------------------
-
-Once work with the accelerator is completed and is no longer required to be in a secure state, press the ACCELERATOR RESET button on the Vault-1 Control IONIZING RADIATION INTERLOCK protocase and open the shield door.
+    **Figure 19:** This is the Vault-1 Control Ionizng Radiation Protocase when a transmitter is in override.
