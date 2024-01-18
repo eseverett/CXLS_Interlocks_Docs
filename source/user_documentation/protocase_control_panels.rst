@@ -1,2 +1,0 @@
-Protocase Control Panels Reference
-==================================

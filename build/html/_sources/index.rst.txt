@@ -50,20 +50,17 @@ Once these electrons are at relativistic speeds, they collide with an IR laser t
 These x-rays will interact with a test sample in pump-prove configuration where the pump laser can produce light in the THz spectrum. 
 Because of these high power lasers through the facility, laser enclosures have been design to create laser safe areas while lasers are operational. 
 
+
 .. toctree::
    :maxdepth: 1
    :caption: User Documentation:
    :hidden:
 
-   user_documentation/laser_safety_systems_modules
-   user_documentation/protocase_control_panels
-   user_documentation/interlock_area_indicators
    user_documentation/Vault-1_ionizing_radiation
    user_documentation/Vault-1_laser
    user_documentation/Hutch-1_ionizing_radiation
    user_documentation/Hutch-1_laser
    user_documentation/Laser-1
-   user_documentation/Vault-1_Hutch-1_ionizing_radiation_search
    user_documentation/radiation_data
 
 .. toctree::
