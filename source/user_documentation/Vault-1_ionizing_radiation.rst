@@ -19,7 +19,7 @@ If all the lamps are :green:`green`, then Vault-1 is in a secure state. When Vau
 If the shield door is opened with the accelerator and/or transmitters armed, then the interlock system will trip and put them into a safe state. 
 
 The AREA MONITORS section of the protocase shows the status of RADIATION, OXYGEN, and MICROWAVE area monitors. 
-These lamps will turn red if any of the ionizing radiation, O :sub:`2`, or microwave monitors in the CXLS suite alarms. 
+These lamps will turn red if any of the ionizing radiation, :math:`O_{2}`, or microwave monitors in the CXLS suite alarms. 
 If any of these monitors alarm the corresponding lamp will turn red,  and then the interlock system will trip, and the accelerator will be put into an unarmed state. 
 
 The ACCELERATOR section of the protocase is to be able to view and chaning the arming status of the accelerator and both transmitters.
@@ -98,7 +98,7 @@ There are blue, red, and orange beacons in Vault-1 Control and Accelerator Lab t
 
         pressed. This beacon is also on the Vault-1 Control protocase.
       - :red-cell:`Beacon Color`
-    * - The orange beacon indicates that one of the O2 meters isreading below 19% O :sub:`2`
+    * - The orange beacon indicates that one of the O2 meters isreading below 19% :math:`O_{2}`
 
         levels.
       - :orange-cell:`Beacon Color`
@@ -109,24 +109,24 @@ The green, orange, white, blue beacon stack in Vault-1 Control is part of the la
 O2 Main and Remote Units
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-Ther eare two O :sub:`2` sensors in the Vault-1 ionizing radiation interlock system. 
+Ther eare two :math:`O_{2}` sensors in the Vault-1 ionizing radiation interlock system. 
 One is located in Vault-1 and the other is located in RF-1. 
 These units will have an audible alarm and flash one of the AL# LEDs depending on the alarm setpoint it passed. 
-Any O :sub:`2` reading below 19% will cause the sensors to alarm. 
-Each O :sub:`2` sensor has a remote unit that only displays information from the main sensor unit.
+Any :math:`O_{2}` reading below 19% will cause the sensors to alarm. 
+Each :math:`O_{2}` sensor has a remote unit that only displays information from the main sensor unit.
 The Vault-1 remote unit is in Vault-1 Control and the RF-1 remote unit is in the Accelerator Lab.
 
 .. figure:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_O2_main.jpg
     :scale: 20 %
     :align: center
 
-    **Figure 4:** This is the O :sub:`2` main unit located in Vault-1. Under this condition there is no alarm.
+    **Figure 4:** This is the :math:`O_{2}` main unit located in Vault-1. Under this condition there is no alarm.
 
 .. figure:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_O2_remote.jpg
     :scale: 20 %
     :align: center
 
-    **Figure 5:** This is the O :sub:`2` remote unit located in Vault-1 Control. Under this condition there is no alarm. 
+    **Figure 5:** This is the :math:`O_{2}` remote unit located in Vault-1 Control. Under this condition there is no alarm. 
 
 
 Ionizing Radiation Monitor
@@ -245,36 +245,73 @@ The accelerator and transmitters can be disarmed by pressing the ACCELERATOR RES
     **Figure 15:** This is the Vault-1 Control Ionizng Radiation Protocase when a transmitter is armed.
 
 
-
 Putting Vault-1 into a Non-Secure State
 ---------------------------------------
 
 Once the transmitters are no longer triggering, the accelerator and transmitters can be disarmed.
 This can be done by pressing the ACCELERATOR RESET button on the Vault-1 Control IONZING RADIATION INTERLOCK protocase, or simply opening the sheild door will disarm the system.
-However, 2 minute must pass from the transmitters being brought to a safe state an the accelerator being disarmed before the Vault-1 door can be opened.
+
+.. note::
+     2 minute must pass from the transmitters being brought to a safe state an the accelerator being disarmed before the Vault-1 door can be opened.
 
 Vault-1 Radiation Survey Procedure
 ----------------------------------
 
-To enter Vault-1 after the accelerator has been running, the vault must be scanned for ionizing radiation.
-Once the 2 minute time has elapsed, the Vault-1 door can be opened to perform the survey.
+For Vault-1 to be cleared for open entry, it must first be surveyed for ionizing radiation. 
 
 
 .. figure:: /images/radiation_survey/dosimeter.png
     :align: center
 
-    **Figure 16:** This is your personal dosimeter. This is to be worn at all times when in the CXLS suite. 
+    **Figure 16:** This is a personal dosimeter. 
+    This is to be worn at all times when in the CXLS suite. 
 
-.. figure:: /images/radiation_survey/Ludlum_9DP.png
+.. figure:: /images/radiation_survey/dosimeter_board.jpg
     :align: center
 
-    **Figure 17:** This is the Ludlum 9DP pressurized ion gas chamber gamma detector. 
+    **Figure 17:** This is the dosimeter storage board. 
+    This is where the dosimeters are stored when not in use. 
+    This is located in the corridor outsitde of Hutch Control / Experiment Prep entrance.
+
+
+Once the two minutes have ellapsed, the Vault-1 can be opened, and the survey can be prerformed. 
+The surveyor, along with his personal dosimeter, must also wear a electronic personal dosimeter, as seen in figure 18. 
+This unit will alarm if the surveyor is exposed to more than 5 mrem/hr.
+
 
 .. figure:: /images/radiation_survey/Ludlum_23.png
     :align: center
 
     **Figure 18:** This is the Ludlum 23 electronic personal dosimeter.
 
+.. figure:: /images/radiation_survey/wearing_epd.png
+    :align: center
+
+    **Figure 19:** This is how the electronic personal dosimeter is to be worn. 
+    The screen of the unit is supposed to face the body.
+
+.. figure:: /images/radiation_survey/draw_holding_ludlum.png
+    :align: center
+
+    **Figure 20:** This is the draw holding the Ludlum 9DP.
+
+
+To perform the survey, the Ludlum 9DP is used to measure the gamma dose rate.
+Once Vault-1 sheild door is opened, they surveyor should slowly enter, watching the readings. 
+Go down the beamline, slowly scanning around inch away from the beamline.
+If any element reads above 20 :math:`\mu R` / hr, scan from 30 cm away to verify the area if not above background from normal viewing distance. 
+
+.. figure:: /images/radiation_survey/Ludlum_9DP.png
+    :align: center
+
+    **Figure 21:** This is the Ludlum 9DP pressurized ionization chamber.
+
+.. figure:: /images/radiation_survey/cabinet_holding_ludlum.jpg
+    :align: center
+
+    **Figure 22:** This is the cabinet holding the Ludlum 9DP.
+
+Once the Vault-1 radiation survey is completed, and it is verified that there are no eleveted levels of ionizing radiation, Vault-1 can be entered by anyone.
 
 
 
@@ -291,4 +328,4 @@ In this state, working on the armed transmitters will not cause the interlocks t
     :scale: 20 %
     :align: center
 
-    **Figure 19:** This is the Vault-1 Control Ionizng Radiation Protocase when a transmitter is in override.
+    **Figure :** This is the Vault-1 Control Ionizng Radiation Protocase when a transmitter is in override.
