@@ -328,4 +328,4 @@ In this state, working on the armed transmitters will not cause the interlocks t
     :scale: 20 %
     :align: center
 
-    **Figure :** This is the Vault-1 Control Ionizng Radiation Protocase when a transmitter is in override.
+    **Figure 23:** This is the Vault-1 Control Ionizng Radiation Protocase when a transmitter is in override.

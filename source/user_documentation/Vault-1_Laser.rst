@@ -1,6 +1,9 @@
 Vault-1 Laser Interlock System User Manual
 ==========================================
 
+Vault-1 Laser Hazard Indicators
+-------------------------------
+
 For the Vault-1 laser interlocks system, there are multiple indicators that inform you of the state of the systems. 
 This includes status beacons, LED display, and interlock warning modules.
 
@@ -25,19 +28,21 @@ On the Pharos protocase the local interlock modules are labeled CONTACT #1 AND C
 Though they are labeled differently, they function the same. 
 
 The INTERLOCK OVERRIDE section of the protocases shows the status of the enclosure interlocks. 
-If the key is set to OVERRIDE and the STATUS LED is red, that means that the enclosure interlocks are bypass, and there could be a laser hazard if the enclosure is opened. 
+If the key is set to OVERRIDE and the STATUS LED is :red:`red`, that means that the enclosure interlocks are bypass, and there could be a laser hazard if the enclosure is opened. 
 
 .. figure:: /images/user_docs/Vault-1_laser/Pharos_protocase.jpg
    :scale: 20 %
    :align: center
 
-   **Figure 1:** Vault-1 Pharos enclosure protocase.
+   **Figure 1:** Vault-1 Pharos enclosure protocase. 
+   It is located on the east wall of the Pharos enclosure.
 
 .. figure:: /images/user_docs/Vault-1_laser/Dira_protocase.jpg
     :scale: 20 %
     :align: center
 
-    **Figure 2:** Vault-1 Dira enclosure protocase.
+    **Figure 2:** Vault-1 Dira enclosure protocase. 
+    It is located on the east wall of the Dira enclosure.
 
 Beacon Stacks
 ^^^^^^^^^^^^^
@@ -75,8 +80,12 @@ Also, the beacon stacks can notify you if there is an enclosure whose interlocks
         This state is possible with or without Vault-1 being armed. 
       - :blue-cell:`Beaconq Color`
 
-For the enclosure specific beacon stacks, the administrative override LED (orange) will only light if that specific enclosure is in override. 
-The general Vault-1 and Vault-1 Control beacon stacks will light the administrative override LED (orange) if either of the enclosures are in override. 
+
+.. role:: orange
+.. role:: green
+
+For the enclosure specific beacon stacks, the administrative override LED (:orange:`orange`) will only light if that specific enclosure is in override. 
+The general Vault-1 and Vault-1 Control beacon stacks will light the administrative override LED (:orange:`orange`) if either of the enclosures are in override. 
 
 The Pharos LASER ENCLOSURE INTERLOCK protocase is the only protocase without a white beacon. 
 That is because the state of the Dira does not affect the state inside of the Pharos enclosure. 
@@ -92,7 +101,8 @@ However, the Dira LASER ENCLOSURE INTERLOCK protocase has a blue beacon because 
     :scale: 20 %
     :align: center
     
-    **Figure 4:** This is the Vault-1 beacon stack.
+    **Figure 4:** This is the Vault-1 beacon stack. 
+    It is located on the east wall of Vault-1.
 
 
 VIEWMARQ Display
@@ -118,16 +128,15 @@ The top line always will either display LASER SAFE or DANGER LASER HAZARD.
 All other possible states will only appear on the display when the hazard is presented. 
 See Figure 3.
 
-Laser Warming module
-^^^^^^^^^^^^^^^^^^^^
+Laser Safety System Modules
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-There are laser warning modules throughout the Vault-1 laser interlocks system. 
-The location of the warning module dictates what the safe or danger status is indicating. 
+The laser interlock system is interfaced through the laser safety systems modules. Below is an outline of the modules and what they do. 
 
 .. figure:: /images/laser_safety_systems/warning_module.gif
     :align: center
 
-    Laser Safety Systems laser area warning module. 
+    **Figure 5:** Area Warming Module
 
 .. list-table::
   :header-rows: 1
@@ -151,29 +160,107 @@ The location of the warning module dictates what the safe or danger status is in
     - | These warning modules tell you if the enclosure is forced to a safe state. 
       | :red:`DANGER LASER HAZARD` = SAFE STATE IS NOT FORCED
 
-The Vault-1 entry module looks slightly different, being square instead of rectangular. 
-That module is the laser interlock control module; however, it serves as a warning module as well. 
-
-Laser Emergency Stop Buttons
-----------------------------
-
-All the laser enclosures are equipped with laser emergency stop buttons. 
-The e-stops on an enclosure can only crash that specific laser. 
-
-Additionally, there are ionizing radiation emergency stop buttons in Vault-1 and Vault-1 Control. 
-Those only serve the purpose of crashing the transmitters and are not located on the laser enclosures.
-
-.. figure:: /images/user_docs/Vault-1_laser/laser_e-stop_off.jpg
-    :scale: 20 %
+.. figure:: /images/laser_safety_systems/control_module.gif
     :align: center
 
-    **Figure 5:** This is a laser emergency stop button in the off state.
+    **Figure 6:** Control Module
 
-.. figure:: /images/user_docs/Vault-1_laser/laser_e-stop_on.jpg 
-    :scale: 20 %
+    This module is a control module for the local laser interlock, however, for the users it serves as another warning module.
+    This warning module tells you if the local interlock is armed or not.
+
+
+.. figure:: /images/laser_safety_systems/room_arm.png
     :align: center
 
-    **Figure 6:** This is a laser emergency stop button in the on state.
+    **Figure 7:** Room Arm Module
+
+    This module is used to arming system systems in the laser interlock system.
+    For example, there are two in Vault-1, one to arm the vault and one to arm the Pharos enclosure.
+
+
+.. list-table::
+  :header-rows: 1
+
+  * - Module Message
+    - Message Meaning
+  * - :orange:`ROOM ARMED`
+    - | If this LED is on, then the corresponding system is armed 
+      | and interlocked.
+  * - :green:`ROOM DISARMED (READY TO ARM)`
+    - | If this LED is on, the the system is the correct state to armed
+      | the module.
+  * - :orange:`ROOM CRASHED (CANNOT ARM)`
+    - | If this LED is on, then there was a fault that tripped the 
+      | system, or a fault that will not allow the system to be armed. 
+
+
+
+.. figure:: /images/laser_safety_systems/local_arm.png
+    :align: center
+
+    **Figure 8:** Local Arm Module
+
+    This module is used to arm the local interlock modules that are sub-systems of the room arm modules.
+    For example, one the Pharos enclosure is armed, it enables the laser and the shutters to be armed by their local arming modules.
+
+.. list-table::
+  :header-rows: 1
+
+  * - Module Message
+    - Message Meaning
+  * - :orange:`LOCAL CONTACTS ARMED`
+    - If this LED is on, then the corresponding sub-system is armed.
+  * - :green:`LOCAL CONTACTS DISARMED`
+    - | If this LED is on, then the connected room module is aremd, 
+      | but this module is not.
+  * - | :green:`LOCAL CONTACTS DISARMED`
+      | :green:`ROOM NOT ARMED`
+      | :green:`LOCAL CONTACT CANNOT ARM`
+    - | If this LED is on, then there was a fault that tripped, or the room 
+      | module is not armed.
+
+
+.. figure:: /images/laser_safety_systems/push_to_exit.png
+    :align: center
+
+    **Figure 9:** Push to Exit Module
+
+    This module is used to exit when a room is armed as a laser lab.
+    When the rooms are armed, the doors are magnetically locked.
+    This button will temporarily unlock the door to allow you to exit the room.
+
+.. figure:: /images/laser_safety_systems/key_pad.jpg
+    :align: center
+
+    **Figure 10:** Keypad
+
+    This is the key pad that is used to enter a room that is armed as a laser lab. 
+    This keypad has a primary pin for permanent users, and a secondary pin for temporary users that is meant to be changed frequently.
+
+.. figure:: /images/laser_safety_systems/door_monitor.jpg
+    :align: center
+
+    **Figure 11:** Door Monitor Module
+
+    This module is used to monitor the state of a door or curtain.
+    It will display does not show :green:`CLOSED`, then it is open. 
+    If the system is put into an administrative override state, then the door monitor will always show :green:`CLOSED`.
+
+
+.. figure:: /images/laser_safety_systems/e_stop.png
+    :align: center
+
+    **Figure 12:** Laser Emergency Stop Button. 
+
+    All the laser enclosures are equipped with laser emergency stop buttons. 
+    The e-stops on an enclosure can only crash that specific laser. 
+
+    Additionally, there are ionizing radiation emergency stop buttons in Vault-1 and Vault-1 Control. 
+    Those only serve the purpose of crashing the transmitters and are not located on the laser enclosures.
+
+    When the e-stop is presed, the LED in the center will turn on.
+    To reset the e-stop, twist the button clockwise.
+
 
 Arming Vault-1 Laser Systems
 ----------------------------
