@@ -1,0 +1,10 @@
+<!-- This html file is a first attmpt to change to logo area in the top left-->
+
+{% extends "!layout.html" %}
+
+{% block logo %}
+<a href="{{ pathto(master_doc) }}" class="logo">
+    <!-- Your custom content here -->
+    <img src="{{ pathto('_static/tab_icon.png', 1) }}" alt="Your Project Logo" />
+</a>
+{% endblock %}

@@ -56,11 +56,6 @@ There are beacon stacks in Vault-1 Control, on the Vault-1 east wall, on the Pha
 The beacons stacks can notify you of the arming status for Vault-1, the Pharos enclosure, and the Dira enclosure. 
 Also, the beacon stacks can notify you if there is an enclosure whose interlocks are in administrative override. 
 
-.. This role was added beacuse the file was not recognizing the custom.css orange-cell, green-cell, white-cell class without it.
-.. role:: orange-cell
-.. role:: green-cell
-.. role:: white-cell
-
 .. list-table::
     :header-rows: 1
 

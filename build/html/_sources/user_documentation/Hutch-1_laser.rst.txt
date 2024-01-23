@@ -1,3 +1,9 @@
+.. These are used to call classes from the custom.css file.
+.. role:: orange-cell
+.. role:: green-cell
+.. role:: white-cell
+.. role:: orange
+
 Hutch-1 Laser Interlock System User Manual
 ==========================================
 
@@ -13,7 +19,7 @@ Protocase
 The Astrella LASER ENCLOSURE INTERLOCK protocase shows hazards in for the administrative override status of the Astrella enclosure. 
 
 The PERIMETER section of the Astrella LASER ENCLOSURE INTERLOCK protocase has a laser warning module and door monitor module. 
-The laser warning module displays if the Astrella is forced into a safe state. This means it will always show DANGER LASER ON unless the interlocks are tripped. 
+The laser warning module displays if the Astrella is forced into a safe state. This means it will always show :red:`DANGER LASER ON`` unless the interlocks are tripped. 
 The door monitor shows if the enclosure doors are opened or closed. If the enclosure is put into an override state, then the monitor will always show closed because the interlocks are bypassed. 
 
 The LOCAL INTERLOCK CONTACT CONTROL section of the Astrella LASER ENCLOSURE INTERLOCK protocase are two local interlock modules. 
@@ -21,23 +27,20 @@ These modules are for arming the UV and IV shutter controllers for manual operat
 These can only be armed when the enclosure is armed. However, if the enclosure is not set to override, then these will disarm when opening the enclosure.
 
 The INTERLOCK OVERRIDE section of the Astrella LASER ENCLOSURE INTERLOCK protocase shows the status of the enclosure interlocks. 
-If the key is set to OVERRIDE and the STATUS LED is red, that means that the enclosure interlocks are bypass, and there could be a laser hazard if the enclosure is opened. 
+If the key is set to OVERRIDE and the STATUS LED is :red:`red`, that means that the enclosure interlocks are bypass, and there could be a laser hazard if the enclosure is opened. 
 
 .. figure:: /images/user_docs/Hutch-1_laser/Astrella_protocase.jpg
     :scale: 20 %
     :align: center
 
-    Astrella LASER ENCLOSURE INTERLOCK protocase
+    **Figure 1:** Hutch-1 Astrella enclosure protocase.
+    It is located on the south wall of the enclosure. 
 
 Beacon Stacks
 ^^^^^^^^^^^^^
 
 There are beacon stacks in Hutch-1 Control and on the Astrella LASER ENCLOSUREI INTERLOCK protocase. 
-The beacons stacks can notify you of the arming status for Hutch-1 and the Astella, as well as the interlock status of the enclosure.
-
-.. role:: orange-cell
-.. role:: green-cell
-.. role:: white-cell
+The beacons stacks can notify you of the arming status for Hutch-1 and the Astella, as well as the override status of the enclosure.
 
 .. list-table::
     :header-rows: 1
@@ -58,6 +61,12 @@ The beacons stacks can notify you of the arming status for Hutch-1 and the Astel
         This state is possible with or without Hutch-1 being armed.
       - :white-cell:`Beacon Color`
 
+.. figure:: /images/user_docs/Hutch-1_laser/Hutch-1_VIEWMARQ_laser_safe.jpg
+    :scale: 20 %
+    :align: center
+
+    **Figure 2:** Hutch-1 Control beacon stack and VIEWMARQ display when Hutch-1 is laser safe.
+
 VIEWMARQ Display
 ^^^^^^^^^^^^^^^^
 
@@ -76,17 +85,17 @@ This display can notify you of the arming status for Hutch-1 and the Astella, as
 
 The top line always will either display LASER SAFE or DANGER LASER HAZARD. 
 All other possible states will only appear on the display when the hazard is presented. 
+See figure 2 for an example of the Hutch-1 Control VIEWMARQ Display.
 
-Laser Warming module
-^^^^^^^^^^^^^^^^^^^^
+Laser Safety System Modules
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-There are laser warning modules throughout the Hutch-1 laser interlocks system. 
-The location of the warning module dictates what the safe or danger status is indicating. 
+The laser interlock system is interfaced through the laser safety systems modules. Below is an outline of the modules and what they do. 
 
 .. figure:: /images/laser_safety_systems/warning_module.gif
     :align: center
 
-    Laser Safety Systems laser area warning module. 
+    **Figure 5:** Area Warming Module
 
 .. list-table::
   :header-rows: 1
@@ -94,50 +103,123 @@ The location of the warning module dictates what the safe or danger status is in
   * - Module Location
     - Module Meaning
   * - | **General Area Module**
-      | Hutch-1 Control
-      | Hutch-1 Entry
-    - | These are warning modules tell you if Hutch-1 is armed as a laser lab. 
+      | Vault-1 Control
+      | Vault-1 Entry
+    - | These are warning modules tell you if Vault-1 is armed as a laser lab. 
       | :red:`DANGER LASER ON` = ARMED
   * - | **Enclosure Modules**
-      | Astrella enclosure south wall
-      | Astrella enclosure west wall
+      | Pharos enclosure south wall
+      | Pharos enclosure west wall
     - | These warning modules tell you if the enclosure is armed.
       | There is no indication on if the laser is armed. 
       | :red:`DANGER LASER ON` = ARMED
   * - | **Protocase Modules**
-      | Astrella enclosure protocase
+      | Pharos enclosure protocase
+      | Dira enclosure protocase
     - | These warning modules tell you if the enclosure is forced to a safe state. 
       | :red:`DANGER LASER HAZARD` = SAFE STATE IS NOT FORCED
 
-The Hutch-1 entry module looks slightly different, being square instead of rectangular. 
-That module is the laser interlock control module; however, it serves as a warning module as well. 
-
-.. figure:: /images/user_docs/Hutch-1_laser/Hutch-1_VIEWMARQ_laser_safe.jpg
-    :scale: 20 %
+.. figure:: /images/laser_safety_systems/control_module.gif
     :align: center
 
-    Hutch-1 Control VIEWMARQ display when Hutch-1 is armed as a laser lab.
+    **Figure 6:** Control Module
 
-Laser Emergency Stop Buttons
-----------------------------
+    This module is a control module for the local laser interlock, however, for the users it serves as another warning module.
+    This warning module tells you if the local interlock is armed or not.
 
-All the laser enclosures are equipped with laser emergency stop buttons. 
-The e-stops on an enclosure can only crash that specific laser. 
 
-Additionally, there are ionizing radiation emergency stop buttons in Vault-1 and Vault-1 Control. 
-Those only serve the purpose of crashing the transmitters and are not located on the laser enclosures.
-
-.. figure:: /images/user_docs/Vault-1_laser/laser_e-stop_off.jpg
-    :scale: 20 %
+.. figure:: /images/laser_safety_systems/room_arm.png
     :align: center
 
-    **Figure 5:** This is a laser emergency stop button in the off state.
+    **Figure 7:** Room Arm Module
 
-.. figure:: /images/user_docs/Vault-1_laser/laser_e-stop_on.jpg 
-    :scale: 20 %
+    This module is used to arming system systems in the laser interlock system.
+    For example, there are two in Vault-1, one to arm the vault and one to arm the Pharos enclosure.
+
+
+.. list-table::
+  :header-rows: 1
+
+  * - Module Message
+    - Message Meaning
+  * - :orange:`ROOM ARMED`
+    - | If this LED is on, then the corresponding system is armed 
+      | and interlocked.
+  * - :green:`ROOM DISARMED (READY TO ARM)`
+    - | If this LED is on, the the system is the correct state to armed
+      | the module.
+  * - :orange:`ROOM CRASHED (CANNOT ARM)`
+    - | If this LED is on, then there was a fault that tripped the 
+      | system, or a fault that will not allow the system to be armed. 
+
+
+
+.. figure:: /images/laser_safety_systems/local_arm.png
     :align: center
 
-    **Figure 6:** This is a laser emergency stop button in the on state.
+    **Figure 8:** Local Arm Module
+
+    This module is used to arm the local interlock modules that are sub-systems of the room arm modules.
+    For example, one the Pharos enclosure is armed, it enables the laser and the shutters to be armed by their local arming modules.
+
+.. list-table::
+  :header-rows: 1
+
+  * - Module Message
+    - Message Meaning
+  * - :orange:`LOCAL CONTACTS ARMED`
+    - If this LED is on, then the corresponding sub-system is armed.
+  * - :green:`LOCAL CONTACTS DISARMED`
+    - | If this LED is on, then the connected room module is aremd, 
+      | but this module is not.
+  * - | :green:`LOCAL CONTACTS DISARMED`
+      | :green:`ROOM NOT ARMED`
+      | :green:`LOCAL CONTACT CANNOT ARM`
+    - | If this LED is on, then there was a fault that tripped, or the room 
+      | module is not armed.
+
+
+.. figure:: /images/laser_safety_systems/push_to_exit.png
+    :align: center
+
+    **Figure 9:** Push to Exit Module
+
+    This module is used to exit when a room is armed as a laser lab.
+    When the rooms are armed, the doors are magnetically locked.
+    This button will temporarily unlock the door to allow you to exit the room.
+
+.. figure:: /images/laser_safety_systems/key_pad.jpg
+    :align: center
+
+    **Figure 10:** Keypad
+
+    This is the key pad that is used to enter a room that is armed as a laser lab. 
+    This keypad has a primary pin for permanent users, and a secondary pin for temporary users that is meant to be changed frequently.
+
+.. figure:: /images/laser_safety_systems/door_monitor.jpg
+    :align: center
+
+    **Figure 11:** Door Monitor Module
+
+    This module is used to monitor the state of a door or curtain.
+    It will display does not show :green:`CLOSED`, then it is open. 
+    If the system is put into an administrative override state, then the door monitor will always show :green:`CLOSED`.
+
+
+.. figure:: /images/laser_safety_systems/e_stop.png
+    :align: center
+
+    **Figure 12:** Laser Emergency Stop Button. 
+
+    All the laser enclosures are equipped with laser emergency stop buttons. 
+    The e-stops on an enclosure can only crash that specific laser. 
+
+    Additionally, there are ionizing radiation emergency stop buttons in Vault-1 and Vault-1 Control. 
+    Those only serve the purpose of crashing the transmitters and are not located on the laser enclosures.
+
+    When the e-stop is presed, the LED in the center will turn on.
+    To reset the e-stop, twist the button clockwise.
+
 
 Arming Hutch-1 Laser Systems
 ----------------------------
@@ -155,23 +237,23 @@ Once the Astrella enclosure is armed, the Astrella laser can be armed with the l
 
 Once the Astrella system is armed the following will change in the interlock system:
 
-- Light is now on the table in the Astrella enclosure.
+- The Astrella is now producing a laser beam. 
 - Beacon stack white LEDs will turn on, indicating that the Astrella is armed.
-- The VIEWMARQ display will show ASTRELLA ARMED.
-- The laser warning module on the Astrella enclosure protocase will show DANGER LASER ON.
+- The VIEWMARQ display will show :red:`ASTRELLA ARMED`.
+- The laser warning module on the Astrella enclosure protocase will show :red:`DANGER LASER ON`.
 - Astrella enclosure e-stop buttons will turn on, shown by the LED in the center. The e-stops are now functional and will crash the Astrella laser if presesd.
 
 .. figure:: /images/user_docs/Hutch-1_laser/Astrella_enclosure_unarmed.jpg
     :scale: 20 %
     :align: center
 
-    **Figure 7:** Astrella enclosure unarmed.
+    **Figure 13:** Astrella enclosure unarmed.
 
 .. figure:: /images/user_docs/Hutch-1_laser/Astrella_enclosure_armed.jpg
     :scale: 20 %
     :align: center
 
-    **Figure 8:** Astrella enclosure armed.
+    **Figure 14:** Astrella enclosure armed.
 
 
 Arming Hutch-1
@@ -186,13 +268,13 @@ The 2nd layer laser curtain door must be closed.
     :scale: 20 %
     :align: center
 
-    **Figure 9:** Hutch-1 unarmed.
+    **Figure 15:** Hutch-1 unarmed.
 
 .. figure:: /images/user_docs/Hutch-1_laser/Hutch-1_armed.jpg
     :scale: 20 %
     :align: center
 
-    **Figure 10:** Hutch-1 armed.
+    **Figure 16:** Hutch-1 armed.
 
 These are the laser safety modules in the Hutch-1 entry. 
 On the left are the modules in an unarmed state, and on the right are the modules in an armed state. 
@@ -201,8 +283,8 @@ In these images, from the top down are the laser control module (serving as a wa
 Once Hutch-1 is armed as a laser lab the following will change in the interlock system:
 
 - Beacon stack green LEDs will turn off, indicating that Hutch-1 is armed.
-- The VIEWMARQ display will show DANGER LASER HAZARD in place of LASER SAFE.
-- The laser warning modules in Hutch-1 Control and Hutch-1 Entry will show DANGER LASER ON.
+- The VIEWMARQ display will show :red:`DANGER LASER HAZARD` in place of LASER SAFE.
+- The laser warning modules in Hutch-1 Control and Hutch-1 Entry will show :red:`DANGER LASER ON`.
 - The push to exit button will be on, shown by the LED in the button. 
 - The Hutch-1 curtain door will be magnetically locked.
 
@@ -217,7 +299,7 @@ It is important to note that Hutch-1 will disarm itself and shutter all laser ha
     :scale: 20 %
     :align: center
 
-    **Figure 11:** Hutch-1 entry armed.
+    **Figure 17:** Hutch-1 entry armed.
 
 Using Laser Enclosure Interlock Protocase for Overriding Interlocks and Manual Shutter Control
 ----------------------------------------------------------------------------------------------
@@ -227,7 +309,7 @@ However, when the laser enclosures are interlocked, regardless of the arming sta
 
 What you will see happen on the enclosure protocase if the door is opened when interlocked is:
 
-- Laser warning module will show LASER SAFE.
+- Laser warning module will show :green:`LASER SAFE`.
 - Door monitor module will be blank, meaning open.
 - LOCAL INTERLOCK CONTACT CONTROL local interlock modules will disarm if armed, automatically closing the shutters.
 
@@ -243,9 +325,9 @@ Turn the key on the protocase under INERLOCK OVERRIDE from INTERLOCK TO OVERRIDE
 
 Once the enclosure is put into override the following will change in the interlock system:
 
-- The VIEWMARQ display will show ASTRELLA ADMIN OVERRIDE.
-- The Hutch-1 Control and Hutch-1 protocase beacon stack orange administrative override LED will turn on.
-- If you open the enclosure,  the laser warning module will still show DANGER LASER ON, the door monitor module will show CLOSED, and the local interlock modules for arming shuttters manual control will not disarm.
+- The VIEWMARQ display will show :red:`ASTRELLA ADMIN OVERRIDE`.
+- The Hutch-1 Control and Hutch-1 protocase beacon stack :orange:`orange` administrative override LED will turn on.
+- If you open the enclosure,  the laser warning module will still show :red:`DANGER LASER ON`, the door monitor module will show :green:`CLOSED`, and the local interlock modules for arming shuttters manual control will not disarm.
 
 At this point, the LOCAL INTERLOCK CONTACT CONTROL local interlock modules can be armed, and the shutters can be controlled manually without the interlocks disarming manual usage. 
 
@@ -253,7 +335,7 @@ At this point, the LOCAL INTERLOCK CONTACT CONTROL local interlock modules can b
     :scale: 20 %
     :align: center
 
-    **Figure 12:** Astrella enclosure override.
+    **Figure 18:** Astrella enclosure override.
 
 
 Disarming the Laser Interlock System

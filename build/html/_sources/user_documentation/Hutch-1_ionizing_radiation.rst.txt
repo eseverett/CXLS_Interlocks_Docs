@@ -99,32 +99,33 @@ To disengage the e-stop, rotate the button clockwise.
 It is important to note that only the ionizing radiation emergency stop buttons will put the accelerator into a safe state. 
 There is also laser emergency stop buttons that will only cut power to their specific laser if armed and do not affect thetransmitters.
 
-.. figure:: /images/user_docs/Hutch-1_ionizing_radiation/Hutch1_Search_Buttons.png
-    :scale: 50 %
-    :align: center
-
-    **Figure 6:** This is a diagram of the Hutch-1 search buttons. The numbers indicate the order in which they need to be pressed.
-
 .. figure:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_estop_off.jpg
     :scale: 20 %
     :align: center
 
-    **Figure 7:** This is the ionizing radiation emergency stop button when not engaged.
+    **Figure 6:** This is the ionizing radiation emergency stop button when not engaged.
 
 .. figure:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_estop_on.jpg
     :scale: 20 %
     :align: center
 
-    **Figure 8:** This is the ionizing radiation emergency stop button when engaged.
+    **Figure 7:** This is the ionizing radiation emergency stop button when engaged.
 
 Search Procedure for Securing Hutch-1
 -------------------------------------
 
-To be able to import a beam from Vault-1 into Hutch-1, Hault-1 must be secured. To secure Hutch-1, it must be cleared, searched, and the Hutch-1 search buttons need to be pressed in the correct sequence. 
+To be able to allow either of the double tungsten shutters to be opened, Huth-1 must be secured. To secure Hutch-1, it must be cleared, searched, and the Hutch-1 search buttons need to be pressed in the correct sequence. 
 Starting in the back of Hutch-1 while verifying the hutch is empty, press the search button labeled 1. 
 As you continue to search press 2 then 3 as you're working your way towards the front of Hutch-1. 
 Once the 3rd search button is pressed, a chime will be audible and a # timer will start. 
 If the shield door is not completely closed by the end of the timer, the search buttons will reset, and Hutch-1 will need to be researched. 
+
+
+.. figure:: /images/user_docs/Hutch-1_ionizing_radiation/Hutch1_Search_Buttons.png
+    :scale: 50 %
+    :align: center
+
+    **Figure 8:** This is a diagram of the Hutch-1 search buttons. The numbers indicate the order in which they need to be pressed.
 
 .. figure:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_search_off.jpg
     :scale: 20 %
@@ -144,9 +145,9 @@ If the shield door is not completely closed by the end of the timer, the search 
 
     **Figure 11:** This is the Hutch-1 Control IONIZING RADIATION INTERLOCK protocase when Hutch-1 is searched.
 
-Once Hutch-1 is searched and all the search buttons have been pressed in the correct sequence, all the SECURE PEREIMETER SEARCH lamps on the Hutch-1 Control IONZING RADIATION INTERLOCK protocase will be green. 
+Once Hutch-1 is searched and all the search buttons have been pressed in the correct sequence, all the SECURE PEREIMETER SEARCH lamps on the Hutch-1 Control IONZING RADIATION INTERLOCK protocase will be :green:`green`. 
 Unlike the Vault-1 door, this door is closed manually. 
-Once the door is fully closed and actuating the door switches the SECURE PERIMETER SHEILD DOOR lamp on the Hutch-1 Control IONIZING RAIDTION INTERLOCK protocase will be green. 
+Once the door is fully closed and actuating the door switches the SECURE PERIMETER SHEILD DOOR lamp on the Hutch-1 Control IONIZING RAIDTION INTERLOCK protocase will be :green:`green`. 
 
 .. figure:: /images/user_docs/Hutch-1_ionizing_radiation/Hutch-1_door.jpg
     :scale: 20 %
@@ -158,9 +159,7 @@ Controlling the Beam Status in Hutch-1
 --------------------------------------
 
 The beam stop can only be opened once Hutch-1 is searched and secured. 
-Once secured, the beam stop can be opened by turning the BEAM STOP OPEN key on the Hutch-1 Control IONIZING RADIATION INTERLOCK protocase.
-
-Note that Hutch-1 is a controlled area, and once the beam is allowed into Hutch-1 if you are not already inside then there is no access until the shutters are closed. 
+Once secured, the beam stop can be opened by turning the BEAM STOP OPEN key on the Hutch-1 Control IONIZING RADIATION INTERLOCK protocase, the lamp should turn :green:`green` when the stop is open.
 If the shield door is opened with the beam stop open, then the shutters will close, and Hutch-1 will no longer be secure.
 
 .. note::
@@ -170,7 +169,7 @@ At any point, the shutters can be closed again by hitting BEAM STOP RESET on the
 
 When the beam stop is open, the shutters will only allow either the collimated or divergent beam into Hutch-1. 
 To select which beam is allowed into Hutch-1 use the BEAM SELECT key on the Hutch-1 Control IONIZING RADIATION INTERLOCK protocase. 
-The BEAM SELECT lamp will show to you what has been selected, and the BEAM STATUS lamp will show to you what the status of the shutters is. 
+The BEAM SELECT lamp shows what has been selected, and the BEAM STATUS lamp shows what the status of the shutters is. 
 
 Putting Hutch-1 into a Non-Secure State
 ---------------------------------------

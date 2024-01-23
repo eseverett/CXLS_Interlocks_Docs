@@ -53,12 +53,22 @@ pygments_style = 'sphinx' ### Added style
 #
 html_theme = 'sphinx_rtd_theme' ### Changed theme to alabaster
 
+# html_theme_path = ['_theme'] ### Added theme path
+
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
 
 html_css_files = ['custom.css'] ### Added custom css file
+
+html_favicon = '_static/tab_icon_2.ico' ### Added icon for browser tab
+
+html_logo = '_static/tab_icon.png' ### Added logo for top left corner
+html_theme_options = {
+    'logo_only': True
+}
+
 
 # Pygments (syntax highlighting) style to use
 pygments_style = 'friendly' ### Added style
