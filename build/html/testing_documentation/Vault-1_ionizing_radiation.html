@@ -52,7 +52,12 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Testing Documentation:</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Vault-1 Ionzing Radiation Interlock Testing Protocol</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Vault-1 Ionzing Radiation Interlock Testing Protocol</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#starting-conditions">Starting Conditions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#testing-unsecure-vault-1-conditions">Testing Unsecure Vault-1 Conditions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#searching-procedure">Searching Procedure</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="Hutch-1_ionizing_radiation.html">Hutch-1 Ionzing Radiation Interlock System Testing protocol</a></li>
 <li class="toctree-l1"><a class="reference internal" href="e-stop_testing.html">Ionizing Radiation Empergency Stop Testing Protocol</a></li>
 <li class="toctree-l1"><a class="reference internal" href="apantec_testing.html">Apantec Ionizing Radiation Sensors Testing Protocol</a></li>
@@ -96,6 +101,78 @@
              
   <section id="vault-1-ionzing-radiation-interlock-testing-protocol">
 <h1>Vault-1 Ionzing Radiation Interlock Testing Protocol</h1>
+<p>The objective of this testing procedure is to verify the funcationality of the Vault-1 ionizing radiation interlock system.
+The following fall under the scope of this testing procedure:
+- Vault-1 search and securing system.
+- RF and accelerator arming.
+- Tranmitter override.
+- Ionzing radiation monitoring interlocks.</p>
+<section id="starting-conditions">
+<h2>Starting Conditions</h2>
+<p>The default state for testing of the Vaut-1 ionizing radiation interlock system is in a completely disarmed state.</p>
+<ol class="arabic">
+<li><p>The IONIZING RADIATION INTERLOCK protocase in Vault-1 Control shows:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>All SECURE PERIMETER lamps are <span class="red">red</span>.</p></li>
+<li><p>All AREA MONITOR lamps are <span class="green">green</span>.</p></li>
+<li><p>TRANSMITTERS and ACCERATOR lamps are <span class="red">red</span>.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>VIEWMARQ in Vault-1 Control displays <span class="green">LASER SAFE</span>.</p></li>
+<li><p>VIEWMARQ in Accererator Lab disaplys <span class="green">RF SAFE</span>.</p></li>
+<li><p>All individual <span class="red">red</span>, <span class="blue">blue</span>, and <span class="orange">orange</span> beacons are off.</p></li>
+<li><p>Search buttons LEDs are off in Vault-1.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>1</p></li>
+<li><p>2</p></li>
+<li><p>3</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>search buttons and protocase images</p>
+</div>
+</section>
+<section id="testing-unsecure-vault-1-conditions">
+<h2>Testing Unsecure Vault-1 Conditions</h2>
+<ol class="arabic simple">
+<li><p>Switch the ENABLE key for the accelerator.
+The accelerator lamp remains <span class="red">red</span>.</p></li>
+<li><p>Swith the ENABLE keys for transmitters 1 and 2.
+Both transmitter lamps remain <span class="red">red</span>.</p></li>
+</ol>
+</section>
+<section id="searching-procedure">
+<h2>Searching Procedure</h2>
+<ol class="arabic">
+<li><p>Push search buttons three and two and verify they will not activate without going in the correct sequence.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>3</p></li>
+<li><p>2</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Go through the vault and in sequence, click the three search buttons.
+The LED on the search button should glow and the corresponding lamp on the Vault-1 Control IONIZING RAIDATION INTERLOCK protocase should turn <span class="green">green</span>.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>1</p></li>
+<li><p>2</p></li>
+<li><p>3</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>When the third search button is hit, a chime should be audible.</p></li>
+<li><p>Once all three search buttons have been hit in order, close the shield door.
+The shield door lamp on the Vault-1 Control IONZING RADIATION INTERLOCK protocase will turn green once the mechanical door switches are fully actuated.</p></li>
+</ol>
+</section>
 </section>
 
 
