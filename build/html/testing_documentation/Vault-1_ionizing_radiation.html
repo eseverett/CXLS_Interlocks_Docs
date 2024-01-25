@@ -56,6 +56,10 @@
 <li class="toctree-l2"><a class="reference internal" href="#starting-conditions">Starting Conditions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#testing-unsecure-vault-1-conditions">Testing Unsecure Vault-1 Conditions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#searching-procedure">Searching Procedure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#arming-the-accererator-and-transmitters">Arming the Accererator and transmitters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#overriding-and-reseting-transmitters-and-accererator">Overriding and Reseting Transmitters and Accererator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#timing-out-the-shield-door-and-search-sequence">Timing out the Shield Door and Search sequence</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#return-to-starting-conditions">Return to Starting Conditions</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Hutch-1_ionizing_radiation.html">Hutch-1 Ionzing Radiation Interlock System Testing protocol</a></li>
@@ -126,9 +130,9 @@ The following fall under the scope of this testing procedure:
 <li><p>Search buttons LEDs are off in Vault-1.</p>
 <blockquote>
 <div><ul class="simple">
-<li><p>1</p></li>
-<li><p>2</p></li>
-<li><p>3</p></li>
+<li><p>Button 1</p></li>
+<li><p>Button 2</p></li>
+<li><p>Button 3</p></li>
 </ul>
 </div></blockquote>
 </li>
@@ -153,8 +157,8 @@ Both transmitter lamps remain <span class="red">red</span>.</p></li>
 <li><p>Push search buttons three and two and verify they will not activate without going in the correct sequence.</p>
 <blockquote>
 <div><ul class="simple">
-<li><p>3</p></li>
-<li><p>2</p></li>
+<li><p>Button 3</p></li>
+<li><p>Button 2</p></li>
 </ul>
 </div></blockquote>
 </li>
@@ -162,15 +166,81 @@ Both transmitter lamps remain <span class="red">red</span>.</p></li>
 The LED on the search button should glow and the corresponding lamp on the Vault-1 Control IONIZING RAIDATION INTERLOCK protocase should turn <span class="green">green</span>.</p>
 <blockquote>
 <div><ul class="simple">
-<li><p>1</p></li>
-<li><p>2</p></li>
-<li><p>3</p></li>
+<li><p>Button 1</p></li>
+<li><p>Button 2</p></li>
+<li><p>Button 3</p></li>
 </ul>
 </div></blockquote>
 </li>
 <li><p>When the third search button is hit, a chime should be audible.</p></li>
 <li><p>Once all three search buttons have been hit in order, close the shield door.
 The shield door lamp on the Vault-1 Control IONZING RADIATION INTERLOCK protocase will turn green once the mechanical door switches are fully actuated.</p></li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>need images</p>
+</div>
+</section>
+<section id="arming-the-accererator-and-transmitters">
+<h2>Arming the Accererator and transmitters</h2>
+<ol class="arabic">
+<li><p>With the shield door still closed, enable the accelerator on the Vault-1 Control IONIZING RADIATION INTERLOCK protocase using the ENABLE key.
+The accelerator status lamp should turn <span class="green">green</span>.</p></li>
+<li><p>Turn the ENABLE key for transmitter 1 on the Vault-1 Control IONIZING RADIATION INTERLOCK protocase.
+The transmitter 1 status lamp should turn <span class="green">green</span>.</p></li>
+<li><p>Once the transmitter is enabled, the VIEWMARQ diaplys will show <span class="red">VAULT SECURE - RF ARMED</span>.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Vault-1 Control</p></li>
+<li><p>Accererator Lab</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>The <span class="blue">blue</span> beacons next to each VIEWMARQs are on.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Vault-1 Control</p></li>
+<li><p>Accererator Lab</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Hit the reset button and repeat 2-4 with transmitter 2.</p></li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>need images</p>
+</div>
+</section>
+<section id="overriding-and-reseting-transmitters-and-accererator">
+<h2>Overriding and Reseting Transmitters and Accererator</h2>
+<ol class="arabic simple">
+<li><p>With the accelerator and transmitters aremed, swithc the OVERRIDE keys on the Vault-1 Control IONIZING RADIATION INTERLOCK protocase.
+The TRANSMITTERS lamps will turn <span class="orange">orange</span>.</p></li>
+<li><p>Switch the OVERRIDE keys back to interlock.
+The TRANSMITTERS lamps will turn <span class="green">green</span>.</p></li>
+<li><p>Hit the reset button on the Vault-1 Control IONIZING RADIATION INTERLOCK protocase.
+The ACCELERATOR and TRANSMITTERS lamps will turn <span class="red">red</span>.</p></li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>need images</p>
+</div>
+</section>
+<section id="timing-out-the-shield-door-and-search-sequence">
+<h2>Timing out the Shield Door and Search sequence</h2>
+<ol class="arabic simple">
+<li><p>Rearm the accelerator and transmitters and open the shield door.
+The accelerator and transmitter lamps should turn <span class="red">red</span>.</p></li>
+<li><p>Push only the first search button.
+After <span class="red">x</span> seconds, the button LED should turn off.</p></li>
+<li><p>Go through the search procedure again except do not close the shield door and allow the system to trip.
+After <span class="red">x</span>, the search lamps should turn <span class="red">red</span>.</p></li>
+</ol>
+</section>
+<section id="return-to-starting-conditions">
+<h2>Return to Starting Conditions</h2>
+<ol class="arabic simple">
+<li><p>Return Vault-1 ionizing radiation interlock system to the default state.</p></li>
 </ol>
 </section>
 </section>
