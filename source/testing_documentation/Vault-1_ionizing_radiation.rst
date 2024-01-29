@@ -33,8 +33,28 @@ The default state for testing of the Vaut-1 ionizing radiation interlock system 
     - Button 2
     - Button 3
 
-.. warning:: 
-    search buttons and protocase images
+.. figure:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_search_off.jpg
+   :scale: 20 %
+   :align: center
+   :alt: Vault-1 search buttons off
+
+   Vault-1 search buttons off
+
+.. figure:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_search_on.jpg
+   :scale: 20 %
+   :align: center
+   :alt: Vault-1 search buttons on
+
+   Vault-1 search buttons on
+
+.. figure:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_protocase.jpg
+   :scale: 20 %
+   :align: center
+   :alt: Vault-1 protocase
+
+   Vault-1 protocase
+
+
 
 Testing Unsecure Vault-1 Conditions
 -----------------------------------
@@ -65,8 +85,19 @@ Searching Procedure
 #. Once all three search buttons have been hit in order, close the shield door. 
    The shield door lamp on the Vault-1 Control IONZING RADIATION INTERLOCK protocase will turn green once the mechanical door switches are fully actuated.
 
-.. warning::
-    need images
+.. figure:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_searched.jpg
+   :scale: 20 %
+   :align: center
+   :alt: Vault-1 searched
+
+   Vault-1 searched
+
+.. figure:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_door.jpg
+   :scale: 20 %
+   :align: center
+   :alt: Vault-1 door
+
+   Vault-1 door
 
 Arming the Accererator and transmitters
 ---------------------------------------
@@ -89,8 +120,22 @@ Arming the Accererator and transmitters
 
 #. Hit the reset button and repeat 2-4 with transmitter 2.
 
+.. figure:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_protocase_accelerator_armed.jpg
+   :scale: 20 %
+   :align: center
+   :alt: Vault-1 protocase accelerator armed
+
+   Vault-1 protocase accelerator armed
+
+.. figure:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_protocase_transmitter_armed.jpg
+   :scale: 20 %
+   :align: center
+   :alt: Vault-1 protocase transmitter armed
+
+   Vault-1 protocase transmitter armed
+
 .. warning::
-    need images
+   NEEDS VIEMARQ IMAGES
 
 Overriding and Reseting Transmitters and Accererator
 ----------------------------------------------------
@@ -104,8 +149,12 @@ Overriding and Reseting Transmitters and Accererator
 #. Hit the reset button on the Vault-1 Control IONIZING RADIATION INTERLOCK protocase.
    The ACCELERATOR and TRANSMITTERS lamps will turn :red:`red`.
 
-.. warning::
-    need images
+.. figure:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_protocase_transmitter_override.jpg
+   :scale: 20 %
+   :align: center
+   :alt: Vault-1 protocase transmitter override
+
+   Vault-1 protocase transmitter override
 
 
 Timing out the Shield Door and Search sequence
