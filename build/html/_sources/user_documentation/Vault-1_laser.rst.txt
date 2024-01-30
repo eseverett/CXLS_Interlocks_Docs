@@ -208,7 +208,7 @@ The laser interlock system is interfaced through the laser safety systems module
   * - :orange:`LOCAL CONTACTS ARMED`
     - If this LED is on, then the corresponding sub-system is armed.
   * - :green:`LOCAL CONTACTS DISARMED`
-    - | If this LED is on, then the connected room module is aremd, 
+    - | If this LED is on, then the connected room module is armed, 
       | but this module is not.
   * - | :green:`LOCAL CONTACTS DISARMED`
       | :green:`ROOM NOT ARMED`
@@ -255,7 +255,7 @@ The laser interlock system is interfaced through the laser safety systems module
     Additionally, there are ionizing radiation emergency stop buttons in Vault-1 and Vault-1 Control. 
     Those only serve the purpose of crashing the transmitters and are not located on the laser enclosures.
 
-    When the e-stop is presed, the LED in the center will turn on.
+    When the e-stop is pressed, the LED in the center will turn on.
     To reset the e-stop, twist the button clockwise.
 
 
@@ -278,7 +278,7 @@ The Pharos enclosure and laser always arm together.
 Once the Pharos system is armed the following will change in the interlock system:
 
 - The Pharos is now producing a laser beam.
-- Beacon stack :blue:`blue` LEDs will tuen on, indicating the Pharos.
+- Beacon stack :blue:`blue` LEDs will turn on, indicating the Pharos.
 - The VIEWMARQ display will show :red:`PHAROS ARMED`.
 - The laser warning modules on the Pharos enclosure will show :red:`DANGER LASER ON`.
 - Pharos enclosure e-stop buttons will turn on, shown by the LED in the center. The e-stops are now functional and will crash the Pharos is pressed.
@@ -303,8 +303,8 @@ Arming Vault-1 as a Laser Lab
 If work in an armed enclosure must be performed in Vault-1, then Vault-1 must be armed as a laser lab. 
 To arm Vault-1 as a laser lab, press arm on the room interlock module in the Vault-1 entry. 
 Unlike for the ionizing radiation interlock system, Vault-1 does not have search buttons, however it is the responsibility of the user to ensure that Vault-1 is cleared or proper PPE is distributed before arming Vault-1. 
-Once Vault-1 is armed, the laser curtain door must be closed. The curtain door is not interlocked and it strickly the responsibility of the user.
-When the laser curtain is open, there will be a chimming prompting the user to close the curtain.  
+Once Vault-1 is armed, the laser curtain door must be closed. The curtain door is not interlocked and it strictly the responsibility of the user.
+When the laser curtain is open, there will be a chiming prompting the user to close the curtain.  
 
 .. figure:: /images/user_docs/Vault-1_laser/Vault-1_unarmed.jpg
     :scale: 20 %
@@ -317,7 +317,7 @@ When the laser curtain is open, there will be a chimming prompting the user to c
     :scale: 20 %
     :align: center
 
-    **Figure 16:** This is the moduels after arming Vault-1 as a laser lab.
+    **Figure 16:** This is the modules after arming Vault-1 as a laser lab.
     This also updates the laser hazard indicator in Vault-1 Control. 
 
 Once Vault-1 is armed as a laser lab the following will change in the interlock system:
@@ -338,7 +338,7 @@ It is important to note that Vault-1 will disarm itself and shutter all exposed 
     :scale: 20 %
     :align: center
 
-    **Figure 17:** These are the modules in Vault-1 Control for seeing the arming statsu and entering the armed vault.
+    **Figure 17:** These are the modules in Vault-1 Control for seeing the arming status and entering the armed vault.
 
 
 User Laser Enclosure Interlock Protocases for Overriding Interlocks and Manual Shutter Control
@@ -362,16 +362,16 @@ In administrative override the interlocks system sees the rolling doors and clos
 For a laser enclosure to be put into administrative override, both Vault-1 and the enclosure must be armed. 
 Specifically for the working with the Dira, both the Pharos and Dira enclosures muss exports a beam into the Dira enclosure, so both enclosure interlocks need to be bypassed. 
 t be set to administrative override. 
-This is because the Pharo
+This is because the Pharos
 The controls for the administrative overrides are on the enclosures LASER ENCLOSURE INTERLOCK protocase. 
-Turn the key on the protocase under INERLOCK OVERRIDE from INTERLOCK TO OVERRIDE. 
+Turn the key on the protocase under INTERLOCK OVERRIDE from INTERLOCK TO OVERRIDE. 
 
 Once the enclosure is put into override the following will change in the interlock system:
 
 - The administrative override :orange:`orange` LED on the enclosure specific protocase will turn on.
 - The Vault-1 Control and Vault-1 entry eat wall administrative override :orange:`orange` LEDs will turn on.
 - The enclosure specific protocase STATUS LED will turn :red:`red`.
-- If you open the enclosure, the laser warning module will still show :red:`LASER DANGER ON`, the door monitor module will show :green:`CLOSED`, and the local interlock modules for arming shutter manula control will not disarm. 
+- If you open the enclosure, the laser warning module will still show :red:`LASER DANGER ON`, the door monitor module will show :green:`CLOSED`, and the local interlock modules for arming shutter manual control will not disarm. 
 
 At this point, the LOCAL INTERLOCK CONTACT CONTROL interlock modules can be armed, and the shutters can be controlled manually without the interlocks disarming manual usage. 
 

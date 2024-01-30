@@ -35,10 +35,10 @@ CXLS Facility Overview
 Ionzing Radiation Hazards
 -------------------------
 
-In the CXLS linear accerator, the relativistic electrons can interact with materials of beampipes and LINACs. 
-These interactions are Columb forces between the relativistic electrons and atomic nuclei within these materials where the electron experiences negative acceleration and releases a high energy photon, gamma radiation. 
+In the CXLS linear accelerator, the relativistic electrons can interact with materials of beam pipes and LINACs. 
+These interactions are Coulomb forces between the relativistic electrons and atomic nuclei within these materials where the electron experiences negative acceleration and releases a high energy photon, gamma radiation. 
 This process is known as Bremsstrahlung. These emitted gamma rays can then interact with nuclei and through the process of photodisintegration neutron radiation is produced. 
-Because of the high radiation feilds generated in Vault-1, this area is off limits during operations. 
+Because of the high radiation felids generated in Vault-1, this area is off limits during operations. 
 As well, when x-rays are enabled into Hutch-1, this area is also off limits.
 
 Laser Hazards

@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ionizing Radiation Empergency Stop Testing Protocol &mdash; CXLS Interlock System Documentation 2024 documentation</title>
+  <title>Ionizing Radiation Emergency Stop Testing Protocol &mdash; CXLS Interlock System Documentation 2024 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
@@ -22,7 +22,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Apantec Ionizing Radiation Sensors Testing Protocol" href="apantec_testing.html" />
-    <link rel="prev" title="Hutch-1 Ionzing Radiation Interlock System Testing protocol" href="Hutch-1_ionizing_radiation.html" /> 
+    <link rel="prev" title="Hutch-1 Ionizing Radiation Interlock System Testing Protocol" href="Hutch-1_ionizing_radiation.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -45,16 +45,22 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../user_documentation/Vault-1_ionizing_radiation.html">Vault-1 Ionzing Radiation Interlock System User Manual</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../user_documentation/Vault-1_laser.html">Vault-1 Laser Interlock System User Manual</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../user_documentation/Hutch-1_ionizing_radiation.html">Hutch-1 Ionzing Radiation Interlock System User Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user_documentation/Hutch-1_ionizing_radiation.html">Hutch-1 Ionizing Radiation Interlock System User Manual</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../user_documentation/Hutch-1_laser.html">Hutch-1 Laser Interlock System User Manual</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../user_documentation/Laser-1.html">Laser-1 Interlock System User Manual</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../user_documentation/radiation_data.html">Ionizing Radiation Surveys and Results</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Testing Documentation:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="Vault-1_ionizing_radiation.html">Vault-1 Ionzing Radiation Interlock Testing Protocol</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Hutch-1_ionizing_radiation.html">Hutch-1 Ionzing Radiation Interlock System Testing protocol</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Ionizing Radiation Empergency Stop Testing Protocol</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Vault-1_ionizing_radiation.html">Vault-1 Ionizing Radiation Interlock Testing Protocol</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Hutch-1_ionizing_radiation.html">Hutch-1 Ionizing Radiation Interlock System Testing Protocol</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Ionizing Radiation Emergency Stop Testing Protocol</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#starting-conditions">Starting Conditions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#testing">Testing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#emergency-tungsten-shutter-crash">Emergency Tungsten Shutter Crash</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#high-power-transmitter-crash">High Power Transmitter Crash</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="apantec_testing.html">Apantec Ionizing Radiation Sensors Testing Protocol</a></li>
 <li class="toctree-l1"><a class="reference internal" href="narda_testing.html">Narda Smarts II Mircowave Sensor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="O2_testing.html">O2 Sensor Testing Protocol</a></li>
@@ -84,7 +90,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home"></a></li>
-      <li class="breadcrumb-item active">Ionizing Radiation Empergency Stop Testing Protocol</li>
+      <li class="breadcrumb-item active">Ionizing Radiation Emergency Stop Testing Protocol</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../_sources/testing_documentation/e-stop_testing.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -94,15 +100,126 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="ionizing-radiation-empergency-stop-testing-protocol">
-<h1>Ionizing Radiation Empergency Stop Testing Protocol</h1>
+  <section id="ionizing-radiation-emergency-stop-testing-protocol">
+<h1>Ionizing Radiation Emergency Stop Testing Protocol</h1>
+<p>The objective of this testing procedure is to verify the functionality of the ionizing radiation emergency stop button system.</p>
+<section id="starting-conditions">
+<h2>Starting Conditions</h2>
+<ol class="arabic">
+<li><p>VIEWMARQ display in Accelerator Lab shows <span class="green">RF SAFE</span>.</p></li>
+<li><p>VIEWMARQ display in Vault-1 Control shows <span class="green">LASER SAFE</span>.</p></li>
+<li><p>Check that relay 1-4, and 7 in Vault-1 Control west aggregator panel shows all diagnostic LEDs on.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Relay 1</p></li>
+<li><p>Relay 2</p></li>
+<li><p>Relay 3</p></li>
+<li><p>Relay 4</p></li>
+<li><p>Relay 7</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Check that the relays in RF-1 aggregator panel show all diagnostic LEDs on.</p></li>
+<li><p>Verify that the Accelerator Lab and Vault-1 Control E-Stop beacons are off.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Vault-1 Control Ionizing Radiation Interlock protocase beacon.</p></li>
+<li><p>Vault-1 Control <span class="red">red</span> beacon module.</p></li>
+<li><p>Accelerator Lab <span class="red">red</span> beacon module.</p></li>
+<li><p>Hutch-1 Control Ionizing Radiation Interlock protocase beacon.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Verify that all CXLS ionizing radiation emergency stop buttons are not engaged.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Hutch-1 A</p></li>
+<li><p>Hutch-1 B</p></li>
+<li><p>Hutch-1 C</p></li>
+<li><p>Hutch-1 Control A</p></li>
+<li><p>Hutch-1 Control B</p></li>
+<li><p>RF-1 A</p></li>
+<li><p>RF-1 B</p></li>
+<li><p>Vault-1 Control A</p></li>
+<li><p>Vault-1 A</p></li>
+<li><p>Vault-1 B</p></li>
+<li><p>Vault-1 C</p></li>
+<li><p>Vault-1 D</p></li>
+<li><p>Vault-1 E</p></li>
+<li><p>Vault-1 F</p></li>
+<li><p>Vault-1 G</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ol>
+</section>
+<section id="testing">
+<h2>Testing</h2>
+<ol class="arabic">
+<li><p>Push the Vault-1 Control E-stop. In response:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>E-stop LED turns on.</p></li>
+<li><p>Ionizing Radiation Interlock protocase beacon in Hutch-1 Control and Vault-1 Control turns on.</p></li>
+<li><p>VIEWMARQ display in Accelerator Lab and Vault-1 Control shows <span class="red">IONIZING RADIATION E-STOP ACTIVATED</span>.</p></li>
+<li><p>Individual <span class="red">red</span> beacon modules in Accelerator Lab and Vault-1 Control turn on.</p></li>
+<li><p>Black and white contacts blocks lose 24VDC signal.</p></li>
+<li><p>Relay 15 diagnostic LEDs are off in the Hutch-1 panel.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>For all other E-stops, only verify that hte E-stop light turns on and that the black and white contact block loses 24VDC signal.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Hutch-1 A</p></li>
+<li><p>Hutch-1 B</p></li>
+<li><p>Hutch-1 C</p></li>
+<li><p>Hutch-1 Control A</p></li>
+<li><p>Hutch-1 Control B</p></li>
+<li><p>RF-1 A</p></li>
+<li><p>RF-1 B</p></li>
+<li><p>Vault-1 Control A</p></li>
+<li><p>Vault-1 A</p></li>
+<li><p>Vault-1 B</p></li>
+<li><p>Vault-1 C</p></li>
+<li><p>Vault-1 D</p></li>
+<li><p>Vault-1 E</p></li>
+<li><p>Vault-1 F</p></li>
+<li><p>Vault-1 G</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ol>
+</section>
+<section id="emergency-tungsten-shutter-crash">
+<h2>Emergency Tungsten Shutter Crash</h2>
+<ol class="arabic">
+<li><p>Secure Hutch-1.</p></li>
+<li><p>Set the Beam Select to Divergent.</p></li>
+<li><p>Chose any ionizing radiation e-stop in the facility and press it. In response:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Yellow and blue contact blocks for the tungsten shutters in Hutch-1 panel do not have 24VDC across them.</p></li>
+<li><p>Hutch-1 Control Ionizing Radiation Interlock protocase lamps for Beam Status turn <span class="red">red</span>.</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ol>
+</section>
+<section id="high-power-transmitter-crash">
+<h2>High Power Transmitter Crash</h2>
+<ol class="arabic simple">
+<li><p>Every 6 months, the ionizing radiation emergency stop buttons are tested for successfully crashing the transmitters from a high-power state. Verify the last date for the e-stop crash test.</p></li>
+<li><p>If 6 months have passed, put both transmitters into TRIG and verify it loses power when an e-stop is pressed.</p></li>
+</ol>
+</section>
 </section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="Hutch-1_ionizing_radiation.html" class="btn btn-neutral float-left" title="Hutch-1 Ionzing Radiation Interlock System Testing protocol" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Hutch-1_ionizing_radiation.html" class="btn btn-neutral float-left" title="Hutch-1 Ionizing Radiation Interlock System Testing Protocol" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="apantec_testing.html" class="btn btn-neutral float-right" title="Apantec Ionizing Radiation Sensors Testing Protocol" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 

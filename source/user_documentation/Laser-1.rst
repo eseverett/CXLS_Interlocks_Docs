@@ -127,7 +127,7 @@ When the Dira is armed, the following will happen to the interlock system:
 - The beacon stacks in the Vault-1 laser interlock system will turn on the white Dira armed LED.
 
 
-Arming Auxilary hazards
+Arming Auxiliary hazards
 -----------------------
 
 .. note::

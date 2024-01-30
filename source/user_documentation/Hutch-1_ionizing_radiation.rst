@@ -1,7 +1,7 @@
 .. This role was added beacuse the file was not recognizing the custom.css orange-cell class without it.
 .. role:: orange-cell
 
-Hutch-1 Ionzing Radiation Interlock System User Manual
+Hutch-1 Ionizing Radiation Interlock System User Manual
 ======================================================
 
 Hutch-1 Ionizing Radiation Hazard Indicators
@@ -14,13 +14,13 @@ Protocase
 
 The Hutch-1 Control IONIZING RADIATION INTERLOCK protocase shows multiple different hazards in Hutch-1.
 
-The SERCURE PERIMETER section of the protocase shows the status of search buttons being engaged and if the sheild door is open. 
+The SECURE PERIMETER section of the protocase shows the status of search buttons being engaged and if the shield door is open. 
 If all the lamps are :green:`green`, then Hutch-1 is in a secure state. When Hutch-1 is secure the hutch cannot be entered until the accelerator is put into an unarmed state.
 If the shield door is opened with the accelerator and/or transmitters armed, then the interlock system will trip and close the double tungsten shutter. 
-Once Hutch-1 is secured the allowed dose rate on the Hutch-1 ratemeters changes from the non-radiation facility user setpoint of 50 µS/hr to the radiation worker setpoint of 500 µS/hr.
+Once Hutch-1 is secured the allowed dose rate on the Hutch-1 rate meters changes from the non-radiation facility user set point of 50 µS/hr to the radiation worker set point of 500 µS/hr.
 
-The AREA MONITOR section of the protocase shows if any ratemeter in the CXLS suite is alarming. 
-If the RADIATION lamp is :red:`red`, then there is either an alarm or fail status from one of the ratemeters. 
+The AREA MONITOR section of the protocase shows if any rate meter in the CXLS suite is alarming. 
+If the RADIATION lamp is :red:`red`, then there is either an alarm or fail status from one of the rate meters. 
 If any of the radiation meters alarm then the interlocks will trip, and the accelerator will be put into a safe state. 
 
 The BEAM STOP section of the protocase shows if the beam stop is open. 
@@ -40,7 +40,7 @@ O2 Main and Remote Units
 
 Ther eare two :math:`O_{2}` sensors in the Hutch-1 ionizing radiation interlock system. 
 One is located on the Hutch-1 west wall and the other is located in the Astrella enclosure. 
-These units will have an audible alarm and flash one of the AL# LEDs depending on the alarm setpoint it passed. 
+These units will have an audible alarm and flash one of the AL# LEDs depending on the alarm set point it passed. 
 Any :math:`O_{2}` reading below 19% will cause the sensors to alarm. 
 Each :math:`O_{2}` sensor has a remote unit that only displays information from the main sensor unit.
 The Hutch-1 west wall and Astrella enclosure :math:`O_{2}` remote units are located in Hutch-1 Control next to the Hutch-1 Control IONIZING RADIATION INTERLOCK protocase.
@@ -69,7 +69,7 @@ Beacons
 
         pressed. This beacon is also on the Vault-1 Control protocase.
       - :red-cell:`Beacon Color`
-    * - The orange beacon indicates that one of the O2 meters isreading below 19% oxygen
+    * - The orange beacon indicates that one of the O2 meters is reading below 19% oxygen
 
         levels.
       - :orange-cell:`Beacon Color`
@@ -97,7 +97,7 @@ When an ionizing radiation e-stop button is pressed, the LED on the unit will tu
 To disengage the e-stop, rotate the button clockwise.
 
 It is important to note that only the ionizing radiation emergency stop buttons will put the accelerator into a safe state. 
-There is also laser emergency stop buttons that will only cut power to their specific laser if armed and do not affect thetransmitters.
+There is also laser emergency stop buttons that will only cut power to their specific laser if armed and do not affect the transmitters.
 
 .. figure:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_estop_off.jpg
     :scale: 20 %
@@ -114,7 +114,7 @@ There is also laser emergency stop buttons that will only cut power to their spe
 Search Procedure for Securing Hutch-1
 -------------------------------------
 
-To be able to allow either of the double tungsten shutters to be opened, Huth-1 must be secured. To secure Hutch-1, it must be cleared, searched, and the Hutch-1 search buttons need to be pressed in the correct sequence. 
+To be able to allow either of the double tungsten shutters to be opened, Hutch-1 must be secured. To secure Hutch-1, it must be cleared, searched, and the Hutch-1 search buttons need to be pressed in the correct sequence. 
 Starting in the back of Hutch-1 while verifying the hutch is empty, press the search button labeled 1. 
 As you continue to search press 2 then 3 as you're working your way towards the front of Hutch-1. 
 Once the 3rd search button is pressed, a chime will be audible and a # timer will start. 
@@ -145,9 +145,9 @@ If the shield door is not completely closed by the end of the timer, the search 
 
     **Figure 11:** This is the Hutch-1 Control IONIZING RADIATION INTERLOCK protocase when Hutch-1 is searched.
 
-Once Hutch-1 is searched and all the search buttons have been pressed in the correct sequence, all the SECURE PEREIMETER SEARCH lamps on the Hutch-1 Control IONZING RADIATION INTERLOCK protocase will be :green:`green`. 
+Once Hutch-1 is searched and all the search buttons have been pressed in the correct sequence, all the SECURE PERIMETER SEARCH lamps on the Hutch-1 Control IONIZING RADIATION INTERLOCK protocase will be :green:`green`. 
 Unlike the Vault-1 door, this door is closed manually. 
-Once the door is fully closed and actuating the door switches the SECURE PERIMETER SHEILD DOOR lamp on the Hutch-1 Control IONIZING RAIDTION INTERLOCK protocase will be :green:`green`. 
+Once the door is fully closed and actuating the door switches the SECURE PERIMETER SHIELD DOOR lamp on the Hutch-1 Control IONIZING RADIATION INTERLOCK protocase will be :green:`green`. 
 
 .. figure:: /images/user_docs/Hutch-1_ionizing_radiation/Hutch-1_door.jpg
     :scale: 20 %

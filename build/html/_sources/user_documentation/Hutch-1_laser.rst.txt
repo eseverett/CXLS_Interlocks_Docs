@@ -39,7 +39,7 @@ If the key is set to OVERRIDE and the STATUS LED is :red:`red`, that means that 
 Beacon Stacks
 ^^^^^^^^^^^^^
 
-There are beacon stacks in Hutch-1 Control and on the Astrella LASER ENCLOSUREI INTERLOCK protocase. 
+There are beacon stacks in Hutch-1 Control and on the Astrella LASER ENCLOSURE INTERLOCK protocase. 
 The beacons stacks can notify you of the arming status for Hutch-1 and the Astella, as well as the override status of the enclosure.
 
 .. list-table::
@@ -170,7 +170,7 @@ The laser interlock system is interfaced through the laser safety systems module
   * - :orange:`LOCAL CONTACTS ARMED`
     - If this LED is on, then the corresponding sub-system is armed.
   * - :green:`LOCAL CONTACTS DISARMED`
-    - | If this LED is on, then the connected room module is aremd, 
+    - | If this LED is on, then the connected room module is armed, 
       | but this module is not.
   * - | :green:`LOCAL CONTACTS DISARMED`
       | :green:`ROOM NOT ARMED`
@@ -217,7 +217,7 @@ The laser interlock system is interfaced through the laser safety systems module
     Additionally, there are ionizing radiation emergency stop buttons in Vault-1 and Vault-1 Control. 
     Those only serve the purpose of crashing the transmitters and are not located on the laser enclosures.
 
-    When the e-stop is presed, the LED in the center will turn on.
+    When the e-stop is pressed, the LED in the center will turn on.
     To reset the e-stop, twist the button clockwise.
 
 
@@ -241,7 +241,7 @@ Once the Astrella system is armed the following will change in the interlock sys
 - Beacon stack white LEDs will turn on, indicating that the Astrella is armed.
 - The VIEWMARQ display will show :red:`ASTRELLA ARMED`.
 - The laser warning module on the Astrella enclosure protocase will show :red:`DANGER LASER ON`.
-- Astrella enclosure e-stop buttons will turn on, shown by the LED in the center. The e-stops are now functional and will crash the Astrella laser if presesd.
+- Astrella enclosure e-stop buttons will turn on, shown by the LED in the center. The e-stops are now functional and will crash the Astrella laser if pressed.
 
 .. figure:: /images/user_docs/Hutch-1_laser/Astrella_enclosure_unarmed.jpg
     :scale: 20 %
@@ -321,13 +321,13 @@ In administrative override the interlocks system sees the rolling doors and clos
 
 For a laser enclosure to be put into administrative override, both Hutch-1 and the enclosure must be armed. 
 The controls for the administrative overrides are on the enclosures LASER ENCLOSURE INTERLOCK protocase. 
-Turn the key on the protocase under INERLOCK OVERRIDE from INTERLOCK TO OVERRIDE. 
+Turn the key on the protocase under INTERLOCK OVERRIDE from INTERLOCK TO OVERRIDE. 
 
 Once the enclosure is put into override the following will change in the interlock system:
 
 - The VIEWMARQ display will show :red:`ASTRELLA ADMIN OVERRIDE`.
 - The Hutch-1 Control and Hutch-1 protocase beacon stack :orange:`orange` administrative override LED will turn on.
-- If you open the enclosure,  the laser warning module will still show :red:`DANGER LASER ON`, the door monitor module will show :green:`CLOSED`, and the local interlock modules for arming shuttters manual control will not disarm.
+- If you open the enclosure,  the laser warning module will still show :red:`DANGER LASER ON`, the door monitor module will show :green:`CLOSED`, and the local interlock modules for arming shutters manual control will not disarm.
 
 At this point, the LOCAL INTERLOCK CONTACT CONTROL local interlock modules can be armed, and the shutters can be controlled manually without the interlocks disarming manual usage. 
 
