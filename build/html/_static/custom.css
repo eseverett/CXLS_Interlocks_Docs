@@ -16,6 +16,11 @@
     color: blue;
 }
 
+.yellow {
+    /* changes closer to gold*/
+    color: #FFD700;
+}
+
 
 /* This was add to add cutom colors to tabel cells in the documents. */
 

@@ -53,7 +53,10 @@
 <p class="caption" role="heading"><span class="caption-text">Testing Documentation:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="Vault-1_ionizing_radiation.html">Vault-1 Ionzing Radiation Interlock Testing Protocol</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Hutch-1 Ionzing Radiation Interlock System Testing Protocol</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Hutch-1 Ionzing Radiation Interlock System Testing Protocol</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#starting-conditions">Starting Conditions</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="e-stop_testing.html">Ionizing Radiation Empergency Stop Testing Protocol</a></li>
 <li class="toctree-l1"><a class="reference internal" href="apantec_testing.html">Apantec Ionizing Radiation Sensors Testing Protocol</a></li>
 <li class="toctree-l1"><a class="reference internal" href="narda_testing.html">Narda Smarts II Mircowave Sensor</a></li>
@@ -96,6 +99,80 @@
              
   <section id="hutch-1-ionzing-radiation-interlock-system-testing-protocol">
 <h1>Hutch-1 Ionzing Radiation Interlock System Testing Protocol</h1>
+<p>The objective of this testing procedure is to verify the funcationality of the Hutch-1 ionizing radiation interlock system.
+The following fall under the scope of this testing procedure:</p>
+<ul class="simple">
+<li><p>Hutch-1 search and securing system.</p></li>
+<li><p>Touble tungsten shutter control.</p></li>
+<li><p>Ionzing radiation monitoring interlocks.</p></li>
+</ul>
+<section id="starting-conditions">
+<h2>Starting Conditions</h2>
+<p>The default state for testing of the Hutch-1 ionizing radiation interlock system is in a completely disarmed state.</p>
+<ol class="arabic">
+<li><p>Search button LEDs are off in Hutch-1.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Button 1</p></li>
+<li><p>Button 2</p></li>
+<li><p>Button 3</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>The following Hutch-1 Control Ionizing Radiation Interlock protocase lamps are <span class="red">red</span>.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>SEACURE PERIMETER</p></li>
+<li><p>BEAM SELECT</p></li>
+<li><p>BEAM STOP</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>THe following Hutch-1 Control Ionizing Radiation Interlock protocase lamps are <span class="green">green</span>.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>AREA MONITOR</p></li>
+<li><p>BEAM status</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Hutch-1 Control Ionizing Radiation Interlock protocase BEAM SELECT key is set to DIVERGENT.</p></li>
+<li><p>Hutch-1 Control VIEWMARQ displays <span class="green">LASER SAFE</span>.</p></li>
+<li><p>There is no 24VDC across the <span class="blue">blue</span> and <span class="yellow">yellow</span> contact blocks in Hutch-1 panel for the double tungsten shutters.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Set 1</p></li>
+<li><p>Set 2</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>The double tungsten shutters are in the closed position.</p></li>
+</ol>
+<figure class="align-center" id="id1">
+<a class="reference internal image-reference" href="../_images/Hutch-1_protocase.jpg"><img alt="../_images/Hutch-1_protocase.jpg" src="../_images/Hutch-1_protocase.jpg" style="width: 604.8000000000001px; height: 604.8000000000001px;" /></a>
+<figcaption>
+<p><span class="caption-text"><strong>Figure 1:</strong> Hutch-1 Control Ionizing Radiation Interlock protocase.</span></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id2">
+<a class="reference internal image-reference" href="../_images/Vault-1_search_off.jpg"><img alt="../_images/Vault-1_search_off.jpg" src="../_images/Vault-1_search_off.jpg" style="width: 604.8000000000001px; height: 604.8000000000001px;" /></a>
+<figcaption>
+<p><span class="caption-text"><strong>Figure 2:</strong> Hutch-1 search button LEDs are off.</span></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id3">
+<a class="reference internal image-reference" href="../_images/Vault-1_search_on.jpg"><img alt="../_images/Vault-1_search_on.jpg" src="../_images/Vault-1_search_on.jpg" style="width: 604.8000000000001px; height: 604.8000000000001px;" /></a>
+<figcaption>
+<p><span class="caption-text"><strong>Figure 3:</strong> Hutch-1 search button LEDs are on.</span></p>
+</figcaption>
+</figure>
+<figure class="align-center">
+<img alt="../_images/shutter_contacts_1.jpg" src="../_images/shutter_contacts_1.jpg" />
+</figure>
+<figure class="align-center">
+<img alt="../_images/shutter_contacts_2.jpg" src="../_images/shutter_contacts_2.jpg" />
+</figure>
+</section>
 </section>
 
 

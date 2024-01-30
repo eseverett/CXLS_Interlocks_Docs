@@ -5,17 +5,19 @@
 Vault-1 Ionzing Radiation Interlock Testing Protocol
 ====================================================
 
-The objective of this testing procedure is to verify the funcationality of the Vault-1 ionizing radiation interlock system.
+The objective of this testing procedure is to verify the functionality of the Vault-1 ionizing radiation interlock system.
 The following fall under the scope of this testing procedure:
+
 - Vault-1 search and securing system.
 - RF and accelerator arming.
-- Tranmitter override.
-- Ionzing radiation monitoring interlocks. 
+- Transmitter override.
+- Ionizing radiation monitoring interlocks.
+
 
 Starting Conditions
 -------------------
 
-The default state for testing of the Vaut-1 ionizing radiation interlock system is in a completely disarmed state.
+The default state for testing of the Vault-1 ionizing radiation interlock system is in a completely disarmed state.
 
 #. The IONIZING RADIATION INTERLOCK protocase in Vault-1 Control shows:
 
