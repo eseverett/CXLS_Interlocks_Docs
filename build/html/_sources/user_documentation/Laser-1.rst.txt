@@ -128,7 +128,7 @@ When the Dira is armed, the following will happen to the interlock system:
 
 
 Arming Auxiliary hazards
------------------------
+------------------------
 
 .. note::
 

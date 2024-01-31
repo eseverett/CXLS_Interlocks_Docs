@@ -21,7 +21,7 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Narda Smarts II Mircowave Sensor" href="narda_testing.html" />
+    <link rel="next" title="Narda Smarts II Microwave Sensor" href="narda_testing.html" />
     <link rel="prev" title="Ionizing Radiation Emergency Stop Testing Protocol" href="e-stop_testing.html" /> 
 </head>
 
@@ -57,13 +57,19 @@
 <li class="toctree-l1"><a class="reference internal" href="e-stop_testing.html">Ionizing Radiation Emergency Stop Testing Protocol</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Apantec Ionizing Radiation Sensors Testing Protocol</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#starting-conditions">Starting Conditions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#testing-alert-alarm">Testing Alert alarm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#testing-high-alarm">Testing High Alarm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#testing-fail-alarm">TESTING FAIL ALARM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#emergency-tungsten-shutter-crash">Emergency Tungsten Shutter Crash</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="narda_testing.html">Narda Smarts II Mircowave Sensor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="narda_testing.html">Narda Smarts II Microwave Sensor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="O2_testing.html">O2 Sensor Testing Protocol</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Laser-1.html">Laser-1 Interlock System Testing Protocol</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Vault-1_laser.html">Vault-1 Laser Interlock System Testing Protocol</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Hutch-1_laser.html">Hutch-1 Laser Interlock System Testing Protocol</a></li>
+<li class="toctree-l1"><a class="reference internal" href="radiation_detection.html">Radiation Survey Equipment Calibration Check</a></li>
+<li class="toctree-l1"><a class="reference internal" href="testing_log.html">CXLS Interlock System Testing Log</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Troubleshooting Documentation:</span></p>
 <ul>
@@ -152,6 +158,164 @@
 </div></blockquote>
 </li>
 </ol>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>NEEDS IMAGES</p>
+</div>
+</section>
+<section id="testing-alert-alarm">
+<h2>Testing Alert alarm</h2>
+<ol class="arabic">
+<li><p>Using either the radiation monitoring program of using the Apantec physical interface, change the alarm set points to 0.
+In response:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>The rate meter that controls the probe has the <span class="orange">ALERT</span> LED on.</p></li>
+<li><p>The Ionizing Radiation Interlock protocase AREA MONITOR RADIATION lamp turns <span class="red">red</span>.</p></li>
+<li><p>The yellow and white contact blocks lose 24VDC across them.</p></li>
+<li><p>Manually change the alert set point back to 50.</p></li>
+</ul>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><strong>Gamma:</strong></p></td>
+<td><p><strong>Neutron:</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>Hutch-1 Front</p></td>
+<td><p>Hutch-1 Front</p></td>
+</tr>
+<tr class="row-odd"><td><p>Hutch-1 Black</p></td>
+<td><p>Hutch-1 Black</p></td>
+</tr>
+<tr class="row-even"><td><p>Vault-1 Control</p></td>
+<td><p>Vault-1 Control</p></td>
+</tr>
+<tr class="row-odd"><td><p>Laser-1</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>RF-1</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>NEEDS IMAGES</p>
+</div>
+</section>
+<section id="testing-high-alarm">
+<h2>Testing High Alarm</h2>
+<ol class="arabic">
+<li><p>Secure Hutch-1.
+In Vault-1 Control west panel, relays R3 and R5 should have power, and relay R4 should have no power.</p></li>
+<li><p>Change the alert alarm settings on any of the Hutch1 probes to zero.
+Nothing should happen, change the value back.</p></li>
+<li><p>Using the same methods as with the alert alarm setting, change the high alarm setting to zero on each probe one at a time.
+In response:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>The rate meter that controls the probe has the <span class="red">HIGH ALARM</span> LED on.</p></li>
+<li><p>The rate meter that control the probe has an audible alarm.</p></li>
+<li><p>The IONIZING RADIATION INTERLOCK protocase AREA MONITOR RADIATION lamps turn <span class="red">red</span>.</p></li>
+<li><p>The yellow and white contact blocks lose 24VDC across them.</p></li>
+<li><p>Manually change the set point back to 500.</p></li>
+<li><p>Relay 16 in Hutch-1 panel loses power.</p></li>
+</ul>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><strong>Gamma:</strong></p></td>
+<td><p><strong>Neutron:</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>Hutch-1 Front</p></td>
+<td><p>Hutch-1 Front</p></td>
+</tr>
+<tr class="row-odd"><td><p>Hutch-1 Black</p></td>
+<td><p>Hutch-1 Black</p></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>NEEDS IMAGES</p>
+</div>
+</section>
+<section id="testing-fail-alarm">
+<h2>TESTING FAIL ALARM</h2>
+<ol class="arabic">
+<li><p>Power off the rate meter you are testing and unplug the gamma probe from their rate meters.
+Turn the unit back on, in response:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>The FAIL LED will turn on.</p></li>
+<li><p>The display will show FAIL: No Cnt GGRt1</p></li>
+<li><dl class="simple">
+<dt>The yellow and white contact blocks lose 24 VDC.</dt><dd><ul>
+<li><p>Hutch-1 Front</p></li>
+<li><p>Hutch-1 Back</p></li>
+<li><p>Laser-1</p></li>
+<li><p>RF-1</p></li>
+<li><p>Vault-1 Control</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Turn off the rate meters and reconnect the probes.
+Once powered back on:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>The NORMAL LED is on.</p></li>
+<li><p>The display does not show an error.</p></li>
+<li><p>The yellow and white contact blocks have 24 VDC.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Repeat with the neutron probes.
+In response:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>The FAIL LED will turn on.</p></li>
+<li><p>The display will show FAIL: No Cnt NHRt1</p></li>
+<li><p>The yellow and white contact blocks lose 24 VDC.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Turn off the rate meters and reconnect the probes.
+Once powered back on:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>The NORMAL LED is on.</p></li>
+<li><p>The display does not show an error.</p></li>
+<li><p>The yellow and white contact blocks have 24 VDC.</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>NEEDS IMAGES</p>
+</div>
+</section>
+<section id="emergency-tungsten-shutter-crash">
+<h2>Emergency Tungsten Shutter Crash</h2>
+<ol class="arabic simple">
+<li><p>Secure Hutch-1.</p></li>
+<li><p>Set the BEAM SELECT to COLLIMATED.</p></li>
+<li><p>Change the Apantec gamma probe high alarm set point to 0 in Hutch-1.
+In response:</p>
+<ul class="simple">
+<li><p>Yellow and blue contact blocks for the tungsten shutters in Hutch-1 panel do not have 24VDC across them.</p></li>
+<li><p>Hutch-1 Control IONIZING RADIATION INTERLOCK protocase lamps for BEAM STATUS turn <span class="red">red</span>.</p></li>
+</ul>
+</li>
+</ol>
 </section>
 </section>
 
@@ -160,7 +324,7 @@
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="e-stop_testing.html" class="btn btn-neutral float-left" title="Ionizing Radiation Emergency Stop Testing Protocol" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="narda_testing.html" class="btn btn-neutral float-right" title="Narda Smarts II Mircowave Sensor" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="narda_testing.html" class="btn btn-neutral float-right" title="Narda Smarts II Microwave Sensor" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

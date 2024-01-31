@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Narda Smarts II Mircowave Sensor &mdash; CXLS Interlock System Documentation 2024 documentation</title>
+  <title>Narda Smarts II Microwave Sensor &mdash; CXLS Interlock System Documentation 2024 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
@@ -45,22 +45,28 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../user_documentation/Vault-1_ionizing_radiation.html">Vault-1 Ionzing Radiation Interlock System User Manual</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../user_documentation/Vault-1_laser.html">Vault-1 Laser Interlock System User Manual</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../user_documentation/Hutch-1_ionizing_radiation.html">Hutch-1 Ionzing Radiation Interlock System User Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user_documentation/Hutch-1_ionizing_radiation.html">Hutch-1 Ionizing Radiation Interlock System User Manual</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../user_documentation/Hutch-1_laser.html">Hutch-1 Laser Interlock System User Manual</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../user_documentation/Laser-1.html">Laser-1 Interlock System User Manual</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../user_documentation/radiation_data.html">Ionizing Radiation Surveys and Results</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Testing Documentation:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="Vault-1_ionizing_radiation.html">Vault-1 Ionzing Radiation Interlock Testing Protocol</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Hutch-1_ionizing_radiation.html">Hutch-1 Ionzing Radiation Interlock System Testing protocol</a></li>
-<li class="toctree-l1"><a class="reference internal" href="e-stop_testing.html">Ionizing Radiation Empergency Stop Testing Protocol</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Vault-1_ionizing_radiation.html">Vault-1 Ionizing Radiation Interlock Testing Protocol</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Hutch-1_ionizing_radiation.html">Hutch-1 Ionizing Radiation Interlock System Testing Protocol</a></li>
+<li class="toctree-l1"><a class="reference internal" href="e-stop_testing.html">Ionizing Radiation Emergency Stop Testing Protocol</a></li>
 <li class="toctree-l1"><a class="reference internal" href="apantec_testing.html">Apantec Ionizing Radiation Sensors Testing Protocol</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Narda Smarts II Mircowave Sensor</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Narda Smarts II Microwave Sensor</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#starting-conditions">Starting Conditions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#testing">Testing</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="O2_testing.html">O2 Sensor Testing Protocol</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Laser-1.html">Laser-1 Interlock System Testing Protocol</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Vault-1_laser.html">Vault-1 Laser Interlock System Testing Protocol</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Hutch-1_laser.html">Hutch-1 Laser Interlock System Testing Protocol</a></li>
+<li class="toctree-l1"><a class="reference internal" href="radiation_detection.html">Radiation Survey Equipment Calibration Check</a></li>
+<li class="toctree-l1"><a class="reference internal" href="testing_log.html">CXLS Interlock System Testing Log</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Troubleshooting Documentation:</span></p>
 <ul>
@@ -84,7 +90,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home"></a></li>
-      <li class="breadcrumb-item active">Narda Smarts II Mircowave Sensor</li>
+      <li class="breadcrumb-item active">Narda Smarts II Microwave Sensor</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../_sources/testing_documentation/narda_testing.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -94,8 +100,47 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="narda-smarts-ii-mircowave-sensor">
-<h1>Narda Smarts II Mircowave Sensor</h1>
+  <section id="narda-smarts-ii-microwave-sensor">
+<h1>Narda Smarts II Microwave Sensor</h1>
+<p>The purpose of this procedure is to validate the functionality of the Vault-1 and Hutch-1 Narda Smarts II Microwave Sensor.</p>
+<section id="starting-conditions">
+<h2>Starting Conditions</h2>
+<ol class="arabic">
+<li><p>Narda meters are not alarming.</p></li>
+<li><p>All meters are calibrated.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Vault-1</p></li>
+<li><p>RF-1</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Vault-1 Control IONIZING RADIATION INTERLOCK protocase microwave AREA MONITOR lamp is <span class="green">green</span>.</p></li>
+<li><p>Narda relay contact #10 in Vault-1 Control West aggregator panel LEDs are all on.</p></li>
+<li><p>Yellow and blue contact blocks in Vault-1 Control west aggregator panel have continuity to each other.</p></li>
+</ol>
+</section>
+<section id="testing">
+<h2>Testing</h2>
+<ol class="arabic">
+<li><p>Go up to the Narda meter in RF-1and press the red test button.
+In response:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>An audible alarm from the meter.</p></li>
+<li><p>IONIZING RADIATION INTERLOCK MICROWAVE AREA MONITOR lamp is Vault-1 Control turns <span class="red">red</span>.</p></li>
+<li><p>Relay 10 in the Vault-1 Control west panel shows all diagnostic LEDs on.</p></li>
+<li><p>Yellow and blue contact blocks will lose continuity with each other.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Repeat for Narda meter in Vault-1.</p></li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>NEEDS IMAGES</p>
+</div>
+</section>
 </section>
 
 

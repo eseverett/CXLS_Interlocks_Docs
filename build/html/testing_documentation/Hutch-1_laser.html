@@ -21,7 +21,7 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="IDEM Safety Relay Troubleshooting guide" href="../troubleshooting_documentation/IDEM_relay.html" />
+    <link rel="next" title="Radiation Survey Equipment Calibration Check" href="radiation_detection.html" />
     <link rel="prev" title="Vault-1 Laser Interlock System Testing Protocol" href="Vault-1_laser.html" /> 
 </head>
 
@@ -45,22 +45,33 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../user_documentation/Vault-1_ionizing_radiation.html">Vault-1 Ionzing Radiation Interlock System User Manual</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../user_documentation/Vault-1_laser.html">Vault-1 Laser Interlock System User Manual</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../user_documentation/Hutch-1_ionizing_radiation.html">Hutch-1 Ionzing Radiation Interlock System User Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user_documentation/Hutch-1_ionizing_radiation.html">Hutch-1 Ionizing Radiation Interlock System User Manual</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../user_documentation/Hutch-1_laser.html">Hutch-1 Laser Interlock System User Manual</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../user_documentation/Laser-1.html">Laser-1 Interlock System User Manual</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../user_documentation/radiation_data.html">Ionizing Radiation Surveys and Results</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Testing Documentation:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="Vault-1_ionizing_radiation.html">Vault-1 Ionzing Radiation Interlock Testing Protocol</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Hutch-1_ionizing_radiation.html">Hutch-1 Ionzing Radiation Interlock System Testing protocol</a></li>
-<li class="toctree-l1"><a class="reference internal" href="e-stop_testing.html">Ionizing Radiation Empergency Stop Testing Protocol</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Vault-1_ionizing_radiation.html">Vault-1 Ionizing Radiation Interlock Testing Protocol</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Hutch-1_ionizing_radiation.html">Hutch-1 Ionizing Radiation Interlock System Testing Protocol</a></li>
+<li class="toctree-l1"><a class="reference internal" href="e-stop_testing.html">Ionizing Radiation Emergency Stop Testing Protocol</a></li>
 <li class="toctree-l1"><a class="reference internal" href="apantec_testing.html">Apantec Ionizing Radiation Sensors Testing Protocol</a></li>
-<li class="toctree-l1"><a class="reference internal" href="narda_testing.html">Narda Smarts II Mircowave Sensor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="narda_testing.html">Narda Smarts II Microwave Sensor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="O2_testing.html">O2 Sensor Testing Protocol</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Laser-1.html">Laser-1 Interlock System Testing Protocol</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Vault-1_laser.html">Vault-1 Laser Interlock System Testing Protocol</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Hutch-1 Laser Interlock System Testing Protocol</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Hutch-1 Laser Interlock System Testing Protocol</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#starting-conditions">Starting Conditions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#arming-hutch-1-as-a-laser-lab">Arming Hutch-1 as a Laser Lab</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#arming-the-astrella-enclosure-and-laser">Arming the Astrella Enclosure and Laser</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#administrative-override-on-the-astrella-enclosure">Administrative Override on the Astrella Enclosure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#safe-astrella-e-stop-test">Safe Astrella E-Stop Test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#crashing-the-astrella">Crashing the Astrella</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#return-to-starting-conditions">Return to Starting Conditions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="radiation_detection.html">Radiation Survey Equipment Calibration Check</a></li>
+<li class="toctree-l1"><a class="reference internal" href="testing_log.html">CXLS Interlock System Testing Log</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Troubleshooting Documentation:</span></p>
 <ul>
@@ -96,6 +107,254 @@
              
   <section id="hutch-1-laser-interlock-system-testing-protocol">
 <h1>Hutch-1 Laser Interlock System Testing Protocol</h1>
+<p>The purpose of this document is to describe the testing protocol for the Hutch-1 laser interlock system including the interlocks for the Astrella laser and enclosure.</p>
+<section id="starting-conditions">
+<h2>Starting Conditions</h2>
+<ol class="arabic">
+<li><p>VIEWMARQ in Hutch-1 Control displays <span class="green">LASER SAFE</span>.</p></li>
+<li><p>Beacon Stacks have <span class="green">green`</span> LED on.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Hutch-1 Control.</p></li>
+<li><p>Astrella LASER ENCLOSURE INTERLOCK protocase.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Hutch-1 Control Entry keypad LED shows <span class="green">RELEASED</span>.</p></li>
+<li><p>Hutch-1 Control laser warning modules show <span class="green">LASER SAFE</span>.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Hutch-1 Control.</p></li>
+<li><p>Astrella enclosure south wall.</p></li>
+<li><p>Astrella enclosure west wall.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Hutch-1 Laser control module shows <span class="green">LASER SAFE</span>.
+The module will show <span class="orange">ACCESS</span> when the door is open.</p></li>
+<li><p>The laser warning module on the Astrella LASER ENCLOSURE INTERLOCK protocase shows <span class="red">DANGER LASER ON</span>.</p></li>
+<li><p>None of the Astrella laser e-stops are on.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Astrella enclosure outside south wall.</p></li>
+<li><p>Astrella enclosure outside west wall.</p></li>
+<li><p>Astrella enclosure inside south wall.</p></li>
+<li><p>Astrella enclosure inside west wall.</p></li>
+<li><p>Astrella enclosure inside east wall.</p></li>
+<li><p>Hutch-1 experimental chamber.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>All room interlock modules light the LED for <span class="green">ROOM DISABLED (READY TO ARM)</span>.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Hutch-1.</p></li>
+<li><p>Astrella enclosure.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Local interlock modules light the LEDs for <span class="green">LOCAL CONTACTS DISARMED</span>, and <span class="green">ROOM NOT ARMED - LOCAL CONTACTS CANNOT ARM</span>.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Astrella enclosure.</p></li>
+<li><p>Astrella LASER ENCLOSURE INTERLOCK protocase CONTROL #1.</p></li>
+<li><p>Astrella LASER ENCLOSURE INTERLOCK protocase CONTROL #2.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Astrella LASER ENCLOSURE INTERLOCK protocase INTERLOCK OVERRIDE panel is set to interlock.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Administrative override key is set to INTERLOCK.</p></li>
+<li><p>STATUS lamp is <span class="green">green</span>.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>All Astrella enclosure curtain doors are closed, and the Door / Curtain Monitor should show <span class="green">CLOSED</span>.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>West enclosure door 1.</p></li>
+<li><p>West enclosure door 2.</p></li>
+<li><p>North enclosure door 1.</p></li>
+<li><p>North enclosure door 2.</p></li>
+<li><p>East enclosure door 1.</p></li>
+<li><p>East enclosure door 2.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Push before exit button is not on.</p></li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>NEED IMAGES</p>
+</div>
+</section>
+<section id="arming-hutch-1-as-a-laser-lab">
+<h2>Arming Hutch-1 as a Laser Lab</h2>
+<ol class="arabic">
+<li><p>While inside of Hutch-1, close the first curtain and press ARM on the Hutch-1 room interlock control module. It lights the LED for <span class="orange">ROOM ARMED</span>.</p></li>
+<li><p>The laser control module shows DANGER LASER ON.</p></li>
+<li><p>The Push Before Exit button is on.</p></li>
+<li><p>The curtain door is locked magnetically locked.</p></li>
+<li><p>Close the second curtain door. Verify that the second curtain door chimes when opened.</p></li>
+<li><p>Use the Push Before Exit button to leave the Hutch, as you leave there is a chime sounding.</p></li>
+<li><p>VIEWMARQ in Hutch-1 Control displays <span class="red">DANGER LASER HAZARD</span>.</p></li>
+<li><p>Hutch-1 Control laser warning modules display <span class="red">DANGER LASER ON</span>.</p></li>
+<li><p>Beacon stacks show no LEDs on.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Hutch-1 Control</p></li>
+<li><p>Astrella LASER ENCLOSURE INTERLOCK protocase</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Entry keypad lights the LED for <span class="red">INTERLOCKED</span>.</p></li>
+<li><p>Type a random pin into the entry keypad.
+The curtain door remains locked.</p></li>
+<li><p>Type in the pin to open the Hutch curtain door.</p></li>
+<li><p>Keypad module lights the LED for <span class="green">RELEASED</span>.</p></li>
+<li><p>Leave the curtain door open and allow the system to trip. It should trip in <span class="red">x seconds/minutes</span>.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>The Hutch-1 room arm module shows <span class="orange">ROOM CRASED (CANNOT ARM)</span>, then <span class="green">ROOM DISARMED (READY TO ARM)</span>.</p></li>
+<li><p>Hutch-1 is now in starting conditions.</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>NEED IMAGES</p>
+</div>
+</section>
+<section id="arming-the-astrella-enclosure-and-laser">
+<h2>Arming the Astrella Enclosure and Laser</h2>
+<ol class="arabic">
+<li><p>Attempt to arm the Astrella by arming local room interlock module on the Astrella enclosure before arming the room module.
+Astrella does not arm.</p></li>
+<li><p>With Hutch-1 unarmed, arm the room interlock module on the Astrella enclosure.</p></li>
+<li><p>The room interlock module only lights the LED for <span class="orange">ROOM ARMED</span>.</p></li>
+<li><p>The local interlock module only lights the LED for <span class="green">LOCAL CONTACT DISARMED</span>.</p></li>
+<li><p>The laser warning control module shows <span class="red">LASER ON</span>.</p></li>
+<li><p>Laser E-stops buttons should be on.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Outside enclosure south</p></li>
+<li><p>Outside enclosure west</p></li>
+<li><p>Experimental Chamber</p></li>
+<li><p>Inside enclosure south</p></li>
+<li><p>Inside enclosure east</p></li>
+<li><p>Inside enclosure west</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Arm the local room interlock module on the Astrella enclosure.
+The local interlock module only lights the LED for <span class="green">LOCAL CONTACTS ARMED</span>.</p></li>
+<li><p>VIEWMARQ in Hutch-1 Control displays <span class="green">LASER SAFE - ASTRELLA ARMED</span>.</p></li>
+<li><dl class="simple">
+<dt>Beacon stacks show green and white LEDs on.</dt><dd><ul class="simple">
+<li><p>Hutch-1 Control</p></li>
+<li><p>Astrella LASER ENCLOSURE INTERLOCK protocase</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>Go through all Astrella enclosure curtain doors and open them one at a time.
+In response:</p>
+<blockquote>
+<div><ul>
+<li><p>The Astrella enclosure laser warning module displays <span class="green">LASER SAFE</span>.</p></li>
+<li><p>The Door/Curtain Monitor shows nothing.</p></li>
+<li><p>“MANUAL INTERLOCK OPEN” is flashing on the shutter controller.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>West enclosure door 1</p></li>
+<li><p>West enclosure door 2</p></li>
+<li><p>North enclosure door 1</p></li>
+<li><p>North enclosure door 2</p></li>
+<li><p>East enclosure door 1</p></li>
+<li><p>East enclosure door 2</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Arm CONTROL #1 local interlock module.
+It lights the LED for <span class="green">LOCAL CONTACTS ARMED</span>.</p></li>
+<li><p>Open the Astrella enclosure, the system trips, and the local interlock module lights the LEDs for <span class="green">LOCAL CONTACTS DISARMED</span>, and <span class="green">ROOM NOT ARMED - LOCAL CONTACT CANNOT ARM</span>.</p></li>
+</ol>
+<ol class="arabic">
+<li><p>Rearm Hutch-1 as a laser lab and rearm the Astrella.
+All laser warning modules display <span class="red">DANGER LASER ON</span>.</p></li>
+<li><p>VIEWMARQ in Hutch-1 Control displays <span class="red">DANGER LASER HAZARD - ASTRELLA ARMED</span>.</p></li>
+<li><p>Beacon stacks show white LED on.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Hutch-1 Control</p></li>
+<li><p>Astrella LASER ENCLOSURE INTERLOCK protocase</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>NEED IMAGES</p>
+</div>
+</section>
+<section id="administrative-override-on-the-astrella-enclosure">
+<h2>Administrative Override on the Astrella Enclosure</h2>
+<ol class="arabic">
+<li><p>Turn the Astrella LASER ENCLOSURE INTERLOCK protocase INTERLOCK OVERRIDE key from INTERLOCK to OVERRIDE.
+The STATUS lamp will not change.</p></li>
+<li><p>With Hutch and Astrella armed, turn the Astrella LASER ENCLOSURE INTERLOCK protocase INTERLOCK OVERRIDE key from INTERLOCK to OVERRIDE.
+The STATUS lamp turns <span class="red">red</span>.</p></li>
+<li><p>VIEWMARQ in Hutch-1 Control displays <span class="red">DANGER LASER HAZARD - ASTRELLA ARMED - ASTRELLA ADMIN OVERRIDE</span>.</p></li>
+<li><p>Beacon stacks show white and <span class="orange">orange</span> LEDs activated.</p>
+<blockquote>
+<div><ul class="simple">
+<li><ol class="loweralpha simple">
+<li><p>Hutch-1 Control</p></li>
+</ol>
+</li>
+<li><ol class="loweralpha simple" start="2">
+<li><p>Astrella LASER ENCLOSURE INTERLOCK protocase</p></li>
+</ol>
+</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Open the Astrella enclosure door.
+The laser warning module displays <span class="red">DANGER LASER ON</span>, and the Door/Curtain Monitor shows <span class="green">CLOSED</span>.</p></li>
+<li><p>Close the Astrella enclosure and arm CONTROL #1 local interlock module, it lights the LED for <span class="orange">LOCAL CONTACTS ARMED</span>.</p></li>
+<li><p>Open the Astrella enclosure. “MANUAL_” is flashing on the shutter controller.</p></li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>NEED IMAGES</p>
+</div>
+</section>
+<section id="safe-astrella-e-stop-test">
+<h2>Safe Astrella E-Stop Test</h2>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>this section needs to be developed</p>
+</div>
+</section>
+<section id="crashing-the-astrella">
+<h2>Crashing the Astrella</h2>
+<ol class="arabic simple">
+<li><p>Once every 6 months, the Astrella laser emergency stop buttons are testing that they can successfully cut power to the Astrella from a functional state.
+Verify if the last testing date was 6 months ago.</p></li>
+<li><p>If 6 months have passed, arm the Astrella laser and use one the the Asterlla laser e-stop to crash the laser and verify that power has been cut.</p></li>
+</ol>
+</section>
+<section id="return-to-starting-conditions">
+<h2>Return to Starting Conditions</h2>
+<ol class="arabic simple">
+<li><p>Return the Hutch-1 laser interlock system back to starting conditions.</p></li>
+</ol>
+</section>
 </section>
 
 
@@ -103,7 +362,7 @@
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="Vault-1_laser.html" class="btn btn-neutral float-left" title="Vault-1 Laser Interlock System Testing Protocol" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="../troubleshooting_documentation/IDEM_relay.html" class="btn btn-neutral float-right" title="IDEM Safety Relay Troubleshooting guide" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="radiation_detection.html" class="btn btn-neutral float-right" title="Radiation Survey Equipment Calibration Check" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

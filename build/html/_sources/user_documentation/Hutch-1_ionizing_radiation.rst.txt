@@ -2,7 +2,7 @@
 .. role:: orange-cell
 
 Hutch-1 Ionizing Radiation Interlock System User Manual
-======================================================
+=======================================================
 
 Hutch-1 Ionizing Radiation Hazard Indicators
 --------------------------------------------

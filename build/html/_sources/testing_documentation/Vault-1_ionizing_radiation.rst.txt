@@ -3,7 +3,7 @@
 .. role:: orange
 
 Vault-1 Ionizing Radiation Interlock Testing Protocol
-====================================================
+=====================================================
 
 The objective of this testing procedure is to verify the functionality of the Vault-1 ionizing radiation interlock system.
 The following fall under the scope of this testing procedure:
@@ -140,7 +140,7 @@ Arming the Accelerator and transmitters
    NEEDS VIEMARQ IMAGES
 
 Overriding and Resetting Transmitters and Accelerator
-----------------------------------------------------
+-----------------------------------------------------
 
 #. With the accelerator and transmitters armed, switch the OVERRIDE keys on the Vault-1 Control IONIZING RADIATION INTERLOCK protocase.
    The TRANSMITTERS lamps will turn :orange:`orange`.

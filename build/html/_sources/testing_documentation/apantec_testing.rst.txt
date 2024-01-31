@@ -1,5 +1,6 @@
 .. roles are for allowing custom css classes to work.
 .. role:: yellow
+.. role:: orange
 
 Apantec Ionizing Radiation Sensors Testing Protocol
 ===================================================
@@ -42,3 +43,122 @@ Starting Conditions
 
     - R3
     - R5
+
+.. warning::
+    NEEDS IMAGES
+
+
+Testing Alert alarm
+-------------------
+
+#. Using either the radiation monitoring program of using the Apantec physical interface, change the alarm set points to 0.
+   In response:
+
+    - The rate meter that controls the probe has the :orange:`ALERT` LED on.
+    - The Ionizing Radiation Interlock protocase AREA MONITOR RADIATION lamp turns :red:`red`.
+    - The yellow and white contact blocks lose 24VDC across them.   
+    - Manually change the alert set point back to 50. 
+
+    .. list-table::
+
+        * - **Gamma:**
+          - **Neutron:**
+        * - Hutch-1 Front
+          - Hutch-1 Front
+        * - Hutch-1 Black
+          - Hutch-1 Black
+        * - Vault-1 Control
+          - Vault-1 Control
+        * - Laser-1
+          -
+        * - RF-1
+          -
+
+.. warning::
+    NEEDS IMAGES
+
+
+Testing High Alarm
+------------------
+
+#. Secure Hutch-1. 
+   In Vault-1 Control west panel, relays R3 and R5 should have power, and relay R4 should have no power.
+
+#. Change the alert alarm settings on any of the Hutch1 probes to zero.
+   Nothing should happen, change the value back. 
+
+#. Using the same methods as with the alert alarm setting, change the high alarm setting to zero on each probe one at a time. 
+   In response:
+
+    - The rate meter that controls the probe has the :red:`HIGH ALARM` LED on.
+    - The rate meter that control the probe has an audible alarm.
+    - The IONIZING RADIATION INTERLOCK protocase AREA MONITOR RADIATION lamps turn :red:`red`.
+    - The yellow and white contact blocks lose 24VDC across them.
+    - Manually change the set point back to 500.
+    - Relay 16 in Hutch-1 panel loses power. 
+
+    .. list-table::
+
+        * - **Gamma:**
+          - **Neutron:**
+        * - Hutch-1 Front
+          - Hutch-1 Front
+        * - Hutch-1 Black
+          - Hutch-1 Black
+
+.. warning::
+    NEEDS IMAGES
+
+
+TESTING FAIL ALARM 
+------------------
+
+#. Power off the rate meter you are testing and unplug the gamma probe from their rate meters. 
+   Turn the unit back on, in response:
+
+    - The FAIL LED will turn on.
+    - The display will show FAIL: No Cnt GGRt1
+    - The yellow and white contact blocks lose 24 VDC.
+        - Hutch-1 Front
+        - Hutch-1 Back
+        - Laser-1
+        - RF-1
+        - Vault-1 Control
+
+#. Turn off the rate meters and reconnect the probes. 
+   Once powered back on:
+
+    - The NORMAL LED is on.
+    - The display does not show an error.
+    - The yellow and white contact blocks have 24 VDC.
+
+#. Repeat with the neutron probes. 
+   In response:
+
+    - The FAIL LED will turn on.
+    - The display will show FAIL: No Cnt NHRt1
+    - The yellow and white contact blocks lose 24 VDC.
+
+#. Turn off the rate meters and reconnect the probes. 
+   Once powered back on:
+
+    - The NORMAL LED is on.
+    - The display does not show an error.
+    - The yellow and white contact blocks have 24 VDC.
+
+.. warning::
+    NEEDS IMAGES
+
+
+Emergency Tungsten Shutter Crash
+--------------------------------
+
+#. Secure Hutch-1. 
+   
+#. Set the BEAM SELECT to COLLIMATED.
+
+#. Change the Apantec gamma probe high alarm set point to 0 in Hutch-1. 
+   In response:
+
+   - Yellow and blue contact blocks for the tungsten shutters in Hutch-1 panel do not have 24VDC across them.
+   - Hutch-1 Control IONIZING RADIATION INTERLOCK protocase lamps for BEAM STATUS turn :red:`red`.

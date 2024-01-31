@@ -45,22 +45,32 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../user_documentation/Vault-1_ionizing_radiation.html">Vault-1 Ionzing Radiation Interlock System User Manual</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../user_documentation/Vault-1_laser.html">Vault-1 Laser Interlock System User Manual</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../user_documentation/Hutch-1_ionizing_radiation.html">Hutch-1 Ionzing Radiation Interlock System User Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user_documentation/Hutch-1_ionizing_radiation.html">Hutch-1 Ionizing Radiation Interlock System User Manual</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../user_documentation/Hutch-1_laser.html">Hutch-1 Laser Interlock System User Manual</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../user_documentation/Laser-1.html">Laser-1 Interlock System User Manual</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../user_documentation/radiation_data.html">Ionizing Radiation Surveys and Results</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Testing Documentation:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="Vault-1_ionizing_radiation.html">Vault-1 Ionzing Radiation Interlock Testing Protocol</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Hutch-1_ionizing_radiation.html">Hutch-1 Ionzing Radiation Interlock System Testing protocol</a></li>
-<li class="toctree-l1"><a class="reference internal" href="e-stop_testing.html">Ionizing Radiation Empergency Stop Testing Protocol</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Vault-1_ionizing_radiation.html">Vault-1 Ionizing Radiation Interlock Testing Protocol</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Hutch-1_ionizing_radiation.html">Hutch-1 Ionizing Radiation Interlock System Testing Protocol</a></li>
+<li class="toctree-l1"><a class="reference internal" href="e-stop_testing.html">Ionizing Radiation Emergency Stop Testing Protocol</a></li>
 <li class="toctree-l1"><a class="reference internal" href="apantec_testing.html">Apantec Ionizing Radiation Sensors Testing Protocol</a></li>
-<li class="toctree-l1"><a class="reference internal" href="narda_testing.html">Narda Smarts II Mircowave Sensor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="narda_testing.html">Narda Smarts II Microwave Sensor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="O2_testing.html">O2 Sensor Testing Protocol</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Laser-1 Interlock System Testing Protocol</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Laser-1 Interlock System Testing Protocol</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#starting-conditions">Starting Conditions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#arming-laser-1">Arming Laser-1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#arming-the-dira">Arming the Dira</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#safe-dira-e-stop-test">Safe Dira E-Stop Test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#rf-1-door">RF-1 Door</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#crashing-the-dira">Crashing the Dira</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="Vault-1_laser.html">Vault-1 Laser Interlock System Testing Protocol</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Hutch-1_laser.html">Hutch-1 Laser Interlock System Testing Protocol</a></li>
+<li class="toctree-l1"><a class="reference internal" href="radiation_detection.html">Radiation Survey Equipment Calibration Check</a></li>
+<li class="toctree-l1"><a class="reference internal" href="testing_log.html">CXLS Interlock System Testing Log</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Troubleshooting Documentation:</span></p>
 <ul>
@@ -96,6 +106,165 @@
              
   <section id="laser-1-interlock-system-testing-protocol">
 <h1>Laser-1 Interlock System Testing Protocol</h1>
+<p>The purpose of this protocol is the Laser-1 laser interlocks.</p>
+<section id="starting-conditions">
+<h2>Starting Conditions</h2>
+<ol class="arabic">
+<li><p>The Vault-1 Control VIEWMARQ does not display <span class="red">DIRA ARMED - DIRA ADMINISTRATIVE OVERRIDE</span>.</p></li>
+<li><p>The Vault-1 beacon stacks show only green LEDs on.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Vault-1 Control</p></li>
+<li><p>Vault-1 east wall</p></li>
+<li><p>Pharos LASER ENCLOSURE INTERLOCK protocase</p></li>
+<li><p>Dira LASER ENCLOSURE INTERLOCK protocase</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Dira enclosure e-stops are not engaged, and the LEDs are off.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>East wall</p></li>
+<li><p>West wall</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>The Laser Lab VIEWMARQs display <span class="green">LASER SAFE</span>.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Laser-1 entrance.</p></li>
+<li><p>Laser-1 airlock.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Laser warning module in Laser-1 entrance shows <span class="green">LASER SAFE</span>.</p></li>
+<li><p>Entry keypad has <span class="green">RELEASE</span> LED on.</p></li>
+<li><p>Control module in Laser-1 airlock shows <span class="green">LASER SAFE</span>.</p></li>
+<li><p>Push to exit module is not on.</p></li>
+<li><p>Laser-1 -estops are not engaged and LEDs are off.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Laser-1 south-West</p></li>
+<li><p>Laser-1 north-West</p></li>
+<li><p>Laser-1 north</p></li>
+<li><p>Laser-1 east</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Laser-1 room interlock module has LED on for <span class="green">ROOM DISARMED (READY TO ARM)</span>.</p></li>
+<li><p>All local interlock modules have LEDs on for <span class="green">LOCAL CONTACTS DISARMED</span> and <span class="green">ROOM NOT ARMED - LOCAL CONTACT CANNOT ARM</span>.</p></li>
+<li><p>All local interlock modules have LEDs on for <span class="green">LOCAL CONTACT DISARMED</span> and <span class="green">ROOM NOT ARMED - LOCAL CONTACT CANNOT ARM</span>.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Dira</p></li>
+<li><p>AUX 1</p></li>
+<li><p>AUX 2</p></li>
+<li><p>AUX 3</p></li>
+<li><p>AUX 4</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Door closure module next to RF-1 / Laser-1 door displays <span class="green">CLOSED</span>.</p></li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>NEEDS IMAGES</p>
+</div>
+</section>
+<section id="arming-laser-1">
+<h2>Arming Laser-1</h2>
+<ol class="arabic">
+<li><p>When entering Laser-1, there should be an audible chime.</p></li>
+<li><p>Attempt to arm all the local interlock modules before arming Laser-1.
+The Dira will not arm.</p></li>
+<li><p>Arm the Laser-1 room control interlock module.
+Laser-1 room interlock module has LED on for <span class="orange">ROOM ARMED</span>.</p></li>
+<li><p>All local interlock modules have LEDs on for <span class="green">LOCAL CONTACTS DISARMED</span>.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Dira</p></li>
+<li><p>AUX 1</p></li>
+<li><p>AUX 2</p></li>
+<li><p>AUX 3</p></li>
+<li><p>AUX 4</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>VIEWMARQ displays show <span class="red">DANGER LASER ON</span>.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Laser-1 entrance.</p></li>
+<li><p>Laser-1 airlock.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Dira LASER ENCLOSURE INTERLOCK protocase laser wrning module shows <span class="red">DANGER LASER ON</span>.</p></li>
+<li><p>Dira LASER ENCLOSURE INTERLOCK protocase CONTROL CONTACTS AUX #1 and #2 should be auto-armed from arming Laser-1.
+They cannot be disarmed.</p></li>
+<li><p>Laser warning module displays <span class="red">DANGER LASER ON</span>.</p></li>
+<li><p>Entry keypad has LED on for <span class="green">INTERLOCKED</span>.</p></li>
+<li><p>Laser control module displays <span class="red">DANGER LASER ON</span>.</p></li>
+<li><p>The push to exit button is on.</p></li>
+<li><p>The airlock / corridor door is magnetically locked.</p></li>
+<li><p>Use the push to exit button to leave Laser-1.</p></li>
+<li><p>Use a random pin on the entry keypad module and scan your badge.
+The door should remain locked.</p></li>
+<li><p>Use the correct pin and scan your badge.
+Hold the door open for <span class="red">x seconds</span> and allow the interlock system to trip.
+The system should return to a completely disarmed state.</p></li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>NEEDS IMAGES</p>
+</div>
+</section>
+<section id="arming-the-dira">
+<h2>Arming the Dira</h2>
+<ol class="arabic">
+<li><p>Arm the Dira local interlock module.
+Dira local interlock module has LED on for <span class="orange">LOCAL CONTACTS ARMED</span>.</p></li>
+<li><p>The VIEWMARQ display in Laser-1 airlock <span class="red">DANGER LASER ON - IR EYE PROTECTION REQUIRED</span>.</p></li>
+<li><p>The VIEWMARQ display in the Laser-1 entrance shows <span class="red">DANGER LASER ON - IR HAZARD</span>.</p></li>
+<li><p>The VIEWMAEQ display in Vault-1 Control shows <span class="green">LASER SAFE</span> - <span class="red">DIRA ARMED</span>.</p></li>
+<li><p>The Vault-1 beacon stacks should show green and white LEDs on.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Vault-1 control.</p></li>
+<li><p>Vault-1 east wall.</p></li>
+<li><p>Dira LASER ENCLOSURE INTERLOCK protocase.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Beacon stack on the Pharos LASER ENCLOSURE INTERLOCK protocase will only have a <span class="green">green</span> LED on.</p></li>
+<li><p>Dira LASER ENCLOSURE INTERLOCK protocase laser warning module shows <span class="red">DANGER LASER ON</span>.</p></li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>NEEDS IMAGES</p>
+</div>
+</section>
+<section id="safe-dira-e-stop-test">
+<h2>Safe Dira E-Stop Test</h2>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This section now needs to be completely developed.</p>
+</div>
+</section>
+<section id="rf-1-door">
+<h2>RF-1 Door</h2>
+<ol class="arabic simple">
+<li><p>With the Dira not armed, open the door between RF-1 and Laser-1.
+The door monitor module should display nothing.</p></li>
+</ol>
+</section>
+<section id="crashing-the-dira">
+<h2>Crashing the Dira</h2>
+<ol class="arabic simple">
+<li><p>Once every 6 months, the Dira laser emergency stop buttons are testing that they can successfully cut power to the Dira from a fully armed state.
+Verify if the last testing date was 6 months ago.</p></li>
+<li><p>If 6 months have passed, arm the Dira laser and use one of the Dira laser e-stops to cut power from the Dira in an armed state.</p></li>
+</ol>
+</section>
 </section>
 
 

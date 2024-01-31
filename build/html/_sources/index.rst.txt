@@ -77,6 +77,8 @@ Because of these high power lasers through the facility, laser enclosures have b
    testing_documentation/Laser-1
    testing_documentation/Vault-1_laser
    testing_documentation/Hutch-1_laser
+   testing_documentation/radiation_detection
+   testing_documentation/testing_log
 
 .. toctree::
    :maxdepth: 1
