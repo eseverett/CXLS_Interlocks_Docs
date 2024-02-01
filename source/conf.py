@@ -10,9 +10,9 @@
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
-# import os
-# import sys
-# sys.path.insert(0, os.path.abspath('.'))
+import os
+import sys
+sys.path.insert(0, os.path.abspath('.'))
 
 ### these imports are need for support for custom css file
 from docutils.parsers.rst import roles
@@ -34,7 +34,7 @@ release = '2024'
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ['sphinx.ext.duration'] ### Added extension
+extensions = ['sphinx.ext.duration', 'extensions.multi_image_figure'] ### Added extension
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -58,7 +58,7 @@ html_theme = 'sphinx_rtd_theme' ### Changed theme to alabaster
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ['_static']
+html_static_path = ['_static', 'images']
 
 html_css_files = ['custom.css'] ### Added custom css file
 
@@ -75,6 +75,11 @@ pygments_style = 'friendly' ### Added style
 
 # This is the correct place for html_add_permalinks configuration
 html_permalinks = False  ### Disable ¶ symbols next to headings
+
+
+
+
+
 
 # -- added definitions for custom roles --------------------------------------
 

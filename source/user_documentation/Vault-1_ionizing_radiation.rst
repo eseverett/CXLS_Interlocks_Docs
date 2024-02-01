@@ -1,3 +1,6 @@
+.. This role was added because the file was not recognizing the custom.css orange-cell class without it.
+.. role:: orange-cell
+
 Vault-1 Ionizing Radiation Interlock System User Manual
 =======================================================
 
@@ -75,9 +78,8 @@ See Figure 2 and 3 for the Vault-1 Control and Accelerator Lab VIEWMARQ displays
 
 
 
-.. leaving off here, attempting to put side by side images so that I can add even more with a less cluttered doc. 
-
-
+.. This is the old figures for the VIEWMARQ displays. 
+.. I am trying to make list-tables of images to add more content to the page while keeping it readable. 
 
 .. .. figure:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_Control_VIEWMARQ.jpg
 ..     :scale: 20 %
@@ -91,19 +93,64 @@ See Figure 2 and 3 for the Vault-1 Control and Accelerator Lab VIEWMARQ displays
 
 ..     **Figure 3:** This is the Accelerator Lab VIEWMARQ display. In this state there are no ionizing radiation hazards.
 
-.. |image1| image:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_Control_VIEWMARQ.jpg
-   :scale: 10%
-
-.. |image2| image:: /images/user_docs/Vault-1_ionizing_radiation/Accelerator_lab_VIEWMARQ.jpg
-   :scale: 10%
-
-.. |image1| .. |image2|
 
 
+.. list-table::
+    :align: center
 
-**Figure 2:** This is the Vault-1 Control VIEWMARQ display. In this state, there are no ionizing radiation or laser hazards.
+    * - .. image:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_Control_VIEWMARQ_safe.jpg
+            :scale: 10 %
+            :align: center
 
-**Figure 3:** This is the Accelerator Lab VIEWMARQ display. In this state, there are no ionizing radiation hazards.
+      - .. image:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_Control_VIEWMARQ_armed.jpg
+            :scale: 10 %
+            :align: center
+
+      - .. image:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_Control_VIEWMARQ_e-stop.jpg
+            :scale: 10 %
+            :align: center
+
+
+
+
+.. multiimagefigure::
+   images/user_docs/Vault-1_ionizing_radiation/Vault-1_Control_VIEWMARQ_safe.jpg
+   images/user_docs/Vault-1_ionizing_radiation/Vault-1_Control_VIEWMARQ_armed.jpg
+   This is a caption for the images.
+
+
+
+
+
+
+.. .. table:: adfladsflkjasdf
+..     :name: name
+
+..     +-------------------------------------------------------------+----------------------------------------------------+
+..     | VIEWMARQ Display Notes                                      | VIEWMARQ Display Text                              |
+..     +=============================================================+====================================================+
+..     | This states if Vault-1 is armed as a laser lab or not.      | :green:`LASER SAFE` / :green:`DANGER LASER HAZARD` |
+..     +-------------------------------------------------------------+----------------------------------------------------+
+..     | This states which laser is armed.                           | :red:`PHAROS ARMED            DIRA ARMED`          |
+..     +-------------------------------------------------------------+----------------------------------------------------+
+..     | This states if the Dira is in administrative override.      | :red:`DIRA ADMIN OVERRIDE`                         |
+..     +-------------------------------------------------------------+----------------------------------------------------+
+..     | This states you if the Pharos is in administrative override.| :red:`PHAROS ADMIN OVERRIDE`                       |
+..     +-------------------------------------------------------------+----------------------------------------------------+
+
+
+
+.. .. centered:: Figure 2:
+
+.. This is the Vault-1 Control VIEWMARQ display in the safe, armed, and e-stop states.
+
+.. **Figure 2:** This is the Vault-1 Control VIEWMARQ display in the safe, armed, and e-stop states.
+
+.. .. raw:: html
+
+..     <div style="text-align: center;"><strong>Figure 2:</strong> This is the Vault-1 Control VIEWMARQ display in the safe, armed, and e-stop states.</div>
+
+
 
 
 
@@ -114,8 +161,6 @@ Beacons
 There are blue, red, and orange beacons in Vault-1 Control and Accelerator Lab to the left of the VIEWMARQ displays.
 
 
-.. This role was added because the file was not recognizing the custom.css orange-cell class without it.
-.. role:: orange-cell
 
 .. list-table::
     :header-rows: 1
