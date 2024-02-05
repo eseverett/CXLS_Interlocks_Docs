@@ -1,3 +1,7 @@
+# This was an attempt to make a extension for sphinx that would allow for multiple images to be displayed in a single figure.
+
+
+
 # from docutils import nodes
 # from docutils.parsers.rst import Directive
 # from sphinx.util.docutils import SphinxDirective
@@ -66,39 +70,39 @@
 
 
 
-from docutils import nodes
-from docutils.parsers.rst import Directive
-from sphinx.util.docutils import SphinxDirective
-import os
+# from docutils import nodes
+# from docutils.parsers.rst import Directive
+# from sphinx.util.docutils import SphinxDirective
+# import os
 
-class MultiImageFigure(SphinxDirective):
-    has_content = True
+# class MultiImageFigure(SphinxDirective):
+#     has_content = True
 
-    def run(self):
-        figure_node = nodes.figure('')
-        doc_dir = os.path.dirname(os.path.relpath(self.state.document.current_source, self.env.srcdir))
+#     def run(self):
+#         figure_node = nodes.figure('')
+#         doc_dir = os.path.dirname(os.path.relpath(self.state.document.current_source, self.env.srcdir))
 
-        for line in self.content:
-            if not line.strip() or self.content.index(line) == len(self.content) - 1:
-                continue
+#         for line in self.content:
+#             if not line.strip() or self.content.index(line) == len(self.content) - 1:
+#                 continue
 
-            # Adjust the path if it's not absolute
-            image_path = line.strip()
-            if not image_path.startswith('/'):
-                image_path = os.path.join(doc_dir, image_path)
+#             # Adjust the path if it's not absolute
+#             image_path = line.strip()
+#             if not image_path.startswith('/'):
+#                 image_path = os.path.join(doc_dir, image_path)
                 
-            # Make path relative to source directory
-            rel_path = os.path.relpath(image_path, self.env.srcdir)
+#             # Make path relative to source directory
+#             rel_path = os.path.relpath(image_path, self.env.srcdir)
 
-            # Ensure the URI is correct for the environment
-            image_node = nodes.image(uri=rel_path)
-            figure_node += image_node
+#             # Ensure the URI is correct for the environment
+#             image_node = nodes.image(uri=rel_path)
+#             figure_node += image_node
 
-        # The last line of the content is treated as the caption
-        caption_text = self.content[-1].strip()
-        figure_node += nodes.caption('', caption_text)
+#         # The last line of the content is treated as the caption
+#         caption_text = self.content[-1].strip()
+#         figure_node += nodes.caption('', caption_text)
 
-        return [figure_node]
+#         return [figure_node]
 
-def setup(app):
-    app.add_directive("multiimagefigure", MultiImageFigure)
+# def setup(app):
+#     app.add_directive("multiimagefigure", MultiImageFigure)

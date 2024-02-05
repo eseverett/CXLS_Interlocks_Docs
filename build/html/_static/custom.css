@@ -21,6 +21,10 @@
     color: #FFD700;
 }
 
+.while {
+    color: white;
+}
+
 
 /* This was add to add cutom colors to tabel cells in the documents. */
 
@@ -47,5 +51,24 @@
     background-color: white;
     color: white;
 }
+
+
+
+
+
+/* .centered-bold-text {
+    text-align: center;
+} */
+
+
+.table-caption {
+    text-align: center;
+    font-style: italic;
+    margin-top: -25px;
+    margin-bottom: 20px; /* Adjust as needed to reduce space */
+}
+
+
+
 
 

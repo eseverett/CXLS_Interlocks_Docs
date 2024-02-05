@@ -1,5 +1,7 @@
 .. This role was added because the file was not recognizing the custom.css orange-cell class without it.
 .. role:: orange-cell
+.. role:: white
+.. role:: white-cell
 
 Vault-1 Ionizing Radiation Interlock System User Manual
 =======================================================
@@ -99,59 +101,24 @@ See Figure 2 and 3 for the Vault-1 Control and Accelerator Lab VIEWMARQ displays
     :align: center
 
     * - .. image:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_Control_VIEWMARQ_safe.jpg
-            :scale: 10 %
+            :scale: 28 %
             :align: center
 
       - .. image:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_Control_VIEWMARQ_armed.jpg
-            :scale: 10 %
+            :scale: 28 %
             :align: center
 
       - .. image:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_Control_VIEWMARQ_e-stop.jpg
-            :scale: 10 %
+            :scale: 28 %
             :align: center
 
+    * - Vault-1 RF safe condition. :white-cell:`===========================================================`
+      - Vault-1 RF hazard condition. :white-cell:`=========================================================`
+      - Vault-1 ionizing radiation e-stop. :white-cell:`===================================================`
 
 
-
-.. multiimagefigure::
-   images/user_docs/Vault-1_ionizing_radiation/Vault-1_Control_VIEWMARQ_safe.jpg
-   images/user_docs/Vault-1_ionizing_radiation/Vault-1_Control_VIEWMARQ_armed.jpg
-   This is a caption for the images.
-
-
-
-
-
-
-.. .. table:: adfladsflkjasdf
-..     :name: name
-
-..     +-------------------------------------------------------------+----------------------------------------------------+
-..     | VIEWMARQ Display Notes                                      | VIEWMARQ Display Text                              |
-..     +=============================================================+====================================================+
-..     | This states if Vault-1 is armed as a laser lab or not.      | :green:`LASER SAFE` / :green:`DANGER LASER HAZARD` |
-..     +-------------------------------------------------------------+----------------------------------------------------+
-..     | This states which laser is armed.                           | :red:`PHAROS ARMED            DIRA ARMED`          |
-..     +-------------------------------------------------------------+----------------------------------------------------+
-..     | This states if the Dira is in administrative override.      | :red:`DIRA ADMIN OVERRIDE`                         |
-..     +-------------------------------------------------------------+----------------------------------------------------+
-..     | This states you if the Pharos is in administrative override.| :red:`PHAROS ADMIN OVERRIDE`                       |
-..     +-------------------------------------------------------------+----------------------------------------------------+
-
-
-
-.. .. centered:: Figure 2:
-
-.. This is the Vault-1 Control VIEWMARQ display in the safe, armed, and e-stop states.
-
-.. **Figure 2:** This is the Vault-1 Control VIEWMARQ display in the safe, armed, and e-stop states.
-
-.. .. raw:: html
-
-..     <div style="text-align: center;"><strong>Figure 2:</strong> This is the Vault-1 Control VIEWMARQ display in the safe, armed, and e-stop states.</div>
-
-
-
+.. tablecaption:: 
+    **Figure 2:** This is the Vault-1 Control VIEWMARQ display under all 3 RF conditions.
 
 
 

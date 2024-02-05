@@ -34,7 +34,7 @@ release = '2024'
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ['sphinx.ext.duration', 'extensions.multi_image_figure'] ### Added extension
+extensions = ['sphinx.ext.duration', 'extensions.centered_bold_text'] ### Added extension
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -65,9 +65,11 @@ html_css_files = ['custom.css'] ### Added custom css file
 html_favicon = '_static/tab_icon_2.ico' ### Added icon for browser tab
 
 html_logo = '_static/tab_icon.png' ### Added logo for top left corner
-html_theme_options = {
-    'logo_only': True
-}
+
+html_theme_options = {'logo_only': True} ### Added option to only display logo in top left corner
+
+# Add the following line in conf.py within the html_js_files list
+html_js_files = ['makeTablesScrollable.js',]
 
 
 # Pygments (syntax highlighting) style to use
