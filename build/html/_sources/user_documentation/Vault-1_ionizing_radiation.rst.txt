@@ -2,6 +2,8 @@
 .. role:: orange-cell
 .. role:: white
 .. role:: white-cell
+.. role:: blue
+.. role:: orange
 
 Vault-1 Ionizing Radiation Interlock System User Manual
 =======================================================
@@ -120,55 +122,91 @@ See Figure 2 and 3 for the Vault-1 Control and Accelerator Lab VIEWMARQ displays
 .. tablecaption:: 
     **Figure 2:** This is the Vault-1 Control VIEWMARQ display under all 3 RF conditions.
 
+.. list-table::
+    :align: center
 
+    * - .. image:: /images/user_docs/Vault-1_ionizing_radiation/Accelerator_lab_VIEWMARQ_safe.jpg
+            :scale: 20 %
+            :align: center
+
+      - .. image:: /images/user_docs/Vault-1_ionizing_radiation/Accelerator_lab_VIEWMARQ_armed.jpg
+            :scale: 20 %
+            :align: center
+
+      - .. image:: /images/user_docs/Vault-1_ionizing_radiation/Accelerator_lab_VIEWMARQ_e-stop.jpg
+            :scale: 20 %
+            :align: center
+
+    * - Accelerator Lab RF safe condition. :white-cell:`======================================================`
+      - Accelerator Lab RF hazard condition. :white-cell:`====================================================`
+      - Accelerator Lab ionizing radiation e-stop. :white-cell:`==============================================`
+
+.. tablecaption:: 
+    **Figure 3:** This is the Accelerator Lab VIEWMARQ display under all 3 RF conditions.
 
 Beacons
 ^^^^^^^
 
 There are blue, red, and orange beacons in Vault-1 Control and Accelerator Lab to the left of the VIEWMARQ displays.
+Specifically, they are the individual beacon modules, not the stacked units, which can be seen in figure 4.
+The stacked units correspond to the state of the Vault-1 laser interlock system.
 
-
+.. warning:: Add zoomed beacon images when back in the lab figure 4
 
 .. list-table::
     :header-rows: 1
+    :align: center
 
     * - Status
       - Beacon Color
-    * - The blue beacon indicates that RF has been enabled into the Vault-1 structures.
+    * - The :blue:`blue` beacon indicates that RF has been enabled into the Vault-1 structures.
       - :blue-cell:`Beacon Color`
-    * - The red beacon indicated that an ionizing radiation emergency stop button had been
-
-        pressed. This beacon is also on the Vault-1 Control protocase.
+    * - | The :red:`red` beacon indicated that an ionizing radiation emergency stop button had been
+        | pressed. This beacon is on the wall and on the protocase.
       - :red-cell:`Beacon Color`
-    * - The orange beacon indicates that one of the O2 meters is reading below 19% :math:`O_{2}`
-
-        levels.
+    * - | The :orange:`orange` beacon indicates that one of the O2 meters is reading below 19% :math:`O_{2}`
+        | levels.
       - :orange-cell:`Beacon Color`
 
-Refernce figures 1, 2, and 3 for the location of the beacons. 
-The green, orange, white, blue beacon stack in Vault-1 Control is part of the laser interlock system and is not covered here.
 
 O2 Main and Remote Units
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-Ther eare two :math:`O_{2}` sensors in the Vault-1 ionizing radiation interlock system. 
+There are two O2 sensors in the Vault-1 ionizing radiation interlock system.
 One is located in Vault-1 and the other is located in RF-1. 
 These units will have an audible alarm and flash one of the AL# LEDs depending on the alarm set point it passed. 
 Any :math:`O_{2}` reading below 19% will cause the sensors to alarm. 
-Each :math:`O_{2}` sensor has a remote unit that only displays information from the main sensor unit.
+Each O2 sensor has a remote unit that only displays information from the main sensor unit.
 The Vault-1 remote unit is in Vault-1 Control and the RF-1 remote unit is in the Accelerator Lab.
 
-.. figure:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_O2_main.jpg
-    :scale: 20 %
+.. .. figure:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_O2_main.jpg
+..     :scale: 20 %
+..     :align: center
+
+..     **Figure 4:** This is the :math:`O_{2}` main unit located in Vault-1. Under this condition there is no alarm.
+
+.. .. figure:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_O2_remote.jpg
+..     :scale: 20 %
+..     :align: center
+
+..     **Figure 5:** This is the :math:`O_{2}` remote unit located in Vault-1 Control. Under this condition there is no alarm. 
+
+.. list-table::
     :align: center
 
-    **Figure 4:** This is the :math:`O_{2}` main unit located in Vault-1. Under this condition there is no alarm.
+    * - .. image:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_O2_main.jpg
+            :scale: 20 %
+            :align: center
 
-.. figure:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_O2_remote.jpg
-    :scale: 20 %
-    :align: center
+      - .. image:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_O2_remote.jpg
+            :scale: 20 %
+            :align: center
+    
+    * - O2 main unit. :white-cell:`=====================================================================`
+      - O2 remote unit. :white-cell:`===================================================================`
 
-    **Figure 5:** This is the :math:`O_{2}` remote unit located in Vault-1 Control. Under this condition there is no alarm. 
+.. tablecaption:: 
+    **Figure 5:** This is the O2 sensor pair. 
 
 
 Ionizing Radiation Monitor
@@ -190,17 +228,34 @@ To disengage the e-stop, rotate the button clockwise.
 It is important to note that only the ionizing radiation emergency stop buttons will put the accelerator into a safe state. 
 There is also laser emergency stop buttons that will only cut power to their specific laser if armed and do not affect the transmitters.
 
-.. figure:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_estop_off.jpg
-    :scale: 20 %
+.. .. figure:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_estop_off.jpg
+..     :scale: 20 %
+..     :align: center
+
+..     **Figure 6:** This is the ionizing radiation emergency stop button when not engaged.
+
+.. .. figure:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_estop_on.jpg
+..     :scale: 20 %
+..     :align: center
+
+..     **Figure 7:** This is the ionizing radiation emergency stop button when engaged.
+
+.. list-table:: 
     :align: center
 
-    **Figure 6:** This is the ionizing radiation emergency stop button when not engaged.
+    * - .. image:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_estop_off.jpg
+            :scale: 20 %
+            :align: center
 
-.. figure:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_estop_on.jpg
-    :scale: 20 %
-    :align: center
+      - .. image:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_estop_on.jpg
+            :scale: 20 %
+            :align: center
 
-    **Figure 7:** This is the ionizing radiation emergency stop button when engaged.
+    * - Ionizing radiation emergency stop button off. :white-cell:`==============================================`
+      - Ionizing radiation emergency stop button on. :white-cell:`===============================================`
+
+.. tablecaption:: 
+    **Figure 6:** This is the ionizing radiation emergency stop button in both states.
 
 Search Procedure for Securing Vault-1
 -------------------------------------

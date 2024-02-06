@@ -2,6 +2,9 @@
 .. role:: orange
 .. role:: green
 .. role:: blue
+.. role:: green-cell
+.. role:: orange-cell
+.. role:: white-cell
 
 Vault-1 Laser Interlock System User Manual
 ==========================================
