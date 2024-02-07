@@ -151,7 +151,7 @@ Overriding and Resetting Transmitters and Accelerator
 #. Hit the reset button on the Vault-1 Control IONIZING RADIATION INTERLOCK protocase.
    The ACCELERATOR and TRANSMITTERS lamps will turn :red:`red`.
 
-.. figure:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_protocase_transmitter_override.jpg
+.. figure:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_protocase_transmitter_override_2.jpg
    :scale: 20 %
    :align: center
    :alt: Vault-1 protocase transmitter override

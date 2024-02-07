@@ -1,4 +1,4 @@
-.. This role was added because the file was not recognizing the custom.css orange-cell class without it.
+.. This section was added to make the custom.css file classes work
 .. role:: orange-cell
 .. role:: white
 .. role:: white-cell
@@ -560,8 +560,25 @@ To do this turn the OVERRIDE key on the Vault-1 Control IONIZING RADIATION INTER
 The STATUS lamp for the transmitter in override will turn :orange:`orange`. 
 In this state, working on the armed transmitters will not cause the interlocks to trip.
 
-.. figure:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_protocase_transmitter_override.jpg
-    :scale: 20 %
+.. .. figure:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_protocase_transmitter_override.jpg
+..     :scale: 20 %
+..     :align: center
+
+..     **Figure 17:** This is the Vault-1 Control Ionizing Radiation Protocase when a transmitter is in override.
+
+
+.. list-table:: 
     :align: center
 
-    **Figure 17:** This is the Vault-1 Control Ionizing Radiation Protocase when a transmitter is in override.
+    * - .. image:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_protocase_transmitter_override_2.jpg
+            :scale: 20 %
+            :align: center
+      - .. image:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_protocase_transmitter_override_both.jpg
+            :scale: 20 %
+            :align: center
+
+    * - Vault-1 Control Ionizing Radiation Protocase when a transmitter is in override. :white-cell:`======================`
+      - Vault-1 Control Ionizing Radiation Protocase when both transmitters are in override. :white-cell:`=================`
+
+.. table-caption::
+    **Figure 17:** This is the Vault-1 Control IONIZING RADIATION INTERLOCK protocase in an override state.

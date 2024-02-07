@@ -48,7 +48,7 @@
 <li class="toctree-l1"><a class="reference internal" href="Vault-1_ionizing_radiation.html">Vault-1 Ionizing Radiation Interlock System User Manual</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Vault-1 Laser Interlock System User Manual</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#vault-1-laser-hazard-indicators">Vault-1 Laser Hazard Indicators</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#protocases">Protocases</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pharos-and-dira-enclosure-protocases">Pharos and Dira Enclosure Protocases</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#beacon-stacks">Beacon Stacks</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#viewmarq-display">VIEWMARQ Display</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#laser-safety-system-modules">Laser Safety System Modules</a></li>
@@ -117,18 +117,24 @@
              
   <section id="vault-1-laser-interlock-system-user-manual">
 <h1>Vault-1 Laser Interlock System User Manual</h1>
+<p>This document provides a user overview for the Vault-1 Laser Interlock System.
+It covers the laser modules, hazard indicators, control protocases, VIEWMARQ display, and the beacons in Vault-1 and Vault-1 Control.
+The laser modules are used for indicating the status of the laser interlock system and arming the laser systems.
+The control protocase allows the users to view the override state of the laser enclosure and control the manual shutter control.
+The VIEWMARQ display provides a quick overview of the laser hazard status in Vault-1.
+The beacons are used to indicate the state of laser hazards in Vault-1 and the laser enclosures.</p>
 <section id="vault-1-laser-hazard-indicators">
 <h2>Vault-1 Laser Hazard Indicators</h2>
-<p>For the Vault-1 laser interlocks system, there are multiple indicators that inform you of the state of the systems.
-This includes status beacons, LED display, and interlock warning modules.</p>
-<section id="protocases">
-<h3>Protocases</h3>
-<p>The Pharos and Dira LASER ENCLOSURE INTERLOCK protocases show hazards in for the administrative override status of their specific enclosure.</p>
+<p>This section will cover the laser hazard indicators in Vault-1 Control and Vault-1.</p>
+<section id="pharos-and-dira-enclosure-protocases">
+<h3>Pharos and Dira Enclosure Protocases</h3>
+<p>The Pharos and Dira LASER ENCLOSURE INTERLOCK protocases are a interface to view and change is the enclosures are in an override state, view the state of the enclosure doors and laser hazard, and arm the local interlock modules for manual shutter control.</p>
 <p>The PERIMETER section of the protocases has a laser warning module and door monitor module.
-The laser warning module displays if the Astrella is forced into a safe state.
-This means it will always show laser safe unless the interlocks are tripped.
-The door monitor shows if the enclosure doors are opened or closed.
-If the enclosure is put into an override state, then the monitor will always show closed because the interlocks are bypassed.</p>
+The laser warning module displays if the respective laser is forced into a safe state.
+This means it will always show <span class="red">DANGER LASER HAZARD</span> unless the interlocks are tripped.
+The Dira enclosure laser warning module will not show <span class="red">DANGER LASER HAZARD</span> until Laser-1 is armed.
+The door monitor shows if the enclosure doors are opened or closed, showing <span class="green">CLOSED</span> or nothing.
+If the enclosure is put into an override state, then the monitor will always show <span class="green">CLOSED</span> because the interlocks are bypassed.</p>
 <p>The LOCAL INTERLOCK CONTACT CONTROL section of the protocases has two local interlock modules.
 These modules are for arming the UV and IV shutter controllers for manual operation.
 These can only be armed when the enclosure is armed.
@@ -158,57 +164,95 @@ It is located on the east wall of the Dira enclosure.</span></p>
 <p>There are beacon stacks in Vault-1 Control, on the Vault-1 east wall, on the Pharos LASER ENCLOSURE INTERLOCK protocase, and on the Dira LASER ENCLOSURE INTERLOCK protocase.
 The beacons stacks can notify you of the arming status for Vault-1, the Pharos enclosure, and the Dira enclosure.
 Also, the beacon stacks can notify you if there is an enclosure whose interlocks are in administrative override.</p>
-<table class="docutils align-default">
+<table class="docutils align-center">
+<tbody>
+<tr class="row-odd"><td><a class="reference internal image-reference" href="../_images/Vault-1_Control_beacons1.jpg"><img alt="../_images/Vault-1_Control_beacons1.jpg" class="align-center" src="../_images/Vault-1_Control_beacons1.jpg" style="width: 604.2px; height: 604.2px;" /></a>
+</td>
+<td><a class="reference internal image-reference" href="../_images/Vault-1_beacons.jpg"><img alt="../_images/Vault-1_beacons.jpg" class="align-center" src="../_images/Vault-1_beacons.jpg" style="width: 604.8000000000001px; height: 604.8000000000001px;" /></a>
+</td>
+<td><a class="reference internal image-reference" href="../_images/Pharos_beacons.jpg"><img alt="../_images/Pharos_beacons.jpg" class="align-center" src="../_images/Pharos_beacons.jpg" style="width: 608.02px; height: 608.02px;" /></a>
+</td>
+<td><a class="reference internal image-reference" href="../_images/Dira_beacons.jpg"><img alt="../_images/Dira_beacons.jpg" class="align-center" src="../_images/Dira_beacons.jpg" style="width: 611.62px; height: 611.62px;" /></a>
+</td>
+</tr>
+<tr class="row-even"><td><p>Vault-1 Control beacon stack. <span class="white-cell">=========================================================</span></p></td>
+<td><p>Vault-1 beacon stack. <span class="white-cell">=================================================================</span></p></td>
+<td><p>Pharos LASER ENCLOSURE INTERLOCK protocase beacon stack. <span class="white-cell">==============================</span></p></td>
+<td><p>Dira LASER ENCLOSURE INTERLOCK protocase beacon stack. <span class="white-cell">================================</span></p></td>
+</tr>
+</tbody>
+</table>
+<div class="tight-table-caption-container docutils container">
+<p class="table-caption"><strong>Table 3:</strong> These are the Vault-1 laser interlock system beacon stacks.</p>
+</div>
+<table class="docutils align-center">
 <thead>
 <tr class="row-odd"><th class="head"><p>Status</p></th>
 <th class="head"><p>Beacon Color</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>Vault-1 is not armed as a laser lab. Vault-1 is laser safe.</p></td>
+<tr class="row-even"><td><div class="line-block">
+<div class="line">Vault-1 is not armed as a laser lab. Vault-1 is laser safe.</div>
+</div>
+</td>
 <td><p><span class="green-cell">Beacon Color</span></p></td>
 </tr>
-<tr class="row-odd"><td><p>Either the Pharos or Dira enclosures are set to administrative override.</p>
-<p>This state is only possible if Vault-1 is armed.</p>
+<tr class="row-odd"><td><div class="line-block">
+<div class="line">Either the Pharos or Dira enclosures are set to administrative override.</div>
+<div class="line">This state is only possible if Vault-1 is armed.</div>
+</div>
 </td>
 <td><p><span class="orange-cell">Beacon Color</span></p></td>
 </tr>
-<tr class="row-even"><td><p>The Dira is armed.</p>
-<p>This state is possible with or without Vault-1 being armed.</p>
+<tr class="row-even"><td><div class="line-block">
+<div class="line">The Dira is armed. This state is possible with or without Vault-1 being</div>
+<div class="line">armed.</div>
+</div>
 </td>
 <td><p><span class="white-cell">Beacon Color</span></p></td>
 </tr>
-<tr class="row-odd"><td><p>The Pharos is armed.</p>
-<p>This state is possible with or without Vault-1 being armed.</p>
+<tr class="row-odd"><td><div class="line-block">
+<div class="line">The Pharos is armed. This state is possible with or without Vault-1</div>
+<div class="line">being armed.</div>
+</div>
 </td>
 <td><p><span class="blue-cell">Beacon Color</span></p></td>
 </tr>
 </tbody>
 </table>
-<p>For the enclosure specific beacon stacks, the administrative override LED (<span class="orange">orange</span>) will only light if that specific enclosure is in override.
-The general Vault-1 and Vault-1 Control beacon stacks will light the administrative override LED (<span class="orange">orange</span>) if either of the enclosures are in override.</p>
+<p>For the enclosure specific beacon stacks, the <span class="orange">orange</span> administrative override LED will only light if that specific enclosure is in override.
+The general Vault-1 and Vault-1 Control beacon stacks will light the administrative override LED if either of the enclosures are in override.</p>
 <p>The Pharos LASER ENCLOSURE INTERLOCK protocase is the only protocase without a white beacon.
 That is because the state of the Dira does not affect the state inside of the Pharos enclosure.
 However, the Dira LASER ENCLOSURE INTERLOCK protocase has a blue beacon because the Pharos exports a beam into the Dira enclosure, so the state of the Pharos affects the Dira enclosure.</p>
-<figure class="align-center" id="id3">
-<a class="reference internal image-reference" href="../_images/Vault-1_Control_beacons.jpg"><img alt="../_images/Vault-1_Control_beacons.jpg" src="../_images/Vault-1_Control_beacons.jpg" style="width: 604.8000000000001px; height: 604.8000000000001px;" /></a>
-<figcaption>
-<p><span class="caption-text"><strong>Figure 3:</strong> This is the Vault-1 Control beacon stack.</span></p>
-</figcaption>
-</figure>
-<figure class="align-center" id="id4">
-<a class="reference internal image-reference" href="../_images/Vault-1_beacons.jpg"><img alt="../_images/Vault-1_beacons.jpg" src="../_images/Vault-1_beacons.jpg" style="width: 604.8000000000001px; height: 604.8000000000001px;" /></a>
-<figcaption>
-<p><span class="caption-text"><strong>Figure 4:</strong> This is the Vault-1 beacon stack.
-It is located on the east wall of Vault-1.</span></p>
-</figcaption>
-</figure>
 </section>
 <section id="viewmarq-display">
 <h3>VIEWMARQ Display</h3>
 <p>There is a VIEWMARQ display in Vault-1 Control that states the status of potential laser hazards in Vault-1.
 This display will notify you if Vault-1, the Pharos, or the Dira is armed.
 Also, it will notify you if the Pharos, the Dira, or both laser enclosures are in administrative override.</p>
+<table class="docutils align-center">
+<tbody>
+<tr class="row-odd"><td><a class="reference internal image-reference" href="../_images/Vault-1_VIEWMARQ_safe.jpg"><img alt="../_images/Vault-1_VIEWMARQ_safe.jpg" class="align-center" src="../_images/Vault-1_VIEWMARQ_safe.jpg" style="width: 604.8000000000001px; height: 604.8000000000001px;" /></a>
+</td>
+<td><a class="reference internal image-reference" href="../_images/Vault-1_VIEWMARQ_laser_hazard.jpg"><img alt="../_images/Vault-1_VIEWMARQ_laser_hazard.jpg" class="align-center" src="../_images/Vault-1_VIEWMARQ_laser_hazard.jpg" style="width: 604.8000000000001px; height: 604.8000000000001px;" /></a>
+</td>
+<td><a class="reference internal image-reference" href="../_images/Vault-1_VIEWMARQ_Pharos_armed.jpg"><img alt="../_images/Vault-1_VIEWMARQ_Pharos_armed.jpg" class="align-center" src="../_images/Vault-1_VIEWMARQ_Pharos_armed.jpg" style="width: 604.8000000000001px; height: 604.8000000000001px;" /></a>
+</td>
+<td><a class="reference internal image-reference" href="../_images/Vault-1_VIEWMARQ_all_armed.jpg"><img alt="../_images/Vault-1_VIEWMARQ_all_armed.jpg" class="align-center" src="../_images/Vault-1_VIEWMARQ_all_armed.jpg" style="width: 604.8000000000001px; height: 604.8000000000001px;" /></a>
+</td>
+</tr>
+<tr class="row-even"><td><p>Vault-1 Control VIEWMARQ display when Vault-1 is not armed as a laser lab. <span class="white-cell">======================</span></p></td>
+<td><p>Vault-1 Control VIEWMARQ display when Vault-1 is armed as a laser lab. <span class="white-cell">==========================</span></p></td>
+<td><p>Vault-1 Control VIEWMARQ display when the Pharos is armed. <span class="white-cell">======================================</span></p></td>
+<td><p>Vault-1 Control VIEWMARQ display when all hazards are armed. <span class="white-cell">====================================</span></p></td>
+</tr>
+</tbody>
+</table>
+<div class="tight-table-caption-container docutils container">
+<p class="table-caption"><strong>Table 4:</strong> These are the Vault-1 laser interlock system VIEWMARQ display examples.</p>
+</div>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>VIEWMARQ Display Notes</p></th>
@@ -230,14 +274,13 @@ Also, it will notify you if the Pharos, the Dira, or both laser enclosures are i
 </tr>
 </tbody>
 </table>
-<p>The top line always will either display LASER SAFE or DANGER LASER HAZARD.
-All other possible states will only appear on the display when the hazard is presented.
-See Figure 3.</p>
+<p>The top line always will either display <span class="green">LASER SAFE</span> or <span class="red">DANGER LASER HAZARD</span>, assuming no RF hazards are present.
+All other possible states will only appear on the display when the hazard is presented.</p>
 </section>
 <section id="laser-safety-system-modules">
 <h3>Laser Safety System Modules</h3>
 <p>The laser interlock system is interfaced through the laser safety systems modules. Below is an outline of the modules and what they do.</p>
-<figure class="align-center" id="id5">
+<figure class="align-center" id="id3">
 <img alt="../_images/warning_module.gif" src="../_images/warning_module.gif" />
 <figcaption>
 <p><span class="caption-text"><strong>Figure 5:</strong> Area Warming Module</span></p>
@@ -289,22 +332,22 @@ See Figure 3.</p>
 </tr>
 </tbody>
 </table>
-<figure class="align-center" id="id6">
+<figure class="align-center" id="id4">
 <img alt="../_images/control_module.gif" src="../_images/control_module.gif" />
 <figcaption>
 <p><span class="caption-text"><strong>Figure 6:</strong> Control Module</span></p>
 <div class="legend">
 <p>This module is a control module for the local laser interlock, however, for the users it serves as another warning module.
-This warning module tells you if the local interlock is armed or not.</p>
+This warning module tells you if the room interlock is armed or not.</p>
 </div>
 </figcaption>
 </figure>
-<figure class="align-center" id="id7">
+<figure class="align-center" id="id5">
 <img alt="../_images/room_arm.png" src="../_images/room_arm.png" />
 <figcaption>
 <p><span class="caption-text"><strong>Figure 7:</strong> Room Arm Module</span></p>
 <div class="legend">
-<p>This module is used to arming system systems in the laser interlock system.
+<p>This module is used to arm systems in the laser interlock system.
 For example, there are two in Vault-1, one to arm the vault and one to arm the Pharos enclosure.</p>
 </div>
 </figcaption>
@@ -339,7 +382,7 @@ For example, there are two in Vault-1, one to arm the vault and one to arm the P
 </tr>
 </tbody>
 </table>
-<figure class="align-center" id="id8">
+<figure class="align-center" id="id6">
 <img alt="../_images/local_arm.png" src="../_images/local_arm.png" />
 <figcaption>
 <p><span class="caption-text"><strong>Figure 8:</strong> Local Arm Module</span></p>
@@ -357,7 +400,10 @@ For example, one the Pharos enclosure is armed, it enables the laser and the shu
 </thead>
 <tbody>
 <tr class="row-even"><td><p><span class="orange">LOCAL CONTACTS ARMED</span></p></td>
-<td><p>If this LED is on, then the corresponding sub-system is armed.</p></td>
+<td><div class="line-block">
+<div class="line">If this LED is on, then the corresponding sub-system is armed.</div>
+</div>
+</td>
 </tr>
 <tr class="row-odd"><td><p><span class="green">LOCAL CONTACTS DISARMED</span></p></td>
 <td><div class="line-block">
@@ -380,18 +426,17 @@ For example, one the Pharos enclosure is armed, it enables the laser and the shu
 </tr>
 </tbody>
 </table>
-<figure class="align-center" id="id9">
+<figure class="align-center" id="id7">
 <img alt="../_images/push_to_exit.png" src="../_images/push_to_exit.png" />
 <figcaption>
 <p><span class="caption-text"><strong>Figure 9:</strong> Push to Exit Module</span></p>
 <div class="legend">
-<p>This module is used to exit when a room is armed as a laser lab.
-When the rooms are armed, the doors are magnetically locked.
+<p>When the rooms are armed, the doors are magnetically locked.
 This button will temporarily unlock the door to allow you to exit the room.</p>
 </div>
 </figcaption>
 </figure>
-<figure class="align-center" id="id10">
+<figure class="align-center" id="id8">
 <img alt="../_images/key_pad.jpg" src="../_images/key_pad.jpg" />
 <figcaption>
 <p><span class="caption-text"><strong>Figure 10:</strong> Keypad</span></p>
@@ -401,7 +446,7 @@ This keypad has a primary pin for permanent users, and a secondary pin for tempo
 </div>
 </figcaption>
 </figure>
-<figure class="align-center" id="id11">
+<figure class="align-center" id="id9">
 <img alt="../_images/door_monitor.jpg" src="../_images/door_monitor.jpg" />
 <figcaption>
 <p><span class="caption-text"><strong>Figure 11:</strong> Door Monitor Module</span></p>
@@ -412,29 +457,33 @@ If the system is put into an administrative override state, then the door monito
 </div>
 </figcaption>
 </figure>
-<figure class="align-center" id="id12">
+<figure class="align-center" id="id10">
 <img alt="../_images/e_stop.png" src="../_images/e_stop.png" />
 <figcaption>
 <p><span class="caption-text"><strong>Figure 12:</strong> Laser Emergency Stop Button.</span></p>
 <div class="legend">
 <p>All the laser enclosures are equipped with laser emergency stop buttons.
 The e-stops on an enclosure can only crash that specific laser.</p>
-<p>Additionally, there are ionizing radiation emergency stop buttons in Vault-1 and Vault-1 Control.
-Those only serve the purpose of crashing the transmitters and are not located on the laser enclosures.</p>
-<p>When the e-stop is pressed, the LED in the center will turn on.
-To reset the e-stop, twist the button clockwise.</p>
 </div>
 </figcaption>
 </figure>
+<p>Additionally, there are ionizing radiation emergency stop buttons in Vault-1 and Vault-1 Control.
+Those only serve the purpose of crashing the transmitters and are not located on the laser enclosures.
+When the e-stop is pressed, the LED in the center will turn on.
+To reset the e-stop, twist the button clockwise.</p>
 </section>
 </section>
 <section id="arming-vault-1-laser-systems">
 <h2>Arming Vault-1 Laser Systems</h2>
 <p>In Vault-1, the laser systems that can be armed are Vault-1 (as a laser lab), the Pharos enclosure, and the Pharos.
 The Dira is in Laser-1 and must be armed from Laser-1.
-The arming of the Dira is discussed in User Documentation: Laser-1.</p>
+The arming of the Dira is discussed in User Documentation: Laser-1 Interlock System User Manual.</p>
 <section id="arming-the-pharos-enclosure-and-laser">
 <h3>Arming the Pharos Enclosure and Laser</h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This may need an additional step of pressing the reset button on the main shutter controller to properly arm the Pharos.</p>
+</div>
 <p>Because the Pharos is contained in an enclosure, Vault-1 does not need to be armed to arm the Pharos enclosure and laser.
 To arm the Pharos enclosure and laser, press arm on the room interlock module on the south wall of the Pharos enclosure.
 The room interlock module arms the enclosure.
@@ -448,45 +497,48 @@ The Pharos enclosure and laser always arm together.</p>
 <li><p>The laser warning modules on the Pharos enclosure will show <span class="red">DANGER LASER ON</span>.</p></li>
 <li><p>Pharos enclosure e-stop buttons will turn on, shown by the LED in the center. The e-stops are now functional and will crash the Pharos is pressed.</p></li>
 </ul>
-<figure class="align-center" id="id13">
-<a class="reference internal image-reference" href="../_images/Pharos_enclosure_unarmed.jpg"><img alt="../_images/Pharos_enclosure_unarmed.jpg" src="../_images/Pharos_enclosure_unarmed.jpg" style="width: 604.8000000000001px; height: 604.8000000000001px;" /></a>
-<figcaption>
-<p><span class="caption-text"><strong>Figure 13:</strong> These are the modules for the arming of the Pharos enclosure.
-This is how the modules look when the Pharos enclosure is not armed.</span></p>
-</figcaption>
-</figure>
-<figure class="align-center" id="id14">
-<a class="reference internal image-reference" href="../_images/Pharos_enclosure_armed.jpg"><img alt="../_images/Pharos_enclosure_armed.jpg" src="../_images/Pharos_enclosure_armed.jpg" style="width: 604.8000000000001px; height: 604.8000000000001px;" /></a>
-<figcaption>
-<p><span class="caption-text"><strong>Figure 14:</strong> This is the modules after arming of the Pharos enclosure after it is armed.
-There is a laser hazard indicator module on the west wall of the enclosure that will also update once this is armed.</span></p>
-</figcaption>
-</figure>
+<table class="docutils align-center">
+<tbody>
+<tr class="row-odd"><td><a class="reference internal image-reference" href="../_images/Pharos_enclosure_unarmed.jpg"><img alt="../_images/Pharos_enclosure_unarmed.jpg" class="align-center" src="../_images/Pharos_enclosure_unarmed.jpg" style="width: 604.8000000000001px; height: 604.8000000000001px;" /></a>
+</td>
+<td><a class="reference internal image-reference" href="../_images/Pharos_enclosure_armed.jpg"><img alt="../_images/Pharos_enclosure_armed.jpg" class="align-center" src="../_images/Pharos_enclosure_armed.jpg" style="width: 604.8000000000001px; height: 604.8000000000001px;" /></a>
+</td>
+</tr>
+<tr class="row-even"><td><p>Pharos enclosure in an unarmed state. <span class="white-cell">===================================================</span></p></td>
+<td><p>Pharos enclosure in an armed state. <span class="white-cell">=====================================================</span></p></td>
+</tr>
+</tbody>
+</table>
+<div class="tight-table-caption-container docutils container">
+<p class="table-caption"><strong>Figure 13:</strong> These are the laser safety system modules for arming the Pharos in armed and unarmed states.</p>
+</div>
 </section>
 <section id="arming-vault-1-as-a-laser-lab">
 <h3>Arming Vault-1 as a Laser Lab</h3>
-<p>If work in an armed enclosure must be performed in Vault-1, then Vault-1 must be armed as a laser lab.
+<p>If work with a live laser must be performed in the enclosure, then Vault-1 must be armed as a laser lab.
 To arm Vault-1 as a laser lab, press arm on the room interlock module in the Vault-1 entry.
-Unlike for the ionizing radiation interlock system, Vault-1 does not have search buttons, however it is the responsibility of the user to ensure that Vault-1 is cleared or proper PPE is distributed before arming Vault-1.
-Once Vault-1 is armed, the laser curtain door must be closed. The curtain door is not interlocked and it strictly the responsibility of the user.
-When the laser curtain is open, there will be a chiming prompting the user to close the curtain.</p>
-<figure class="align-center" id="id15">
-<a class="reference internal image-reference" href="../_images/Vault-1_unarmed.jpg"><img alt="../_images/Vault-1_unarmed.jpg" src="../_images/Vault-1_unarmed.jpg" style="width: 604.8000000000001px; height: 604.8000000000001px;" /></a>
-<figcaption>
-<p><span class="caption-text"><strong>Figure 15:</strong> These are the modules for arming Vault-1 as a laser lab.
-This is how the modules look when Vault-1 is not armed.</span></p>
-</figcaption>
-</figure>
-<figure class="align-center" id="id16">
-<a class="reference internal image-reference" href="../_images/Vault-1_armed.jpg"><img alt="../_images/Vault-1_armed.jpg" src="../_images/Vault-1_armed.jpg" style="width: 604.8000000000001px; height: 604.8000000000001px;" /></a>
-<figcaption>
-<p><span class="caption-text"><strong>Figure 16:</strong> This is the modules after arming Vault-1 as a laser lab.
-This also updates the laser hazard indicator in Vault-1 Control.</span></p>
-</figcaption>
-</figure>
+Unlike for the ionizing radiation interlock system, the laser system does not have search buttons, however it is the responsibility of the user to ensure that Vault-1 is cleared or proper PPE is distributed before arming Vault-1.
+Once Vault-1 is armed, the laser curtain door must be closed.
+The curtain door is not interlocked and it strictly the responsibility of the user.
+When the laser curtain is open, there will be a chiming prompting the user to close the curtain and informing people outside that the curtain is open.</p>
+<table class="docutils align-center">
+<tbody>
+<tr class="row-odd"><td><a class="reference internal image-reference" href="../_images/Vault-1_unarmed.jpg"><img alt="../_images/Vault-1_unarmed.jpg" class="align-center" src="../_images/Vault-1_unarmed.jpg" style="width: 604.8000000000001px; height: 604.8000000000001px;" /></a>
+</td>
+<td><a class="reference internal image-reference" href="../_images/Vault-1_armed.jpg"><img alt="../_images/Vault-1_armed.jpg" class="align-center" src="../_images/Vault-1_armed.jpg" style="width: 604.8000000000001px; height: 604.8000000000001px;" /></a>
+</td>
+</tr>
+<tr class="row-even"><td><p>Vault-1 laser safety system modules in an unarmed state. <span class="white-cell">====================================</span></p></td>
+<td><p>Vault-1 laser safety system modules in an armed state. <span class="white-cell">======================================</span></p></td>
+</tr>
+</tbody>
+</table>
+<div class="tight-table-caption-container docutils container">
+<p class="table-caption"><strong>Figure 14:</strong> These are the laser safety system modules for arming Vault-1 in armed and unarmed states.</p>
+</div>
 <p>Once Vault-1 is armed as a laser lab the following will change in the interlock system:</p>
 <ul class="simple">
-<li><p>Beacon stack LEDs will turn off, indicating that Vault-1 is not longer laser safe.</p></li>
+<li><p>Beacon stack <span class="green">green</span> LEDs will turn off, indicating that Vault-1 is not longer laser safe.</p></li>
 <li><p>The VIEWMARQ display will show <span class="red">DANGER LASER HAZARD</span>.</p></li>
 <li><p>The laser warning modules in Vault-1 Control and Vault-1 entry will show <span class="red">DANGER LASER ON</span>.</p></li>
 <li><p>The push to exit button will turn on, shown by the LED in the center.</p></li>
@@ -494,15 +546,24 @@ This also updates the laser hazard indicator in Vault-1 Control.</span></p>
 </ul>
 <p>Once Vault-1 is armed the door is magnetically locked.
 To get into Vault-1, you must type the Vault-1 laser pin into the keypad in Vault-1 Control.
-Once the pin is entered, the door will unlock for <span class="red">###</span>.
-To exit Vault-1, you must push the push to exit button, which will unlock the door for <span class="red">###</span>.
+Once the pin is entered, the door will temporarily unlock.
+To exit Vault-1, you must push the push to exit button, which will again temporarily unlock the door.
 It is important to note that Vault-1 will disarm itself and shutter all exposed laser hazards if the Vault-1 door is open for longer than the timer.</p>
-<figure class="align-center" id="id17">
-<a class="reference internal image-reference" href="../_images/Vault-1_entry_armed.jpg"><img alt="../_images/Vault-1_entry_armed.jpg" src="../_images/Vault-1_entry_armed.jpg" style="width: 604.8000000000001px; height: 604.8000000000001px;" /></a>
-<figcaption>
-<p><span class="caption-text"><strong>Figure 17:</strong> These are the modules in Vault-1 Control for seeing the arming status and entering the armed vault.</span></p>
-</figcaption>
-</figure>
+<table class="docutils align-center">
+<tbody>
+<tr class="row-odd"><td><a class="reference internal image-reference" href="../_images/Vault-1_entry_unarmed.jpg"><img alt="../_images/Vault-1_entry_unarmed.jpg" class="align-center" src="../_images/Vault-1_entry_unarmed.jpg" style="width: 604.8000000000001px; height: 604.8000000000001px;" /></a>
+</td>
+<td><a class="reference internal image-reference" href="../_images/Vault-1_entry_armed.jpg"><img alt="../_images/Vault-1_entry_armed.jpg" class="align-center" src="../_images/Vault-1_entry_armed.jpg" style="width: 604.8000000000001px; height: 604.8000000000001px;" /></a>
+</td>
+</tr>
+<tr class="row-even"><td><p>Vault-1 Control laser safety system modules in an unarmed state. <span class="white-cell">===============================</span></p></td>
+<td><p>Vault-1 Control laser safety system modules in an armed state. <span class="white-cell">=================================</span></p></td>
+</tr>
+</tbody>
+</table>
+<div class="tight-table-caption-container docutils container">
+<p class="table-caption"><strong>Figure 15:</strong> These are the laser safety system modules for arming Vault-1 in armed and unarmed states.</p>
+</div>
 </section>
 </section>
 <section id="user-laser-enclosure-interlock-protocases-for-overriding-interlocks-and-manual-shutter-control">
@@ -511,7 +572,7 @@ It is important to note that Vault-1 will disarm itself and shutter all exposed 
 However, when the laser enclosures are interlocked, regardless of the arming status of the enclosure and Vault-1, if someone attempts to open the rolling enclosure doors the shutters will disarm and close.</p>
 <p>What you will see happen on the enclosure protocase if the rolling door is opened when interlocked is:</p>
 <ul class="simple">
-<li><p>Laser warning modules will show LASER SAFE.</p></li>
+<li><p>Laser warning modules will show <span class="green">LASER SAFE</span>.</p></li>
 <li><p>Door monitor module will be blank, meaning open.</p></li>
 <li><p>LOCAL INTERLOCK CONTACT CONTROL local interlock modules will be disarmed if armed, automatically closing the shutters.</p></li>
 </ul>
@@ -521,9 +582,8 @@ However, when the laser enclosures are interlocked, regardless of the arming sta
 <p>The only way to work in the laser enclosures with light on the table is to change the enclosures interlocks to administrative override.
 In administrative override the interlocks system sees the rolling doors and closed even if they are opened, bypassing the interlocks.</p>
 <p>For a laser enclosure to be put into administrative override, both Vault-1 and the enclosure must be armed.
-Specifically for the working with the Dira, both the Pharos and Dira enclosures muss exports a beam into the Dira enclosure, so both enclosure interlocks need to be bypassed.
-t be set to administrative override.
-This is because the Pharos
+Specifically for the working with the Dira, both the Pharos and Dira enclosures must be set to administrative override.
+This is because the Pharos exports a beam into the Dira enclosure, so both enclosure interlocks need to be bypassed.
 The controls for the administrative overrides are on the enclosures LASER ENCLOSURE INTERLOCK protocase.
 Turn the key on the protocase under INTERLOCK OVERRIDE from INTERLOCK TO OVERRIDE.</p>
 <p>Once the enclosure is put into override the following will change in the interlock system:</p>
@@ -534,12 +594,21 @@ Turn the key on the protocase under INTERLOCK OVERRIDE from INTERLOCK TO OVERRID
 <li><p>If you open the enclosure, the laser warning module will still show <span class="red">LASER DANGER ON</span>, the door monitor module will show <span class="green">CLOSED</span>, and the local interlock modules for arming shutter manual control will not disarm.</p></li>
 </ul>
 <p>At this point, the LOCAL INTERLOCK CONTACT CONTROL interlock modules can be armed, and the shutters can be controlled manually without the interlocks disarming manual usage.</p>
-<figure class="align-center" id="id18">
-<a class="reference internal image-reference" href="../_images/Pharos_protocase_override.jpg"><img alt="../_images/Pharos_protocase_override.jpg" src="../_images/Pharos_protocase_override.jpg" style="width: 604.8000000000001px; height: 604.8000000000001px;" /></a>
-<figcaption>
-<p><span class="caption-text"><strong>Figure 18:</strong> This is the Pharos enclosure protocase after it is set to administrative override.</span></p>
-</figcaption>
-</figure>
+<table class="docutils align-center">
+<tbody>
+<tr class="row-odd"><td><a class="reference internal image-reference" href="../_images/Pharos_protocase_override.jpg"><img alt="../_images/Pharos_protocase_override.jpg" class="align-center" src="../_images/Pharos_protocase_override.jpg" style="width: 604.8000000000001px; height: 604.8000000000001px;" /></a>
+</td>
+<td><a class="reference internal image-reference" href="../_images/Dira_protocase_override.jpg"><img alt="../_images/Dira_protocase_override.jpg" class="align-center" src="../_images/Dira_protocase_override.jpg" style="width: 604.8000000000001px; height: 604.8000000000001px;" /></a>
+</td>
+</tr>
+<tr class="row-even"><td><p>Pharos enclosure protocase in an override state. <span class="white-cell">============================================</span></p></td>
+<td><p>Dira enclosure protocase in an override state. <span class="white-cell">==============================================</span></p></td>
+</tr>
+</tbody>
+</table>
+<div class="tight-table-caption-container docutils container">
+<p class="table-caption"><strong>Figure 16:</strong> These are the laser safety system modules for arming Vault-1 in armed and unarmed states.</p>
+</div>
 </section>
 <section id="disarming-the-laser-interlock-system">
 <h2>Disarming the Laser Interlock System</h2>
