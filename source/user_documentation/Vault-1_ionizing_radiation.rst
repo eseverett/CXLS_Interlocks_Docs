@@ -114,13 +114,14 @@ See Figure 2 and 3 for the Vault-1 Control and Accelerator Lab VIEWMARQ displays
             :scale: 28 %
             :align: center
 
-    * - Vault-1 RF safe condition. :white-cell:`===========================================================`
-      - Vault-1 RF hazard condition. :white-cell:`=========================================================`
-      - Vault-1 ionizing radiation e-stop. :white-cell:`===================================================`
+    * - Vault-1 RF safe condition. :white-cell:`============================================================`
+      - Vault-1 RF hazard condition. :white-cell:`==========================================================`
+      - Vault-1 ionizing radiation e-stop. :white-cell:`====================================================`
 
 
-.. tablecaption:: 
+.. table-caption:: 
     **Figure 2:** This is the Vault-1 Control VIEWMARQ display under all 3 RF conditions.
+
 
 .. list-table::
     :align: center
@@ -141,7 +142,7 @@ See Figure 2 and 3 for the Vault-1 Control and Accelerator Lab VIEWMARQ displays
       - Accelerator Lab RF hazard condition. :white-cell:`====================================================`
       - Accelerator Lab ionizing radiation e-stop. :white-cell:`==============================================`
 
-.. tablecaption:: 
+.. table-caption:: 
     **Figure 3:** This is the Accelerator Lab VIEWMARQ display under all 3 RF conditions.
 
 Beacons
@@ -151,7 +152,32 @@ There are blue, red, and orange beacons in Vault-1 Control and Accelerator Lab t
 Specifically, they are the individual beacon modules, not the stacked units, which can be seen in figure 4.
 The stacked units correspond to the state of the Vault-1 laser interlock system.
 
-.. warning:: Add zoomed beacon images when back in the lab figure 4
+
+.. list-table::
+   :align: center
+
+   * - 
+        .. image:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_Control_beacons.jpg
+           :scale: 110 %
+           :align: center
+
+     - 
+        .. image:: /images/user_docs/Vault-1_ionizing_radiation/Accelerator_lab_beacons.jpg
+           :scale: 112 %
+           :align: center
+
+     - 
+        .. image:: /images/user_docs/Vault-1_ionizing_radiation/Protocase_beacon.jpg
+           :scale: 82 %
+           :align: center
+
+   * - Vault-1 Control beacons. :white-cell:`==============================================================`
+     - Accelerator Lab beacons. :white-cell:`==============================================================`
+     - Vault-1 Control protocase beacon. :white-cell:`=====================================================`
+
+
+
+
 
 .. list-table::
     :header-rows: 1
@@ -174,9 +200,9 @@ O2 Main and Remote Units
 
 There are two O2 sensors in the Vault-1 ionizing radiation interlock system.
 One is located in Vault-1 and the other is located in RF-1. 
-These units will have an audible alarm and flash one of the AL# LEDs depending on the alarm set point it passed. 
-Any :math:`O_{2}` reading below 19% will cause the sensors to alarm. 
-Each O2 sensor has a remote unit that only displays information from the main sensor unit.
+If alarming, these units will sound an alarm and flash one of the AL# LEDs depending on the alarm set point it passed. 
+Any :math:`O_{2}` reading below 19% will cause the sensors to alarm, passing the AL1 set point.  
+Each O2 sensor has a remote unit that has controls and displays information from the main unit, but does not have its own dedicated sensor. 
 The Vault-1 remote unit is in Vault-1 Control and the RF-1 remote unit is in the Accelerator Lab.
 
 .. .. figure:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_O2_main.jpg
@@ -205,7 +231,7 @@ The Vault-1 remote unit is in Vault-1 Control and the RF-1 remote unit is in the
     * - O2 main unit. :white-cell:`=====================================================================`
       - O2 remote unit. :white-cell:`===================================================================`
 
-.. tablecaption:: 
+.. table-caption:: 
     **Figure 5:** This is the O2 sensor pair. 
 
 
@@ -254,102 +280,143 @@ There is also laser emergency stop buttons that will only cut power to their spe
     * - Ionizing radiation emergency stop button off. :white-cell:`==============================================`
       - Ionizing radiation emergency stop button on. :white-cell:`===============================================`
 
-.. tablecaption:: 
+.. table-caption:: 
     **Figure 6:** This is the ionizing radiation emergency stop button in both states.
 
 Search Procedure for Securing Vault-1
 -------------------------------------
 
-To arm the accelerator and transmitters, Vault-1 must be secured. 
-To secure Vault-1, it must be cleared, searched, and the Vault-1 search buttons need to be pressed in the correct sequence. 
-Starting at the west end of Vault-1, while verifying the vault is empty, press the search button labeled 1, see Figure 9. 
+To arm the accelerator and transmitters, Vault-1 must be searched and secured.
+Starting at the west end of Vault-1 (down steam of the accelerator), while verifying the vault is empty, press the search button labeled 1.
 As you continue to search and clear press 2 then 3 as you're working your way towards the vault entrance. 
-Once the 3rd search button is pressed, a chime will be audible and a # timer will start amd all the SECURE PERIMETER SEARCH lamps on the Vault-1 Control IONIZING RADIATION INTERLOCK protocase will be green. 
-If the seach buttons are pressed out of order, or the search takes too long, the search will need to be restarted.
+Once the 3rd search button is pressed, a chime will be audible and a timer will start and all the SECURE PERIMETER SEARCH lamps on the Vault-1 Control IONIZING RADIATION INTERLOCK protocase will be :green:`green`. 
+If the search buttons are pressed out of order, or the search takes too long, the search will need to be restarted.
 
 .. figure:: /images/user_docs/Vault-1_ionizing_radiation/Vault1_Search_Buttons.png
     :scale: 35 %
     :align: center
 
-    **Figure 8:** This is a diagram of the Vault-1 search buttons. The numbers indicate the order in which they need to be pressed.
+    **Figure 7:** This is a diagram of the Vault-1 search buttons. The numbers indicate the order in which they need to be pressed.
 
-.. figure:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_search_off.jpg
-    :scale: 20 %
+.. .. figure:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_search_off.jpg
+..     :scale: 20 %
+..     :align: center
+
+..     **Figure 9:** This one of the search buttons in Vault-1 when not pressed.
+
+.. .. figure:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_search_on.jpg
+..     :scale: 20 %
+..     :align: center
+
+..     **Figure 9:** This one of the search buttons in Vault-1 when pressed.
+
+.. list-table::
     :align: center
 
-    **Figure 9:** This one of the search buttons in Vault-1 when not pressed.
+    * - .. image:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_search_off.jpg
+            :scale: 20 %
+            :align: center
 
-.. figure:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_search_on.jpg
-    :scale: 20 %
-    :align: center
+      - .. image:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_search_on.jpg
+            :scale: 20 %
+            :align: center
 
-    **Figure 10:** This one of the search buttons in Vault-1 when pressed.
+    * - Vault-1 search button off. :white-cell:`============================================================`
+      - Vault-1 search button on. :white-cell:`=============================================================`
+
+.. table-caption::
+    **Figure 8:** This is the Vault-1 search button in both states.
 
 .. figure:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_searched.jpg
     :scale: 20 %
     :align: center
 
-    **Figure 11:** This is the Vault-1 Control Ionizing Radiation Protocase when all searched buttons have been pressed in the correct order.
+    **Figure 9:** This is the Vault-1 Control Ionizing Radiation Protocase when all searched buttons have been pressed in the correct order.
 
-Holding down the close button to the right of the protocase, see figure 12, close the shield door till up to the yellow and black stripped tape.
-Do not close the door where the tap is being covered at all.  
-Once the door is fully closed and actuating the door switches the SHIELD DOOR lamp on the Vault-1 Control IONIZING RADIATION INTERLOCK protocase will be green.
+Holding down the CLOSE button to the right of the protocase, close the shield door up to the yellow and black tape but not covering the tap.
+Once the door is fully closed and actuating the door switches the SHIELD DOOR lamp on the Vault-1 Control IONIZING RADIATION INTERLOCK protocase will be :green:`green`.
 
 .. figure:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_door_buttons.jpg
     :scale: 20 %
     :align: center
 
-    **Figure 12:** These are the Vault-1 shield door control buttons. 
+    **Figure 10:** These are the Vault-1 shield door control buttons. 
 
 .. figure:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_door.jpg
     :scale: 20 %
     :align: center
 
-    **Figure 13:** This is the Vault-1 Control Ionizing Radiation Protocase when the shield door is closed.
+    **Figure 11:** This is the Vault-1 Control Ionizing Radiation Protocase when the shield door is closed.
 
 Arming the Accelerator and Transmitters
 ---------------------------------------
 
-Unarmable States
-^^^^^^^^^^^^^^^^
+Non-Armable States
+^^^^^^^^^^^^^^^^^^
 
-Besides Vault-1 not being secured, if any of the area monitors are alarming or failing the AREA MONITOR lamp will turn red and the accelerator will not arm. 
+Besides Vault-1 not being secured, if any of the area monitors are alarming or failing the respective AREA MONITOR lamp will turn :red:`red` and the accelerator will not arm. 
+If the accelerator is already armed and either of these states change, the accelerator will disarm.
 
 Arming Procedure
 ^^^^^^^^^^^^^^^^
 
 Once Vault-1 is secured the accelerator can be armed. 
 To arm the accelerator, turn the ACCELERATOR ENABLE key on the Vault-1 IONIZING RADIATION INTERLOCK protocase. 
-The STATUS lamp will turn green. Now that the accelerator is armed, the transmitters can be armed.
+The STATUS lamp will turn :green:`green`. Now that the accelerator is armed, the transmitters can be armed.
 
 .. figure:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_protocase_accelerator_armed.jpg
     :scale: 20 %
     :align: center
 
-    **Figure 14:** This is the Vault-1 Control Ionizing Radiation Protocase when the accelerator is armed.
+    **Figure 12:** This is the Vault-1 Control Ionizing Radiation Protocase when the accelerator is armed.
 
 Like the accelerator, to arm the individual transmitters turn the TRANSMITTER ENABLE key on the Vault-1 Control IONIZING RADIATION INTERLOCK protocase. 
-The STATUS lamp will turn green for the transmitter you armed. 
-Once either of the transmitters are armed the VIEWMARQ displays in Vault-1 Control and Accelerator Lab will display :red:`VAULT SECURE - RF ARMED` and the blue beacons next to the display will be on.
+The STATUS lamp will turn :green:`green` for the transmitter you armed. 
+Once either of the transmitters are armed the VIEWMARQ displays in Vault-1 Control and Accelerator Lab will display :red:`VAULT SECURE - RF ARMED` and the :blue:`blue` beacons next to the displays will be on.
 At this state the transmitters can be set to trig and power can be enabled into the RF structures.
 
 The accelerator and transmitters can be disarmed by pressing the ACCELERATOR RESET button on the Vault-1 Control IONIZING RADIATION INTERLOCK protocase.
 
-.. figure:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_protocase_transmitter_armed.jpg
-    :scale: 20 %
+.. .. figure:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_protocase_transmitter_armed.jpg
+..     :scale: 20 %
+..     :align: center
+
+..     **Figure 13:** This is the Vault-1 Control Ionizing Radiation Protocase when a transmitter is armed.
+
+
+.. list-table:: 
     :align: center
 
-    **Figure 15:** This is the Vault-1 Control Ionizing Radiation Protocase when a transmitter is armed.
+    * - .. image:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_protocase_transmitter_armed_1.jpg
+            :scale: 20 %
+            :align: center
+
+      - .. image:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_protocase_transmitter_armed_2.jpg
+            :scale: 20 %
+            :align: center
+        
+      - .. image:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_protocase_transmitter_armed_both.jpg
+            :scale: 20 %
+            :align: center
+    * - Vault-1 Control Ionizing Radiation Protocase when transmitter 1 is armed. :white-cell:`========================`
+      - Vault-1 Control Ionizing Radiation Protocase when transmitter 2 is armed. :white-cell:`========================`
+      - Vault-1 Control Ionizing Radiation Protocase when both transmitters are armed. :white-cell:`===================`
+
+.. table-caption::
+    **Figure 13:** This is the Vault-1 Control IONIZING RADIATION INTERLOCK protocase when the transmitters are armed.
+
 
 
 Putting Vault-1 into a Non-Secure State
 ---------------------------------------
 
 Once the transmitters are no longer triggering, the accelerator and transmitters can be disarmed.
-This can be done by pressing the ACCELERATOR RESET button on the Vault-1 Control IONIZING RADIATION INTERLOCK protocase, or simply opening the shield door will disarm the system.
+This can be done by pressing the ACCELERATOR RESET button on the Vault-1 Control IONIZING RADIATION INTERLOCK protocase, where all :green:`green` STATUS lamps will turn :red:`red`.
+This will keep Vault-1 in a secure state while disarming the accelerator and transmitters.
+To put Vault-1 into a non-secure state, simply opening the shield door will disarm the system and turn all :green:`green` STATUS and PERIMETER lamps will turn :red:`red`.
 
 .. note::
-     2 minute must pass from the transmitters being brought to a safe state an the accelerator being disarmed before the Vault-1 door can be opened.
+     2 minute must pass from the transmitters being brought to a safe state and the accelerator being disarmed before the Vault-1 door can be opened.
 
 Vault-1 Radiation Survey Procedure
 ----------------------------------
@@ -357,58 +424,130 @@ Vault-1 Radiation Survey Procedure
 For Vault-1 to be cleared for open entry, it must first be surveyed for ionizing radiation. 
 
 
-.. figure:: /images/radiation_survey/dosimeter.png
+.. .. figure:: /images/radiation_survey/dosimeter.png
+..     :align: center
+
+..     **Figure 15:** This is a personal dosimeter. 
+..     This is to be worn at all times when in the CXLS suite. 
+
+.. .. figure:: /images/radiation_survey/dosimeter_board.jpg
+..     :align: center
+
+..     **Figure 16:** This is the dosimeter storage board. 
+..     This is where the dosimeters are stored when not in use. 
+..     This is located in the corridor out side of Hutch Control / Experiment Prep entrance.
+
+
+.. list-table::
     :align: center
 
-    **Figure 16:** This is a personal dosimeter. 
-    This is to be worn at all times when in the CXLS suite. 
+    * - .. image:: /images/radiation_survey/dosimeter.png
+            :scale: 120 %
+            :align: center
 
-.. figure:: /images/radiation_survey/dosimeter_board.jpg
-    :align: center
+      - .. image:: /images/radiation_survey/dosimeter_board.jpg
+            :scale: 120 %
+            :align: center
 
-    **Figure 17:** This is the dosimeter storage board. 
-    This is where the dosimeters are stored when not in use. 
-    This is located in the corridor out side of Hutch Control / Experiment Prep entrance.
+    * - Personal dosimeter. :white-cell:`================================================================`
+      - Dosimeter storage board. :white-cell:`===========================================================`
+
+.. table-caption::
+    **Figure 14:** This is the personal dosimeter and the dosimeter storage board.
+    Your personal dosimeter should be worn at all time during the operation of the CXLS electron beam. 
+    If your dosimeter is not on your person, it should be on the dosimeter storage board, located in the corridor outside of Hutch Control / Experiment Prep entrance.
 
 
 Once the two minutes have elapsed, the Vault-1 can be opened, and the survey can be performed. 
-The surveyor, along with his personal dosimeter, must also wear a electronic personal dosimeter, as seen in figure 18. 
+The surveyor, along with his personal dosimeter, must also wear a electronic personal dosimeter. 
 This unit will alarm if the surveyor is exposed to more than 5 mrem/hr.
 
 
-.. figure:: /images/radiation_survey/Ludlum_23.png
+.. .. figure:: /images/radiation_survey/Ludlum_23.png
+..     :align: center
+
+..     **Figure 18:** This is the Ludlum 23 electronic personal dosimeter.
+
+.. .. figure:: /images/radiation_survey/wearing_epd.png
+..     :align: center
+
+..     **Figure 19:** This is how the electronic personal dosimeter is to be worn. 
+..     The screen of the unit is supposed to face the body.
+
+.. list-table::
     :align: center
 
-    **Figure 18:** This is the Ludlum 23 electronic personal dosimeter.
+    * - .. image:: /images/radiation_survey/Ludlum_23.png
+            :scale: 120 %
+            :align: center
 
-.. figure:: /images/radiation_survey/wearing_epd.png
-    :align: center
+      - .. image:: /images/radiation_survey/wearing_epd.png
+            :scale: 120 %
+            :align: center
 
-    **Figure 19:** This is how the electronic personal dosimeter is to be worn. 
-    The screen of the unit is supposed to face the body.
+      - .. image:: /images/radiation_survey/draw_holding_ludlum.png
+            :scale: 120 %
+            :align: center
 
-.. figure:: /images/radiation_survey/draw_holding_ludlum.png
-    :align: center
+    * - Ludlum 23 electronic personal dosimeter. :white-cell:`================================================`
+      - Wearing the electronic personal dosimeter. :white-cell:`==============================================`
+      - Draw holding the Ludlum 23. :white-cell:`=============================================================`
 
-    **Figure 20:** This is the draw holding the Ludlum 9DP.
+.. table-caption::
+    **Figure 15:** This is the Ludlum 23 electronic personal dosimeter, how it is to be worn, and the draw holding the Ludlum 23.
+    This draw holding the units is located at the desk to teh left when entering the Accelerator Lab.
+
+
+.. .. figure:: /images/radiation_survey/draw_holding_ludlum.png
+..     :align: center
+
+..     **Figure 16:** This is the draw holding the Ludlum 9DP.
 
 
 To perform the survey, the Ludlum 9DP is used to measure the gamma dose rate.
 Once Vault-1 shield door is opened, they surveyor should slowly enter, watching the readings. 
-Go down the beam line, slowly scanning around inch away from the beam line.
-If any element reads above 20 :math:`\mu R` / hr, scan from 30 cm away to verify the area if not above background from normal viewing distance. 
+Go down the beam line, slowly scanning around inch away from the beam line and fill in the survey sheet.
+If any element reads above 20 :math:`\mu R` / hr, scan from 30 cm away to verify the general area is not above background from normal viewing distance. 
 
-.. figure:: /images/radiation_survey/Ludlum_9DP.png
+.. note::
+    A survey sheet exist for routine Vault-1 radiation surveys, but not a dedicated sheet for specifically post beam time surveys. 
+
+.. .. figure:: /images/radiation_survey/Ludlum_9DP.png
+..     :align: center
+
+..     **Figure 21:** This is the Ludlum 9DP pressurized ionization chamber.
+
+.. .. figure:: /images/radiation_survey/cabinet_holding_ludlum.jpg
+..     :align: center
+
+..     **Figure 22:** This is the cabinet holding the Ludlum 9DP.
+
+
+.. list-table::
     :align: center
 
-    **Figure 21:** This is the Ludlum 9DP pressurized ionization chamber.
+    * - .. image:: /images/radiation_survey/Ludlum_9DP.png
+            :scale: 120 %
+            :align: center
 
-.. figure:: /images/radiation_survey/cabinet_holding_ludlum.jpg
-    :align: center
+      - .. image:: /images/radiation_survey/cabinet_holding_ludlum.jpg
+            :scale: 120 %
+            :align: center
 
-    **Figure 22:** This is the cabinet holding the Ludlum 9DP.
+    * - Ludlum 9DP pressurized ionization chamber. :white-cell:`==============================================`
+      - Cabinet holding the Ludlum 9DP. :white-cell:`=========================================================`
+
+.. table-caption::
+    **Figure 16:** This is the Ludlum 9DP pressurized ionization chamber and the cabinet holding the Ludlum 9DP.
+
+
 
 Once the Vault-1 radiation survey is completed, and it is verified that there are no elevated levels of ionizing radiation, Vault-1 can be entered by anyone.
+Enter the readings into the designated spread sheet and sign the survey sheet.
+
+.. note:: 
+    A specific post beam time survey excel sheet does not exist.
+    This may simply be merged with the routine Vault-1 radiation survey sheet.
 
 
 
@@ -418,11 +557,11 @@ Overriding the Transmitters to Work in an Armed State
 When the transmitters are armed, attempting to remove the side panels for maintenance will cause the transmitters to lose power. 
 If work needs to be done on the transmitters in an armed state, you must override the interlocks on the transmitters. 
 To do this turn the OVERRIDE key on the Vault-1 Control IONIZING RADIATION INTERLOCK protocase. 
-The STATUS lamp for the transmitter in override will turn orange. 
+The STATUS lamp for the transmitter in override will turn :orange:`orange`. 
 In this state, working on the armed transmitters will not cause the interlocks to trip.
 
 .. figure:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_protocase_transmitter_override.jpg
     :scale: 20 %
     :align: center
 
-    **Figure 23:** This is the Vault-1 Control Ionizing Radiation Protocase when a transmitter is in override.
+    **Figure 17:** This is the Vault-1 Control Ionizing Radiation Protocase when a transmitter is in override.

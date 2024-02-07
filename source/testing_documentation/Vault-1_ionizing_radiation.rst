@@ -129,7 +129,7 @@ Arming the Accelerator and transmitters
 
    Vault-1 protocase accelerator armed
 
-.. figure:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_protocase_transmitter_armed.jpg
+.. figure:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_protocase_transmitter_armed_1.jpg
    :scale: 20 %
    :align: center
    :alt: Vault-1 protocase transmitter armed
