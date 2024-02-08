@@ -62,7 +62,8 @@ html_static_path = ['_static', 'images']
 
 html_css_files = ['custom.css'] ### Added custom css file
 
-html_favicon = '_static/tab_icon_2.ico' ### Added icon for browser tab
+html_favicon = '_static/tab_icon_4.ico' ### Added icon for browser tab
+
 
 html_logo = '_static/tab_icon.png' ### Added logo for top left corner
 
@@ -111,7 +112,7 @@ roles.register_local_role('green', colored_text)
 
 def colored_cell_role(role, rawtext, text, lineno, inliner, options={}, content=[]):
     
-    """ This function is used to add colored cells to tabels.
+    """ This function is used to add colored cells to tables.
 
     Returns:
         _type_: _description_

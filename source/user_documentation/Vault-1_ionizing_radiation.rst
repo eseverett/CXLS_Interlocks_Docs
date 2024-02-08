@@ -12,7 +12,7 @@ This document provides a user overview for the Vault-1 Ionizing Radiation Interl
 It covers the hazard indicators, control protocase, VIEWMARQ displays, and beacons in Vault-1 Control and Accelerator Lab. 
 The control protocase allows users to view and change the secure state of Vault-1, arm the accelerator and transmitters, and monitor area monitors. 
 The VIEWMARQ displays provide information on the ionizing radiation hazard status, laser hazards, and the secure state of Vault-1. 
-The beacons indicate the enabled state of RF and ionizing radiation emergency stop buttons. Refer to the figures for visual references.
+The beacons indicate the enabled state of RF and ionizing radiation emergency stop buttons. 
 
 
 
@@ -28,7 +28,6 @@ Vault-1 Control Protocase
 
 The Vault-1 Control IONIZING RADIATION INTERLOCK protocase is an interface to view if Vault-1 is secure, arm the accelerator and transmitters, and view the status of the area monitors. 
 This panel is located on the east wall in Vault-1 Control next to the Vault-1 door. 
-See Figure 1 for Reference.
 
 The SECURE PERIMETER section of the protocase shows the status of search buttons being pressed during a search and if the shield door is open. 
 If all the lamps are :green:`green`, then Vault-1 is in a secure state. When Vault-1 is secure it may not be entered until accelerator operations are concluded and Vault-1 is surveyed.
@@ -507,7 +506,7 @@ This unit will alarm if the surveyor is exposed to more than 5 mrem/hr.
 To perform the survey, the Ludlum 9DP is used to measure the gamma dose rate.
 Once Vault-1 shield door is opened, they surveyor should slowly enter, watching the readings. 
 Go down the beam line, slowly scanning around inch away from the beam line and fill in the survey sheet.
-If any element reads above 20 :math:`\mu R` / hr, scan from 30 cm away to verify the general area is not above background from normal viewing distance. 
+If any element reads above 20 µR/hr, scan from 30 cm away to verify the general area is not above background from normal viewing distance. 
 
 .. note::
     A survey sheet exist for routine Vault-1 radiation surveys, but not a dedicated sheet for specifically post beam time surveys. 

@@ -7,14 +7,21 @@
 Hutch-1 Laser Interlock System User Manual
 ==========================================
 
+This document provides a user overview for the Hutch-1 Laser Interlock System.
+It covers the laser modules, hazard indicators, control protocases, VIEWMARQ display, and the beacons in Hutch-1 and Hutch-1 Control.
+The laser modules are used for indicating the status of the laser interlock system and arming the laser systems.
+The control protocase allows the users to view the override state of the laser enclosure and control the manual shutter control. 
+The VIEWMARQ display provides a quick overview of the laser hazard status in Hutch-1.
+The beacons are used to indicate the state of laser hazards in Hutch-1 and the laser enclosure.
+
 Hutch-1 Laser Hazard Warning Indicators
 ---------------------------------------
 
-For the Hutch-1 laser interlocks system, there are multiple indicators that inform you of the state of the systems. 
-This includes status beacons, LED display, and interlock warning modules.
+This section will cover the laser hazard indicators in Hutch-1 Control and Hutch-1. 
 
-Protocase
-^^^^^^^^^
+
+Astrella Enclosure Protocase
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The Astrella LASER ENCLOSURE INTERLOCK protocase shows hazards in for the administrative override status of the Astrella enclosure. 
 
