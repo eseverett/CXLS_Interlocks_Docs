@@ -263,17 +263,30 @@ Controlling the Beam Status in Hutch-1
 Once Hutch-1 is searched and secured, the beam stop can be opened by turning the BEAM STOP OPEN key on the Hutch-1 Control IONIZING RADIATION INTERLOCK protocase, the lamp should turn :green:`green` when the stop is open.
 If the shield door is opened with the beam stop open, the beam stop will close, and Hutch-1 will no longer be secure.
 
-.. warning:: 
-    Need updated image with beam stop open 
-
 At any point, the shutters can be closed again by hitting BEAM STOP RESET on the Hutch-1 IONIZING RADIATION INTERLOCK protocase. 
 
 When the beam stop is open, the shutters will only allow either the collimated or divergent beam into Hutch-1. 
 To select which beam is allowed into Hutch-1 use the BEAM SELECT key on the Hutch-1 Control IONIZING RADIATION INTERLOCK protocase. 
 The BEAM SELECT lamp shows what has been selected, and the BEAM STATUS lamp shows the status of the shutters. 
 
-.. warning::
-    Need updated images with beam select and beam status. 
+.. list-table:: 
+    :align: center
+
+    * - .. image:: /images/user_docs/Hutch-1_ionizing_radiation/Hutch-1_Divergent_open.jpg
+            :scale: 20 %
+            :align: center
+
+      - .. image:: /images/user_docs/Hutch-1_ionizing_radiation/Hutch-1_Collimated_open.jpg
+            :scale: 20 %
+            :align: center
+
+    * - Divergent beam open. :white-cell:`===============================================================`
+      - Collimated beam open. :white-cell:`==============================================================`
+
+
+.. table-caption::
+    **Figure 9:** This is the Hutch-1 Control IONIZING RADIATION INTERLOCK protocase when either shutter is open. 
+    When the beam stop is open a shutter will automatically open to whatever beam select is set to before hand. 
 
 Putting Hutch-1 into a Non-Secure State
 ---------------------------------------

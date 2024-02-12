@@ -1,6 +1,13 @@
 Laser-1 Interlock System User Manual
 ====================================
 
+This document provides a user overview for the Laser-1 Laser Interlock System.
+It covers the laser modules, hazard indicators, control protocases, VIEWMARQ display, and the beacons in Vault-1 and Vault-1 Control.
+The laser modules are used for indicating the status of the laser interlock system and arming the laser systems.
+The control protocase allows the users to view the override state of the laser enclosure and control the manual shutter control. 
+The VIEWMARQ display provides a quick overview of the laser hazard status in Vault-1.
+The beacons are used to indicate the state of laser hazards in Vault-1 and the laser enclosures.
+
 Laser-1 Laser Hazard Warning Indicators
 ---------------------------------------
 

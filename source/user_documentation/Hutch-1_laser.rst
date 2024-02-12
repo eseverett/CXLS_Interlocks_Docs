@@ -26,7 +26,7 @@ Astrella Enclosure Protocase
 The Astrella LASER ENCLOSURE INTERLOCK protocase shows hazards in for the administrative override status of the Astrella enclosure. 
 
 The PERIMETER section of the Astrella LASER ENCLOSURE INTERLOCK protocase has a laser warning module and door monitor module. 
-The laser warning module displays if the Astrella is forced into a safe state. This means it will always show :red:`DANGER LASER ON`` unless the interlocks are tripped. 
+The laser warning module displays if the Astrella is forced into a safe state. This means it will always show :red:`DANGER LASER ON` unless the interlocks are tripped. 
 The door monitor shows if the enclosure doors are opened or closed. If the enclosure is put into an override state, then the monitor will always show closed because the interlocks are bypassed. 
 
 The LOCAL INTERLOCK CONTACT CONTROL section of the Astrella LASER ENCLOSURE INTERLOCK protocase are two local interlock modules. 
@@ -51,6 +51,7 @@ The beacons stacks can notify you of the arming status for Hutch-1 and the Astel
 
 .. list-table::
     :header-rows: 1
+    :align: center
 
     * - Status
       - Beacon Color
@@ -68,11 +69,7 @@ The beacons stacks can notify you of the arming status for Hutch-1 and the Astel
         This state is possible with or without Hutch-1 being armed.
       - :white-cell:`Beacon Color`
 
-.. figure:: /images/user_docs/Hutch-1_laser/Hutch-1_VIEWMARQ_laser_safe.jpg
-    :scale: 20 %
-    :align: center
 
-    **Figure 2:** Hutch-1 Control beacon stack and VIEWMARQ display when Hutch-1 is laser safe.
 
 VIEWMARQ Display
 ^^^^^^^^^^^^^^^^
@@ -80,19 +77,59 @@ VIEWMARQ Display
 There is a VIEWMARQ display in Hutch-1 Control that states the status of potential laser hazards in Hutch-1. 
 This display can notify you of the arming status for Hutch-1 and the Astella, as well as the interlock status of the enclosure.
 
-+-------------------------------------------------------------+----------------------------------------------------+
-| VIEWMARQ Display Notes                                      | VIEWMARQ Display Text                              |
-+=============================================================+====================================================+
-| This states if Hutch-1 is armed as a laser lab or not.      | :green:`LASER SAFE` / :green:`DANGER LASER HAZARD` |
-+-------------------------------------------------------------+----------------------------------------------------+
-| This states if the Astrella is armed.                       | :red:`Astrella ARMED`                              |
-+-------------------------------------------------------------+----------------------------------------------------+
-| This states if the Astrella is in administrative override.  | :red:`Astrella ADMIN OVERRIDE`                     |
-+-------------------------------------------------------------+----------------------------------------------------+
+.. .. figure:: /images/user_docs/Hutch-1_laser/Hutch-1_VIEWMARQ_laser_safe.jpg
+..     :scale: 20 %
+..     :align: center
+
+..     **Figure 2:** Hutch-1 Control beacon stack and VIEWMARQ display when Hutch-1 is laser safe.
+
+
+.. list-table:: 
+  :align: center
+
+  * - .. image:: /images/user_docs/Hutch-1_laser/Hutch-1_VIEWMARQ_laser_safe.jpg
+        :scale: 20 %
+        :align: center
+    - .. image:: /images/user_docs/Hutch-1_laser/Hutch-1_VIEWMARQ_laser_safe_armed.jpg
+        :scale: 20 %
+        :align: center
+    - .. image:: /images/user_docs/Hutch-1_laser/Hutch-1_VIEWMARQ_laser_hazard.jpg
+        :scale: 20 %
+        :align: center
+    - .. image:: /images/user_docs/Hutch-1_laser/Hutch-1_VIEWMARQ_laser_hazard_armed.jpg
+        :scale: 20 %
+        :align: center
+    - .. image:: /images/user_docs/Hutch-1_laser/Hutch-1_VIEWMARQ_override.jpg
+        :scale: 20 %
+        :align: center
+
+  * - Hutch-1 Control beacon stack and VIEWMARQ display when Hutch-1 is laser safe. :white-cell:`=================`
+    - Hutch-1 Control beacon stack and VIEWMARQ display when the Astrella is armed. :white-cell:`=================`
+    - Hutch-1 Control beacon stack and VIEWMARQ display when Hutch-1 is armed as as laser lab. :white-cell:`======`
+    - Hutch-1 Control beacon stack and VIEWMARQ display when Hutch-1 and the Astrella are armed. :white-cell:`====`
+    - Hutch-1 Control beacon stack and VIEWMARQ display when the Astrella enclosure is in administrative override. 
+
+
+.. list-table::
+    :header-rows: 1
+    :align: center
+
+    * - VIEWMARQ Display Notes
+      - VIEWMARQ Display Text
+
+    * - This states if Hutch-1 is armed as a laser lab or not.
+      - :green:`LASER SAFE` / :green:`DANGER LASER HAZARD`
+
+    * - This states if the Astrella is armed.
+      - :red:`Astrella ARMED`
+
+    * - This states if the Astrella is in administrative override.
+      - :red:`Astrella ADMIN OVERRIDE`
+
 
 The top line always will either display LASER SAFE or DANGER LASER HAZARD. 
 All other possible states will only appear on the display when the hazard is presented. 
-See figure 2 for an example of the Hutch-1 Control VIEWMARQ Display.
+
 
 Laser Safety System Modules
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -102,10 +139,11 @@ The laser interlock system is interfaced through the laser safety systems module
 .. figure:: /images/laser_safety_systems/warning_module.gif
     :align: center
 
-    **Figure 5:** Area Warming Module
+    **Figure 3:** Area Warming Module
 
 .. list-table::
   :header-rows: 1
+  :align: center
 
   * - Module Location
     - Module Meaning
@@ -129,7 +167,7 @@ The laser interlock system is interfaced through the laser safety systems module
 .. figure:: /images/laser_safety_systems/control_module.gif
     :align: center
 
-    **Figure 6:** Control Module
+    **Figure 4:** Control Module
 
     This module is a control module for the local laser interlock, however, for the users it serves as another warning module.
     This warning module tells you if the local interlock is armed or not.
@@ -138,7 +176,7 @@ The laser interlock system is interfaced through the laser safety systems module
 .. figure:: /images/laser_safety_systems/room_arm.png
     :align: center
 
-    **Figure 7:** Room Arm Module
+    **Figure 5:** Room Arm Module
 
     This module is used to arming system systems in the laser interlock system.
     For example, there are two in Vault-1, one to arm the vault and one to arm the Pharos enclosure.
@@ -146,6 +184,7 @@ The laser interlock system is interfaced through the laser safety systems module
 
 .. list-table::
   :header-rows: 1
+  :align: center
 
   * - Module Message
     - Message Meaning
@@ -164,13 +203,14 @@ The laser interlock system is interfaced through the laser safety systems module
 .. figure:: /images/laser_safety_systems/local_arm.png
     :align: center
 
-    **Figure 8:** Local Arm Module
+    **Figure 6:** Local Arm Module
 
     This module is used to arm the local interlock modules that are sub-systems of the room arm modules.
     For example, one the Pharos enclosure is armed, it enables the laser and the shutters to be armed by their local arming modules.
 
 .. list-table::
   :header-rows: 1
+  :align: center
 
   * - Module Message
     - Message Meaning
@@ -189,7 +229,7 @@ The laser interlock system is interfaced through the laser safety systems module
 .. figure:: /images/laser_safety_systems/push_to_exit.png
     :align: center
 
-    **Figure 9:** Push to Exit Module
+    **Figure 7:** Push to Exit Module
 
     This module is used to exit when a room is armed as a laser lab.
     When the rooms are armed, the doors are magnetically locked.
@@ -198,7 +238,7 @@ The laser interlock system is interfaced through the laser safety systems module
 .. figure:: /images/laser_safety_systems/key_pad.jpg
     :align: center
 
-    **Figure 10:** Keypad
+    **Figure 8:** Keypad
 
     This is the key pad that is used to enter a room that is armed as a laser lab. 
     This keypad has a primary pin for permanent users, and a secondary pin for temporary users that is meant to be changed frequently.
@@ -206,7 +246,7 @@ The laser interlock system is interfaced through the laser safety systems module
 .. figure:: /images/laser_safety_systems/door_monitor.jpg
     :align: center
 
-    **Figure 11:** Door Monitor Module
+    **Figure 9:** Door Monitor Module
 
     This module is used to monitor the state of a door or curtain.
     It will display does not show :green:`CLOSED`, then it is open. 
@@ -216,7 +256,7 @@ The laser interlock system is interfaced through the laser safety systems module
 .. figure:: /images/laser_safety_systems/e_stop.png
     :align: center
 
-    **Figure 12:** Laser Emergency Stop Button. 
+    **Figure 10:** Laser Emergency Stop Button. 
 
     All the laser enclosures are equipped with laser emergency stop buttons. 
     The e-stops on an enclosure can only crash that specific laser. 
@@ -244,44 +284,80 @@ Once the Astrella enclosure is armed, the Astrella laser can be armed with the l
 
 Once the Astrella system is armed the following will change in the interlock system:
 
-- The Astrella is now producing a laser beam. 
 - Beacon stack white LEDs will turn on, indicating that the Astrella is armed.
 - The VIEWMARQ display will show :red:`ASTRELLA ARMED`.
 - The laser warning module on the Astrella enclosure protocase will show :red:`DANGER LASER ON`.
-- Astrella enclosure e-stop buttons will turn on, shown by the LED in the center. The e-stops are now functional and will crash the Astrella laser if pressed.
+- Astrella enclosure e-stop buttons will turn on, shown by the LED in the center. 
+  The e-stops are now functional and will crash the Astrella laser if pressed.
 
-.. figure:: /images/user_docs/Hutch-1_laser/Astrella_enclosure_unarmed.jpg
-    :scale: 20 %
-    :align: center
+.. .. figure:: /images/user_docs/Hutch-1_laser/Astrella_enclosure_unarmed.jpg
+..     :scale: 20 %
+..     :align: center
 
-    **Figure 13:** Astrella enclosure unarmed.
+..     **Figure 13:** Astrella enclosure unarmed.
 
-.. figure:: /images/user_docs/Hutch-1_laser/Astrella_enclosure_armed.jpg
-    :scale: 20 %
-    :align: center
+.. .. figure:: /images/user_docs/Hutch-1_laser/Astrella_enclosure_armed.jpg
+..     :scale: 20 %
+..     :align: center
 
-    **Figure 14:** Astrella enclosure armed.
+..     **Figure 14:** Astrella enclosure armed.
 
+.. list-table:: 
+  :align: center
+
+  * - .. image:: /images/user_docs/Hutch-1_laser/Astrella_enclosure_unarmed.jpg
+        :scale: 20 %
+        :align: center
+    - .. image:: /images/user_docs/Hutch-1_laser/Astrella_enclosure_armed.jpg
+        :scale: 20 %
+        :align: center
+
+  * - Astrella enclosure in an unarmed state. :white-cell:`===================================================`
+    - Astrella enclosure in an armed state. :white-cell:`=====================================================`
+
+.. table-caption:: 
+  **Figure 11:** Astrella enclosure armed and unarmed.
 
 Arming Hutch-1
 ^^^^^^^^^^^^^^
 
-If work on armed lasers needs to be performed in Hutch-1, then Hutch-1 must be armed as a laser lab. 
+If work with a live laser must be performed in the enclosure, then Hutch-1 must be armed as a laser lab. 
 To arm Hutch-1 as a laser lab, press arm on the room interlock module in the Hutch-1 entry. 
-There is no local interlock module that is part of arming Hutch-1. once the room module is armed Hutch-1 is secured. 
-The 2nd layer laser curtain door must be closed.  
+Unlike for the ionizing radiation interlock system, the laser system does not have search buttons, however it is the responsibility of the user to ensure that Vault-1 is cleared or proper PPE is distributed before arming Hutch-1. 
+Once Hutch-1 is armed, the laser curtain door must be closed. 
+The curtain door is not interlocked and it strictly the responsibility of the user.
+When the laser curtain is open, there will be a chiming prompting the user to close the curtain and informing people outside that the curtain is open.
 
-.. figure:: /images/user_docs/Hutch-1_laser/Hutch-1_unarmed.jpg
-    :scale: 20 %
-    :align: center
+.. .. figure:: /images/user_docs/Hutch-1_laser/Hutch-1_unarmed.jpg
+..     :scale: 20 %
+..     :align: center
 
-    **Figure 15:** Hutch-1 unarmed.
+..     **Figure 15:** Hutch-1 unarmed.
 
-.. figure:: /images/user_docs/Hutch-1_laser/Hutch-1_armed.jpg
-    :scale: 20 %
-    :align: center
+.. .. figure:: /images/user_docs/Hutch-1_laser/Hutch-1_armed.jpg
+..     :scale: 20 %
+..     :align: center
 
-    **Figure 16:** Hutch-1 armed.
+..     **Figure 16:** Hutch-1 armed.
+
+
+.. list-table::
+  :align: center
+
+  * - .. image:: /images/user_docs/Hutch-1_laser/Hutch-1_unarmed.jpg
+        :scale: 20 %
+        :align: center
+    - .. image:: /images/user_docs/Hutch-1_laser/Hutch-1_armed.jpg
+        :scale: 20 %
+        :align: center
+
+  * - Hutch-1 in an unarmed state. :white-cell:`=========================================================`
+    - Hutch-1 in an armed state. :white-cell:`===========================================================`
+
+.. table-caption:: 
+  **Figure 12:** Hutch-1 armed and unarmed.
+
+
 
 These are the laser safety modules in the Hutch-1 entry. 
 On the left are the modules in an unarmed state, and on the right are the modules in an armed state. 
@@ -289,24 +365,41 @@ In these images, from the top down are the laser control module (serving as a wa
 
 Once Hutch-1 is armed as a laser lab the following will change in the interlock system:
 
-- Beacon stack green LEDs will turn off, indicating that Hutch-1 is armed.
+- Beacon stack :green:`green` LEDs will turn off, indicating that Hutch-1 is armed.
 - The VIEWMARQ display will show :red:`DANGER LASER HAZARD` in place of LASER SAFE.
 - The laser warning modules in Hutch-1 Control and Hutch-1 Entry will show :red:`DANGER LASER ON`.
 - The push to exit button will be on, shown by the LED in the button. 
 - The Hutch-1 curtain door will be magnetically locked.
 
-Once Hutch-1 is armed the curtain door is magnetically locked. 
-To get into Hutch-1, you must type the Hutch-1 laser pin into the keypad in Hutch-1 Control. 
-Once it is entered the door will be temporarily unlocked. 
-To exit Hutch-1, you must push the push to exit button. 
-Once pressed the door will be temporarily unlocked. 
-It is important to note that Hutch-1 will disarm itself and shutter all laser hazards if the Hutch-1 door is open for longer than # . 
+Once Hutch-1 is armed the door is magnetically locked. 
+To get into Hutch-1, you must type the Vault-1 laser pin into the keypad in Hutch-1 Control. 
+Once the pin is entered, the door will temporarily unlock.
+To exit Hutch-1, you must push the push to exit button, which will again temporarily unlock the door.
+It is important to note that Vault-1 will disarm itself and shutter all exposed laser hazards if the Hutch-1 door is open for longer than the timer. 
 
-.. figure:: /images/user_docs/Hutch-1_laser/Hutch-1_entry_armed.jpg
-    :scale: 20 %
-    :align: center
+.. .. figure:: /images/user_docs/Hutch-1_laser/Hutch-1_entry_armed.jpg
+..     :scale: 20 %
+..     :align: center
 
-    **Figure 17:** Hutch-1 entry armed.
+..     **Figure 13:** Hutch-1 entry armed.
+
+.. list-table::
+  :align: center
+
+  * - .. image:: /images/user_docs/Hutch-1_laser/Hutch-1_entry_disarmed.jpg
+        :scale: 20 %
+        :align: center
+    - .. image:: /images/user_docs/Hutch-1_laser/Hutch-1_entry_armed.jpg
+        :scale: 20 %
+        :align: center
+
+  * - Hutch-1 entry in an unarmed state. :white-cell:`======================================================`
+    - Hutch-1 entry in an armed state. :white-cell:`========================================================`
+
+.. table-caption::
+  **Figure 13:** Hutch-1 entry armed and unarmed.
+
+
 
 Using Laser Enclosure Interlock Protocase for Overriding Interlocks and Manual Shutter Control
 ----------------------------------------------------------------------------------------------
@@ -342,7 +435,7 @@ At this point, the LOCAL INTERLOCK CONTACT CONTROL local interlock modules can b
     :scale: 20 %
     :align: center
 
-    **Figure 18:** Astrella enclosure override.
+    **Figure 14:** Astrella enclosure override.
 
 
 Disarming the Laser Interlock System

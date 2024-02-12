@@ -259,6 +259,7 @@ The laser interlock system is interfaced through the laser safety systems module
 
 .. list-table::
   :header-rows: 1
+  :align: center
 
   * - Module Message
     - Message Meaning
@@ -284,6 +285,7 @@ The laser interlock system is interfaced through the laser safety systems module
 
 .. list-table::
   :header-rows: 1
+  :align: center
 
   * - Module Message
     - Message Meaning
