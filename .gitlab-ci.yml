@@ -1,0 +1,13 @@
+image: python:3.11.7
+
+pages:
+  stage: deploy
+  script:
+    - pip install sphinx
+    - pip install sphinx_rtd_theme
+    - sphinx-build -b html . public
+  artifacts:
+    paths:
+      - public
+  only:
+    - main  
