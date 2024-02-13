@@ -12,7 +12,7 @@ Laser-1 Laser Hazard Warning Indicators
 ---------------------------------------
 
 Unlike the Vault-1 and Hutch-1 laser interlocks systems, there are no beacon stacks for displaying the state of the laser interlock system. 
-Additionally, because the Dira enclosure is in Vault-1 there is no protocase discussed in this manual. 
+Additionally, because the Dira enclosure is in Vault-1 there is no protocase corresponding to Laser-1.
 
 VIEWMARQ Display
 ^^^^^^^^^^^^^^^^
