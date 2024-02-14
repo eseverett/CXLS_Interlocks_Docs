@@ -10,6 +10,7 @@
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
+
 import os
 import sys
 sys.path.insert(0, os.path.abspath('.'))
@@ -53,25 +54,21 @@ pygments_style = 'sphinx' ### Added style
 #
 html_theme = 'sphinx_rtd_theme' ### Changed theme to alabaster
 
-# html_theme_path = ['_theme'] ### Added theme path
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static', 'images']
-
 html_css_files = ['custom.css'] ### Added custom css file
 
+
+# This sets the home page icon and web tab icon for the documentation.
 html_favicon = '_static/tab_icon_4.ico' ### Added icon for browser tab
-
-
 html_logo = '_static/tab_icon.png' ### Added logo for top left corner
-
 html_theme_options = {'logo_only': True} ### Added option to only display logo in top left corner
 
 # Add the following line in conf.py within the html_js_files list
 html_js_files = ['makeTablesScrollable.js',]
-
 
 # Pygments (syntax highlighting) style to use
 pygments_style = 'friendly' ### Added style
@@ -97,7 +94,7 @@ def colored_text(name, rawtext, text, lineno, inliner, options={}, content=[]):
         inliner (_type_): _description_
         options (dict, optional): _description_. Defaults to {}.
         content (list, optional): _description_. Defaults to [].
-
+        
     Returns:
         _type_: _description_
     """

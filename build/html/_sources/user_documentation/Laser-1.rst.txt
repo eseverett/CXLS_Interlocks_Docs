@@ -1,3 +1,7 @@
+.. these roles are here to use custom css classes
+.. role:: white-cell
+.. role:: orange
+
 Laser-1 Interlock System User Manual
 ====================================
 
@@ -19,56 +23,209 @@ VIEWMARQ Display
 
 There is a VIEWMARQ display outside of the Laser-1 entrance and inside of the Laser-1 airlock.  
 
-+-------------------------------------------------------------+----------------------------------------------------+
-| VIEWMARQ Display Notes                                      | VIEWMARQ Display Text                              |
-+=============================================================+====================================================+
-| This states if Laser-1 is armed as a laser lab or not.      | :green:`LASER SAFE` / :red:`DANGER LASER HAZARD`   |
-+-------------------------------------------------------------+----------------------------------------------------+
-| This states which hazard is armed.                          | :red:`IR HAZARD`        :red:`AUX 3 HAZARD`        |
-+-------------------------------------------------------------+----------------------------------------------------+
-| This states which hazard is armed.                          | :red:`UV HAZARD`     :red:`AUX 4 HAZARD`           |
-+-------------------------------------------------------------+----------------------------------------------------+
-| This states which hazard is armed.                          | :red:`AUX 2 HAZARD`                                |
-+-------------------------------------------------------------+----------------------------------------------------+
+.. list-table::
+        :header-rows: 1
+        :align: center
 
-The top line always will either display LASER SAFE or DANGER LASER HAZARD. 
+        * - VIEWMARQ Display Notes
+          - VIEWMARQ Display Text
+        * - This states if Laser-1 is armed as a laser lab or not.
+          - :green:`LASER SAFE` / :red:`DANGER LASER HAZARD`
+        * - This states which hazard is armed.
+          - :red:`IR HAZARD`        :red:`AUX 3 HAZARD`
+        * - This states which hazard is armed.
+          - :red:`UV HAZARD`     :red:`AUX 4 HAZARD`
+        * - This states which hazard is armed.
+          - :red:`AUX 2 HAZARD`
+
+The top line of the Laser-1 entry VIEWMARQ will always either display :green:`LASER SAFE` or :red:`DANGER LASER HAZARD`. 
 All other possible states will only appear on the display when the hazard is presented. 
 Additionally, the VIEWMARQ display in the Laser-1 airlock will display the same message as the VIEWMARQ outside of Laser-1. 
 The airlock VIEWMARQ can only support one-line messages, so the whole message is truncated to one line and moves across the display. 
 
-.. figure:: /images/user_docs/Laser-1/Laser-1_entry_safe.jpg
-    :scale: 20 %
+.. .. figure:: /images/user_docs/Laser-1/Laser-1_entry_safe.jpg
+..     :scale: 20 %
+..     :align: center
+
+..     Laser-1 entryway with the VIEWMARQ display showing LASER SAFE.
+
+.. .. figure:: /images/user_docs/Laser-1/Laser-1_airlock_safe.jpg
+..     :scale: 20 %
+..     :align: center
+
+    .. Laser-1 airlock with the VIEWMARQ display showing LASER SAFE.
+
+.. list-table::
     :align: center
 
-    Laser-1 entryway with the VIEWMARQ display showing LASER SAFE.
+    * - .. image:: /images/user_docs/Laser-1/Laser-1_VIEWMARQ_entry_safe.jpg
+          :scale: 20 %
+          :align: center
 
-.. figure:: /images/user_docs/Laser-1/Laser-1_airlock_safe.jpg
-    :scale: 20 %
+      - .. image:: /images/user_docs/Laser-1/Laser-1_VIEWMARQ_airlock_safe.jpg
+          :scale: 20 %
+          :align: center
+
+    * - This figure shows the Laser-1 VIEWMARQ. :white-cell:`===============================================`
+      - This figure shows the Laser-1 airlock VIEWMARQ. :white-cell:`=======================================`
+
+.. table-caption::
+    **Figure 1:** These are the Laser-1 VIEWMARQ displays under a laser safe condition. 
+
+
+.. Laser Emergency Stop Buttons
+.. ----------------------------
+
+.. All the laser enclosures are equipped with laser emergency stop buttons. 
+.. The e-stops on an enclosure can only crash that specific laser. 
+.. Additionally, there are ionizing radiation emergency stop buttons in Vault-1 and Vault-1 Control. 
+.. Those only serve the purpose of crashing the transmitters and are not located on the laser enclosures.
+
+
+.. .. figure:: /images/user_docs/Vault-1_laser/laser_e-stop_off.jpg
+..     :scale: 20 %
+..     :align: center
+
+..     **Figure 5:** This is a laser emergency stop button in the off state.
+
+.. .. figure:: /images/user_docs/Vault-1_laser/laser_e-stop_on.jpg 
+..     :scale: 20 %
+..     :align: center
+
+..     **Figure 6:** This is a laser emergency stop button in the on state.
+
+Laser Safety System Modules
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The laser interlock system is interfaced through the laser safety systems modules. Below is an outline of the modules and what they do. 
+
+.. figure:: /images/laser_safety_systems/warning_module.gif
     :align: center
 
-    Laser-1 airlock with the VIEWMARQ display showing LASER SAFE.
+    **Figure 5:** Area Warming Module
+
+.. list-table::
+  :header-rows: 1
+
+  * - Module Location
+    - Module Meaning
+  * - | **General Area Module**
+      | Vault-1 Control
+      | Vault-1 Entry
+    - | These are warning modules tell you if Vault-1 is armed as a laser lab. 
+      | :red:`DANGER LASER ON` = ARMED
+  * - | **Enclosure Modules**
+      | Pharos enclosure south wall
+      | Pharos enclosure west wall
+    - | These warning modules tell you if the enclosure is armed.
+      | There is no indication on if the laser is armed. 
+      | :red:`DANGER LASER ON` = ARMED
+  * - | **Protocase Modules**
+      | Pharos enclosure protocase
+      | Dira enclosure protocase
+    - | These warning modules tell you if the enclosure is forced to a safe state. 
+      | :red:`DANGER LASER HAZARD` = SAFE STATE IS NOT FORCED
+
+.. figure:: /images/laser_safety_systems/control_module.gif
+    :align: center
+
+    **Figure 6:** Control Module
+
+    This module is a control module for the local laser interlock, however, for the users it serves as another warning module.
+    This warning module tells you if the room interlock is armed or not.
 
 
-Laser Emergency Stop Buttons
-----------------------------
+.. figure:: /images/laser_safety_systems/room_arm.png
+    :align: center
 
-All the laser enclosures are equipped with laser emergency stop buttons. 
-The e-stops on an enclosure can only crash that specific laser. 
+    **Figure 7:** Room Arm Module
+
+    This module is used to arm systems in the laser interlock system.
+    For example, there are two in Vault-1, one to arm the vault and one to arm the Pharos enclosure.
+
+
+.. list-table::
+  :header-rows: 1
+  :align: center
+
+  * - Module Message
+    - Message Meaning
+  * - :orange:`ROOM ARMED`
+    - | If this LED is on, then the corresponding system is armed 
+      | and interlocked.
+  * - :green:`ROOM DISARMED (READY TO ARM)`
+    - | If this LED is on, the the system is the correct state to armed
+      | the module.
+  * - :orange:`ROOM CRASHED (CANNOT ARM)`
+    - | If this LED is on, then there was a fault that tripped the 
+      | system, or a fault that will not allow the system to be armed. 
+
+
+
+.. figure:: /images/laser_safety_systems/local_arm.png
+    :align: center
+
+    **Figure 8:** Local Arm Module
+
+    This module is used to arm the local interlock modules that are sub-systems of the room arm modules.
+    For example, one the Pharos enclosure is armed, it enables the laser and the shutters to be armed by their local arming modules.
+
+.. list-table::
+  :header-rows: 1
+  :align: center
+
+  * - Module Message
+    - Message Meaning
+  * - :orange:`LOCAL CONTACTS ARMED`
+    - | If this LED is on, then the corresponding sub-system is armed.
+  * - :green:`LOCAL CONTACTS DISARMED`
+    - | If this LED is on, then the connected room module is armed, 
+      | but this module is not.
+  * - | :green:`LOCAL CONTACTS DISARMED`
+      | :green:`ROOM NOT ARMED`
+      | :green:`LOCAL CONTACT CANNOT ARM`
+    - | If this LED is on, then there was a fault that tripped, or the room 
+      | module is not armed.
+
+
+.. figure:: /images/laser_safety_systems/push_to_exit.png
+    :align: center
+
+    **Figure 9:** Push to Exit Module
+
+    When the rooms are armed, the doors are magnetically locked.
+    This button will temporarily unlock the door to allow you to exit the room.
+
+.. figure:: /images/laser_safety_systems/key_pad.jpg
+    :align: center
+
+    **Figure 10:** Keypad
+
+    This is the key pad that is used to enter a room that is armed as a laser lab. 
+    This keypad has a primary pin for permanent users, and a secondary pin for temporary users that is meant to be changed frequently.
+
+.. figure:: /images/laser_safety_systems/door_monitor.jpg
+    :align: center
+
+    **Figure 11:** Door Monitor Module
+
+    This module is used to monitor the state of a door or curtain.
+    It will display does not show :green:`CLOSED`, then it is open. 
+    If the system is put into an administrative override state, then the door monitor will always show :green:`CLOSED`.
+
+
+.. figure:: /images/laser_safety_systems/e_stop.png
+    :align: center
+
+    **Figure 12:** Laser Emergency Stop Button. 
+
+    All the laser enclosures are equipped with laser emergency stop buttons. 
+    The e-stops on an enclosure can only crash that specific laser. 
+
 Additionally, there are ionizing radiation emergency stop buttons in Vault-1 and Vault-1 Control. 
 Those only serve the purpose of crashing the transmitters and are not located on the laser enclosures.
-
-
-.. figure:: /images/user_docs/Vault-1_laser/laser_e-stop_off.jpg
-    :scale: 20 %
-    :align: center
-
-    **Figure 5:** This is a laser emergency stop button in the off state.
-
-.. figure:: /images/user_docs/Vault-1_laser/laser_e-stop_on.jpg 
-    :scale: 20 %
-    :align: center
-
-    **Figure 6:** This is a laser emergency stop button in the on state.
+When the e-stop is pressed, the LED in the center will turn on.
+To reset the e-stop, twist the button clockwise.
 
 
 Arming Laser-1 Laser Systems

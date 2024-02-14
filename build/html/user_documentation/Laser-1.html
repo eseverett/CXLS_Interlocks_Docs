@@ -52,9 +52,9 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Laser-1 Interlock System User Manual</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#laser-1-laser-hazard-warning-indicators">Laser-1 Laser Hazard Warning Indicators</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#viewmarq-display">VIEWMARQ Display</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#laser-safety-system-modules">Laser Safety System Modules</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#laser-emergency-stop-buttons">Laser Emergency Stop Buttons</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#arming-laser-1-laser-systems">Arming Laser-1 Laser Systems</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#arming-laser-1-and-the-dira-enclosure">Arming Laser-1 and the Dira Enclosure</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#arming-the-dira">Arming the Dira</a></li>
@@ -127,7 +127,7 @@ Additionally, because the Dira enclosure is in Vault-1 there is no protocase cor
 <section id="viewmarq-display">
 <h3>VIEWMARQ Display</h3>
 <p>There is a VIEWMARQ display outside of the Laser-1 entrance and inside of the Laser-1 airlock.</p>
-<table class="docutils align-default">
+<table class="docutils align-center">
 <thead>
 <tr class="row-odd"><th class="head"><p>VIEWMARQ Display Notes</p></th>
 <th class="head"><p>VIEWMARQ Display Text</p></th>
@@ -148,47 +148,226 @@ Additionally, because the Dira enclosure is in Vault-1 there is no protocase cor
 </tr>
 </tbody>
 </table>
-<p>The top line always will either display LASER SAFE or DANGER LASER HAZARD.
+<p>The top line of the Laser-1 entry VIEWMARQ will always either display <span class="green">LASER SAFE</span> or <span class="red">DANGER LASER HAZARD</span>.
 All other possible states will only appear on the display when the hazard is presented.
 Additionally, the VIEWMARQ display in the Laser-1 airlock will display the same message as the VIEWMARQ outside of Laser-1.
 The airlock VIEWMARQ can only support one-line messages, so the whole message is truncated to one line and moves across the display.</p>
+<table class="docutils align-center">
+<tbody>
+<tr class="row-odd"><td><a class="reference internal image-reference" href="../_images/Laser-1_VIEWMARQ_entry_safe.jpg"><img alt="../_images/Laser-1_VIEWMARQ_entry_safe.jpg" class="align-center" src="../_images/Laser-1_VIEWMARQ_entry_safe.jpg" style="width: 604.8000000000001px; height: 604.8000000000001px;" /></a>
+</td>
+<td><a class="reference internal image-reference" href="../_images/Laser-1_VIEWMARQ_airlock_safe.jpg"><img alt="../_images/Laser-1_VIEWMARQ_airlock_safe.jpg" class="align-center" src="../_images/Laser-1_VIEWMARQ_airlock_safe.jpg" style="width: 604.8000000000001px; height: 604.8000000000001px;" /></a>
+</td>
+</tr>
+<tr class="row-even"><td><p>This figure shows the Laser-1 VIEWMARQ. <span class="white-cell">===============================================</span></p></td>
+<td><p>This figure shows the Laser-1 airlock VIEWMARQ. <span class="white-cell">=======================================</span></p></td>
+</tr>
+</tbody>
+</table>
+<div class="tight-table-caption-container docutils container">
+<p class="table-caption"><strong>Figure 1:</strong> These are the Laser-1 VIEWMARQ displays under a laser safe condition.</p>
+</div>
+</section>
+<section id="laser-safety-system-modules">
+<h3>Laser Safety System Modules</h3>
+<p>The laser interlock system is interfaced through the laser safety systems modules. Below is an outline of the modules and what they do.</p>
 <figure class="align-center" id="id1">
-<a class="reference internal image-reference" href="../_images/Laser-1_entry_safe.jpg"><img alt="../_images/Laser-1_entry_safe.jpg" src="../_images/Laser-1_entry_safe.jpg" style="width: 604.8000000000001px; height: 604.8000000000001px;" /></a>
+<img alt="../_images/warning_module.gif" src="../_images/warning_module.gif" />
 <figcaption>
-<p><span class="caption-text">Laser-1 entryway with the VIEWMARQ display showing LASER SAFE.</span></p>
+<p><span class="caption-text"><strong>Figure 5:</strong> Area Warming Module</span></p>
 </figcaption>
 </figure>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Module Location</p></th>
+<th class="head"><p>Module Meaning</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><div class="line-block">
+<div class="line"><strong>General Area Module</strong></div>
+<div class="line">Vault-1 Control</div>
+<div class="line">Vault-1 Entry</div>
+</div>
+</td>
+<td><div class="line-block">
+<div class="line">These are warning modules tell you if Vault-1 is armed as a laser lab.</div>
+<div class="line"><span class="red">DANGER LASER ON</span> = ARMED</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><div class="line-block">
+<div class="line"><strong>Enclosure Modules</strong></div>
+<div class="line">Pharos enclosure south wall</div>
+<div class="line">Pharos enclosure west wall</div>
+</div>
+</td>
+<td><div class="line-block">
+<div class="line">These warning modules tell you if the enclosure is armed.</div>
+<div class="line">There is no indication on if the laser is armed.</div>
+<div class="line"><span class="red">DANGER LASER ON</span> = ARMED</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><div class="line-block">
+<div class="line"><strong>Protocase Modules</strong></div>
+<div class="line">Pharos enclosure protocase</div>
+<div class="line">Dira enclosure protocase</div>
+</div>
+</td>
+<td><div class="line-block">
+<div class="line">These warning modules tell you if the enclosure is forced to a safe state.</div>
+<div class="line"><span class="red">DANGER LASER HAZARD</span> = SAFE STATE IS NOT FORCED</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
 <figure class="align-center" id="id2">
-<a class="reference internal image-reference" href="../_images/Laser-1_airlock_safe.jpg"><img alt="../_images/Laser-1_airlock_safe.jpg" src="../_images/Laser-1_airlock_safe.jpg" style="width: 604.8000000000001px; height: 604.8000000000001px;" /></a>
+<img alt="../_images/control_module.gif" src="../_images/control_module.gif" />
 <figcaption>
-<p><span class="caption-text">Laser-1 airlock with the VIEWMARQ display showing LASER SAFE.</span></p>
+<p><span class="caption-text"><strong>Figure 6:</strong> Control Module</span></p>
+<div class="legend">
+<p>This module is a control module for the local laser interlock, however, for the users it serves as another warning module.
+This warning module tells you if the room interlock is armed or not.</p>
+</div>
 </figcaption>
 </figure>
-</section>
-</section>
-<section id="laser-emergency-stop-buttons">
-<h2>Laser Emergency Stop Buttons</h2>
-<p>All the laser enclosures are equipped with laser emergency stop buttons.
-The e-stops on an enclosure can only crash that specific laser.
-Additionally, there are ionizing radiation emergency stop buttons in Vault-1 and Vault-1 Control.
-Those only serve the purpose of crashing the transmitters and are not located on the laser enclosures.</p>
 <figure class="align-center" id="id3">
-<a class="reference internal image-reference" href="../_images/laser_e-stop_off.jpg"><img alt="../_images/laser_e-stop_off.jpg" src="../_images/laser_e-stop_off.jpg" style="width: 604.8000000000001px; height: 604.8000000000001px;" /></a>
+<img alt="../_images/room_arm.png" src="../_images/room_arm.png" />
 <figcaption>
-<p><span class="caption-text"><strong>Figure 5:</strong> This is a laser emergency stop button in the off state.</span></p>
+<p><span class="caption-text"><strong>Figure 7:</strong> Room Arm Module</span></p>
+<div class="legend">
+<p>This module is used to arm systems in the laser interlock system.
+For example, there are two in Vault-1, one to arm the vault and one to arm the Pharos enclosure.</p>
+</div>
 </figcaption>
 </figure>
+<table class="docutils align-center">
+<thead>
+<tr class="row-odd"><th class="head"><p>Module Message</p></th>
+<th class="head"><p>Message Meaning</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><span class="orange">ROOM ARMED</span></p></td>
+<td><div class="line-block">
+<div class="line">If this LED is on, then the corresponding system is armed</div>
+<div class="line">and interlocked.</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p><span class="green">ROOM DISARMED (READY TO ARM)</span></p></td>
+<td><div class="line-block">
+<div class="line">If this LED is on, the the system is the correct state to armed</div>
+<div class="line">the module.</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p><span class="orange">ROOM CRASHED (CANNOT ARM)</span></p></td>
+<td><div class="line-block">
+<div class="line">If this LED is on, then there was a fault that tripped the</div>
+<div class="line">system, or a fault that will not allow the system to be armed.</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
 <figure class="align-center" id="id4">
-<a class="reference internal image-reference" href="../_images/laser_e-stop_on.jpg"><img alt="../_images/laser_e-stop_on.jpg" src="../_images/laser_e-stop_on.jpg" style="width: 604.8000000000001px; height: 604.8000000000001px;" /></a>
+<img alt="../_images/local_arm.png" src="../_images/local_arm.png" />
 <figcaption>
-<p><span class="caption-text"><strong>Figure 6:</strong> This is a laser emergency stop button in the on state.</span></p>
+<p><span class="caption-text"><strong>Figure 8:</strong> Local Arm Module</span></p>
+<div class="legend">
+<p>This module is used to arm the local interlock modules that are sub-systems of the room arm modules.
+For example, one the Pharos enclosure is armed, it enables the laser and the shutters to be armed by their local arming modules.</p>
+</div>
 </figcaption>
 </figure>
+<table class="docutils align-center">
+<thead>
+<tr class="row-odd"><th class="head"><p>Module Message</p></th>
+<th class="head"><p>Message Meaning</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><span class="orange">LOCAL CONTACTS ARMED</span></p></td>
+<td><div class="line-block">
+<div class="line">If this LED is on, then the corresponding sub-system is armed.</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p><span class="green">LOCAL CONTACTS DISARMED</span></p></td>
+<td><div class="line-block">
+<div class="line">If this LED is on, then the connected room module is armed,</div>
+<div class="line">but this module is not.</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><div class="line-block">
+<div class="line"><span class="green">LOCAL CONTACTS DISARMED</span></div>
+<div class="line"><span class="green">ROOM NOT ARMED</span></div>
+<div class="line"><span class="green">LOCAL CONTACT CANNOT ARM</span></div>
+</div>
+</td>
+<td><div class="line-block">
+<div class="line">If this LED is on, then there was a fault that tripped, or the room</div>
+<div class="line">module is not armed.</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<figure class="align-center" id="id5">
+<img alt="../_images/push_to_exit.png" src="../_images/push_to_exit.png" />
+<figcaption>
+<p><span class="caption-text"><strong>Figure 9:</strong> Push to Exit Module</span></p>
+<div class="legend">
+<p>When the rooms are armed, the doors are magnetically locked.
+This button will temporarily unlock the door to allow you to exit the room.</p>
+</div>
+</figcaption>
+</figure>
+<figure class="align-center" id="id6">
+<img alt="../_images/key_pad.jpg" src="../_images/key_pad.jpg" />
+<figcaption>
+<p><span class="caption-text"><strong>Figure 10:</strong> Keypad</span></p>
+<div class="legend">
+<p>This is the key pad that is used to enter a room that is armed as a laser lab.
+This keypad has a primary pin for permanent users, and a secondary pin for temporary users that is meant to be changed frequently.</p>
+</div>
+</figcaption>
+</figure>
+<figure class="align-center" id="id7">
+<img alt="../_images/door_monitor.jpg" src="../_images/door_monitor.jpg" />
+<figcaption>
+<p><span class="caption-text"><strong>Figure 11:</strong> Door Monitor Module</span></p>
+<div class="legend">
+<p>This module is used to monitor the state of a door or curtain.
+It will display does not show <span class="green">CLOSED</span>, then it is open.
+If the system is put into an administrative override state, then the door monitor will always show <span class="green">CLOSED</span>.</p>
+</div>
+</figcaption>
+</figure>
+<figure class="align-center" id="id8">
+<img alt="../_images/e_stop.png" src="../_images/e_stop.png" />
+<figcaption>
+<p><span class="caption-text"><strong>Figure 12:</strong> Laser Emergency Stop Button.</span></p>
+<div class="legend">
+<p>All the laser enclosures are equipped with laser emergency stop buttons.
+The e-stops on an enclosure can only crash that specific laser.</p>
+</div>
+</figcaption>
+</figure>
+<p>Additionally, there are ionizing radiation emergency stop buttons in Vault-1 and Vault-1 Control.
+Those only serve the purpose of crashing the transmitters and are not located on the laser enclosures.
+When the e-stop is pressed, the LED in the center will turn on.
+To reset the e-stop, twist the button clockwise.</p>
+</section>
 </section>
 <section id="arming-laser-1-laser-systems">
 <h2>Arming Laser-1 Laser Systems</h2>
 <p>In Laser-1, there are arming modules for Laser-1, the Dira, and 4 auxiliary hazards. All laser modules for arming systems are located on the arming panel.</p>
-<figure class="align-center" id="id5">
+<figure class="align-center" id="id9">
 <a class="reference internal image-reference" href="../_images/Laser-1_arming_panel.jpg"><img alt="../_images/Laser-1_arming_panel.jpg" src="../_images/Laser-1_arming_panel.jpg" style="width: 604.8000000000001px; height: 604.8000000000001px;" /></a>
 <figcaption>
 <p><span class="caption-text"><strong>Figure 7:</strong> This is the arming panel for Laser-1.</span></p>
@@ -209,19 +388,19 @@ To get into Vault-1, you must type the Laser-1 laser pin into the keypad in Vaul
 Once it is entered the door will be temporarily unlocked.
 To exit Laser-1, you must push the push to exit button. Once pressed the door will be temporarily unlocked.
 It is important to note that Laser-1 will disarm itself and shutter all laser hazards if the Laser-1 door is open for  #.</p>
-<figure class="align-center" id="id6">
+<figure class="align-center" id="id10">
 <a class="reference internal image-reference" href="../_images/Laser-1_control_module_armed.jpg"><img alt="../_images/Laser-1_control_module_armed.jpg" src="../_images/Laser-1_control_module_armed.jpg" style="width: 604.8000000000001px; height: 604.8000000000001px;" /></a>
 <figcaption>
 <p><span class="caption-text"><strong>Figure 8:</strong> This is the Laser-1 arming module in the armed state.</span></p>
 </figcaption>
 </figure>
-<figure class="align-center" id="id7">
+<figure class="align-center" id="id11">
 <a class="reference internal image-reference" href="../_images/Laser-1_push_to_exit.jpg"><img alt="../_images/Laser-1_push_to_exit.jpg" src="../_images/Laser-1_push_to_exit.jpg" style="width: 604.8000000000001px; height: 604.8000000000001px;" /></a>
 <figcaption>
 <p><span class="caption-text"><strong>Figure 9:</strong> This is the push to exit button for Laser-1.</span></p>
 </figcaption>
 </figure>
-<figure class="align-center" id="id8">
+<figure class="align-center" id="id12">
 <a class="reference internal image-reference" href="../_images/Laser-1_entry_armed.jpg"><img alt="../_images/Laser-1_entry_armed.jpg" src="../_images/Laser-1_entry_armed.jpg" style="width: 604.8000000000001px; height: 604.8000000000001px;" /></a>
 <figcaption>
 <p><span class="caption-text"><strong>Figure 10:</strong> This is the Laser-1 entryway with the VIEWMARQ display showing DANGER LASER HAZARD.</span></p>
