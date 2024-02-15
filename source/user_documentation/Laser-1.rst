@@ -62,15 +62,45 @@ The airlock VIEWMARQ can only support one-line messages, so the whole message is
           :scale: 20 %
           :align: center
 
-      - .. image:: /images/user_docs/Laser-1/Laser-1_VIEWMARQ_airlock_safe.jpg
+      - .. image:: /images/user_docs/Laser-1/Laser-1_VIEWMARQ_entry_armed.jpg
           :scale: 20 %
           :align: center
 
-    * - This figure shows the Laser-1 VIEWMARQ. :white-cell:`===============================================`
-      - This figure shows the Laser-1 airlock VIEWMARQ. :white-cell:`=======================================`
+      - .. image:: /images/user_docs/Laser-1/Laser-1_VIEWMARQ_entry_IR.jpg
+          :scale: 20 %
+          :align: center
+
+    * - This figure shows the Laser-1 entry VIEWMARQ in a safe condition. :white-cell:`============================`
+      - This figure shows the Laser-1 entry VIEWMARQ when Laser-1 is armed. :white-cell:`==========================`
+      - This figure shows the Laser-1 entry VIEWMARQ when the Dira is armed. :white-cell:`=========================`
 
 .. table-caption::
-    **Figure 1:** These are the Laser-1 VIEWMARQ displays under a laser safe condition. 
+    **Figure 1:** This is the Laser-1 entry VIEWMARQ in different states.
+
+
+.. list-table::
+  :align: center
+
+  * - .. image:: /images/user_docs/Laser-1/Laser-1_VIEWMARQ_airlock_safe.jpg
+        :scale: 20 %
+        :align: center
+
+    - .. image:: /images/user_docs/Laser-1/Laser-1_VIEWMARQ_airlock_armed.jpg
+        :scale: 20 %
+        :align: center
+
+    - .. image:: /images/user_docs/Laser-1/Laser-1_VIEWMARQ_airlock_IR.gif
+        :scale: 56 %
+        :align: center
+
+  * - This figure shows the Laser-1 airlock VIEWMARQ in a safe condition. :white-cell:`============================`
+    - This figure shows the Laser-1 airlock VIEWMARQ when Laser-1 is armed. :white-cell:`==========================`
+    - This figure shows the Laser-1 airlock VIEWMARQ when the Dira is armed. :white-cell:`=========================`
+
+.. table-caption::
+    **Figure 2:** This is the Laser-1 airlock VIEWMARQ in different states.
+
+
 
 
 .. Laser Emergency Stop Buttons
