@@ -1,6 +1,8 @@
 .. these roles are here to use custom css classes
 .. role:: white-cell
 .. role:: orange
+.. role:: red
+.. role:: green
 
 Laser-1 Interlock System User Manual
 ====================================
@@ -132,7 +134,7 @@ The laser interlock system is interfaced through the laser safety systems module
 .. figure:: /images/laser_safety_systems/warning_module.gif
     :align: center
 
-    **Figure 5:** Area Warming Module
+    **Figure 3:** Area Warming Module
 
 .. list-table::
   :header-rows: 1
@@ -159,7 +161,7 @@ The laser interlock system is interfaced through the laser safety systems module
 .. figure:: /images/laser_safety_systems/control_module.gif
     :align: center
 
-    **Figure 6:** Control Module
+    **Figure 4:** Control Module
 
     This module is a control module for the local laser interlock, however, for the users it serves as another warning module.
     This warning module tells you if the room interlock is armed or not.
@@ -168,7 +170,7 @@ The laser interlock system is interfaced through the laser safety systems module
 .. figure:: /images/laser_safety_systems/room_arm.png
     :align: center
 
-    **Figure 7:** Room Arm Module
+    **Figure 5:** Room Arm Module
 
     This module is used to arm systems in the laser interlock system.
     For example, there are two in Vault-1, one to arm the vault and one to arm the Pharos enclosure.
@@ -195,7 +197,7 @@ The laser interlock system is interfaced through the laser safety systems module
 .. figure:: /images/laser_safety_systems/local_arm.png
     :align: center
 
-    **Figure 8:** Local Arm Module
+    **Figure 6:** Local Arm Module
 
     This module is used to arm the local interlock modules that are sub-systems of the room arm modules.
     For example, one the Pharos enclosure is armed, it enables the laser and the shutters to be armed by their local arming modules.
@@ -221,7 +223,7 @@ The laser interlock system is interfaced through the laser safety systems module
 .. figure:: /images/laser_safety_systems/push_to_exit.png
     :align: center
 
-    **Figure 9:** Push to Exit Module
+    **Figure 7:** Push to Exit Module
 
     When the rooms are armed, the doors are magnetically locked.
     This button will temporarily unlock the door to allow you to exit the room.
@@ -229,7 +231,7 @@ The laser interlock system is interfaced through the laser safety systems module
 .. figure:: /images/laser_safety_systems/key_pad.jpg
     :align: center
 
-    **Figure 10:** Keypad
+    **Figure 8:** Keypad
 
     This is the key pad that is used to enter a room that is armed as a laser lab. 
     This keypad has a primary pin for permanent users, and a secondary pin for temporary users that is meant to be changed frequently.
@@ -237,7 +239,7 @@ The laser interlock system is interfaced through the laser safety systems module
 .. figure:: /images/laser_safety_systems/door_monitor.jpg
     :align: center
 
-    **Figure 11:** Door Monitor Module
+    **Figure 9:** Door Monitor Module
 
     This module is used to monitor the state of a door or curtain.
     It will display does not show :green:`CLOSED`, then it is open. 
@@ -247,7 +249,7 @@ The laser interlock system is interfaced through the laser safety systems module
 .. figure:: /images/laser_safety_systems/e_stop.png
     :align: center
 
-    **Figure 12:** Laser Emergency Stop Button. 
+    **Figure 10:** Laser Emergency Stop Button. 
 
     All the laser enclosures are equipped with laser emergency stop buttons. 
     The e-stops on an enclosure can only crash that specific laser. 
@@ -261,26 +263,26 @@ To reset the e-stop, twist the button clockwise.
 Arming Laser-1 Laser Systems
 ----------------------------
 
-In Laser-1, there are arming modules for Laser-1, the Dira, and 4 auxiliary hazards. All laser modules for arming systems are located on the arming panel. 
+In Laser-1, there are arming modules for Laser-1, the Dira, and 4 auxiliary hazard. All arming modules are located inside on the arming panel that faces the west wall.  
 
 .. figure:: /images/user_docs/Laser-1/Laser-1_arming_panel.jpg
     :scale: 20 %
     :align: center
 
-    **Figure 7:** This is the arming panel for Laser-1.
+    **Figure 11:** This is the arming panel for Laser-1.
 
 
 Arming Laser-1 and the Dira Enclosure
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Laser-1 must be armed to do laser work. To arm Laser-1, press arm on the room interlock module labeled Laser-1. 
+Laser-1 must be armed to perform work with the Dira. To arm Laser-1, press arm on the room interlock module labeled Laser-1. 
 The Laser-1 arming module also serves as the arming module for the Dira enclosure. 
 
 When Laser-1 is armed, the following will happen to the interlock system:
 
-- The VIEWMARQ display will show DANGER LASER HAZARD.
+- The Laser-1 VIEWMARQ displays will show :red:`DANGER LASER HAZARD`.
 - Laser emergency stop buttons in Laser-1 and around the Vault-1 Dira enclosure will turn on. 
-- Laser warning modules outside of Laser-1, inside of the Laser-1 airlock, and on the Dira LASER ENCLOSURE INTERLOCK protocase will display DANGER LASER ON.
+- Laser warning modules outside of Laser-1, inside of the Laser-1 airlock, and on the Dira LASER ENCLOSURE INTERLOCK protocase will display :red:`DANGER LASER ON`.
 
 
 Once Laser-1 is armed the door is magnetically locked. 
@@ -293,20 +295,21 @@ It is important to note that Laser-1 will disarm itself and shutter all laser ha
     :scale: 20 %
     :align: center
 
-    **Figure 8:** This is the Laser-1 arming module in the armed state.
+    **Figure 12:** This is the Laser-1 arming module in the armed state.
 
 .. figure:: /images/user_docs/Laser-1/Laser-1_push_to_exit.jpg
     :scale: 20 %
     :align: center
 
-    **Figure 9:** This is the push to exit button for Laser-1.
+    **Figure 13:** This is the push to exit button for Laser-1.
 
 .. figure:: /images/user_docs/Laser-1/Laser-1_entry_armed.jpg
     :scale: 20 %
     :align: center
 
-    **Figure 10:** This is the Laser-1 entryway with the VIEWMARQ display showing DANGER LASER HAZARD.
+    **Figure 14:** This is the Laser-1 entryway with the VIEWMARQ display showing DANGER LASER HAZARD.
 
+   
 
 Arming the Dira
 ^^^^^^^^^^^^^^^
@@ -316,8 +319,9 @@ Because the Dira exports a laser hazard into Vault-1, Vault-1 laser hazard indic
 
 When the Dira is armed, the following will happen to the interlock system:
 
-- The VIEWMARQ displays will show IR HAZARD.
-- The VIEWMARQ in Vault-1 Control will display DIRA ARMED.
+- The Laser-1 entry VIEWMARQ display will show :red:`IR HAZARD`.
+- The Laser-1 arilock VIEWMARQ display wil show :red:`DANGER LASER ON -- IR EYE PROTECTION REQUIRED`.
+- The Vault-1 Control VIEWMARQ display will show :red:`DIRA ARMED`.
 - The beacon stacks in the Vault-1 laser interlock system will turn on the white Dira armed LED.
 
 
