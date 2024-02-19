@@ -291,24 +291,73 @@ Once it is entered the door will be temporarily unlocked.
 To exit Laser-1, you must push the push to exit button. Once pressed the door will be temporarily unlocked. 
 It is important to note that Laser-1 will disarm itself and shutter all laser hazards if the Laser-1 door is open for  #. 
 
-.. figure:: /images/user_docs/Laser-1/Laser-1_control_module_armed.jpg
-    :scale: 20 %
+.. .. figure:: /images/user_docs/Laser-1/Laser-1_control_module_armed.jpg
+..     :scale: 20 %
+..     :align: center
+
+..     **Figure 12:** This is the Laser-1 arming module in the armed state.
+
+.. list-table::
     :align: center
 
-    **Figure 12:** This is the Laser-1 arming module in the armed state.
+    * - .. image:: /images/user_docs/Laser-1/Laser-1_control_module_safe.jpg
+          :scale: 20 %
+          :align: center
+      - .. image:: /images/user_docs/Laser-1/Laser-1_control_module_armed.jpg
+          :scale: 20 %
+          :align: center
+    * - This figure shows the Laser-1 control module in the safe state. :white-cell:`================================`
+      - This figure shows the Laser-1 control module in the armed state. :white-cell:`===============================`
 
-.. figure:: /images/user_docs/Laser-1/Laser-1_push_to_exit.jpg
-    :scale: 20 %
+.. table-caption::
+    **Figure 12:** This is the Laser-1 arming module in different states.
+
+
+
+.. .. figure:: /images/user_docs/Laser-1/Laser-1_push_to_exit.jpg
+..     :scale: 20 %
+..     :align: center
+
+..     **Figure 13:** This is the push to exit button for Laser-1.
+
+
+.. list-table::
     :align: center
 
-    **Figure 13:** This is the push to exit button for Laser-1.
+    * - .. image:: /images/user_docs/Laser-1/Laser-1_push_to_exit_safe.jpg
+          :scale: 20 %
+          :align: center
+      - .. image:: /images/user_docs/Laser-1/Laser-1_push_to_exit.jpg
+          :scale: 20 %
+          :align: center
+    * - This figure shows the Laser-1 push to exit button in the safe state. :white-cell:`==============================`
+      - This figure shows the Laser-1 push to exit button in the armed state. :white-cell:`=============================`
 
-.. figure:: /images/user_docs/Laser-1/Laser-1_entry_armed.jpg
-    :scale: 20 %
-    :align: center
+.. table-caption::
+    **Figure 13:** This is the Laser-1 push to exit button in different states.
 
-    **Figure 14:** This is the Laser-1 entryway with the VIEWMARQ display showing DANGER LASER HAZARD.
 
+
+.. .. figure:: /images/user_docs/Laser-1/Laser-1_entry_armed.jpg
+..     :scale: 20 %
+..     :align: center
+
+..     **Figure 14:** This is the Laser-1 entryway with the VIEWMARQ display showing DANGER LASER HAZARD.
+
+.. list-table::
+    :align: center 
+
+    * - .. image:: /images/user_docs/Laser-1/Laser-1_entry_safe.jpg
+          :scale: 20 %
+          :align: center
+      - .. image:: /images/user_docs/Laser-1/Laser-1_entry_armed.jpg
+          :scale: 20 %
+          :align: center
+    * - This figure shows the Laser-1 entryway with the modules showing LASER SAFE. :white-cell:`===================`
+      - This figure shows the Laser-1 entryway with the modules showing DANGER LASER HAZARD. :white-cell:`==========`
+
+.. table-caption::
+    **Figure 14:** This is the Laser-1 entryway with the modules showing different states.
    
 
 Arming the Dira

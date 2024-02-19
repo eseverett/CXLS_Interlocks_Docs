@@ -32,8 +32,8 @@ CXLS Facility Overview
 
 |small_space|
 
-Ionzing Radiation Hazards
--------------------------
+Ionizing Radiation Hazards
+--------------------------
 
 In the CXLS linear accelerator, the relativistic electrons can interact with materials of beam pipes and LINACs. 
 These interactions are Coulomb forces between the relativistic electrons and atomic nuclei within these materials where the electron experiences negative acceleration and releases a high energy photon, gamma radiation. 
