@@ -1,7 +1,13 @@
+.. these roles are defined to use custom css classes
+.. role:: white-cell
+.. role:: yellow
+.. role:: blue
+
 Ionizing Radiation Emergency Stop Testing Protocol
 ===================================================
 
-The objective of this testing procedure is to verify the functionality of the ionizing radiation emergency stop button system.
+The objective of this testing procedure is to verify the functionality of the ionizing radiation emergency stop button system. 
+This system is used to cut power to the transmitters from a high-power state during an emergency.
 
 Starting Conditions
 -------------------
@@ -9,6 +15,7 @@ Starting Conditions
 #. VIEWMARQ display in Accelerator Lab shows :green:`RF SAFE`.
 
 #. VIEWMARQ display in Vault-1 Control shows :green:`LASER SAFE`.
+
 
 #. Check that relay 1-4, and 7 in Vault-1 Control west aggregator panel shows all diagnostic LEDs on.
 
@@ -44,6 +51,54 @@ Starting Conditions
     - Vault-1 E
     - Vault-1 F
     - Vault-1 G
+
+
+.. list-table::
+    :align: center
+
+    * - .. image:: /images/testing_documentation/e-stops/e-stop_on.jpg
+            :scale: 20 %
+            :align: center
+      - .. image:: /images/testing_documentation/e-stops/e-stop_off.jpg
+            :scale: 20 %
+            :align: center
+    * - E-stop button engaged. :white-cell:`===============================================================` 
+      - E-stop button disengaged. :white-cell:`============================================================`
+
+.. table-caption::
+    **Figure 1:** These are examples of the ionizing radiation emergency stop buttons in the facility.
+
+
+.. list-table::
+   :align: center
+
+   * - .. image:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_Control_VIEWMARQ_safe.jpg
+            :scale: 28 %
+            :align: center
+     - .. image:: /images/user_docs/Vault-1_ionizing_radiation/Accelerator_lab_VIEWMARQ_safe.jpg
+            :scale: 20 %
+            :align: center
+   * - Vault-1 Control VIEWMARQ display when the system is safe. :white-cell:`=================================`
+     - Accelerator Lab VIEWMARQ display when the system is safe. :white-cell:`=================================`
+
+.. table-caption::
+   **Figure 2:** These are the VIEWMARQ displays in Vault-1 Control and Accelerator Lab when the system is safe.    
+
+.. list-table::
+    :align: center
+
+    * - .. image:: /images/testing_documentation/e-stops/relay_on.jpg
+            :scale: 20 %
+            :align: center
+      - .. image:: /images/testing_documentation/e-stops/relay_off.jpg
+            :scale: 20 %
+            :align: center
+
+    * - Relay on example. :white-cell:`=================================================================`
+      - Relay off example. :white-cell:`================================================================`
+
+.. table-caption::
+    **Figure 3:** These are examples of the relays, in on and off states. 
 
 
 Testing
@@ -86,7 +141,7 @@ Emergency Tungsten Shutter Crash
 
 #. Chose any ionizing radiation e-stop in the facility and press it. In response:
 
-    - Yellow and blue contact blocks for the tungsten shutters in Hutch-1 panel do not have 24VDC across them.
+    - :yellow:`Yellow` and :blue:`blue` contact blocks for the tungsten shutters in Hutch-1 panel do not have 24VDC across them.
     - Hutch-1 Control Ionizing Radiation Interlock protocase lamps for Beam Status turn :red:`red`.
 
 High Power Transmitter Crash
