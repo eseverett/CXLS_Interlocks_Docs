@@ -43,22 +43,46 @@ The default state for testing of the Vault-1 ionizing radiation interlock system
 
 ..    Vault-1 search buttons off
 
+.. figure:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_protocase.jpg
+   :scale: 20 %
+   :align: center
+   :alt: Vault-1 protocase
+
+   **Figure 1:** This is the Vault-1 Control IONIZING RADIATION INTERLOCK protocase in a disarmed, unsecured, safe state.
+
+
 .. list-table::
-    :align: center
+   :align: center
 
-    * - .. image:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_search_off.jpg
+   * - .. image:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_Control_VIEWMARQ_safe.jpg
+            :scale: 28 %
+            :align: center
+     - .. image:: /images/user_docs/Vault-1_ionizing_radiation/Accelerator_lab_VIEWMARQ_safe.jpg
             :scale: 20 %
             :align: center
-
-      - .. image:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_search_on.jpg
-            :scale: 20 %
-            :align: center
-
-    * - Vault-1 search button off. :white-cell:`============================================================`
-      - Vault-1 search button on. :white-cell:`=============================================================`
+   * - Vault-1 Control VIEWMARQ display when the system is safe. :white-cell:`=================================`
+     - Accelerator Lab VIEWMARQ display when the system is safe. :white-cell:`=================================`
 
 .. table-caption::
-    **Figure 1:** This is an example of the Vault-1 search buttons in both states.
+   **Figure 2:** These are the VIEWMARQ displays in Vault-1 Control and Accelerator Lab when the system is safe.
+
+
+.. list-table::
+   :align: center
+      
+   * - .. image:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_search_off.jpg
+            :scale: 20 %
+            :align: center
+
+     - .. image:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_search_on.jpg
+            :scale: 20 %
+            :align: center
+
+   * - Vault-1 search button off. :white-cell:`============================================================`
+     - Vault-1 search button on. :white-cell:`=============================================================`
+       
+.. table-caption::
+    **Figure 3:** This is an example of the Vault-1 search buttons in both states.
 
 
 
@@ -68,14 +92,6 @@ The default state for testing of the Vault-1 ionizing radiation interlock system
 ..    :alt: Vault-1 search buttons on
 
 ..    Vault-1 search buttons on
-
-.. figure:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_protocase.jpg
-   :scale: 20 %
-   :align: center
-   :alt: Vault-1 protocase
-
-   **Figure 2:** This is the Vault-1 Control IONIZING RADIATION INTERLOCK protocase in a disarmed, unsecured, safe state.
-
 
 
 Testing Unsecure Vault-1 Conditions
@@ -116,14 +132,14 @@ Searching Procedure
    :align: center
    :alt: Vault-1 searched
 
-   **Figure 3:** Vault-1 IONIZING RADIATION INTERLOCK protocase when Vault-1 is searched.
+   **Figure 4:** Vault-1 IONIZING RADIATION INTERLOCK protocase when Vault-1 is searched.
 
 .. figure:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_door.jpg
    :scale: 20 %
    :align: center
    :alt: Vault-1 door
 
-   **Figure 4:** Vault-1 IONIZING RADIATION INTERLOCK protocase when the shield door is closed and Vault-1 is secured.
+   **Figure 5:** Vault-1 IONIZING RADIATION INTERLOCK protocase when the shield door is closed and Vault-1 is secured.
    Under this state the accelerator can now be armed. 
 
 Arming the Accelerator and transmitters
@@ -152,7 +168,7 @@ Arming the Accelerator and transmitters
    :align: center
    :alt: Vault-1 protocase accelerator armed
 
-   **Figure 5:** Vault-1 Control IONIZING RADIATION INTERLOCK protocase when the accelerator is armed. 
+   **Figure 6:** Vault-1 Control IONIZING RADIATION INTERLOCK protocase when the accelerator is armed. 
 
 .. .. figure:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_protocase_transmitter_armed_1.jpg
 ..    :scale: 20 %
@@ -172,14 +188,30 @@ Arming the Accelerator and transmitters
            :scale: 20 %
            :align: center
 
-   * - Vault-1 Control IONIZING RADIATION INTERLOCK protocase when transmitter 1 is armed. :white-cell:`=====================================`
-     - Vault-1 Control IONIZING RADIATION INTERLOCK protocase when transmitter 2 is armed. :white-cell:`=====================================`
+   * - Vault-1 Control IONIZING RADIATION INTERLOCK protocase when transmitter 1 is armed. :white-cell:`============`
+     - Vault-1 Control IONIZING RADIATION INTERLOCK protocase when transmitter 2 is armed. :white-cell:`============`
 
 .. table-caption::
-      **Figure 6:** This is the Vault-1 Control IONIZING RADIATION INTERLOCK protocase when the transmitters are armed.
+      **Figure 7:** This is the Vault-1 Control IONIZING RADIATION INTERLOCK protocase when the transmitters are armed.
 
-.. warning::
-   NEEDS VIEWMARQ IMAGES
+
+.. list-table:: 
+   :align: center
+
+   * - .. image:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_Control_VIEWMARQ_armed.jpg
+           :scale: 28 %
+           :align: center
+
+     - .. image:: /images/user_docs/Vault-1_ionizing_radiation/Accelerator_lab_VIEWMARQ_armed.jpg
+           :scale: 20 %
+           :align: center
+
+   * - Vault-1 Control VIEWMARQ display when the RF is armed. :white-cell:`=================================`
+     - Accelerator Lab VIEWMARQ display when the RF is armed. :white-cell:`=================================`
+
+.. table-caption::
+   **Figure 8:** These are the VIEWMARQ displays in Vault-1 Control and Accelerator Lab when the RF is armed.
+
 
 Overriding and Resetting Transmitters and Accelerator
 -----------------------------------------------------
@@ -193,12 +225,31 @@ Overriding and Resetting Transmitters and Accelerator
 #. Hit the reset button on the Vault-1 Control IONIZING RADIATION INTERLOCK protocase.
    The ACCELERATOR and TRANSMITTERS lamps will turn :red:`red`.
 
-.. figure:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_protocase_transmitter_override_2.jpg
-   :scale: 20 %
-   :align: center
-   :alt: Vault-1 protocase transmitter override
+.. .. figure:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_protocase_transmitter_override_2.jpg
+..    :scale: 20 %
+..    :align: center
+..    :alt: Vault-1 protocase transmitter override
 
-   Vault-1 protocase transmitter override
+..    Vault-1 protocase transmitter override
+
+
+.. list-table::
+   :align: center
+
+   * - .. image:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_protocase_transmitter_override_2.jpg
+            :scale: 20 %
+            :align: center
+
+     - .. image:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_protocase_transmitter_override_both.jpg
+            :scale: 20 %
+            :align: center
+
+   * - Vault-1 Control IONIZING RADIATION INTERLOCK protocase when transmitter 2 is in override. :white-cell:`=======`
+     - Vault-1 Control IONIZING RADIATION INTERLOCK protocase when both transmitters are in override. :white-cell:`==`
+
+.. table-caption::
+   **Figure 9:** This is the Vault-1 Control IONIZING RADIATION INTERLOCK protocase when the transmitters are in override.
+
 
 
 Timing out the Shield Door and Search sequence
