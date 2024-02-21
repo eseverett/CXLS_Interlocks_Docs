@@ -98,7 +98,8 @@ Starting Conditions
       - Relay off example. :white-cell:`================================================================`
 
 .. table-caption::
-    **Figure 3:** These are examples of the relays, in on and off states. 
+    **Figure 3:** These are examples of the relays, in on and off states.
+    If there are only some diagnostic LEDs on, the relay is in a fault state, and must be troubleshooted. 
 
 
 Testing
@@ -131,18 +132,33 @@ Testing
     - Vault-1 F
     - Vault-1 G
 
+.. list-table::
+    :align: center
+    
+    * - .. image:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_Control_VIEWMARQ_e-stop.jpg
+            :scale: 28 %
+            :align: center
+      - .. image:: /images/user_docs/Vault-1_ionizing_radiation/Accelerator_lab_VIEWMARQ_e-stop.jpg
+            :scale: 20 %
+            :align: center
+    * - Vault-1 Control VIEWMARQ display when the system is in an e-stop state. :white-cell:`=======================`
+      - Accelerator Lab VIEWMARQ display when the system is in an e-stop state. :white-cell:`=======================`
+
+.. table-caption::
+    **Figure 4:** These are the VIEWMARQ displays in Vault-1 Control and Accelerator Lab when an ionizing radiation e-stop is pressed.
+
 
 Emergency Tungsten Shutter Crash
 --------------------------------
 
 #. Secure Hutch-1. 
 
-#. Set the Beam Select to Divergent.
+#. Set the BEAM SELECT to DIVERGENT.
 
 #. Chose any ionizing radiation e-stop in the facility and press it. In response:
 
-    - :yellow:`Yellow` and :blue:`blue` contact blocks for the tungsten shutters in Hutch-1 panel do not have 24VDC across them.
-    - Hutch-1 Control Ionizing Radiation Interlock protocase lamps for Beam Status turn :red:`red`.
+    - Hutch-1 Control Ionizing Radiation Interlock protocase lamps for Beam Status turn :red:`red`. 
+    - The DIVERGENT shutter (closest, upside down shutter) closed. 
 
 High Power Transmitter Crash
 ----------------------------

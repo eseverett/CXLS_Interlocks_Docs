@@ -112,11 +112,30 @@ The default state for testing of the Hutch-1 ionizing radiation interlock system
 
 .. table-caption::
     **Figure 3:** These are the contract blocks for the double tungsten shutters in the Hutch-1 aggregator panel.
+    The specific sets being referenced here are the blue and yellow contact blocks next to the red IDEM relays. 
+    If there is 24VDC across these contact blocks, the shutters are open.
 
-.. warning:: 
-    These steps should be based off of the physical position of the shutters because you have to secure Hutch-1. 
-    This is done in the steps below, but there are no corresponding images. 
 
+.. list-table::
+    :align: center
+
+    * - .. image:: /images/testing_documentation/Hutch-1_ionizing_radiation/double_tungsten_shutter.jpg
+            :scale: 20 %
+            :align: center
+
+      - .. image:: /images/testing_documentation/Hutch-1_ionizing_radiation/double_tungsten_shutter_zoom.jpg
+            :scale: 20 %
+            :align: center
+
+    * - This is the upright double tungsten shutter. :white-cell:`===============================================`
+      - This is a zoomed in image of the upright double tungsten shutter. 
+        It can be seen here that the contact plate is on the bottom sensors. :white-cell:`====`
+
+.. table-caption::
+    **Figure 4:** This is the upright double tungsten shutter, and an example of this shutter being in the closed position.
+    If the plate where to be on the top sensors, the shutters would be open.
+    Additionally, the other double tungsten shutter is rotated 180 degrees from this one, which can be seen in the first image as the closer shutter only shows its top.
+    Because it is rotated, the contact on the upper sensors is the closed position for the other shutter. 
 
 Search Procedure
 ----------------
@@ -142,13 +161,13 @@ Search Procedure
     :scale: 20 %
     :align: center
 
-    **Figure 4:** This is the Hutch-1 Control IONIZING RADIATION INTERLOCK protocase when Hutch-1 is searched.
+    **Figure 5:** This is the Hutch-1 Control IONIZING RADIATION INTERLOCK protocase when Hutch-1 is searched.
 
 .. figure:: /images/user_docs/Hutch-1_ionizing_radiation/Hutch-1_door.jpg
     :scale: 20 %
     :align: center
 
-    **Figure 5:** This is the Hutch-1 Control IONIZING RADIATION INTERLOCK protocase when Hutch-1 is secured.
+    **Figure 6:** This is the Hutch-1 Control IONIZING RADIATION INTERLOCK protocase when Hutch-1 is secured.
 
 
 
@@ -196,7 +215,7 @@ Changing Beam status
 
 
 .. table-caption::
-    **Figure 6:** This is the Hutch-1 Control IONIZING RADIATION INTERLOCK protocase when either shutter is open. 
+    **Figure 7:** This is the Hutch-1 Control IONIZING RADIATION INTERLOCK protocase when either shutter is open. 
     When the beam stop is open a shutter will automatically open to whatever beam select is set to before hand. 
 
 

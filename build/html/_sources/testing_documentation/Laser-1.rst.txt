@@ -1,16 +1,24 @@
+.. these roles are defined to use custom css classes
 .. role:: orange
+.. role:: red
+.. role:: green
+.. role:: white-cell
 
 
 Laser-1 Interlock System Testing Protocol
 =========================================
 
-The purpose of this protocol is the Laser-1 laser interlocks.
+The purpose of this protocol is to test the Laser-1 interlocks system. 
+This includes:
+
+- Arming Laser-1.
+- Arming the Dira.
 
 
 Starting Conditions
 -------------------
 
-#. The Vault-1 Control VIEWMARQ does not display :red:`DIRA ARMED - DIRA ADMINISTRATIVE OVERRIDE`.
+#. The Vault-1 Control VIEWMARQ only displays :green:`LASER SAFE`.
 
 #. The Vault-1 beacon stacks show only green LEDs on.
 
@@ -58,7 +66,102 @@ Starting Conditions
 
 #. Door closure module next to RF-1 / Laser-1 door displays :green:`CLOSED`.
 
-.. warning:: NEEDS IMAGES
+.. list-table:: 
+    :align: center
+    
+    * - .. image:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_Control_VIEWMARQ_safe.jpg
+            :align: center
+            :scale: 28 %
+
+      - .. image:: /images/user_docs/Laser-1/Laser-1_VIEWMARQ_entry_safe.jpg
+            :align: center
+            :scale: 20 %
+
+      - .. image:: /images/user_docs/Laser-1/Laser-1_VIEWMARQ_airlock_safe.jpg
+            :align: center
+            :scale: 20 %
+
+    * - This is the Vault-1 Control VIEWMARQ in a safe condition. :white-cell:`===================================`
+      - This is the Laser-1 entrance VIEWMARQ in a safe condition. :white-cell:`==================================`
+      - This is the Laser-1 airlock VIEWMARQ in a safe condition. :white-cell:`===================================`
+
+.. table-caption::
+    **Figure 1:** These are the VIEWMARQ displays that show the state of the Dira.
+
+.. list-table:: 
+  :align: center
+
+  * - .. image:: /images/user_docs/Vault-1_laser/Vault-1_Control_beacons.jpg
+        :scale: 76 %
+        :align: center
+
+    - .. image:: /images/user_docs/Vault-1_laser/Vault-1_beacons.jpg
+        :scale: 20 %
+        :align: center
+
+    - .. image:: /images/user_docs/Vault-1_laser/Pharos_beacons.jpg
+        :scale: 43 %
+        :align: center
+
+    - .. image:: /images/user_docs/Vault-1_laser/Dira_beacons.jpg
+        :scale: 53 %
+        :align: center
+
+  * - Vault-1 Control beacon stack. :white-cell:`=========================================================`
+    - Vault-1 beacon stack. :white-cell:`=================================================================`
+    - Pharos LASER ENCLOSURE INTERLOCK protocase beacon stack. :white-cell:`==============================`
+    - Dira LASER ENCLOSURE INTERLOCK protocase beacon stack. :white-cell:`================================`
+
+.. table-caption:: 
+    **Figure 2:** These are the Vault-1 laser interlock system beacon stacks.
+    These all show the state of the Dira.
+
+
+
+
+.. figure:: /images/user_docs/Laser-1/Laser-1_control_module_safe.jpg
+    :scale: 20 %
+    :align: center
+
+    **Figure 3:** This is the control module in Laser-1 airlock in a safe condition
+
+
+.. figure:: /images/user_docs/Laser-1/Laser-1_push_to_exit_safe.jpg
+    :scale: 20 %
+    :align: center
+
+    **Figure 4:** THis is the push-to-exit module in Laser-1 airlock in a safe condition.
+
+
+
+.. figure:: /images/user_docs/Laser-1/Laser-1_entry_safe.jpg
+    :scale: 20 %
+    :align: center
+
+    **Figure 5:** This is the entry keypad in Laser-1 in a safe condition.
+
+
+.. figure:: /images/testing_documentation/Laser-1/e-stop_off.jpg
+    :scale: 20 %
+    :align: center
+
+    **Figure 6:** This is the e-stop module in Laser-1 in a safe condition.
+
+
+.. figure:: /images/testing_documentation/Laser-1/RF_door.jpg
+    :scale: 20 %
+    :align: center
+
+    **Figure 7:** This is the Laser-1 to RF-1 door monitor in a closed condition. 
+
+    
+
+.. figure:: /images/user_docs/Laser-1/Laser-1_arming_panel.jpg
+    :scale: 20 %
+    :align: center
+
+    **Figure 8:** This is the arming panel for Laser-1.
+
 
 
 
@@ -86,7 +189,7 @@ Arming Laser-1
     - Laser-1 entrance.
     - Laser-1 airlock.
 
-#. Dira LASER ENCLOSURE INTERLOCK protocase laser wrning module shows :red:`DANGER LASER ON`.
+#. Dira LASER ENCLOSURE INTERLOCK protocase laser warning module shows :red:`DANGER LASER ON`.
 
 #. Dira LASER ENCLOSURE INTERLOCK protocase CONTROL CONTACTS AUX #1 and #2 should be auto-armed from arming Laser-1.
    They cannot be disarmed. 
@@ -110,7 +213,33 @@ Arming Laser-1
    Hold the door open for :red:`x seconds` and allow the interlock system to trip.
    The system should return to a completely disarmed state. 
 
-.. warning:: NEEDS IMAGES
+.. figure:: /images/user_docs/Laser-1/Laser-1_control_module_armed.jpg
+    :scale: 20 %
+    :align: center
+
+    **Figure 9:** This is the control module in Laser-1 airlock in a safe condition
+
+
+.. figure:: /images/user_docs/Laser-1/Laser-1_push_to_exit.jpg
+    :scale: 20 %
+    :align: center
+
+    **Figure 10:** THis is the push-to-exit module in Laser-1 airlock in a safe condition.
+
+
+
+.. figure:: /images/user_docs/Laser-1/Laser-1_entry_armed.jpg
+    :scale: 20 %
+    :align: center
+
+    **Figure 11:** This is the entry keypad in Laser-1 in a safe condition.
+
+
+.. figure:: /images/testing_documentation/Laser-1/e-stop_on.jpg
+    :scale: 20 %
+    :align: center
+
+    **Figure 12:** This is the e-stop module in Laser-1 in a safe condition.
 
 
 Arming the Dira
@@ -123,9 +252,9 @@ Arming the Dira
 
 #. The VIEWMARQ display in the Laser-1 entrance shows :red:`DANGER LASER ON - IR HAZARD`.
 
-#. The VIEWMAEQ display in Vault-1 Control shows :green:`LASER SAFE` - :red:`DIRA ARMED`.
+#. The VIEWMARQ display in Vault-1 Control shows :green:`LASER SAFE` - :red:`DIRA ARMED`.
 
-#. The Vault-1 beacon stacks should show green and white LEDs on.
+#. The Vault-1 beacon stacks should show :green:`green` and white LEDs on.
 
     - Vault-1 control.
     - Vault-1 east wall.

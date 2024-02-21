@@ -127,12 +127,30 @@
 </li>
 <li><p>Vault-1 Control IONIZING RADIATION INTERLOCK protocase AREA MONITOR OXYGEN lamp is <span class="green">green</span>.</p></li>
 <li><p>Relay contact #9 in Vault-1 Control west aggregator panel has LEDs on.</p></li>
-<li><p>Yellow 4 contact blocks in Vault-1 Control west aggregator panel all have continuity with each other.</p></li>
+<li><p><span class="yellow">Yellow</span> 4 contact blocks in Vault-1 Control west aggregator panel all have continuity with each other.</p></li>
 </ol>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>NEED IMAGES</p>
+<table class="docutils align-center">
+<tbody>
+<tr class="row-odd"><td><a class="reference internal image-reference" href="../_images/Vault-1_O2_main.jpg"><img alt="../_images/Vault-1_O2_main.jpg" class="align-center" src="../_images/Vault-1_O2_main.jpg" style="width: 604.8000000000001px; height: 604.8000000000001px;" /></a>
+</td>
+<td><a class="reference internal image-reference" href="../_images/Vault-1_O2_remote.jpg"><img alt="../_images/Vault-1_O2_remote.jpg" class="align-center" src="../_images/Vault-1_O2_remote.jpg" style="width: 604.8000000000001px; height: 604.8000000000001px;" /></a>
+</td>
+</tr>
+<tr class="row-even"><td><p>O2 main unit. <span class="white-cell">=====================================================================</span></p></td>
+<td><p>O2 remote unit. <span class="white-cell">===================================================================</span></p></td>
+</tr>
+</tbody>
+</table>
+<div class="tight-table-caption-container docutils container">
+<p class="table-caption"><strong>Figure 1:</strong> This is the O2 sensor pair. The O2 main unit is the sensor, which sends data for display to the O2 remote unit. Both display the same information.</p>
 </div>
+<figure class="align-center" id="id1">
+<a class="reference internal image-reference" href="../_images/yellow_4_contacts.jpg"><img alt="../_images/yellow_4_contacts.jpg" src="../_images/yellow_4_contacts.jpg" style="width: 604.8000000000001px; height: 604.8000000000001px;" /></a>
+<figcaption>
+<p><span class="caption-text"><strong>Figure 2:</strong> These are the yellow 4 contact blocks in the Vault-1 Control west aggregator panel.
+If any of the O2 sensors alarm, these blocks will loose continuity with each other.</span></p>
+</figcaption>
+</figure>
 </section>
 <section id="testing-connectivity-between-main-and-remote-units">
 <h2>Testing Connectivity Between Main and Remote Units</h2>
@@ -159,7 +177,7 @@
 <section id="testing-alarming">
 <h2>Testing Alarming</h2>
 <ol class="arabic">
-<li><p>Using compressed gas, spray the gas into the main controller sensor until the unit sees an <span class="math notranslate nohighlight">\(O_2\)</span> concentration of less than 19%.</p>
+<li><p>Using compressed gas (electronics duster will work fine), spray the gas into the main controller sensor until the unit sees an <span class="math notranslate nohighlight">\(O_2\)</span> concentration of less than 19%.</p>
 <blockquote>
 <div><ul>
 <li><p>The main and remote units will audibly alarm.</p></li>
@@ -167,7 +185,7 @@
 However, the AL1 relay is what is critical.</p></li>
 <li><p>The Vault-1 Control IONIZING RADIATION INTERLOCK protocase AREA MONITOR OXYGEN lamp will turn <span class="red">red</span>.</p></li>
 <li><p>Relay contract #9 in the Vault-1 Control west aggregator panel LEDs will turn off.</p></li>
-<li><p>The correct <span class="yellow">yellow 4`</span> contact blocks will lose continuity with each other.</p></li>
+<li><p>The correct <span class="yellow">yellow 4</span> contact blocks will lose continuity with each other.</p></li>
 <li><p>Corresponding <span class="orange">orange</span> beacon to the unit being tested will flash.</p></li>
 <li><p>These units have latching alarms.
 Press the bottom left recessed button to rest the alarm.</p>
@@ -189,20 +207,16 @@ Press the bottom left recessed button to rest the alarm.</p>
 <h2>Emergency Tungsten Shutter Crash</h2>
 <ol class="arabic">
 <li><p>Secure Hutch-1.</p></li>
-<li><p>Open a tungsten shutter and make sure it is physically open.</p></li>
+<li><p>Set the BEAM SELECT to DIVERGENT.</p></li>
 <li><p>Spray compressed gas into a O2 unit. In response:</p>
 <blockquote>
 <div><ul class="simple">
-<li><p>The yellow and blue contact block for the tungsten shutters in Hutch-1 panel do nat have 24VDC across them.</p></li>
-<li><p>Hutch-1 Control IONIZING RADIATION INTERLOCK protcase lamps for BEAM STATUS turn <span class="red">red</span>.</p></li>
+<li><p>Hutch-1 Control Ionizing Radiation Interlock protocase lamps for Beam Status turn <span class="red">red</span>.</p></li>
+<li><p>The DIVERGENT shutter (closest, upside down shutter) closed.</p></li>
 </ul>
 </div></blockquote>
 </li>
 </ol>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>NEED IMAGES</p>
-</div>
 </section>
 </section>
 

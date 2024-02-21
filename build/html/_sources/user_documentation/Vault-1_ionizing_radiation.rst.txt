@@ -174,7 +174,8 @@ The stacked units correspond to the state of the Vault-1 laser interlock system.
      - Accelerator Lab beacons. :white-cell:`==============================================================`
      - Vault-1 Control protocase beacon. :white-cell:`=====================================================`
 
-
+.. table-caption:: 
+    **Figure 4:** These are the Vault-1 Control and Accelerator Lab beacons. 
 
 
 
