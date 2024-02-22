@@ -214,8 +214,22 @@ Arming Laser-1
    The system should return to a completely disarmed state. 
 
 
-.. warning::
-    add viewmarq images
+.. list-table:: 
+    :align: center 
+
+    * - .. image:: /images/user_docs/Laser-1/Laser-1_VIEWMARQ_entry_armed.jpg
+          :scale: 20 %
+          :align: center
+
+      - .. image:: /images/user_docs/Laser-1/Laser-1_VIEWMARQ_airlock_armed.jpg
+          :scale: 20 %
+          :align: center      
+
+    * - This is the Laser-1 entrance VIEWMARQ in an armed condition. :white-cell:`================================`
+      - This is the Laser-1 airlock VIEWMARQ in an armed condition. :white-cell:`=================================`
+
+.. table-caption:: 
+    **Figure 9:** These are the Laser-1 VIEWMARQ displays when Laser-1 is armed.
 
 
 .. figure:: /images/user_docs/Laser-1/Laser-1_control_module_armed.jpg
@@ -269,7 +283,31 @@ Arming the Dira
 
 #. Dira LASER ENCLOSURE INTERLOCK protocase laser warning module shows :red:`DANGER LASER ON`.
 
-.. warning:: NEEDS IMAGES
+
+
+
+.. list-table::
+    :align: center 
+
+    * - .. image:: /images/user_docs/Laser-1/Laser-1_VIEWMARQ_entry_IR.jpg
+          :scale: 20 %
+          :align: center
+
+      - .. image:: /images/user_docs/Laser-1/Laser-1_VIEWMARQ_airlock_IR.gif
+          :scale: 56 %
+          :align: center      
+
+      - .. image:: /images/testing_documentation/Laser-1/Vault-1_Control_VIEWMARQ_dira_armed.jpg
+          :scale: 20 %
+          :align: center
+
+    * - This is the Laser-1 entrance VIEWMARQ when the Dira is armed. :white-cell:`===============================`
+      - This is the Laser-1 airlock VIEWMARQ when the Dira is armed. :white-cell:`================================`
+      - This is the Vault-1 Control VIEWMARQ when the Dira is armed. :white-cell:`================================`
+
+.. table-caption::
+    **Figure 14:** These are all the VIEWMARQ displays that will update when the Dira is armed. 
+
 
 Safe Dira E-Stop Test
 ---------------------
@@ -283,6 +321,12 @@ RF-1 Door
 #. With the Dira not armed, open the door between RF-1 and Laser-1.
    The door monitor module should display nothing.
 
+
+.. figure:: /images/testing_documentation/Laser-1/door_monitor_open.jpg
+    :scale: 20 %
+    :align: center
+
+    **Figure 15:** This is the Laser-1 to RF-1 door monitor when the door is open.
 
 Crashing the Dira
 -----------------

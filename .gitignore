@@ -2,5 +2,6 @@ fast_push.sh
 fast_pull.sh
 
 whitespace.py
+video_to_gif.py
 
 .vscode
