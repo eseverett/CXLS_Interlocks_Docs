@@ -186,6 +186,7 @@ Also, it will notify you if the Pharos, the Dira, or both laser enclosures are i
 
 .. list-table::
     :header-rows: 1
+    :align: center
 
     * - VIEWMARQ Display Notes
       - VIEWMARQ Display Text
@@ -219,6 +220,7 @@ The laser interlock system is interfaced through the laser safety systems module
 
 .. list-table::
   :header-rows: 1
+  :align: center
 
   * - Module Location
     - Module Meaning

@@ -1,6 +1,10 @@
+.. roles defined to use custom css classes
 .. role:: orange
 .. role:: yellow
 .. role:: blue
+.. role:: red
+.. role:: green
+.. role:: white-cell
 
 Hutch-1 Laser Interlock System Testing Protocol
 ===============================================
@@ -13,7 +17,7 @@ Starting Conditions
 
 #. VIEWMARQ in Hutch-1 Control displays :green:`LASER SAFE`.
 
-#. Beacon Stacks have :green:`green`` LED on.
+#. Beacon Stacks have :green:`green` LED on.
 
     - Hutch-1 Control.
     - Astrella LASER ENCLOSURE INTERLOCK protocase.
@@ -68,7 +72,42 @@ Starting Conditions
 #. Push before exit button is not on. 
 
 
-.. warning:: NEED IMAGES
+.. figure:: /images/user_docs/Hutch-1_laser/Hutch-1_VIEWMARQ_laser_safe.jpg
+    :align: center
+    :scale: 20 %
+
+    **Figure 1:** Hutch-1 Control VIEWMARQ showing LASER SAFE.
+
+.. figure:: /images/user_docs/Hutch-1_laser/Hutch-1_entry_disarmed.jpg
+    :align: center
+    :scale: 20 %
+
+    **Figure 2:** Hutch-1 Control Entry Keypad showing RELEASED.
+
+.. figure:: /images/user_docs/Hutch-1_laser/Hutch-1_unarmed.jpg
+    :align: center
+    :scale: 20 %
+
+    **Figure 3:** Hutch-1 Control showing all room interlock modules disabled.
+
+.. figure:: /images/user_docs/Hutch-1_laser/Astrella_enclosure_unarmed.jpg
+    :align: center
+    :scale: 20 %
+
+    **Figure 4:** Astrella enclosure showing all local interlock modules disarmed.
+
+.. figure:: /images/user_docs/Hutch-1_laser/Astrella_protocase.jpg
+    :align: center
+    :scale: 20 %
+
+    **Figure 5:** Astrella LASER ENCLOSURE INTERLOCK protocase showing the INTERLOCK OVERRIDE panel set to INTERLOCK.
+
+.. figure:: /images/user_docs/Vault-1_laser/laser_e-stop_off.jpg
+    :align: center
+    :scale: 20 %
+
+    **Figure 6:** Astrella enclosure showing all e-stops off.
+
 
 
 
@@ -94,8 +133,8 @@ Arming Hutch-1 as a Laser Lab
 
 #. Beacon stacks show no LEDs on.
 
-    - Hutch-1 Control
-    - Astrella LASER ENCLOSURE INTERLOCK protocase
+    - Hutch-1 Control.
+    - Astrella LASER ENCLOSURE INTERLOCK protocase.
 
 #. Entry keypad lights the LED for :red:`INTERLOCKED`.
 
@@ -107,10 +146,27 @@ Arming Hutch-1 as a Laser Lab
 
 #. Leave the curtain door open and allow the system to trip. It should trip in :red:`x seconds/minutes`.
 
-    - The Hutch-1 room arm module shows :orange:`ROOM CRASED (CANNOT ARM)`, then :green:`ROOM DISARMED (READY TO ARM)`.
+    - The Hutch-1 room arm module shows :orange:`ROOM CRASHED (CANNOT ARM)`, then :green:`ROOM DISARMED (READY TO ARM)`.
     - Hutch-1 is now in starting conditions.
 
-.. warning:: NEED IMAGES
+
+.. figure:: /images/user_docs/Hutch-1_laser/Hutch-1_VIEWMARQ_laser_hazard.jpg
+    :align: center
+    :scale: 20 %
+
+    **Figure 7:** Hutch-1 Control VIEWMARQ showing DANGER LASER HAZARD.
+
+.. figure:: /images/user_docs/Hutch-1_laser/Hutch-1_armed.jpg
+    :align: center
+    :scale: 20 %
+
+    **Figure 8:** Hutch-1 Control showing the room interlock module armed.
+
+.. figure:: /images/user_docs/Hutch-1_laser/Hutch-1_entry_armed.jpg
+    :align: center
+    :scale: 20 %
+
+    **Figure 9:** Hutch-1 Control Entry Keypad showing INTERLOCKED.
 
 
 
@@ -190,7 +246,22 @@ Arming the Astrella Enclosure and Laser
     - Astrella LASER ENCLOSURE INTERLOCK protocase
 
 
-.. warning:: NEED IMAGES
+
+.. figure:: /images/user_docs/Hutch-1_laser/Hutch-1_VIEWMARQ_laser_hazard_armed.jpg
+    :align: center
+    :scale: 20 %
+
+    **Figure 10:** Hutch-1 Control VIEWMARQ showing DANGER LASER HAZARD - ASTRELLA ARMED.
+
+
+
+.. figure:: /images/user_docs/Hutch-1_laser/Astrella_enclosure_armed.jpg
+    :align: center
+    :scale: 20 %
+
+    **Figure 11:** Astrella enclosure showing the room interlock module armed.
+
+
 
 
 Administrative Override on the Astrella Enclosure
@@ -217,7 +288,17 @@ Administrative Override on the Astrella Enclosure
 #. Open the Astrella enclosure. "MANUAL\_" is flashing on the shutter controller.
 
 
-.. warning:: NEED IMAGES
+.. figure:: /images/user_docs/Hutch-1_laser/Hutch-1_VIEWMARQ_override.jpg
+    :align: center
+    :scale: 20 %
+
+    **Figure 12:** Hutch-1 Control VIEWMARQ showing DANGER LASER HAZARD - ASTRELLA ARMED - ASTRELLA ADMIN OVERRIDE.
+
+.. figure:: /images/user_docs/Hutch-1_laser/Astrella_override.jpg
+    :align: center
+    :scale: 20 %
+
+    **Figure 13:** Astrella enclosure showing the INTERLOCK OVERRIDE panel set to OVERRIDE.
 
 
 Safe Astrella E-Stop Test
@@ -232,7 +313,7 @@ Crashing the Astrella
 #. Once every 6 months, the Astrella laser emergency stop buttons are testing that they can successfully cut power to the Astrella from a functional state.
    Verify if the last testing date was 6 months ago.
 
-#. If 6 months have passed, arm the Astrella laser and use one the the Asterlla laser e-stop to crash the laser and verify that power has been cut. 
+#. If 6 months have passed, arm the Astrella laser and use one the the Astrella laser e-stop to crash the laser and verify that power has been cut. 
 
 
 Return to Starting Conditions
