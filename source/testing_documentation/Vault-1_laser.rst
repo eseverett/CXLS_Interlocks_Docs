@@ -1,6 +1,10 @@
+.. these roles are defined to use custom css classes
 .. role:: orange
 .. role:: blue
 .. role:: yellow
+.. role:: red
+.. role:: green
+.. role:: white-cell
 
 Vault-1 Laser Interlock System Testing Protocol
 ===============================================
@@ -41,7 +45,7 @@ Starting Conditions
     - Dira enclosure east wall.
     - Dira enclosure west wall.
 
-#. All room interlock modules LED for :greenL`ROOM DISABLED (READY TO ARM)` is on.
+#. All room interlock modules LED for :green:`ROOM DISABLED (READY TO ARM)` is on.
 
     - Vault-1.
     - Pharos enclosure.
@@ -69,7 +73,74 @@ Starting Conditions
 
 #. Push before exit buttons is not on.
 
-.. warning:: NEEDS IMAGES
+
+
+.. figure:: /images/user_docs/Vault-1_laser/Vault-1_VIEWMARQ_safe.jpg
+    :align: center
+    :scale: 20 %
+
+    **Figure 1:** This is the Vault-1 Control VIEWMARQ display when the system is in a safe state. 
+
+
+.. list-table:: 
+  :align: center
+
+  * - .. image:: /images/user_docs/Vault-1_laser/Vault-1_Control_beacons.jpg
+        :scale: 76 %
+        :align: center
+
+    - .. image:: /images/user_docs/Vault-1_laser/Vault-1_beacons.jpg
+        :scale: 20 %
+        :align: center
+
+    - .. image:: /images/user_docs/Vault-1_laser/Pharos_beacons.jpg
+        :scale: 43 %
+        :align: center
+
+    - .. image:: /images/user_docs/Vault-1_laser/Dira_beacons.jpg
+        :scale: 53 %
+        :align: center
+
+  * - Vault-1 Control beacon stack. :white-cell:`=========================================================`
+    - Vault-1 beacon stack. :white-cell:`=================================================================`
+    - Pharos LASER ENCLOSURE INTERLOCK protocase beacon stack. :white-cell:`==============================`
+    - Dira LASER ENCLOSURE INTERLOCK protocase beacon stack. :white-cell:`================================`
+
+.. table-caption:: 
+    **Table 2:** These are the Vault-1 laser interlock system beacon stacks.
+
+
+.. figure:: /images/user_docs/Vault-1_laser/Vault-1_entry_unarmed.jpg
+    :align: center
+    :scale: 20 %
+
+    **Figure 3:** This is the Vault-1 entry modules when the system is in a safe state.
+
+
+.. figure:: /images/user_docs/Vault-1_Laser/Vault-1_unarmed.jpg
+    :align: center
+    :scale: 20 %
+
+    **Figure 4:** This is the Vault-1 laser control module when the system is in a safe state.
+
+.. figure:: /images/user_docs/Vault-1_Laser/Pharos_protocase.jpg
+    :align: center
+    :scale: 20 %
+
+    **Figure 5:** This is the Pharos enclosure laser warning module when the system is in a safe state.
+
+.. figure:: /images/user_docs/Vault-1_Laser/Dira_protocase.jpg
+    :align: center
+    :scale: 20 %
+
+    **Figure 6:** This is the Dira enclosure laser warning module when the system is in a safe state.   
+
+.. figure:: /images/user_docs/Vault-1_Laser/laser_e-stop_off.jpg
+    :align: center
+    :scale: 20 %
+
+    **Figure 7:** This is the laser e-stop button when the system is in a safe state.
+
 
 
 Arming Vault-1 as a Laser Lab
@@ -109,7 +180,26 @@ Arming Vault-1 as a Laser Lab
     - The Vault-1 laser interlock system should return to its initial conditions.
     - The Vault-1 room arming module should show :orange:`ROOM CRASHED (CANNOT ARM)`, then :green:`ROOM DISABLED (READY TO ARM)` once the door is closed.
 
-.. warning:: NEEDS IMAGES
+
+.. figure:: /images/user_docs/Vault-1_Laser/Vault-1_armed.jpg
+    :align: center
+    :scale: 20 %
+
+    **Figure 8:** This is the Vault-1 laser control module when the system is armed.
+
+.. figure:: /images/user_docs/Vault-1_Laser/Vault-1_VIEWMARQ_laser_hazard.jpg
+    :align: center
+    :scale: 20 %
+
+    **Figure 9:** This is the Vault-1 Control VIEWMARQ display when the system is armed.
+
+.. figure:: /images/user_docs/Vault-1_Laser/Vault-1_entry_armed.jpg
+    :align: center
+    :scale: 20 %
+
+    **Figure 10:** This is the Vault-1 entry modules when the system is armed.
+
+
 
 
 Arming the Pharos Enclosure and Laser
@@ -149,6 +239,40 @@ Arming the Pharos Enclosure and Laser
     - Vault-1 east wall
     - Pharos LASER ENCLOSURE INTERLOCK protocase
     - Dira LASER ENCLOSURE INTERLOCK protocase
+
+
+.. list-table:: 
+    :align: center 
+
+    * - .. image:: /images/user_docs/Vault-1_Laser/Pharos_enclosure_unarmed.jpg
+          :scale: 20 %
+          :align: center
+
+      - .. image:: /images/user_docs/Vault-1_Laser/Pharos_enclosure_armed.jpg
+          :scale: 20 %
+          :align: center
+
+    * - Pharos enclosure when unarmed. :white-cell:`======================================================`
+      - Pharos enclosure when armed. :white-cell:`========================================================`
+
+.. table-caption::
+    **Figure 11:** These are the Pharos enclosure laser warning modules when the system is unarmed and armed.
+
+
+.. figure:: /images/testing_documentation/Vault-1_Laser/Vault-1_Control_VIEWMARQ_Pharos_armed_hazard.jpg
+    :align: center
+    :scale: 20 %
+
+    **Figure 12:** This is the Vault-1 Control VIEWMARQ display when the system is armed.
+
+
+.. figure:: /images/user_docs/Vault-1_Laser/laser_e-stop_on.jpg
+    :align: center
+    :scale: 20 %
+
+    **Figure 13:** This is the laser e-stop button when the system is armed.
+
+
 
 
 Safe Pharos E-Stop Test
@@ -211,7 +335,17 @@ Administrative Override on the Pharos Enclosure
    The VIEWMARQ display and beacon stacks show a non-override status.
 
 
-.. warning:: NEEDS IMAGES
+.. figure:: /images/testing_documentation/Vault-1_Laser/Vault-1_Control_VIEWMARQ_Pharos_override.jpg
+    :align: center
+    :scale: 20 %
+
+    **Figure 14:** This is the Vault-1 Control VIEWMARQ display when the system is overridden.
+
+.. figure:: /images/user_docs/Vault-1_laser/Pharos_protocase_override.jpg
+    :align: center
+    :scale: 20 %
+
+    **Figure 15:** This is the Pharos LASER ENCLOSURE INTERLOCK protocase when the system is overridden.
 
 
 Arming the Dira Enclosure and Laser
@@ -220,10 +354,10 @@ Arming the Dira Enclosure and Laser
 #. Disarm Vault-1 and the Pharos.
 
 #. See Laser Lab testing procedure for arming the Dira. 
-   The laser warning module on Dira enclosure displays DANGER LASER ON.
+   The laser warning module on Dira enclosure displays :red:`DANGER LASER ON`.
 
 #. Change the Dira LASER ENCLOSURE INTERLOCK protocase INTERLOCK OVERRIDE key from INTERLOCK to OVERRIDE. 
-   The STATUS LED remains green. Change back to INTERLOCK.
+   The STATUS LED remains :green:`green`. Change back to INTERLOCK.
 
 
 Administrative Override on the Dira Enclosure
@@ -277,7 +411,21 @@ Administrative Override on the Dira Enclosure
     - Pharos UV and IR shutters will close.
 
 
-Crashing the Pharos Laser
+.. figure:: /images/user_docs/Vault-1_laser/Vault-1_VIEWMARQ_all_armed.jpg
+    :align: center
+    :scale: 20 %
+
+    **Figure 16:** This is the Vault-1 Control VIEWMARQ display when the system is overridden.
+
+.. figure:: /images/user_docs/Vault-1_laser/Dira_protocase_override.jpg
+    :align: center
+    :scale: 20 %
+
+    **Figure 17:** This is the Dira LASER ENCLOSURE INTERLOCK protocase when the system is overridden.
+
+
+
+Crashing the Dira Laser
 -------------------------
 
 #. Once every 6 months, the Pharos laser emergency stop buttons are tested that they can successfully cut power to the Pharos from a functional state. 
