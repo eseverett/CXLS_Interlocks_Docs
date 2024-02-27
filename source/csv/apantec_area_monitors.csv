@@ -1,0 +1,11 @@
+Model, Serial Number, Calibration Data, Location, Description
+NH1X, 2127NH01, 08/18/24, Hutch-1, Neutron Detector 
+NH1X, 2127NH02, 08/18/24, Vault-1 Control, Neutron Detector
+NH1X, 2127NH03, 08/18/24, Accelerator Lab, Neutron Detector
+NB1XV2, 2139NB01, 08/18/24, Vault-1, Neutron Detector
+GG2W, 2139GG01, 11/10/24, Hutch-1, Gamma Detector
+GG2W, 2139GG02, 08/18/24, Accelerator Lab, Gamma Detector
+GG1W, 2139GG03, 08/18/24, RF-1, Gamma Detector
+GG1W, 2139GG04, 08/18/24, Laser-1, Gamma Detector
+GG1W, 2139GG05, 08/18/24, Vault-1 Control, Gamma Detector
+Gl1V1, 2139Gl02, 08/18/24, Vault-1, Gamma Detector

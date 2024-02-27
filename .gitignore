@@ -3,6 +3,8 @@ fast_pull.sh
 
 whitespace.py
 video_to_gif.py
+
 excel_to_csv_radiation.py
+csv_plotting.py
 
 .vscode
