@@ -93,9 +93,6 @@ Because of these high power lasers through the facility, laser enclosures have b
 .. note:: 
    This documentation is a work in progress. 
 
-   User Documentation is under revisons.
-   
-   Testing and Troubleshooting Documentation is starting development.
 
 
 .. Indices and tables

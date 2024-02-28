@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>VIEWMARQ Marquee Display Interlock Error Troubleshooting guide &mdash; CXLS Interlock System Documentation 2024 documentation</title>
+  <title>VIEWMARQ Marquee Display Interlock Error Troubleshooting Guide &mdash; CXLS Interlock System Documentation 2024 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
@@ -23,8 +23,8 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Laser Safety Systems Troubleshooting guide" href="laser_safety_systems.html" />
-    <link rel="prev" title="Apantec Ionizing Radiation Sensor No Count Fail Troubleshooting guide" href="apantec_ncf.html" /> 
+    <link rel="next" title="Laser Safety Systems Troubleshooting Guide" href="laser_safety_systems.html" />
+    <link rel="prev" title="Apantec Ionizing Radiation Sensor No Count Fail Troubleshooting Guide" href="apantec_ncf.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -68,10 +68,13 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Troubleshooting Documentation:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="IDEM_relay.html">IDEM Safety Relay Troubleshooting guide</a></li>
-<li class="toctree-l1"><a class="reference internal" href="apantec_ncf.html">Apantec Ionizing Radiation Sensor No Count Fail Troubleshooting guide</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">VIEWMARQ Marquee Display Interlock Error Troubleshooting guide</a></li>
-<li class="toctree-l1"><a class="reference internal" href="laser_safety_systems.html">Laser Safety Systems Troubleshooting guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IDEM_relay.html">IDEM Safety Relay Troubleshooting Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="apantec_ncf.html">Apantec Ionizing Radiation Sensor No Count Fail Troubleshooting Guide</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">VIEWMARQ Marquee Display Interlock Error Troubleshooting Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#resolved-issues">Resolved Issues</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="laser_safety_systems.html">Laser Safety Systems Troubleshooting Guide</a></li>
 </ul>
 
         </div>
@@ -88,7 +91,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home"></a></li>
-      <li class="breadcrumb-item active">VIEWMARQ Marquee Display Interlock Error Troubleshooting guide</li>
+      <li class="breadcrumb-item active">VIEWMARQ Marquee Display Interlock Error Troubleshooting Guide</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../_sources/troubleshooting_documentation/viewmarq.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -99,15 +102,130 @@
            <div itemprop="articleBody">
              
   <section id="viewmarq-marquee-display-interlock-error-troubleshooting-guide">
-<h1>VIEWMARQ Marquee Display Interlock Error Troubleshooting guide</h1>
+<h1>VIEWMARQ Marquee Display Interlock Error Troubleshooting Guide</h1>
+<p>The VIEWMARQ Marquee displays show the status of the room the display oversees.
+It knows the status of the room by receiving an 8-bit signal from the possible hazards, where each hazard corresponds to one of the 8 channels.</p>
+<table class="docutils align-center" id="id1">
+<caption><span class="caption-text">Vault-1 Control VIEWMARQ Display Bit Channels</span></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Bit Channel</p></th>
+<th class="head"><p>Status</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>Ionizing Radiation E-stop Active</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>RF Armed</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>Pharos Admin Override</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>Dira Admin Override</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>Laser Safety</p></td>
+</tr>
+<tr class="row-odd"><td><p>6</p></td>
+<td><p>Pharos Armed</p></td>
+</tr>
+<tr class="row-even"><td><p>7</p></td>
+<td><p>Dira Armed</p></td>
+</tr>
+<tr class="row-odd"><td><p>8</p></td>
+<td><p>Unused Bit Channel</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-center" id="id2">
+<caption><span class="caption-text">Hutch-1 Control VIEWMARQ Display Bit Channels</span></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Bit Channel</p></th>
+<th class="head"><p>Status</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>Unused Bit Channel</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>Unused Bit Channel</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>Unused Bit Channel</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>Astrella Admin Override</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>Unused Bit Channel</p></td>
+</tr>
+<tr class="row-odd"><td><p>6</p></td>
+<td><p>Laser Safety</p></td>
+</tr>
+<tr class="row-even"><td><p>7</p></td>
+<td><p>Unused Bit Channel</p></td>
+</tr>
+<tr class="row-odd"><td><p>8</p></td>
+<td><p>Astrella Armed</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-center" id="id3">
+<caption><span class="caption-text">Accelerator Lab VIEWMARQ Display Bit Channels</span></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Bit Channel</p></th>
+<th class="head"><p>Status</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>Ionizing Radiation E-stop Active</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>RF Armed</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>Unused Bit Channel</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>Unused Bit Channel</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>Unused Bit Channel</p></td>
+</tr>
+<tr class="row-odd"><td><p>6</p></td>
+<td><p>Unused Bit Channel</p></td>
+</tr>
+<tr class="row-even"><td><p>7</p></td>
+<td><p>Unused Bit Channel</p></td>
+</tr>
+<tr class="row-odd"><td><p>8</p></td>
+<td><p>Unused Bit Channel</p></td>
+</tr>
+</tbody>
+</table>
+<section id="resolved-issues">
+<h2>Resolved Issues</h2>
+<ol class="arabic simple">
+<li><p>The a VIEWMARQ displays shows <span class="red">Interlock System Error: xxxxxxxx</span>, where the xxxxxxxx is an 8-bit binary number, if there is a state that should not exist.
+The error was that the specific 8-bit combination was not programmed into the VIEWMARQ display.
+All 255 possible combinations of the 8-bit signal must be programmed individually, therefore is a combination was not considered or overlooked, a false error will occur.</p></li>
+<li><p>The VIEWMARQ display either shows the wrong status or an error status.
+This error was caused by incorrect wiring in the interlock system aggregator panel between the relays.
+This could also be caused by a faulty relay, bad power supply, or other downstream issues.</p></li>
+</ol>
+</section>
 </section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="apantec_ncf.html" class="btn btn-neutral float-left" title="Apantec Ionizing Radiation Sensor No Count Fail Troubleshooting guide" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="laser_safety_systems.html" class="btn btn-neutral float-right" title="Laser Safety Systems Troubleshooting guide" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="apantec_ncf.html" class="btn btn-neutral float-left" title="Apantec Ionizing Radiation Sensor No Count Fail Troubleshooting Guide" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="laser_safety_systems.html" class="btn btn-neutral float-right" title="Laser Safety Systems Troubleshooting Guide" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Laser Safety Systems Troubleshooting guide &mdash; CXLS Interlock System Documentation 2024 documentation</title>
+  <title>Laser Safety Systems Troubleshooting Guide &mdash; CXLS Interlock System Documentation 2024 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
@@ -23,7 +23,7 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="prev" title="VIEWMARQ Marquee Display Interlock Error Troubleshooting guide" href="viewmarq.html" /> 
+    <link rel="prev" title="VIEWMARQ Marquee Display Interlock Error Troubleshooting Guide" href="viewmarq.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -67,10 +67,13 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Troubleshooting Documentation:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="IDEM_relay.html">IDEM Safety Relay Troubleshooting guide</a></li>
-<li class="toctree-l1"><a class="reference internal" href="apantec_ncf.html">Apantec Ionizing Radiation Sensor No Count Fail Troubleshooting guide</a></li>
-<li class="toctree-l1"><a class="reference internal" href="viewmarq.html">VIEWMARQ Marquee Display Interlock Error Troubleshooting guide</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Laser Safety Systems Troubleshooting guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IDEM_relay.html">IDEM Safety Relay Troubleshooting Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="apantec_ncf.html">Apantec Ionizing Radiation Sensor No Count Fail Troubleshooting Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="viewmarq.html">VIEWMARQ Marquee Display Interlock Error Troubleshooting Guide</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Laser Safety Systems Troubleshooting Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#resolved-issues">Resolved Issues</a></li>
+</ul>
+</li>
 </ul>
 
         </div>
@@ -87,7 +90,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home"></a></li>
-      <li class="breadcrumb-item active">Laser Safety Systems Troubleshooting guide</li>
+      <li class="breadcrumb-item active">Laser Safety Systems Troubleshooting Guide</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../_sources/troubleshooting_documentation/laser_safety_systems.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -98,14 +101,29 @@
            <div itemprop="articleBody">
              
   <section id="laser-safety-systems-troubleshooting-guide">
-<h1>Laser Safety Systems Troubleshooting guide</h1>
+<h1>Laser Safety Systems Troubleshooting Guide</h1>
+<p>For the CXLS laser interlock systems, Laser Safety Systems modules are used to perform the majority of the interlocking function.</p>
+<section id="resolved-issues">
+<h2>Resolved Issues</h2>
+<ol class="arabic simple">
+<li><p>The Laser-1 VIEWMARQ display was not updating when Laser-1 was armed.
+This was traced back to the the corresponding arming module relay was not being energized.
+This was due to loose contact terminals, barely holding onto the PCB, causing intermittent contact.
+Replacing the arming module fixed this issue.</p></li>
+<li><p>Again, the Laser-1 VIEWMARQ display was not updating correctly.
+As well, the Laser-1 control module was showing dim lighting and the keypad was working, but with no LED or audible feedback.
+This was traced back to the Laser-1 control module.
+The relay contact that sends a signal to the Laser-1 VIEWMARQ display was being energized by the push to exit button, not the arming button.
+We are not sure why, nor why the keypad was affect, but replacing the Laser-1 control module fixed this issue.</p></li>
+</ol>
+</section>
 </section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="viewmarq.html" class="btn btn-neutral float-left" title="VIEWMARQ Marquee Display Interlock Error Troubleshooting guide" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="viewmarq.html" class="btn btn-neutral float-left" title="VIEWMARQ Marquee Display Interlock Error Troubleshooting Guide" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 
   <hr/>

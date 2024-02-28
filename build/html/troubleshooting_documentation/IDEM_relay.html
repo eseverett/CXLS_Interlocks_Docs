@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>IDEM Safety Relay Troubleshooting guide &mdash; CXLS Interlock System Documentation 2024 documentation</title>
+  <title>IDEM Safety Relay Troubleshooting Guide &mdash; CXLS Interlock System Documentation 2024 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
@@ -23,7 +23,7 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Apantec Ionizing Radiation Sensor No Count Fail Troubleshooting guide" href="apantec_ncf.html" />
+    <link rel="next" title="Apantec Ionizing Radiation Sensor No Count Fail Troubleshooting Guide" href="apantec_ncf.html" />
     <link rel="prev" title="CXLS Interlock System Testing Log" href="../testing_documentation/testing_log.html" /> 
 </head>
 
@@ -68,10 +68,13 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Troubleshooting Documentation:</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">IDEM Safety Relay Troubleshooting guide</a></li>
-<li class="toctree-l1"><a class="reference internal" href="apantec_ncf.html">Apantec Ionizing Radiation Sensor No Count Fail Troubleshooting guide</a></li>
-<li class="toctree-l1"><a class="reference internal" href="viewmarq.html">VIEWMARQ Marquee Display Interlock Error Troubleshooting guide</a></li>
-<li class="toctree-l1"><a class="reference internal" href="laser_safety_systems.html">Laser Safety Systems Troubleshooting guide</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">IDEM Safety Relay Troubleshooting Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#resolved-issues">Resolved Issues</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="apantec_ncf.html">Apantec Ionizing Radiation Sensor No Count Fail Troubleshooting Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="viewmarq.html">VIEWMARQ Marquee Display Interlock Error Troubleshooting Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="laser_safety_systems.html">Laser Safety Systems Troubleshooting Guide</a></li>
 </ul>
 
         </div>
@@ -88,7 +91,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home"></a></li>
-      <li class="breadcrumb-item active">IDEM Safety Relay Troubleshooting guide</li>
+      <li class="breadcrumb-item active">IDEM Safety Relay Troubleshooting Guide</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../_sources/troubleshooting_documentation/IDEM_relay.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -99,7 +102,28 @@
            <div itemprop="articleBody">
              
   <section id="idem-safety-relay-troubleshooting-guide">
-<h1>IDEM Safety Relay Troubleshooting guide</h1>
+<h1>IDEM Safety Relay Troubleshooting Guide</h1>
+<p>In the CXLS interlocks system, we use two modules of IDEM safety relays, SCR-21-i and SCR-31-i.</p>
+<img alt="../_images/IDEM.png" class="align-center" src="../_images/IDEM.png" />
+<p>The face of the IDEM relays have 6 diagnostics LEDs:</p>
+<ol class="arabic simple">
+<li><p>POWER: Power to the safety relay.</p></li>
+<li><p>RESET: Reset loop S11-S21 or S11-S22 is closed (see manual).</p></li>
+<li><p>CH1: Channel 1 control loop S11-S21 is closed.</p></li>
+<li><p>CH2: Channel 2 control loop S13-S10 is closed.</p></li>
+<li><p>K1: Power to internal relay K1.</p></li>
+<li><p>K2: Power to internal relay K2.</p></li>
+</ol>
+<p>During normal operations all 6 of these lights should be on if the relay is supposed to be receiving power.
+If any of the LEDs are not on, there is an error occurring.</p>
+<section id="resolved-issues">
+<h2>Resolved Issues</h2>
+<ol class="arabic simple">
+<li><p>A relay was not properly actuating when receiving power, and would show either the K1 or K2 off.
+It was discovered that the relay was receiving too voltage to function properly due to voltage drops from Apantec breakout boards.
+The operating voltage for these units is 24VDC, with a tolerance of 20.4-26.4VDC.</p></li>
+</ol>
+</section>
 </section>
 
 
@@ -107,7 +131,7 @@
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="../testing_documentation/testing_log.html" class="btn btn-neutral float-left" title="CXLS Interlock System Testing Log" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="apantec_ncf.html" class="btn btn-neutral float-right" title="Apantec Ionizing Radiation Sensor No Count Fail Troubleshooting guide" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="apantec_ncf.html" class="btn btn-neutral float-right" title="Apantec Ionizing Radiation Sensor No Count Fail Troubleshooting Guide" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

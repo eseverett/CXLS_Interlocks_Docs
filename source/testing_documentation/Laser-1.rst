@@ -312,7 +312,13 @@ Arming the Dira
 Safe Dira E-Stop Test
 ---------------------
 
-.. warning:: This section now needs to be completely developed.
+#. Put the Dira into a powered down state.
+
+#. Arm Laser-1 and the Dira. 
+
+#. Press one of the Dira enclosure laser e-stops. 
+
+#. Verify that the Dira power supply is cut off.
 
 
 RF-1 Door

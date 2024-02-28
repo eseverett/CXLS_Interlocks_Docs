@@ -61,7 +61,7 @@ See Figure 2 and 3 for the Vault-1 Control and Accelerator Lab VIEWMARQ displays
     :header-rows: 1
     :align: center
 
-    * - VIEWMAEQ Display Notes
+    * - VIEWMARQ Display Notes
       - VIEWMARQ Display Text
     * - | The VIEWMARQ display in Vault-1 Control shows :green:`LASER SAFE`
         | because this display also shows laser hazards present in Vault-1.
@@ -509,8 +509,6 @@ Once Vault-1 shield door is opened, they surveyor should slowly enter, watching 
 Go down the beam line, slowly scanning around inch away from the beam line and fill in the survey sheet.
 If any element reads above 20 µR/hr, scan from 30 cm away to verify the general area is not above background from normal viewing distance. 
 
-.. note::
-    A survey sheet exist for routine Vault-1 radiation surveys, but not a dedicated sheet for specifically post beam time surveys. 
 
 .. .. figure:: /images/radiation_survey/Ludlum_9DP.png
 ..     :align: center
@@ -545,9 +543,6 @@ If any element reads above 20 µR/hr, scan from 30 cm away to verify the general
 Once the Vault-1 radiation survey is completed, and it is verified that there are no elevated levels of ionizing radiation, Vault-1 can be entered by anyone.
 Enter the readings into the designated spread sheet and sign the survey sheet.
 
-.. note:: 
-    A specific post beam time survey excel sheet does not exist.
-    This may simply be merged with the routine Vault-1 radiation survey sheet.
 
 
 

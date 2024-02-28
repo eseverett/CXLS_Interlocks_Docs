@@ -12,6 +12,7 @@ Hutch-1 Laser Interlock System Testing Protocol
 The purpose of this document is to describe the testing protocol for the Hutch-1 laser interlock system including the interlocks for the Astrella laser and enclosure. 
 
 
+
 Starting Conditions
 -------------------
 
@@ -304,8 +305,13 @@ Administrative Override on the Astrella Enclosure
 Safe Astrella E-Stop Test
 -------------------------
 
-.. warning:: this section needs to be developed
+#. Put the Astrella into a powered down state.
 
+#. Arm the Astrella and Astrella enclosure. 
+
+#. Press one of the Astrella enclosure e-stops. 
+
+#. Verify that the Astrella power supply is cut off.
 
 Crashing the Astrella
 ---------------------

@@ -191,17 +191,17 @@ Also, it will notify you if the Pharos, the Dira, or both laser enclosures are i
     * - VIEWMARQ Display Notes
       - VIEWMARQ Display Text
 
-    * - This states if Vault-1 is armed as a laser lab or not.
-      - :green:`LASER SAFE` / :green:`DANGER LASER HAZARD`
+    * - | This states if Vault-1 is armed as a laser lab or not.
+      - | :green:`LASER SAFE` / :green:`DANGER LASER HAZARD`
 
-    * - This states which laser is armed.
-      - :red:`PHAROS ARMED            DIRA ARMED`
+    * - | This states which laser is armed.
+      - | :red:`PHAROS ARMED            DIRA ARMED`
 
-    * - This states if the Dira is in administrative override.
-      - :red:`DIRA ADMIN OVERRIDE`
+    * - | This states if the Dira is in administrative override.
+      - | :red:`DIRA ADMIN OVERRIDE`
 
-    * - This states you if the Pharos is in administrative override.
-      - :red:`PHAROS ADMIN OVERRIDE`
+    * - | This states you if the Pharos is in administrative override.
+      - | :red:`PHAROS ADMIN OVERRIDE`
 
 
 The top line always will either display :green:`LASER SAFE` or :red:`DANGER LASER HAZARD`, assuming no RF hazards are present.  

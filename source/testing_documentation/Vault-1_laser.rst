@@ -278,7 +278,15 @@ Arming the Pharos Enclosure and Laser
 Safe Pharos E-Stop Test
 -----------------------
 
-.. warning:: NEEDS IMAGES, need to develop this section.
+
+#. Put the Pharos into a powered down state.
+
+#. Arm the Pharos and the Pharos enclosure. 
+
+#. Press one of the Pharos enclosure laser e-stops. 
+
+#. Verify that the Pharos power supply is cut off.
+
 
 
 Administrative Override on the Pharos Enclosure

@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Apantec Ionizing Radiation Sensor No Count Fail Troubleshooting guide &mdash; CXLS Interlock System Documentation 2024 documentation</title>
+  <title>Apantec Ionizing Radiation Sensor No Count Fail Troubleshooting Guide &mdash; CXLS Interlock System Documentation 2024 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
@@ -23,8 +23,8 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="VIEWMARQ Marquee Display Interlock Error Troubleshooting guide" href="viewmarq.html" />
-    <link rel="prev" title="IDEM Safety Relay Troubleshooting guide" href="IDEM_relay.html" /> 
+    <link rel="next" title="VIEWMARQ Marquee Display Interlock Error Troubleshooting Guide" href="viewmarq.html" />
+    <link rel="prev" title="IDEM Safety Relay Troubleshooting Guide" href="IDEM_relay.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -68,10 +68,10 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Troubleshooting Documentation:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="IDEM_relay.html">IDEM Safety Relay Troubleshooting guide</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Apantec Ionizing Radiation Sensor No Count Fail Troubleshooting guide</a></li>
-<li class="toctree-l1"><a class="reference internal" href="viewmarq.html">VIEWMARQ Marquee Display Interlock Error Troubleshooting guide</a></li>
-<li class="toctree-l1"><a class="reference internal" href="laser_safety_systems.html">Laser Safety Systems Troubleshooting guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IDEM_relay.html">IDEM Safety Relay Troubleshooting Guide</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Apantec Ionizing Radiation Sensor No Count Fail Troubleshooting Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="viewmarq.html">VIEWMARQ Marquee Display Interlock Error Troubleshooting Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="laser_safety_systems.html">Laser Safety Systems Troubleshooting Guide</a></li>
 </ul>
 
         </div>
@@ -88,7 +88,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home"></a></li>
-      <li class="breadcrumb-item active">Apantec Ionizing Radiation Sensor No Count Fail Troubleshooting guide</li>
+      <li class="breadcrumb-item active">Apantec Ionizing Radiation Sensor No Count Fail Troubleshooting Guide</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../_sources/troubleshooting_documentation/apantec_ncf.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -99,15 +99,25 @@
            <div itemprop="articleBody">
              
   <section id="apantec-ionizing-radiation-sensor-no-count-fail-troubleshooting-guide">
-<h1>Apantec Ionizing Radiation Sensor No Count Fail Troubleshooting guide</h1>
+<h1>Apantec Ionizing Radiation Sensor No Count Fail Troubleshooting Guide</h1>
+<p>The each gamma and neutron probe for the Apantec area monitoring system has a no count fail time (NCFT) setting.
+This set point tells the probe that if radiation is not detected over a certain period of time, then the probe if failing.</p>
+<p>This NCFT has caused false fails because of the during of time we go without running the beam.
+The CXLS interlock system is currently in an override state, bypassing the fail signal so that the accelerator can be armed.
+Once RF is enabled in to the accelerator structures and the probes see radiation, the fail is cleared.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>We are currently exploring ways to work with the NCFT.
+This could mean changing the setting, or working in a manual reset in the radiation monitoring software.</p>
+</div>
 </section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="IDEM_relay.html" class="btn btn-neutral float-left" title="IDEM Safety Relay Troubleshooting guide" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="viewmarq.html" class="btn btn-neutral float-right" title="VIEWMARQ Marquee Display Interlock Error Troubleshooting guide" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="IDEM_relay.html" class="btn btn-neutral float-left" title="IDEM Safety Relay Troubleshooting Guide" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="viewmarq.html" class="btn btn-neutral float-right" title="VIEWMARQ Marquee Display Interlock Error Troubleshooting Guide" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
