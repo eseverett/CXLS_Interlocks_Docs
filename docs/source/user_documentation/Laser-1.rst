@@ -369,9 +369,38 @@ Because the Dira exports a laser hazard into Vault-1, Vault-1 laser hazard indic
 When the Dira is armed, the following will happen to the interlock system:
 
 - The Laser-1 entry VIEWMARQ display will show :red:`IR HAZARD`.
-- The Laser-1 arilock VIEWMARQ display wil show :red:`DANGER LASER ON -- IR EYE PROTECTION REQUIRED`.
+- The Laser-1 airlock VIEWMARQ display wil show :red:`DANGER LASER ON -- IR EYE PROTECTION REQUIRED`.
 - The Vault-1 Control VIEWMARQ display will show :red:`DIRA ARMED`.
 - The beacon stacks in the Vault-1 laser interlock system will turn on the white Dira armed LED.
+
+If the Dira is disarmed from either the arming panel or from a laser e-stop, the Dira will not rearm normally.
+You must first toggle one of the e-stops that are on the Dira laser. 
+After this, the Dira can be properly armed from the arming panel. 
+
+
+
+.. list-table::
+  :align: center
+
+  * - .. image:: /images/user_docs/Laser-1/Dira_disarmed.jpg
+        :scale: 20 %
+        :align: center
+    - .. image:: /images/user_docs/Laser-1/Dira_incorrect_arm.jpg
+        :scale: 20 %
+        :align: center
+    
+    - .. image:: /images/user_docs/Laser-1/Dira_armed.jpg
+        :scale: 20 %
+        :align: center
+
+  * - This shows the Dira control panel when the Dira is disarmed.  :white-cell:`===============================`
+    - This shows the Dira control panel after attempting to rearm without toggling a Dira e-stop.
+    - This shows the Dira control panel when the Dira is armed. :white-cell:`===================================`
+    
+.. table-caption::
+    **Figure 15:** This shows the Dira control panel software under different arming states. 
+    Here you can see where the issue arises, causing a need for the Dira to be reset before it can be armed again.
+
 
 
 Arming Auxiliary hazards

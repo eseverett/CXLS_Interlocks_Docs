@@ -82,10 +82,10 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Troubleshooting Documentation:</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../troubleshooting_documentation/IDEM_relay.html">IDEM Safety Relay Troubleshooting guide</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../troubleshooting_documentation/apantec_ncf.html">Apantec Ionizing Radiation Sensor No Count Fail Troubleshooting guide</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../troubleshooting_documentation/viewmarq.html">VIEWMARQ Marquee Display Interlock Error Troubleshooting guide</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../troubleshooting_documentation/laser_safety_systems.html">Laser Safety Systems Troubleshooting guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting_documentation/IDEM_relay.html">IDEM Safety Relay Troubleshooting Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting_documentation/apantec_ncf.html">Apantec Ionizing Radiation Sensor No Count Fail Troubleshooting Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting_documentation/viewmarq.html">VIEWMARQ Marquee Display Interlock Error Troubleshooting Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting_documentation/laser_safety_systems.html">Laser Safety Systems Troubleshooting Guide</a></li>
 </ul>
 
         </div>
@@ -462,10 +462,31 @@ Because the Dira exports a laser hazard into Vault-1, Vault-1 laser hazard indic
 <p>When the Dira is armed, the following will happen to the interlock system:</p>
 <ul class="simple">
 <li><p>The Laser-1 entry VIEWMARQ display will show <span class="red">IR HAZARD</span>.</p></li>
-<li><p>The Laser-1 arilock VIEWMARQ display wil show <span class="red">DANGER LASER ON – IR EYE PROTECTION REQUIRED</span>.</p></li>
+<li><p>The Laser-1 airlock VIEWMARQ display wil show <span class="red">DANGER LASER ON – IR EYE PROTECTION REQUIRED</span>.</p></li>
 <li><p>The Vault-1 Control VIEWMARQ display will show <span class="red">DIRA ARMED</span>.</p></li>
 <li><p>The beacon stacks in the Vault-1 laser interlock system will turn on the white Dira armed LED.</p></li>
 </ul>
+<p>If the Dira is disarmed from either the arming panel or from a laser e-stop, the Dira will not rearm normally.
+You must first toggle one of the e-stops that are on the Dira laser.
+After this, the Dira can be properly armed from the arming panel.</p>
+<table class="docutils align-center">
+<tbody>
+<tr class="row-odd"><td><a class="reference internal image-reference" href="../_images/Dira_disarmed.jpg"><img alt="../_images/Dira_disarmed.jpg" class="align-center" src="../_images/Dira_disarmed.jpg" style="width: 604.8000000000001px; height: 604.8000000000001px;" /></a>
+</td>
+<td><a class="reference internal image-reference" href="../_images/Dira_incorrect_arm.jpg"><img alt="../_images/Dira_incorrect_arm.jpg" class="align-center" src="../_images/Dira_incorrect_arm.jpg" style="width: 604.8000000000001px; height: 604.8000000000001px;" /></a>
+</td>
+<td><a class="reference internal image-reference" href="../_images/Dira_armed.jpg"><img alt="../_images/Dira_armed.jpg" class="align-center" src="../_images/Dira_armed.jpg" style="width: 604.8000000000001px; height: 604.8000000000001px;" /></a>
+</td>
+</tr>
+<tr class="row-even"><td><p>This shows the Dira control panel when the Dira is disarmed.  <span class="white-cell">===============================</span></p></td>
+<td><p>This shows the Dira control panel after attempting to rearm without toggling a Dira e-stop.</p></td>
+<td><p>This shows the Dira control panel when the Dira is armed. <span class="white-cell">===================================</span></p></td>
+</tr>
+</tbody>
+</table>
+<div class="tight-table-caption-container docutils container">
+<p class="table-caption"><strong>Figure 15:</strong> This shows the Dira control panel software under different arming states. Here you can see where the issue arises, causing a need for the Dira to be reset before it can be armed again.</p>
+</div>
 </section>
 </section>
 <section id="arming-auxiliary-hazards">

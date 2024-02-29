@@ -353,14 +353,13 @@ The arming of the Dira is discussed in User Documentation: Laser-1 Interlock Sys
 Arming the Pharos Enclosure and Laser
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. note::
-  This may need an additional step of pressing the reset button on the main shutter controller to properly arm the Pharos.
 
 Because the Pharos is contained in an enclosure, Vault-1 does not need to be armed to arm the Pharos enclosure and laser. 
 To arm the Pharos enclosure and laser, press arm on the room interlock module on the south wall of the Pharos enclosure. 
 The room interlock module arms the enclosure. 
 For the Pharos system only, the local interlock module arms the Pharos laser underneath the room interlock module auto-arms with the room interlock module.
-The Pharos enclosure and laser always arm together.
+Once the Pharos arming modules are armed, the Pharos main shutter controller must be reset to clear a fault that arming causes by pressing the RESET REMOTE INTERLOCK on the controller. 
+
 
 Once the Pharos system is armed the following will change in the interlock system:
 
@@ -403,6 +402,16 @@ Once the Pharos system is armed the following will change in the interlock syste
   **Figure 13:** These are the laser safety system modules for arming the Pharos in armed and unarmed states.
 
 
+
+.. figure:: /images/user_docs/Vault-1_laser/Pharos_main_shutter.jpg
+    :scale: 20 %
+    :align: center
+
+    **Figure 14:** This is the main shutter controller for the Pharos. 
+    At the bottom is the button that must be pressed to reset the controller after the Pharos is armed.
+
+
+
 Arming Vault-1 as a Laser Lab
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -443,7 +452,7 @@ When the laser curtain is open, there will be a chiming prompting the user to cl
     - Vault-1 laser safety system modules in an armed state. :white-cell:`======================================`
 
 .. table-caption:: 
-  **Figure 14:** These are the laser safety system modules for arming Vault-1 in armed and unarmed states.
+  **Figure 15:** These are the laser safety system modules for arming Vault-1 in armed and unarmed states.
 
 
 Once Vault-1 is armed as a laser lab the following will change in the interlock system:
@@ -481,7 +490,7 @@ It is important to note that Vault-1 will disarm itself and shutter all exposed 
     - Vault-1 Control laser safety system modules in an armed state. :white-cell:`=================================`
 
 .. table-caption::
-  **Figure 15:** These are the laser safety system modules for arming Vault-1 in armed and unarmed states.
+  **Figure 16:** These are the laser safety system modules for arming Vault-1 in armed and unarmed states.
 
 
 
@@ -542,7 +551,7 @@ At this point, the LOCAL INTERLOCK CONTACT CONTROL interlock modules can be arme
     - Dira enclosure protocase in an override state. :white-cell:`==============================================`
 
 .. table-caption::
-  **Figure 16:** These are the laser safety system modules for arming Vault-1 in armed and unarmed states.
+  **Figure 17:** These are the laser safety system modules for arming Vault-1 in armed and unarmed states.
 
 
 Disarming the Laser Interlock System

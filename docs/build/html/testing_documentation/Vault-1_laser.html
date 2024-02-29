@@ -79,10 +79,10 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Troubleshooting Documentation:</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../troubleshooting_documentation/IDEM_relay.html">IDEM Safety Relay Troubleshooting guide</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../troubleshooting_documentation/apantec_ncf.html">Apantec Ionizing Radiation Sensor No Count Fail Troubleshooting guide</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../troubleshooting_documentation/viewmarq.html">VIEWMARQ Marquee Display Interlock Error Troubleshooting guide</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../troubleshooting_documentation/laser_safety_systems.html">Laser Safety Systems Troubleshooting guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting_documentation/IDEM_relay.html">IDEM Safety Relay Troubleshooting Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting_documentation/apantec_ncf.html">Apantec Ionizing Radiation Sensor No Count Fail Troubleshooting Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting_documentation/viewmarq.html">VIEWMARQ Marquee Display Interlock Error Troubleshooting Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting_documentation/laser_safety_systems.html">Laser Safety Systems Troubleshooting Guide</a></li>
 </ul>
 
         </div>
@@ -111,7 +111,8 @@
              
   <section id="vault-1-laser-interlock-system-testing-protocol">
 <h1>Vault-1 Laser Interlock System Testing Protocol</h1>
-<p>The purpose of this testing procedure if the Verify the functionality of the Vault-1 laser interlock system including arming Vault-1 as a laser lab, the Pharos enclosure, and the Dira enclosure.</p>
+<p>The purpose of this testing procedure if the Verify the functionality of the Vault-1 laser interlock system including arming Vault-1 as a laser lab, and arming the Pharos system.
+Additionally, the administrative override on the Pharos and Dira enclosures will be tested.</p>
 <section id="starting-conditions">
 <h2>Starting Conditions</h2>
 <ol class="arabic">
@@ -405,11 +406,11 @@ The STATUS LED remains <span class="green">green</span>. Change back to INTERLOC
 <li><p>The LOCAL INTERLOCK CONTACT CONTROL modules will disarm and display <span class="orange">LOCAL CONTACTS DISARMED</span>.</p></li>
 <li><p>Pharos LASER ENCLOSURE INTERLOCK protocase door monitor will display nothing.</p></li>
 <li><p>Pharos UV and IR shutters will close.</p></li>
-<li><p>Pharos UV and IR shutter controllers will display <span class="red">something</span>.</p></li>
+<li><p>The Pharos power supply is cut off.</p></li>
 </ul>
 </div></blockquote>
 </li>
-<li><p>Rearm the contact controls manually.</p>
+<li><p>Rearm the contact controls, and repeat step 2 for all enclosure doors.</p>
 <blockquote>
 <div><ul class="simple">
 <li><p>East door</p></li>
@@ -419,8 +420,8 @@ The STATUS LED remains <span class="green">green</span>. Change back to INTERLOC
 </div></blockquote>
 </li>
 <li><p>Turn the Pharos LASER ENCLOSURE INTERLOCK protocase INTERLOCK OVERRIDE key from <span class="red">INTERLOCK</span> to <span class="red">OVERRIDE</span>.
-The STATUS LED changed to <span class="red">red</span>.</p></li>
-<li><p>The VIEWMARQ in Vault-1 Control displays <span class="red">DANGER LASER HAZARD-PHAROS ARMED-PHAROS ADMIN OVERRIDE</span>.</p></li>
+The STATUS LED will change to <span class="red">red</span>.</p></li>
+<li><p>The VIEWMARQ in Vault-1 Control will display <span class="red">DANGER LASER HAZARD-PHAROS ARMED-PHAROS ADMIN OVERRIDE</span>.</p></li>
 <li><p>Beacon stacks show <span class="orange">orange</span> and <span class="blue">blue</span> LEDs on.</p>
 <blockquote>
 <div><ul class="simple">
@@ -446,7 +447,7 @@ The STATUS LED changed to <span class="red">red</span>.</p></li>
 <li><p>The LOCAL INTERLOCK CONTACT CONTROL modules will stay armed.</p></li>
 <li><p>Pharos LASER ENCLOSURE INTERLOCK protocase door monitor will display <span class="red">CLOSED</span>.</p></li>
 <li><p>Pharos UV and IR shutters will not close.</p></li>
-<li><p>Pharos UV and IR shutter controllers will display <span class="red">something different</span>.</p></li>
+<li><p>The Pharos power supply is cut off.</p></li>
 </ul>
 </div></blockquote>
 </li>
@@ -489,7 +490,7 @@ In response:</p>
 <li><p>Dira and Pharos LASER ENCLOSURE INTERLOCK protocase door monitor will display nothing.</p></li>
 <li><p>Pharos UV and IR shutters will close.</p></li>
 <li><p>Dira will lose power.</p></li>
-<li><p>Pharos UV and IR shutter controllers will display <span class="red">something</span>.</p></li>
+<li><p>The Pharos power supply is cut off.</p></li>
 </ul>
 </div></blockquote>
 </li>
@@ -517,7 +518,7 @@ In response:</p>
 <li><p>Pharos LASER ENCLOSURE INTERLOCK protocase laser warning module will display <span class="red">DANGER LASER ON</span></p></li>
 <li><p>The LOCAL INTERLOCK CONTACT CONTROL modules will disarm on the Pharos.</p></li>
 <li><p>Pharos UV and IR shutters will not close.</p></li>
-<li><p>Pharos UV and IR shutter controllers will display <span class="red">something different</span>.</p></li>
+<li><p>The Pharos power supply is cut off.</p></li>
 </ul>
 </div></blockquote>
 </li>

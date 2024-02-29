@@ -9,8 +9,8 @@
 Vault-1 Laser Interlock System Testing Protocol
 ===============================================
 
-The purpose of this testing procedure if the Verify the functionality of the Vault-1 laser interlock system including arming Vault-1 as a laser lab, the Pharos enclosure, and the Dira enclosure. 
-
+The purpose of this testing procedure if the Verify the functionality of the Vault-1 laser interlock system including arming Vault-1 as a laser lab, and arming the Pharos system.
+Additionally, the administrative override on the Pharos and Dira enclosures will be tested.
 
 Starting Conditions
 -------------------
@@ -304,18 +304,18 @@ Administrative Override on the Pharos Enclosure
     - The LOCAL INTERLOCK CONTACT CONTROL modules will disarm and display :orange:`LOCAL CONTACTS DISARMED`.
     - Pharos LASER ENCLOSURE INTERLOCK protocase door monitor will display nothing.
     - Pharos UV and IR shutters will close.
-    - Pharos UV and IR shutter controllers will display :red:`something`.
+    - The Pharos power supply is cut off. 
 
-#. Rearm the contact controls manually.
+#. Rearm the contact controls, and repeat step 2 for all enclosure doors. 
 
     - East door
     - North door
     - South door
 
 #. Turn the Pharos LASER ENCLOSURE INTERLOCK protocase INTERLOCK OVERRIDE key from :red:`INTERLOCK` to :red:`OVERRIDE`. 
-   The STATUS LED changed to :red:`red`.
+   The STATUS LED will change to :red:`red`.
 
-#. The VIEWMARQ in Vault-1 Control displays :red:`DANGER LASER HAZARD-PHAROS ARMED-PHAROS ADMIN OVERRIDE`.
+#. The VIEWMARQ in Vault-1 Control will display :red:`DANGER LASER HAZARD-PHAROS ARMED-PHAROS ADMIN OVERRIDE`.
 
 #. Beacon stacks show :orange:`orange` and :blue:`blue` LEDs on.
 
@@ -336,7 +336,7 @@ Administrative Override on the Pharos Enclosure
     - The LOCAL INTERLOCK CONTACT CONTROL modules will stay armed.
     - Pharos LASER ENCLOSURE INTERLOCK protocase door monitor will display :red:`CLOSED`.
     - Pharos UV and IR shutters will not close.
-    - Pharos UV and IR shutter controllers will display :red:`something different`.
+    - The Pharos power supply is cut off. 
 
 #. Turn the Pharos LASER ENCLOSURE INTERLOCK protocase INTERLOCK OVERRIDE key from :red:`OVERRIDE` to :red:`INTERLOCK`. 
    The STATUS LED changed to :green:`green`. 
@@ -379,7 +379,7 @@ Administrative Override on the Dira Enclosure
     - Dira and Pharos LASER ENCLOSURE INTERLOCK protocase door monitor will display nothing.
     - Pharos UV and IR shutters will close.
     - Dira will lose power.
-    - Pharos UV and IR shutter controllers will display :red:`something`.
+    - The Pharos power supply is cut off. 
 
 #. Rearm the Dira.
 
@@ -408,8 +408,7 @@ Administrative Override on the Dira Enclosure
     - Pharos LASER ENCLOSURE INTERLOCK protocase laser warning module will display :red:`DANGER LASER ON`
     - The LOCAL INTERLOCK CONTACT CONTROL modules will disarm on the Pharos.
     - Pharos UV and IR shutters will not close.
-    - Pharos UV and IR shutter controllers will display :red:`something different`.
-
+    - The Pharos power supply is cut off. 
 #. With the Pharos, Dira, and Vault-1 armed and the Dira and Pharos enclosures set to override, open one of the Dira enclosure rolling doors. 
    In response:
 
