@@ -1,10 +1,10 @@
 fast_push.sh
 fast_pull.sh
 
+.vscode
+
+python_scripts/
 whitespace.py
 video_to_gif.py
-
 excel_to_csv_radiation.py
 csv_plotting.py
-
-.vscode
