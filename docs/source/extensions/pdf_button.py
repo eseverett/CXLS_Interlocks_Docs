@@ -15,13 +15,19 @@ class PDFButtonDirective(SphinxDirective):
         # Prepend the path to `_static` to the PDF filename
         # Adjust this path if your static files are located differently
         # pdf_path = f'/_static/{pdf_filename}'
+        # pdf_path = f'/docs/build/html/_static/{pdf_filename}'    
         
-        hosting_platform = os.environ.get('HOSTING_PLATFORM', 'local')
-        
-        if hosting_platform == 'gitlab' or hosting_platform == 'github':
+        # Check if explicitly marked as a local build
+        on_gitlab = os.environ.get('GITLAB_CI') == 'true'
+        on_github = os.environ.get('GITHUB_ACTIONS') == 'true'
+
+        if on_gitlab:
+            pdf_path = f'/_static/{pdf_filename}'
+        elif on_github:
             pdf_path = f'/_static/{pdf_filename}'
         else:
-            pdf_path = f'/docs/build/html/_static/{pdf_filename}'            
+            # Default to local development path
+            pdf_path = f'/docs/build/html/_static/{pdf_filename}'          
         
         # Use the provided content as the button text if available, otherwise default to the PDF filename
         button_text = ' '.join(self.content) if self.content else pdf_filename
