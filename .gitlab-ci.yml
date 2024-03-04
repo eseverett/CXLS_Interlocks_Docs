@@ -10,5 +10,6 @@ pages:
   artifacts:
     paths:
       - public
+      - pdfs
   only:
     - main  
