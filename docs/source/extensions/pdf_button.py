@@ -2,6 +2,7 @@
 
 from docutils import nodes
 from sphinx.util.docutils import SphinxDirective
+import os
 
 class PDFButtonDirective(SphinxDirective):
     has_content = True
@@ -13,7 +14,14 @@ class PDFButtonDirective(SphinxDirective):
         pdf_filename = self.arguments[0]
         # Prepend the path to `_static` to the PDF filename
         # Adjust this path if your static files are located differently
-        pdf_path = f'/_static/{pdf_filename}'
+        # pdf_path = f'/_static/{pdf_filename}'
+        
+        hosting_platform = os.environ.get('HOSTING_PLATFORM', 'local')
+        
+        if hosting_platform == 'gitlab' or hosting_platform == 'github':
+            pdf_path = f'/_static/{pdf_filename}'
+        else:
+            pdf_path = f'/docs/build/html/_static/{pdf_filename}'            
         
         # Use the provided content as the button text if available, otherwise default to the PDF filename
         button_text = ' '.join(self.content) if self.content else pdf_filename

@@ -39,7 +39,7 @@ In the situation where any of these monitors are alarming the interlock system w
 
 The ACCELERATOR section of the protocase is for viewing and changing the arming status of the accelerator and both transmitters.
 The accelerator cannot be armed until Vault-1 is secured, and the transmitters cannot be armed until the accelerator is armed.
-This section of the protocase can also be used to override the interlocks on the transmitters to work on them in an armed state.
+This section of the protocase can also be used to override the interlocks on the transmitters for maintenance. 
 
 
 .. figure:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_protocase.jpg
@@ -74,8 +74,8 @@ See Figure 2 and 3 for the Vault-1 Control and Accelerator Lab VIEWMARQ displays
         | or both transmitters are armed. Additional laser hazards will appear
         | here as well. See Vault-1 laser system manual for hazards.
       - :red:`Vault-1 Secure - RF Armed`
-    * - | Both VIEWMARQ displays :red:`IONIZING RADIATION E-STOP ACTIVE`
-        | when any ionizing radiation e-stop in the CXLS suite is pressed.
+    * - | Both VIEWMARQ displays show :red:`IONIZING RADIATION E-STOP`
+        | :red:`ACTIVE` when any ionizing radiation e-stop in the CXLS suite is pressed.
       - | :red:`Ionizing Radiation` 
         | :red:`E-Stop Activated`
 
@@ -289,7 +289,7 @@ Search Procedure for Securing Vault-1
 To arm the accelerator and transmitters, Vault-1 must be searched and secured.
 Starting at the west end of Vault-1 (down steam of the accelerator), while verifying the vault is empty, press the search button labeled 1.
 As you continue to search and clear press 2 then 3 as you're working your way towards the vault entrance. 
-Once the 3rd search button is pressed, a chime will be audible and a timer will start and all the SECURE PERIMETER SEARCH lamps on the Vault-1 Control IONIZING RADIATION INTERLOCK protocase will be :green:`green`. 
+Once the 3rd search button is pressed, a chime will sound, a timer will start, and all the SECURE PERIMETER SEARCH lamps on the Vault-1 Control IONIZING RADIATION INTERLOCK protocase will be :green:`green`. 
 If the search buttons are pressed out of order, or the search takes too long, the search will need to be restarted.
 
 .. figure:: /images/user_docs/Vault-1_ionizing_radiation/Vault1_Search_Buttons.png
@@ -333,7 +333,7 @@ If the search buttons are pressed out of order, or the search takes too long, th
 
     **Figure 9:** This is the Vault-1 Control Ionizing Radiation Protocase when all searched buttons have been pressed in the correct order.
 
-Holding down the CLOSE button to the right of the protocase, close the shield door up to the yellow and black tape but not covering the tap.
+Holding down the CLOSE button to the right of the protocase, close the shield door up to the yellow and black tape but not covering it.
 Once the door is fully closed and actuating the door switches the SHIELD DOOR lamp on the Vault-1 Control IONIZING RADIATION INTERLOCK protocase will be :green:`green`.
 
 .. figure:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_door_buttons.jpg
@@ -403,7 +403,7 @@ The accelerator and transmitters can be disarmed by pressing the ACCELERATOR RES
       - Vault-1 Control Ionizing Radiation Protocase when both transmitters are armed. :white-cell:`===================`
 
 .. table-caption::
-    **Figure 13:** This is the Vault-1 Control IONIZING RADIATION INTERLOCK protocase when the transmitters are armed.
+    **Figure 13:** This is the Vault-1 Control IONIZING RADIATION INTERLOCK protocase when transmitter 1 is armed.
 
 
 
@@ -416,7 +416,7 @@ This will keep Vault-1 in a secure state while disarming the accelerator and tra
 To put Vault-1 into a non-secure state, simply opening the shield door will disarm the system and turn all :green:`green` STATUS and PERIMETER lamps will turn :red:`red`.
 
 .. note::
-     2 minute must pass from the transmitters being brought to a safe state and the accelerator being disarmed before the Vault-1 door can be opened.
+     2 minutes must pass from the transmitters being brought to a safe state and the accelerator being disarmed before the Vault-1 door can be opened.
 
 Vault-1 Radiation Survey Procedure
 ----------------------------------
