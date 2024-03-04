@@ -23,8 +23,8 @@ class PDFButtonDirective(SphinxDirective):
 
         if on_gitlab:
             pdf_path = f'/_static/{pdf_filename}'
-        elif on_github:
-            pdf_path = f'/_static/{pdf_filename}'
+        # elif on_github:
+        #     pdf_path = f'/_static/{pdf_filename}'
         else:
             # Default to local development path
             pdf_path = f'/docs/build/html/_static/{pdf_filename}'          

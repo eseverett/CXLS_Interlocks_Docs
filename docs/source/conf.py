@@ -77,6 +77,13 @@ pygments_style = 'friendly' ### Added style
 html_permalinks = False  ### Disable ¶ symbols next to headings
 
 
+### Latex
+latex_documents = [
+  ('index', 'CXLS_Interlock_System_Documentation.tex', 'CXLS_Interlock_System_Documentation',
+   'Eric Everett', 'manual'),
+]
+
+
 
 
 
