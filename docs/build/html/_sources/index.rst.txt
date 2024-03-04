@@ -21,7 +21,7 @@ About This Documentation
 ------------------------
 
 The purpose of this documentation is to provide a complete guide to the CXLS interlock system. 
-This documentent will outline user guides to all interlock subsystems, as well as provide documentation on testing and troubleshooting the system.
+This document will outline user guides to all interlock subsystems, as well as provide documentation on testing and troubleshooting the system.
 
 CXLS Facility Overview
 ----------------------
@@ -36,19 +36,27 @@ Ionizing Radiation Hazards
 --------------------------
 
 In the CXLS linear accelerator, the relativistic electrons can interact with materials of beam pipes and LINACs. 
-These interactions are Coulomb forces between the relativistic electrons and atomic nuclei within these materials where the electron experiences negative acceleration and releases a high energy photon, gamma radiation. 
+These Coulomb interactions between the relativistic electrons and atomic nuclei within these materials cause the electrons to experience acceleration and releases a high energy photon, gamma radiation. 
 This process is known as Bremsstrahlung. These emitted gamma rays can then interact with nuclei and through the process of photodisintegration neutron radiation is produced. 
-Because of the high radiation felids generated in Vault-1, this area is off limits during operations. 
-As well, when x-rays are enabled into Hutch-1, this area is also off limits.
+These processes cause elevated radiation felids in Vault-1 and Hutch-1. 
 
 Laser Hazards
 -------------
 
 In the CXLS, there are three class 4 lasers used throughout the system. 
 A UV laser is used at the photocathode to eject electrons in bunches via the photoelectric effect. 
-Once these electrons are at relativistic speeds, they collide with an IR laser to induce inverse Compton scattering to produce hard x-ray pulses. 
+Once these electrons are at relativistic speeds, they collide with an IR laser and through inverse Compton scattering produce hard x-ray pulses. 
 These x-rays will interact with a test sample in pump-prove configuration where the pump laser can produce light in the THz spectrum. 
 Because of these high power lasers through the facility, laser enclosures have been design to create laser safe areas while lasers are operational. 
+
+Interlocks System
+-----------------
+
+The CXLS interlocks system are sets of sensors and components that send data to predefined digital logic systems. 
+This digital logic decides to change the state of actuators and safety displays. 
+These interlocks are designed to enforce proper sequential operations and control access to hazards. 
+Built into the system are redundancy to increase reliability, and fail safe designs to ensure systems are put into a safe state incase of a user of system failure. 
+
 
 
 .. toctree::
@@ -92,6 +100,8 @@ Because of these high power lasers through the facility, laser enclosures have b
 
 .. note:: 
    This documentation is a work in progress. 
+
+
 
 
 

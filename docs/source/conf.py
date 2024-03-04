@@ -35,7 +35,7 @@ release = '2024'
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ['sphinx.ext.duration', 'extensions.centered_bold_text', 'sphinxcontrib.video'] ### Added extension
+extensions = ['sphinx.ext.duration', 'extensions.centered_bold_text', 'sphinxcontrib.video', 'extensions.pdf_button'] ### Added extension
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -58,8 +58,8 @@ html_theme = 'sphinx_rtd_theme' ### Changed theme to alabaster
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ['_static', 'images']
-html_css_files = ['custom.css'] ### Added custom css file
+html_static_path = ['_static', 'images', 'pdfs']
+html_css_files = ['custom.css', 'extensions.css'] ### Added custom css file
 
 
 # This sets the home page icon and web tab icon for the documentation.

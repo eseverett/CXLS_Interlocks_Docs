@@ -3,6 +3,7 @@ Laser Safety Systems Troubleshooting Guide
 
 For the CXLS laser interlock systems, Laser Safety Systems modules are used to perform the majority of the interlocking function. 
 
+.. pdfbutton:: Laser_Safety_Systems_user_manual.pdf
 
 Resolved Issues
 ---------------

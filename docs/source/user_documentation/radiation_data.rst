@@ -151,15 +151,19 @@ Below are the maps of the detectors, the beam charge and energy, and the summary
 
     * - .. image:: /images/radiation_survey/Hutch-1_readings_1.png
           :align: center
+          :scale: 90 %
 
       - .. image:: /images/radiation_survey/Hutch-1_readings_2.png
           :align: center
+          :scale: 90 %
 
       - .. image:: /images/radiation_survey/Hutch-1_readings_3.png
           :align: center
+          :scale: 90 %
 
       - .. image:: /images/radiation_survey/Hutch-1_readings_4.png
           :align: center 
+          :scale: 90 %
     
     * - Radiation in Hutch-1 near the penetration points. Spikes when downstream pop screens are in and a shutter is open.
       - Radiation in Hutch-1 behind the detector chamber. Spikes when POP10 is in and collimated shutter open.

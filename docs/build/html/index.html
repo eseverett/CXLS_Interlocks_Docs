@@ -9,6 +9,7 @@
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="_static/custom.css" type="text/css" />
       <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+      <link rel="stylesheet" href="_static/extensions.css" type="text/css" />
     <link rel="shortcut icon" href="_static/tab_icon_4.ico"/>
   <!--[if lt IE 9]>
     <script src="_static/js/html5shiv.min.js"></script>
@@ -104,7 +105,7 @@
 <section id="about-this-documentation">
 <h2>About This Documentation</h2>
 <p>The purpose of this documentation is to provide a complete guide to the CXLS interlock system.
-This documentent will outline user guides to all interlock subsystems, as well as provide documentation on testing and troubleshooting the system.</p>
+This document will outline user guides to all interlock subsystems, as well as provide documentation on testing and troubleshooting the system.</p>
 </section>
 <section id="cxls-facility-overview">
 <h2>CXLS Facility Overview</h2>
@@ -114,18 +115,24 @@ This documentent will outline user guides to all interlock subsystems, as well a
 <section id="ionizing-radiation-hazards">
 <h2>Ionizing Radiation Hazards</h2>
 <p>In the CXLS linear accelerator, the relativistic electrons can interact with materials of beam pipes and LINACs.
-These interactions are Coulomb forces between the relativistic electrons and atomic nuclei within these materials where the electron experiences negative acceleration and releases a high energy photon, gamma radiation.
+These Coulomb interactions between the relativistic electrons and atomic nuclei within these materials cause the electrons to experience acceleration and releases a high energy photon, gamma radiation.
 This process is known as Bremsstrahlung. These emitted gamma rays can then interact with nuclei and through the process of photodisintegration neutron radiation is produced.
-Because of the high radiation felids generated in Vault-1, this area is off limits during operations.
-As well, when x-rays are enabled into Hutch-1, this area is also off limits.</p>
+These processes cause elevated radiation felids in Vault-1 and Hutch-1.</p>
 </section>
 <section id="laser-hazards">
 <h2>Laser Hazards</h2>
 <p>In the CXLS, there are three class 4 lasers used throughout the system.
 A UV laser is used at the photocathode to eject electrons in bunches via the photoelectric effect.
-Once these electrons are at relativistic speeds, they collide with an IR laser to induce inverse Compton scattering to produce hard x-ray pulses.
+Once these electrons are at relativistic speeds, they collide with an IR laser and through inverse Compton scattering produce hard x-ray pulses.
 These x-rays will interact with a test sample in pump-prove configuration where the pump laser can produce light in the THz spectrum.
 Because of these high power lasers through the facility, laser enclosures have been design to create laser safe areas while lasers are operational.</p>
+</section>
+<section id="interlocks-system">
+<h2>Interlocks System</h2>
+<p>The CXLS interlocks system are sets of sensors and components that send data to predefined digital logic systems.
+This digital logic decides to change the state of actuators and safety displays.
+These interlocks are designed to enforce proper sequential operations and control access to hazards.
+Built into the system are redundancy to increase reliability, and fail safe designs to ensure systems are put into a safe state incase of a user of system failure.</p>
 <div class="toctree-wrapper compound">
 </div>
 <div class="toctree-wrapper compound">

@@ -54,16 +54,6 @@
 
 
 
-/* This is added to adjust the spacing for the custom directive table-caption. */
-
-.table-caption {
-    text-align: center;
-    font-style: italic;
-    margin-top: -25px;
-    margin-bottom: 20px; /* Adjust as needed to reduce space */
-}
-
-
 /* This is added to center the content of the read the docs content*/
 
 .wy-nav-content {

@@ -18,6 +18,8 @@ The face of the IDEM relays have 6 diagnostics LEDs:
 During normal operations all 6 of these lights should be on if the relay is supposed to be receiving power. 
 If any of the LEDs are not on, there is an error occurring. 
 
+.. pdfbutton:: IDEM_safety_relay_manual.pdf
+
 
 Resolved Issues
 ---------------

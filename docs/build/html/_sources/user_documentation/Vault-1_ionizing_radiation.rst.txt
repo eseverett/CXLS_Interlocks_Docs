@@ -10,9 +10,9 @@ Vault-1 Ionizing Radiation Interlock System User Manual
 
 This document provides a user overview for the Vault-1 Ionizing Radiation Interlock System. 
 It covers the hazard indicators, control protocase, VIEWMARQ displays, and beacons in Vault-1 Control and Accelerator Lab. 
-The control protocase allows users to view and change the secure state of Vault-1, arm the accelerator and transmitters, and monitor area monitors. 
+The control protocase allows users to view and change the secure state of Vault-1, arm the accelerator and transmitters, and view area monitor statuses. 
 The VIEWMARQ displays provide information on the ionizing radiation hazard status, laser hazards, and the secure state of Vault-1. 
-The beacons indicate the enabled state of RF and ionizing radiation emergency stop buttons. 
+The beacons indicate the state of RF and ionizing radiation emergency stop buttons. 
 
 
 
