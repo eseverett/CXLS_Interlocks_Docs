@@ -101,8 +101,19 @@ When Vault-1 is in a non-secure state, neither the accelerator nor the transmitt
 
 #. Switch the ENABLE key for the accelerator. 
    The accelerator lamp remains :red:`red`.
+
+   - Relay R2 in Vault-1 Control west panel remains off
+
 #. Switch the ENABLE keys for transmitters 1 and 2.
    Both transmitter lamps remain :red:`red`.
+
+   - Relays R3 and R4 in Vault-1 Control west panel remain off. 
+
+.. figure:: /images/testing_documentation/Vault-1_ionizing_radiation/arming_relays.jpg
+   :scale: 20 %
+   :align: center
+
+   **Figure 4:** Vault-1 Control west panel relays for arming the accelerator and transmitters.
 
 
 Searching Procedure
@@ -132,14 +143,14 @@ Searching Procedure
    :align: center
    :alt: Vault-1 searched
 
-   **Figure 4:** Vault-1 IONIZING RADIATION INTERLOCK protocase when Vault-1 is searched.
+   **Figure 5:** Vault-1 IONIZING RADIATION INTERLOCK protocase when Vault-1 is searched.
 
 .. figure:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_door.jpg
    :scale: 20 %
    :align: center
    :alt: Vault-1 door
 
-   **Figure 5:** Vault-1 IONIZING RADIATION INTERLOCK protocase when the shield door is closed and Vault-1 is secured.
+   **Figure 6:** Vault-1 IONIZING RADIATION INTERLOCK protocase when the shield door is closed and Vault-1 is secured.
    Under this state the accelerator can now be armed. 
 
 Arming the Accelerator and transmitters
@@ -148,8 +159,12 @@ Arming the Accelerator and transmitters
 #. With the shield door still closed, enable the accelerator on the Vault-1 Control IONIZING RADIATION INTERLOCK protocase using the ENABLE key.
    The accelerator status lamp should turn :green:`green`.
 
+   - Relay R2 in Vault-1 Control west panel turns on.
+
 #. Turn the ENABLE key for transmitter 1 on the Vault-1 Control IONIZING RADIATION INTERLOCK protocase.
    The transmitter 1 status lamp should turn :green:`green`.
+
+   - Relay R3 in Vault-1 Control west panel turns on.
 
 #. Once the transmitter is enabled, the VIEWMARQ displays will show :red:`VAULT SECURE - RF ARMED`.
 
@@ -163,12 +178,14 @@ Arming the Accelerator and transmitters
 
 #. Hit the reset button and repeat 2-4 with transmitter 2.
 
+   - Relay R4 in Vault-1 Control west panel turns on.
+
 .. figure:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_protocase_accelerator_armed.jpg
    :scale: 20 %
    :align: center
    :alt: Vault-1 protocase accelerator armed
 
-   **Figure 6:** Vault-1 Control IONIZING RADIATION INTERLOCK protocase when the accelerator is armed. 
+   **Figure 7:** Vault-1 Control IONIZING RADIATION INTERLOCK protocase when the accelerator is armed. 
 
 .. .. figure:: /images/user_docs/Vault-1_ionizing_radiation/Vault-1_protocase_transmitter_armed_1.jpg
 ..    :scale: 20 %
@@ -192,7 +209,7 @@ Arming the Accelerator and transmitters
      - Vault-1 Control IONIZING RADIATION INTERLOCK protocase when transmitter 2 is armed. :white-cell:`============`
 
 .. table-caption::
-      **Figure 7:** This is the Vault-1 Control IONIZING RADIATION INTERLOCK protocase when the transmitters are armed.
+      **Figure 8:** This is the Vault-1 Control IONIZING RADIATION INTERLOCK protocase when the transmitters are armed.
 
 
 .. list-table:: 
@@ -210,7 +227,7 @@ Arming the Accelerator and transmitters
      - Accelerator Lab VIEWMARQ display when the RF is armed. :white-cell:`=================================`
 
 .. table-caption::
-   **Figure 8:** These are the VIEWMARQ displays in Vault-1 Control and Accelerator Lab when the RF is armed.
+   **Figure 9:** These are the VIEWMARQ displays in Vault-1 Control and Accelerator Lab when the RF is armed.
 
 
 Overriding and Resetting Transmitters and Accelerator
@@ -218,6 +235,8 @@ Overriding and Resetting Transmitters and Accelerator
 
 #. With the accelerator and transmitters armed, switch the OVERRIDE keys on the Vault-1 Control IONIZING RADIATION INTERLOCK protocase.
    The TRANSMITTERS lamps will turn :orange:`orange`.
+
+   - Relays R5 and R6 in Vault-1 Control west panel turn on.
 
 #. Switch the OVERRIDE keys back to interlock. 
    The TRANSMITTERS lamps will turn :green:`green`.
@@ -248,8 +267,14 @@ Overriding and Resetting Transmitters and Accelerator
      - Vault-1 Control IONIZING RADIATION INTERLOCK protocase when both transmitters are in override. :white-cell:`==`
 
 .. table-caption::
-   **Figure 9:** This is the Vault-1 Control IONIZING RADIATION INTERLOCK protocase when the transmitters are in override.
+   **Figure 10:** This is the Vault-1 Control IONIZING RADIATION INTERLOCK protocase when the transmitters are in override.
 
+
+.. figure:: /images/testing_documentation/Vault-1_ionizing_radiation/override_relays.jpg
+   :scale: 20 %
+   :align: center
+
+   **Figure 11:** Vault-1 Control west panel relays for overriding the transmitters.
 
 
 Timing out the Shield Door and Search sequence

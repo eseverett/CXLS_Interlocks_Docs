@@ -186,10 +186,24 @@ The following falls under the scope of this testing procedure:</p>
 <p>When Vault-1 is in a non-secure state, neither the accelerator nor the transmitters should be able to be armed.</p>
 <ol class="arabic simple">
 <li><p>Switch the ENABLE key for the accelerator.
-The accelerator lamp remains <span class="red">red</span>.</p></li>
+The accelerator lamp remains <span class="red">red</span>.</p>
+<ul class="simple">
+<li><p>Relay R2 in Vault-1 Control west panel remains off</p></li>
+</ul>
+</li>
 <li><p>Switch the ENABLE keys for transmitters 1 and 2.
-Both transmitter lamps remain <span class="red">red</span>.</p></li>
+Both transmitter lamps remain <span class="red">red</span>.</p>
+<ul class="simple">
+<li><p>Relays R3 and R4 in Vault-1 Control west panel remain off.</p></li>
+</ul>
+</li>
 </ol>
+<figure class="align-center" id="id2">
+<a class="reference internal image-reference" href="../_images/arming_relays.jpg"><img alt="../_images/arming_relays.jpg" src="../_images/arming_relays.jpg" style="width: 604.8000000000001px; height: 604.8000000000001px;" /></a>
+<figcaption>
+<p><span class="caption-text"><strong>Figure 4:</strong> Vault-1 Control west panel relays for arming the accelerator and transmitters.</span></p>
+</figcaption>
+</figure>
 </section>
 <section id="searching-procedure">
 <h2>Searching Procedure</h2>
@@ -216,16 +230,16 @@ The LED on the search button should glow and the corresponding lamp on the Vault
 <li><p>Once all three search buttons have been hit in order, close the shield door.
 The shield door lamp on the Vault-1 Control IONIZING RADIATION INTERLOCK protocase will turn green once the mechanical door switches are fully actuated.</p></li>
 </ol>
-<figure class="align-center" id="id2">
+<figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="../_images/Vault-1_searched.jpg"><img alt="Vault-1 searched" src="../_images/Vault-1_searched.jpg" style="width: 604.8000000000001px; height: 604.8000000000001px;" /></a>
 <figcaption>
-<p><span class="caption-text"><strong>Figure 4:</strong> Vault-1 IONIZING RADIATION INTERLOCK protocase when Vault-1 is searched.</span></p>
+<p><span class="caption-text"><strong>Figure 5:</strong> Vault-1 IONIZING RADIATION INTERLOCK protocase when Vault-1 is searched.</span></p>
 </figcaption>
 </figure>
-<figure class="align-center" id="id3">
+<figure class="align-center" id="id4">
 <a class="reference internal image-reference" href="../_images/Vault-1_door.jpg"><img alt="Vault-1 door" src="../_images/Vault-1_door.jpg" style="width: 604.8000000000001px; height: 604.8000000000001px;" /></a>
 <figcaption>
-<p><span class="caption-text"><strong>Figure 5:</strong> Vault-1 IONIZING RADIATION INTERLOCK protocase when the shield door is closed and Vault-1 is secured.
+<p><span class="caption-text"><strong>Figure 6:</strong> Vault-1 IONIZING RADIATION INTERLOCK protocase when the shield door is closed and Vault-1 is secured.
 Under this state the accelerator can now be armed.</span></p>
 </figcaption>
 </figure>
@@ -234,9 +248,17 @@ Under this state the accelerator can now be armed.</span></p>
 <h2>Arming the Accelerator and transmitters</h2>
 <ol class="arabic">
 <li><p>With the shield door still closed, enable the accelerator on the Vault-1 Control IONIZING RADIATION INTERLOCK protocase using the ENABLE key.
-The accelerator status lamp should turn <span class="green">green</span>.</p></li>
+The accelerator status lamp should turn <span class="green">green</span>.</p>
+<ul class="simple">
+<li><p>Relay R2 in Vault-1 Control west panel turns on.</p></li>
+</ul>
+</li>
 <li><p>Turn the ENABLE key for transmitter 1 on the Vault-1 Control IONIZING RADIATION INTERLOCK protocase.
-The transmitter 1 status lamp should turn <span class="green">green</span>.</p></li>
+The transmitter 1 status lamp should turn <span class="green">green</span>.</p>
+<ul class="simple">
+<li><p>Relay R3 in Vault-1 Control west panel turns on.</p></li>
+</ul>
+</li>
 <li><p>Once the transmitter is enabled, the VIEWMARQ displays will show <span class="red">VAULT SECURE - RF ARMED</span>.</p>
 <blockquote>
 <div><ul class="simple">
@@ -253,12 +275,16 @@ The transmitter 1 status lamp should turn <span class="green">green</span>.</p><
 </ul>
 </div></blockquote>
 </li>
-<li><p>Hit the reset button and repeat 2-4 with transmitter 2.</p></li>
+<li><p>Hit the reset button and repeat 2-4 with transmitter 2.</p>
+<ul class="simple">
+<li><p>Relay R4 in Vault-1 Control west panel turns on.</p></li>
+</ul>
+</li>
 </ol>
-<figure class="align-center" id="id4">
+<figure class="align-center" id="id5">
 <a class="reference internal image-reference" href="../_images/Vault-1_protocase_accelerator_armed.jpg"><img alt="Vault-1 protocase accelerator armed" src="../_images/Vault-1_protocase_accelerator_armed.jpg" style="width: 604.8000000000001px; height: 604.8000000000001px;" /></a>
 <figcaption>
-<p><span class="caption-text"><strong>Figure 6:</strong> Vault-1 Control IONIZING RADIATION INTERLOCK protocase when the accelerator is armed.</span></p>
+<p><span class="caption-text"><strong>Figure 7:</strong> Vault-1 Control IONIZING RADIATION INTERLOCK protocase when the accelerator is armed.</span></p>
 </figcaption>
 </figure>
 <table class="docutils align-center">
@@ -274,7 +300,7 @@ The transmitter 1 status lamp should turn <span class="green">green</span>.</p><
 </tbody>
 </table>
 <div class="tight-table-caption-container docutils container">
-<p class="table-caption"><strong>Figure 7:</strong> This is the Vault-1 Control IONIZING RADIATION INTERLOCK protocase when the transmitters are armed.</p>
+<p class="table-caption"><strong>Figure 8:</strong> This is the Vault-1 Control IONIZING RADIATION INTERLOCK protocase when the transmitters are armed.</p>
 </div>
 <table class="docutils align-center">
 <tbody>
@@ -289,14 +315,18 @@ The transmitter 1 status lamp should turn <span class="green">green</span>.</p><
 </tbody>
 </table>
 <div class="tight-table-caption-container docutils container">
-<p class="table-caption"><strong>Figure 8:</strong> These are the VIEWMARQ displays in Vault-1 Control and Accelerator Lab when the RF is armed.</p>
+<p class="table-caption"><strong>Figure 9:</strong> These are the VIEWMARQ displays in Vault-1 Control and Accelerator Lab when the RF is armed.</p>
 </div>
 </section>
 <section id="overriding-and-resetting-transmitters-and-accelerator">
 <h2>Overriding and Resetting Transmitters and Accelerator</h2>
 <ol class="arabic simple">
 <li><p>With the accelerator and transmitters armed, switch the OVERRIDE keys on the Vault-1 Control IONIZING RADIATION INTERLOCK protocase.
-The TRANSMITTERS lamps will turn <span class="orange">orange</span>.</p></li>
+The TRANSMITTERS lamps will turn <span class="orange">orange</span>.</p>
+<ul class="simple">
+<li><p>Relays R5 and R6 in Vault-1 Control west panel turn on.</p></li>
+</ul>
+</li>
 <li><p>Switch the OVERRIDE keys back to interlock.
 The TRANSMITTERS lamps will turn <span class="green">green</span>.</p></li>
 <li><p>Hit the reset button on the Vault-1 Control IONIZING RADIATION INTERLOCK protocase.
@@ -315,8 +345,14 @@ The ACCELERATOR and TRANSMITTERS lamps will turn <span class="red">red</span>.</
 </tbody>
 </table>
 <div class="tight-table-caption-container docutils container">
-<p class="table-caption"><strong>Figure 9:</strong> This is the Vault-1 Control IONIZING RADIATION INTERLOCK protocase when the transmitters are in override.</p>
+<p class="table-caption"><strong>Figure 10:</strong> This is the Vault-1 Control IONIZING RADIATION INTERLOCK protocase when the transmitters are in override.</p>
 </div>
+<figure class="align-center" id="id6">
+<a class="reference internal image-reference" href="../_images/override_relays.jpg"><img alt="../_images/override_relays.jpg" src="../_images/override_relays.jpg" style="width: 604.8000000000001px; height: 604.8000000000001px;" /></a>
+<figcaption>
+<p><span class="caption-text"><strong>Figure 11:</strong> Vault-1 Control west panel relays for overriding the transmitters.</span></p>
+</figcaption>
+</figure>
 </section>
 <section id="timing-out-the-shield-door-and-search-sequence">
 <h2>Timing out the Shield Door and Search sequence</h2>

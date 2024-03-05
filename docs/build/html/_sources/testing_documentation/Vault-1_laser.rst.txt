@@ -334,9 +334,9 @@ Administrative Override on the Pharos Enclosure
 
     - Pharos LASER ENCLOSURE INTERLOCK protocase laser warning module will display :red:`LASER ON`.
     - The LOCAL INTERLOCK CONTACT CONTROL modules will stay armed.
-    - Pharos LASER ENCLOSURE INTERLOCK protocase door monitor will display :red:`CLOSED`.
+    - Pharos LASER ENCLOSURE INTERLOCK protocase door monitor will display :green:`CLOSED`.
     - Pharos UV and IR shutters will not close.
-    - The Pharos power supply is cut off. 
+    - The Pharos power supply stays on. 
 
 #. Turn the Pharos LASER ENCLOSURE INTERLOCK protocase INTERLOCK OVERRIDE key from :red:`OVERRIDE` to :red:`INTERLOCK`. 
    The STATUS LED changed to :green:`green`. 
@@ -378,8 +378,9 @@ Administrative Override on the Dira Enclosure
     - The LOCAL INTERLOCK CONTACT CONTROL modules will disarm and display :orange:`LOCAL CONTACTS DISARMED` on the Dira and Pharos protocases.
     - Dira and Pharos LASER ENCLOSURE INTERLOCK protocase door monitor will display nothing.
     - Pharos UV and IR shutters will close.
+    - Dira UV and IR shutters will close.
     - Dira will lose power.
-    - The Pharos power supply is cut off. 
+    - Pharos will lose power.
 
 #. Rearm the Dira.
 
@@ -408,7 +409,8 @@ Administrative Override on the Dira Enclosure
     - Pharos LASER ENCLOSURE INTERLOCK protocase laser warning module will display :red:`DANGER LASER ON`
     - The LOCAL INTERLOCK CONTACT CONTROL modules will disarm on the Pharos.
     - Pharos UV and IR shutters will not close.
-    - The Pharos power supply is cut off. 
+    - Dira UV and IR shutters will not close. 
+
 #. With the Pharos, Dira, and Vault-1 armed and the Dira and Pharos enclosures set to override, open one of the Dira enclosure rolling doors. 
    In response:
 
@@ -416,6 +418,7 @@ Administrative Override on the Dira Enclosure
     - Dira LASER ENCLOSURE INTERLOCK protocase door monitor will display :red:`CLOSED`.
     - Pharos LASER ENCLOSURE INTERLOCK protocase door monitor will display nothing.
     - Pharos UV and IR shutters will close.
+    - Dira UV and IR shutters will close.
 
 
 .. figure:: /images/user_docs/Vault-1_laser/Vault-1_VIEWMARQ_all_armed.jpg

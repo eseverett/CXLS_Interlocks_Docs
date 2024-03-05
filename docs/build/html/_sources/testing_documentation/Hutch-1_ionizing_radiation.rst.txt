@@ -171,7 +171,7 @@ Search Procedure
 
 
 
-Changing Beam status
+Changing Beam Status
 --------------------
 
 #. Turn the Hutch-1 Control IONIZING RADIATION INTERLOCK protocase BEAM STOP key to Open. 
