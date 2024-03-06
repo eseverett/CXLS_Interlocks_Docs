@@ -19,12 +19,12 @@ class PDFButtonDirective(SphinxDirective):
         
         # Check if explicitly marked as a local build
         on_gitlab = os.environ.get('GITLAB_CI') == 'true'
-        on_github = os.environ.get('GITHUB_ACTIONS') == 'true'
+        on_github = os.environ.get('github-pages') == 'true'
 
         if on_gitlab:
             pdf_path = f'/_static/{pdf_filename}'
-        # elif on_github:
-        #     pdf_path = f'/_static/{pdf_filename}'
+        elif on_github:
+            pdf_path = f'/_static/{pdf_filename}'
         else:
             # Default to local development path
             pdf_path = f'/docs/build/html/_static/{pdf_filename}'          

@@ -35,7 +35,7 @@ release = '2024'
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ['sphinx.ext.duration', 'extensions.centered_bold_text', 'sphinxcontrib.video', 'extensions.pdf_button', 'sphinx.ext.githubpages', 'sphinx.ext.todo'] ### Added extension
+extensions = ['sphinx.ext.duration', 'extensions.centered_bold_text', 'sphinxcontrib.video', 'extensions.pdf_button', 'sphinx.ext.githubpages'] ### Added extension
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -77,14 +77,12 @@ pygments_style = 'friendly' ### Added style
 html_permalinks = False  ### Disable ¶ symbols next to headings
 
 
+
 ### Latex
 latex_documents = [
   ('index', 'CXLS_Interlock_System_Documentation.tex', 'CXLS_Interlock_System_Documentation',
    'Eric Everett', 'manual'),
 ]
-
-
-
 
 
 
