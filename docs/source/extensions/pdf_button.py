@@ -31,13 +31,8 @@ class PDFButtonDirective(SphinxDirective):
         #     pdf_path = f'/docs/build/html/_static/{pdf_filename}'          
         
         
-        on_local = os.environ.get('HOME')
-        
-        if on_local:
-            pdf_path = f'/docs/build/html/_static/{pdf_filename}'  
-        else:
-            pdf_path = f'/_static/{pdf_filename}'
-        
+        pdf_path = f'/_static/{pdf_filename}'
+    
         
         # Use the provided content as the button text if available, otherwise default to the PDF filename
         button_text = ' '.join(self.content) if self.content else pdf_filename
