@@ -379,8 +379,8 @@ Administrative Override on the Dira Enclosure
     - Dira and Pharos LASER ENCLOSURE INTERLOCK protocase door monitor will display nothing.
     - Pharos UV and IR shutters will close.
     - Dira UV and IR shutters will close.
-    - Dira will lose power.
-    - Pharos will lose power.
+    - The Dira power supply is cut off.
+    - The Pharos power supply is cut off.
 
 #. Rearm the Dira.
 

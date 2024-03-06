@@ -23,12 +23,8 @@ Starting Conditions
         - Laser-1
         - RF-1
         - Vault-1 Control
+        - Vault-1 
 
-.. note::
-    Check calibration sheet in Accelerator Lab.
-
-.. warning:: 
-    Make calibration sheet and find a place to post it. 
 
 #. The Ionizing Radiation Interlock protocase AREA MONITOR RADIATION lamps are :green:`green`.
 
@@ -65,6 +61,35 @@ Starting Conditions
     **Figure 2:** These are the yellow and white contact blocks in the Vault-1 Control west panel.
 
 
+.. list-table:: 
+  :align: center 
+
+
+  * - .. image:: /images/testing_documentation/apantec/relays.jpg
+        :align: center
+        :scale: 20 % 
+
+    - .. image:: /images/testing_documentation/apantec/relay8.jpg
+        :align: center
+        :scale: 20 % 
+
+  * - Relays R3-R8. :white-cell:`=====================================================================`
+
+    - Relay 8. :white-cell:`==========================================================================`
+
+.. table-caption::
+    **Figure 3:** These are the relays that correspond to the radiation chain in the Vault-1 Control west panel. 
+    Note that these relays are different from the ones referenced in the Vault-1 Ionizing Radiation Testing Protocol.
+
+
+.. .. figure:: /images/testing_documentation/apantec/relays.jpg
+..     :align: center
+..     :scale: 20 % 
+
+..     **Figure 3:** These are the relays that correspond to the radiation chain in the Vault-1 Control west panel. 
+..     Note that these relays are different from the ones referenced in the Vault-1 Ionizing Radiation Testing Protocol.
+
+
 Testing Alert alarm
 -------------------
 
@@ -97,13 +122,13 @@ Testing Alert alarm
     :align: center
     :scale: 20 %
 
-    **Figure 3:** This is an example of the RMW1 rate meter control in an alert state.
+    **Figure 4:** This is an example of the RMW1 rate meter control in an alert state.
 
 .. figure:: /images/testing_documentation/apantec/Hutch-1_Control_protocase_radiation_fail.jpg
     :align: center
     :scale: 20 %
 
-    **Figure 4:** This is an example of the Hutch-1 Control IONIZING RADIATION INTERLOCK protocase AREA MONITOR RADIATION lamp in a fail state.
+    **Figure 5:** This is an example of the Hutch-1 Control IONIZING RADIATION INTERLOCK protocase AREA MONITOR RADIATION lamp in a fail state.
     This should occur on the Vault-1 Control IONIZING RADIATION INTERLOCK protocase AREA MONITOR RADIATION lamp as well.
 
 
@@ -143,7 +168,7 @@ Testing High Alarm
     :align: center
     :scale: 20 %
 
-    **Figure 5:** This is an example of the RMW1 rate meter control in an alarm state.
+    **Figure 6:** This is an example of the RMW1 rate meter control in an alarm state.
 
 
 .. TESTING FAIL ALARM 
@@ -196,5 +221,5 @@ Emergency Tungsten Shutter Crash
 #. Change the Apantec gamma probe high alarm set point to 0 in Hutch-1. 
    In response:
 
-    - Hutch-1 Control Ionizing Radiation Interlock protocase lamps for Beam Status turn :red:`red`. 
-    - The COLLIMATED shutter (furthest, right side up shutter) closed. 
+    - Hutch-1 Control IONIZING RADIATION INTERLOCK protocase lamps for Beam Status turn :red:`red`. 
+    - The COLLIMATED shutter (furthest, right side up shutter) is closed. 

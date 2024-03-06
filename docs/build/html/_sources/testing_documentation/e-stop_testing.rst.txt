@@ -25,14 +25,14 @@ Starting Conditions
     - Relay 4
     - Relay 7
 
-#. Check that the relays in RF-1 aggregator panel show all diagnostic LEDs on.
+#. Check that all relays in RF-1 aggregator panel show all diagnostic LEDs on.
 
 #. Verify that the Accelerator Lab and Vault-1 Control E-Stop beacons are off. 
 
-    - Vault-1 Control Ionizing Radiation Interlock protocase beacon.
+    - Vault-1 Control IONIZING RADIATION INTERLOCK protocase beacon.
     - Vault-1 Control :red:`red` beacon module.
     - Accelerator Lab :red:`red` beacon module.
-    - Hutch-1 Control Ionizing Radiation Interlock protocase beacon. 
+    - Hutch-1 Control IONIZING RADIATION INTERLOCK protocase beacon. 
 
 #. Verify that all CXLS ionizing radiation emergency stop buttons are not engaged.
  
@@ -108,13 +108,12 @@ Testing
 #. Push the Vault-1 Control E-stop. In response:
 
     - E-stop LED turns on. 
-    - Ionizing Radiation Interlock protocase beacon in Hutch-1 Control and Vault-1 Control turns on.
-    - VIEWMARQ display in Accelerator Lab and Vault-1 Control shows :red:`IONIZING RADIATION E-STOP ACTIVATED`.
+    - IONIZING RADIATION INTERLOCK protocase beacon in Hutch-1 Control and Vault-1 Control turns on.
+    - VIEWMARQ displays in Accelerator Lab and Vault-1 Control shows :red:`IONIZING RADIATION E-STOP ACTIVATED`.
     - Individual :red:`red` beacon modules in Accelerator Lab and Vault-1 Control turn on.
-    - Black and white contacts blocks lose 24VDC signal.
-    - Relay 15 diagnostic LEDs are off in the Hutch-1 panel.
+    - Both relays in the RF aggregator panel turn off. 
 
-#. For all other E-stops, only verify that hte E-stop light turns on and that the black and white contact block loses 24VDC signal. 
+#. For all other E-stops, only verify that the E-stop light turns on and that the relays in the RF aggregator panel turn off. 
 
     - Hutch-1 A
     - Hutch-1 B
@@ -157,8 +156,8 @@ Emergency Tungsten Shutter Crash
 
 #. Chose any ionizing radiation e-stop in the facility and press it. In response:
 
-    - Hutch-1 Control Ionizing Radiation Interlock protocase lamps for Beam Status turn :red:`red`. 
-    - The DIVERGENT shutter (closest, upside down shutter) closed. 
+    - Hutch-1 Control IONIZING RADIATION INTERLOCK protocase lamps for BEAM STATUS turn :red:`red`. 
+    - The DIVERGENT shutter (closest, upside down shutter) is closed. 
 
 High Power Transmitter Crash
 ----------------------------

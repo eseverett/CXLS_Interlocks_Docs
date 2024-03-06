@@ -102,5 +102,5 @@ Emergency Tungsten Shutter Crash
 #. Spray compressed gas into a O2 unit. In response:
 
     - Hutch-1 Control Ionizing Radiation Interlock protocase lamps for Beam Status turn :red:`red`. 
-    - The DIVERGENT shutter (closest, upside down shutter) closed. 
+    - The DIVERGENT shutter (closest, upside down shutter) is closed. 
 

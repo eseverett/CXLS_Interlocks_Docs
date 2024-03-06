@@ -35,7 +35,7 @@ release = '2024'
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ['sphinx.ext.duration', 'extensions.centered_bold_text', 'sphinxcontrib.video', 'extensions.pdf_button'] ### Added extension
+extensions = ['sphinx.ext.duration', 'extensions.centered_bold_text', 'sphinxcontrib.video', 'extensions.pdf_button', 'sphinx.ext.githubpages', 'sphinx.ext.todo'] ### Added extension
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']

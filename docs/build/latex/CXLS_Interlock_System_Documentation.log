@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.3.4)  5 MAR 2024 09:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.3.4)  6 MAR 2024 07:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -784,10 +784,13 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package hyperref Info: Link coloring ON on input line 70.
+(CXLS_Interlock_System_Documentation.out)
+(CXLS_Interlock_System_Documentation.out)
 \@outlinefile=\write5
 \openout5 = `CXLS_Interlock_System_Documentation.out'.
 
 Package hyperref Info: Option `pageanchor' set `false' on input line 78.
+
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 78.
@@ -811,15 +814,20 @@ File: t1qhv.fd 2009/09/25 v1.2 font definition file for T1/qhv
 l.78 \sphinxmaketitle
                      
 ? 
-<<ot1.cmap>><<oml.cmap>><<oms.cmap>><<omx.cmap>>
-LaTeX Font Info:    Trying to load font information for U+msa on input line 78.
+! Emergency stop.
+<inserted text> 
+                $
+l.78 \sphinxmaketitle
+                     
+End of file on the terminal!
 
-
-(C:\Users\eseveret\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 78.
-
-
-(C:\Users\eseveret\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AM
+ 
+Here is how much of TeX's memory you used:
+ 14619 strings out of 474457
+ 236164 string characters out of 5741339
+ 1925190 words of memory out of 5000000
+ 36647 multiletter control sequences out of 15000+600000
+ 570531 words of font info for 41 fonts, out of 8000000 for 9000
+ 1142 hyphenation exceptions out of 8191
+ 72i,1n,79p,308b,513s stack positions out of 10000i,1000n,20000p,200000b,200000s
+!  ==> Fatal error occurred, no output PDF file produced!

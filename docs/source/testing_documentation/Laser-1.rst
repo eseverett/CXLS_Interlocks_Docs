@@ -20,7 +20,7 @@ Starting Conditions
 
 #. The Vault-1 Control VIEWMARQ only displays :green:`LASER SAFE`.
 
-#. The Vault-1 beacon stacks show only green LEDs on.
+#. The Vault-1 beacon stacks show only :green:`green` LEDs on.
 
     - Vault-1 Control
     - Vault-1 east wall
@@ -45,7 +45,7 @@ Starting Conditions
 
 #. Push to exit module is not on.
 
-#. Laser-1 -estops are not engaged and LEDs are off.
+#. Laser-1 e-stops are not engaged and LEDs are off.
 
     - Laser-1 south-West
     - Laser-1 north-West
@@ -168,7 +168,8 @@ Starting Conditions
 Arming Laser-1
 --------------
 
-#. When entering Laser-1, there should be an audible chime.
+#. When entering Laser-1, there should be an audible chime and a flashing LED on the chime. 
+   The chime is on the west wall of the Laser-1 airlock.
 
 #. Attempt to arm all the local interlock modules before arming Laser-1. 
    The Dira will not arm.

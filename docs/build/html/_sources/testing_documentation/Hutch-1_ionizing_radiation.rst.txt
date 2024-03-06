@@ -32,7 +32,7 @@ The default state for testing of the Hutch-1 ionizing radiation interlock system
     - BEAM SELECT
     - BEAM STOP
 
-#. THe following Hutch-1 Control Ionizing Radiation Interlock protocase lamps are :green:`green`.
+#. The following Hutch-1 Control Ionizing Radiation Interlock protocase lamps are :green:`green`.
 
     - AREA MONITOR
     - BEAM status
@@ -132,10 +132,11 @@ The default state for testing of the Hutch-1 ionizing radiation interlock system
         It can be seen here that the contact plate is on the bottom sensors. :white-cell:`====`
 
 .. table-caption::
-    **Figure 4:** This is the upright double tungsten shutter, and an example of this shutter being in the closed position.
-    If the plate where to be on the top sensors, the shutters would be open.
-    Additionally, the other double tungsten shutter is rotated 180 degrees from this one, which can be seen in the first image as the closer shutter only shows its top.
-    Because it is rotated, the contact on the upper sensors is the closed position for the other shutter. 
+    **Figure 4:** This is the upright double tungsten shutter in the closed position.
+    This shutter corresponds to the convergent beam. 
+    If the plate in image 2  where to be on the top sensors, the shutters would be open.
+    Additionally, the other double tungsten shutter is rotated 180 degrees around the beam pipe from this one.
+    Because it is rotated, the contact being on the upper sensors is the closed position for the other shutter. 
 
 Search Procedure
 ----------------
@@ -151,11 +152,12 @@ Search Procedure
     - Button 2
     - Button 3
 
-#. When the third search button is hit, there will be an audible chime and a flashing light. 
+#. When the third search button is hit, there will be an audible chime and a flashing light from the chime. 
+   The chime is located on the west wall of Hutch-1. 
 
-#. Once all three search buttons have been hit in order, close the shield door. The Hutch-1 Control Ionizing Radiation Interlock protocase shield door lamp turns :green:`green`.
+#. Once all three search buttons have been hit in order, close the shield door. The Hutch-1 Control IONIZING RADIATION INTERLOCK protocase shield door lamp turns :green:`green`.
 
-#. The Hutch-1 Control Ionizing Radiation Interlock protocase Beam Select Divergent lamp turns :green:`green`. 
+#. The Hutch-1 Control IONIZING RADIATION INTERLOCK protocase Beam Select Divergent lamp turns :green:`green`. 
 
 .. figure:: /images/user_docs/Hutch-1_ionizing_radiation/Hutch-1_searched.jpg
     :scale: 20 %
@@ -181,23 +183,24 @@ Changing Beam Status
 
 #. Change the Hutch-1 Ionizing Radiation Interlock protocase Beam Select key to Collimated.
 
-    - The Beam Select Divergent lamp turn :red:`red`.
-    - The Beam Select Collimated lamp turn :green:`green`.
-    - The Status Divergent lamp turns :red:`red`.
-    - The Beam Status Collimated lamp turn :orange:`orange` while the shutter is moving, and then turns :green:`green` when the shutter is closed. 
-    - Verify that the shutters are physically closed.
+    - The BEAM SELECT DIVERGENT lamp turn :red:`red`.
+    - The BEAM SELECT COLLIMATED lamp turn :green:`green`.
+    - The BEAM STATUS DIVERGENT lamp turns :red:`red`.
+    - The BEAM STATUS COLLIMATED lamp turn :orange:`orange` while the shutter is moving, and then turns :green:`green` when the shutter is open. 
+    - Verify that the divergent shutter is physically closed and the collimated shutter is physically open on the double tungsten shutters in Vault-1.
 
 #. Change the Beam Select key back to Divergent. The inverse of step three should occur. 
 
-    - The Beam Select Collimated lamp turns :red:`red`.
-    - The Beam Select Divergent lamp turns :green:`green`.
-    - The Beam Status Collimated lamp turns :red:`red`.
-    - The Beam Status Divergent lamp turns :orange:`orange` while the shutter is moving, and then turns :green:`green` when the shutter is closed.
-    - Verify that the shutters are physically closed.
+    - The BEAM SELECT COLLIMATED lamp turns :red:`red`.
+    - The BEAM SELECT DIVERGENT lamp turns :green:`green`.
+    - The BEAM STATUS COLLIMATED lamp turns :red:`red`.
+    - The BEAM STATUS DIVERGENT lamp turns :orange:`orange` while the shutter is moving, and then turns :green:`green` when the shutter is open.
+    - Verify that the divergent shutter is physically open and the collimated shutter is physically closed on the double tungsten shutters in Vault-1. 
 
 #. Press the Reset button. 
-   All Hutch-1 Control Ionizing Radiation Interlock protocase Beam Status lamps are :green:`green`.
-   Verify the shutters are physically in the correct position.
+   All Hutch-1 Control IONIZING RADIATION INTERLOCK protocase BEAM STATUS lamps are :green:`green`.
+   
+   - Verify that both shutters are closed. 
 
 .. list-table:: 
     :align: center

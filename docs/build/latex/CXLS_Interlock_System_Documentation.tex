@@ -61,7 +61,7 @@
 
 
 \title{CXLS_Interlock_System_Documentation}
-\date{Mar 05, 2024}
+\date{Mar 06, 2024}
 \release{2024}
 \author{Eric Everett}
 \newcommand{\sphinxlogo}{\vbox{}}
@@ -3527,15 +3527,38 @@ When Vault\sphinxhyphen{}1 is in a non\sphinxhyphen{}secure state, neither the a
 \sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
 \item {} 
 \sphinxAtStartPar
+Relay R1 in Vault\sphinxhyphen{}1 Control west panel is off.
+
+\item {} 
+\sphinxAtStartPar
 Switch the ENABLE key for the accelerator.
 The accelerator lamp remains \DUrole{red}{red}.
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+Relay R2 in Vault\sphinxhyphen{}1 Control west panel remains off
+
+\end{itemize}
 
 \item {} 
 \sphinxAtStartPar
 Switch the ENABLE keys for transmitters 1 and 2.
 Both transmitter lamps remain \DUrole{red}{red}.
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+Relays R3, R5 for transmitter 1 and R4, R6 for transmitter 2 in Vault\sphinxhyphen{}1 Control west panel remain off.
+
+\end{itemize}
 
 \end{enumerate}
+
+\begin{figure}[htbp]
+\centering
+\capstart
+
+\noindent\sphinxincludegraphics[scale=0.2]{{arming_relays}.jpg}
+\caption{\sphinxstylestrong{Figure 4:} Vault\sphinxhyphen{}1 Control west panel relays for arming the accelerator and transmitters.}\label{\detokenize{testing_documentation/Vault-1_ionizing_radiation:id2}}\end{figure}
 
 
 \subsection{Searching Procedure}
@@ -3558,7 +3581,7 @@ Button 2
 \item {} 
 \sphinxAtStartPar
 Go through the vault and in sequence, click the three search buttons.
-The LED on the search button should glow and the corresponding lamp on the Vault\sphinxhyphen{}1 Control IONIZING RADIATION INTERLOCK protocase should turn \DUrole{green}{green}.
+The LED on the search button should turn on and the corresponding lamp on the Vault\sphinxhyphen{}1 Control IONIZING RADIATION INTERLOCK protocase should turn \DUrole{green}{green}.
 \begin{itemize}
 \item {} 
 \sphinxAtStartPar
@@ -3577,11 +3600,18 @@ Button 3
 \item {} 
 \sphinxAtStartPar
 When the third search button is hit, a chime will start, and the LED on the chime will flash.
+The chime is located on the Vault\sphinxhyphen{}1 east wall.
 
 \item {} 
 \sphinxAtStartPar
 Once all three search buttons have been hit in order, close the shield door.
-The shield door lamp on the Vault\sphinxhyphen{}1 Control IONIZING RADIATION INTERLOCK protocase will turn green once the mechanical door switches are fully actuated.
+The shield door lamp on the Vault\sphinxhyphen{}1 Control IONIZING RADIATION INTERLOCK protocase will turn \DUrole{green}{green} once the mechanical door switches are fully actuated.
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+R1 in Vault\sphinxhyphen{}1 Control west panel turns on.
+
+\end{itemize}
 
 \end{enumerate}
 
@@ -3590,15 +3620,22 @@ The shield door lamp on the Vault\sphinxhyphen{}1 Control IONIZING RADIATION INT
 \capstart
 
 \noindent\sphinxincludegraphics[scale=0.2]{{Vault-1_searched}.jpg}
-\caption{\sphinxstylestrong{Figure 4:} Vault\sphinxhyphen{}1 IONIZING RADIATION INTERLOCK protocase when Vault\sphinxhyphen{}1 is searched.}\label{\detokenize{testing_documentation/Vault-1_ionizing_radiation:id2}}\end{figure}
+\caption{\sphinxstylestrong{Figure 5:} Vault\sphinxhyphen{}1 IONIZING RADIATION INTERLOCK protocase when Vault\sphinxhyphen{}1 is searched.}\label{\detokenize{testing_documentation/Vault-1_ionizing_radiation:id3}}\end{figure}
 
 \begin{figure}[htbp]
 \centering
 \capstart
 
 \noindent\sphinxincludegraphics[scale=0.2]{{Vault-1_door}.jpg}
-\caption{\sphinxstylestrong{Figure 5:} Vault\sphinxhyphen{}1 IONIZING RADIATION INTERLOCK protocase when the shield door is closed and Vault\sphinxhyphen{}1 is secured.
-Under this state the accelerator can now be armed.}\label{\detokenize{testing_documentation/Vault-1_ionizing_radiation:id3}}\end{figure}
+\caption{\sphinxstylestrong{Figure 6:} Vault\sphinxhyphen{}1 IONIZING RADIATION INTERLOCK protocase when the shield door is closed and Vault\sphinxhyphen{}1 is secured.
+Under this state the accelerator can now be armed.}\label{\detokenize{testing_documentation/Vault-1_ionizing_radiation:id4}}\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\capstart
+
+\noindent\sphinxincludegraphics[scale=0.2]{{R1_door_closed}.jpg}
+\caption{\sphinxstylestrong{Figure 7:} Vault\sphinxhyphen{}1 Control west panel when the Vault\sphinxhyphen{}1 shield door is closed, turing on relay R1.}\label{\detokenize{testing_documentation/Vault-1_ionizing_radiation:id5}}\end{figure}
 
 
 \subsection{Arming the Accelerator and transmitters}
@@ -3608,11 +3645,23 @@ Under this state the accelerator can now be armed.}\label{\detokenize{testing_do
 \sphinxAtStartPar
 With the shield door still closed, enable the accelerator on the Vault\sphinxhyphen{}1 Control IONIZING RADIATION INTERLOCK protocase using the ENABLE key.
 The accelerator status lamp should turn \DUrole{green}{green}.
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+Relay R2 in Vault\sphinxhyphen{}1 Control west panel turns on.
+
+\end{itemize}
 
 \item {} 
 \sphinxAtStartPar
 Turn the ENABLE key for transmitter 1 on the Vault\sphinxhyphen{}1 Control IONIZING RADIATION INTERLOCK protocase.
 The transmitter 1 status lamp should turn \DUrole{green}{green}.
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+Relay R3 and R5 in Vault\sphinxhyphen{}1 Control west panel turns on.
+
+\end{itemize}
 
 \item {} 
 \sphinxAtStartPar
@@ -3645,6 +3694,12 @@ Accelerator Lab
 \item {} 
 \sphinxAtStartPar
 Hit the reset button and repeat 2\sphinxhyphen{}4 with transmitter 2.
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+Relay R4 and R6 in Vault\sphinxhyphen{}1 Control west panel turns on.
+
+\end{itemize}
 
 \end{enumerate}
 
@@ -3653,7 +3708,14 @@ Hit the reset button and repeat 2\sphinxhyphen{}4 with transmitter 2.
 \capstart
 
 \noindent\sphinxincludegraphics[scale=0.2]{{Vault-1_protocase_accelerator_armed}.jpg}
-\caption{\sphinxstylestrong{Figure 6:} Vault\sphinxhyphen{}1 Control IONIZING RADIATION INTERLOCK protocase when the accelerator is armed.}\label{\detokenize{testing_documentation/Vault-1_ionizing_radiation:id4}}\end{figure}
+\caption{\sphinxstylestrong{Figure 8:} Vault\sphinxhyphen{}1 Control IONIZING RADIATION INTERLOCK protocase when the accelerator is armed.}\label{\detokenize{testing_documentation/Vault-1_ionizing_radiation:id6}}\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\capstart
+
+\noindent\sphinxincludegraphics[scale=0.2]{{R1R2_accelerator_armed}.jpg}
+\caption{\sphinxstylestrong{Figure 9:} Vault\sphinxhyphen{}1 Control west panel when the accelerator is armed, turning on relays R2.}\label{\detokenize{testing_documentation/Vault-1_ionizing_radiation:id7}}\end{figure}
 
 
 \begin{savenotes}\sphinxattablestart
@@ -3679,7 +3741,39 @@ Vault\sphinxhyphen{}1 Control IONIZING RADIATION INTERLOCK protocase when transm
 
 \begin{sphinxuseclass}{tight-table-caption-container}
 \sphinxAtStartPar
-\sphinxstylestrong{Figure 7:} This is the Vault\sphinxhyphen{}1 Control IONIZING RADIATION INTERLOCK protocase when the transmitters are armed.
+\sphinxstylestrong{Figure 10:} This is the Vault\sphinxhyphen{}1 Control IONIZING RADIATION INTERLOCK protocase when the transmitters are armed.
+
+\end{sphinxuseclass}
+
+\begin{savenotes}\sphinxattablestart
+\centering
+\begin{tabulary}{\linewidth}[t]{|T|T|T|}
+\hline
+
+\noindent{\hspace*{\fill}\sphinxincludegraphics[scale=0.2]{{R1R2R3R5_transmitter_1_armed}.jpg}\hspace*{\fill}}
+&
+\noindent{\hspace*{\fill}\sphinxincludegraphics[scale=0.2]{{R1R2R4_transmitter_2_armed}.jpg}\hspace*{\fill}}
+&
+\noindent{\hspace*{\fill}\sphinxincludegraphics[scale=0.2]{{R1R2R3R4R5_both_transmitters_armed}.jpg}\hspace*{\fill}}
+\\
+\hline
+\sphinxAtStartPar
+Vault\sphinxhyphen{}1 Control west panel when transmitter 1 is armed, turning on relays R3 and R5 \DUrole{white-cell}{===============}
+&
+\sphinxAtStartPar
+Vault\sphinxhyphen{}1 Control west panel when transmitter 2 is armed, turning on relays R4 and R6. \DUrole{white-cell}{==============}
+&
+\sphinxAtStartPar
+Vault\sphinxhyphen{}1 Control west panel when both transmitters are armed, turning on all 4 relays. \DUrole{white-cell}{=============}
+\\
+\hline
+\end{tabulary}
+\par
+\sphinxattableend\end{savenotes}
+
+\begin{sphinxuseclass}{tight-table-caption-container}
+\sphinxAtStartPar
+\sphinxstylestrong{Figure 11:} These are the Vault\sphinxhyphen{}1 Control west panel relays for arming the transmitters.
 
 \end{sphinxuseclass}
 
@@ -3706,7 +3800,7 @@ Accelerator Lab VIEWMARQ display when the RF is armed. \DUrole{white-cell}{=====
 
 \begin{sphinxuseclass}{tight-table-caption-container}
 \sphinxAtStartPar
-\sphinxstylestrong{Figure 8:} These are the VIEWMARQ displays in Vault\sphinxhyphen{}1 Control and Accelerator Lab when the RF is armed.
+\sphinxstylestrong{Figure 12:} These are the VIEWMARQ displays in Vault\sphinxhyphen{}1 Control and Accelerator Lab when the RF is armed.
 
 \end{sphinxuseclass}
 
@@ -3754,9 +3848,16 @@ Vault\sphinxhyphen{}1 Control IONIZING RADIATION INTERLOCK protocase when both t
 
 \begin{sphinxuseclass}{tight-table-caption-container}
 \sphinxAtStartPar
-\sphinxstylestrong{Figure 9:} This is the Vault\sphinxhyphen{}1 Control IONIZING RADIATION INTERLOCK protocase when the transmitters are in override.
+\sphinxstylestrong{Figure 11:} This is the Vault\sphinxhyphen{}1 Control IONIZING RADIATION INTERLOCK protocase when the transmitters are in override.
 
 \end{sphinxuseclass}
+\begin{figure}[htbp]
+\centering
+\capstart
+
+\noindent\sphinxincludegraphics[scale=0.2]{{override_relays}.jpg}
+\caption{\sphinxstylestrong{Figure 13:} Vault\sphinxhyphen{}1 Control west panel relays for overriding the transmitters.}\label{\detokenize{testing_documentation/Vault-1_ionizing_radiation:id8}}\end{figure}
+
 
 \subsection{Timing out the Shield Door and Search sequence}
 \label{\detokenize{testing_documentation/Vault-1_ionizing_radiation:timing-out-the-shield-door-and-search-sequence}}\begin{enumerate}
@@ -3764,7 +3865,7 @@ Vault\sphinxhyphen{}1 Control IONIZING RADIATION INTERLOCK protocase when both t
 \item {} 
 \sphinxAtStartPar
 Rearm the accelerator and transmitters and open the shield door.
-The accelerator and transmitter lamps should turn \DUrole{red}{red}.
+The ACCELERATOR, TRANSMITTERS, and SECURE PERIMETER lamps should turn \DUrole{red}{red}.
 
 \item {} 
 \sphinxAtStartPar
@@ -4050,7 +4151,7 @@ The Hutch\sphinxhyphen{}1 Control Ionizing Radiation Interlock protocase Beam Se
 \caption{\sphinxstylestrong{Figure 6:} This is the Hutch\sphinxhyphen{}1 Control IONIZING RADIATION INTERLOCK protocase when Hutch\sphinxhyphen{}1 is secured.}\label{\detokenize{testing_documentation/Hutch-1_ionizing_radiation:id3}}\end{figure}
 
 
-\subsection{Changing Beam status}
+\subsection{Changing Beam Status}
 \label{\detokenize{testing_documentation/Hutch-1_ionizing_radiation:changing-beam-status}}\begin{enumerate}
 \sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
 \item {} 
@@ -6434,7 +6535,7 @@ The LOCAL INTERLOCK CONTACT CONTROL modules will stay armed.
 
 \item {} 
 \sphinxAtStartPar
-Pharos LASER ENCLOSURE INTERLOCK protocase door monitor will display \DUrole{red}{CLOSED}.
+Pharos LASER ENCLOSURE INTERLOCK protocase door monitor will display \DUrole{green}{CLOSED}.
 
 \item {} 
 \sphinxAtStartPar
@@ -6442,7 +6543,7 @@ Pharos UV and IR shutters will not close.
 
 \item {} 
 \sphinxAtStartPar
-The Pharos power supply is cut off.
+The Pharos power supply stays on.
 
 \end{itemize}
 
@@ -6515,11 +6616,15 @@ Pharos UV and IR shutters will close.
 
 \item {} 
 \sphinxAtStartPar
+Dira UV and IR shutters will close.
+
+\item {} 
+\sphinxAtStartPar
 Dira will lose power.
 
 \item {} 
 \sphinxAtStartPar
-The Pharos power supply is cut off.
+Pharos will lose power.
 
 \end{itemize}
 
@@ -6589,7 +6694,7 @@ Pharos UV and IR shutters will not close.
 
 \item {} 
 \sphinxAtStartPar
-The Pharos power supply is cut off.
+Dira UV and IR shutters will not close.
 
 \end{itemize}
 
@@ -6613,6 +6718,10 @@ Pharos LASER ENCLOSURE INTERLOCK protocase door monitor will display nothing.
 \item {} 
 \sphinxAtStartPar
 Pharos UV and IR shutters will close.
+
+\item {} 
+\sphinxAtStartPar
+Dira UV and IR shutters will close.
 
 \end{itemize}
 
