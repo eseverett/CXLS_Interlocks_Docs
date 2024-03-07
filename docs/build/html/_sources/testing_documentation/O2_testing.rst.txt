@@ -9,6 +9,7 @@ O2 Sensor Testing Protocol
 
 The purpose of this document is to test the functionality of the O2 sensors in Vault-1, Hutch-1, and RF-1. 
 
+-----
 
 Staring Conditions
 ------------------
@@ -57,6 +58,10 @@ Staring Conditions
     **Figure 2:** These are the yellow 4 contact blocks in the Vault-1 Control west aggregator panel.
     If any of the O2 sensors alarm, these blocks will loose continuity with each other.
 
+
+-----
+
+
 Testing Connectivity Between Main and Remote Units
 --------------------------------------------------
 
@@ -69,6 +74,8 @@ Testing Connectivity Between Main and Remote Units
         - RF-1 / Accelerator Lab
         - Hutch-1 / Hutch-1 Control (top)
         - Astrella enclosure / Hutch-1 Control (bottom)
+
+-----
 
     
 Testing Alarming
@@ -91,6 +98,7 @@ Testing Alarming
         - Hutch-1 / Hutch-1 Control (top)
         - Astrella enclosure / Hutch-1 Control (bottom)
 
+-----
 
 Emergency Tungsten Shutter Crash
 --------------------------------

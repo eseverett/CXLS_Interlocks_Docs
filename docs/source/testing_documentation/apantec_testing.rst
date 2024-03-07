@@ -8,6 +8,8 @@ Apantec Ionizing Radiation Sensors Testing Protocol
 
 The objective of this testing procedure is to test the functionality of the Apantec ionizing radiation detection equipment and interlocks. 
 
+-----
+
 Starting Conditions
 -------------------
 
@@ -90,6 +92,8 @@ Starting Conditions
 ..     Note that these relays are different from the ones referenced in the Vault-1 Ionizing Radiation Testing Protocol.
 
 
+-----
+
 Testing Alert alarm
 -------------------
 
@@ -130,6 +134,9 @@ Testing Alert alarm
 
     **Figure 5:** This is an example of the Hutch-1 Control IONIZING RADIATION INTERLOCK protocase AREA MONITOR RADIATION lamp in a fail state.
     This should occur on the Vault-1 Control IONIZING RADIATION INTERLOCK protocase AREA MONITOR RADIATION lamp as well.
+
+
+-----
 
 
 Testing High Alarm
@@ -209,6 +216,9 @@ Testing High Alarm
 
 .. .. warning
 ..     NEEDS IMAGES
+
+
+-----
 
 
 Emergency Tungsten Shutter Crash

@@ -5,6 +5,9 @@ For the CXLS laser interlock systems, Laser Safety Systems modules are used to p
 
 .. pdfbutton:: Laser_Safety_Systems_user_manual.pdf
 
+
+-----
+
 Resolved Issues
 ---------------
 

@@ -15,6 +15,8 @@ This includes:
 - Arming the Dira.
 
 
+------
+
 Starting Conditions
 -------------------
 
@@ -163,7 +165,7 @@ Starting Conditions
     **Figure 8:** This is the arming panel for Laser-1.
 
 
-
+-----
 
 Arming Laser-1
 --------------
@@ -262,6 +264,8 @@ Arming Laser-1
     **Figure 13:** This is the e-stop module in Laser-1 in a safe condition.
 
 
+-----
+
 Arming the Dira
 ---------------
 
@@ -310,6 +314,8 @@ Arming the Dira
     **Figure 14:** These are all the VIEWMARQ displays that will update when the Dira is armed. 
 
 
+-----
+
 Safe Dira E-Stop Test
 ---------------------
 
@@ -321,6 +327,8 @@ Safe Dira E-Stop Test
 
 #. Verify that the Dira power supply is cut off.
 
+
+-----
 
 RF-1 Door
 ---------
@@ -334,6 +342,9 @@ RF-1 Door
     :align: center
 
     **Figure 15:** This is the Laser-1 to RF-1 door monitor when the door is open.
+
+-----
+
 
 Crashing the Dira
 -----------------

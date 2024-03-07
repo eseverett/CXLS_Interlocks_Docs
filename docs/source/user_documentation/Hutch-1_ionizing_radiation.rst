@@ -11,6 +11,8 @@ It covers the hazard indicators, control protocase, and beacons in Hutch-1 Contr
 The control protocase allows users to view and change the secure state of Vault-1, arm the accelerator and transmitters, and monitor area monitors.  
 The beacons indicate the enabled state of RF and ionizing radiation emergency stop buttons. 
 
+-----
+
 Hutch-1 Ionizing Radiation Hazard Indicators
 --------------------------------------------
 
@@ -87,7 +89,7 @@ The Hutch-1 west wall and Astrella enclosure O2 remote units are located in Hutc
 
 
 Beacons
--------
+^^^^^^^
 
 In Hutch-1 Control, there are two beacons that show ionizing radiation hazards. 
 There is one for the :math:`O_{2}` levels and one for the ionizing radiation emergency stop button.
@@ -141,14 +143,14 @@ There is one for the :math:`O_{2}` levels and one for the ionizing radiation eme
 ..     **Figure 5:** This is the Hutch-1 Control O2 beacon that corresponds to both Hutch-1 O2 sensors.
 
 
-Ionizing Radiation Monitor
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+Ionizing Radiation Monitoring GUI
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. note:: 
     The ionizing radiation monitor may go through changes in the near future.
     This section will be updated when those changes are made.
 
-
+-----
 
 Ionizing Radiation Emergency Stop Buttons
 -----------------------------------------
@@ -191,6 +193,7 @@ There is also laser emergency stop buttons that will only cut power to their spe
 .. table-caption:: 
     **Figure 4:** This is the ionizing radiation emergency stop button in both states.
 
+-----
 
 Search Procedure for Securing Hutch-1
 -------------------------------------
@@ -257,6 +260,9 @@ Once the door is fully closed and actuating the door switches the SECURE PERIMET
 
     **Figure 8:** This is the Hutch-1 Control IONIZING RADIATION INTERLOCK protocase when Hutch-1 is secured.
 
+-----
+
+
 Controlling the Beam Status in Hutch-1
 --------------------------------------
 
@@ -288,15 +294,11 @@ The BEAM SELECT lamp shows what has been selected, and the BEAM STATUS lamp show
     **Figure 9:** This is the Hutch-1 Control IONIZING RADIATION INTERLOCK protocase when either shutter is open. 
     When the beam stop is open a shutter will automatically open to whatever beam select is set to before hand. 
 
+
+-----
+
 Putting Hutch-1 into a Non-Secure State
 ---------------------------------------
 
 Once work in Hutch-1 is completed and is no longer required to be in a secure state, press the BEAM STOP RESET button on the Hutch-1 IONIZING RADIATION INTERLOCK protocase and open the shield door. 
 
-
-
-Hutch-1 Radiation Survey Procedure
-----------------------------------
-
-.. note:: 
-    As of now, there is no ionizing radiation survey procedure for Hutch-1.

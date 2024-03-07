@@ -78,6 +78,8 @@ It knows the status of the room by receiving an 8-bit signal from the possible h
       - Unused Bit Channel
 
 
+-----
+
 
 Resolved Issues
 ---------------

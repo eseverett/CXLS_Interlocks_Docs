@@ -14,6 +14,8 @@ The control protocase allows the users to view the override state of the laser e
 The VIEWMARQ display provides a quick overview of the laser hazard status in Hutch-1.
 The beacons are used to indicate the state of laser hazards in Hutch-1 and the laser enclosure.
 
+-----
+
 Hutch-1 Laser Hazard Warning Indicators
 ---------------------------------------
 
@@ -267,6 +269,8 @@ The laser interlock system is interfaced through the laser safety systems module
     When the e-stop is pressed, the LED in the center will turn on.
     To reset the e-stop, twist the button clockwise.
 
+-----
+
 
 Arming Hutch-1 Laser Systems
 ----------------------------
@@ -399,6 +403,7 @@ It is important to note that Vault-1 will disarm itself and shutter all exposed 
 .. table-caption::
   **Figure 13:** Hutch-1 entry armed and unarmed.
 
+-----
 
 
 Using Laser Enclosure Interlock Protocase for Overriding Interlocks and Manual Shutter Control
@@ -436,6 +441,9 @@ At this point, the LOCAL INTERLOCK CONTACT CONTROL local interlock modules can b
     :align: center
 
     **Figure 14:** Astrella enclosure override.
+
+
+-----
 
 
 Disarming the Laser Interlock System

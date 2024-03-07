@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
+    <meta property="article:modified_time" content="2024-02-29T07:16:17-07:00" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hutch-1 Ionizing Radiation Interlock System User Manual &mdash; CXLS Interlock System Documentation 2024 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -53,17 +54,14 @@
 <li class="toctree-l2"><a class="reference internal" href="#hutch-1-ionizing-radiation-hazard-indicators">Hutch-1 Ionizing Radiation Hazard Indicators</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#hutch-1-control-protocase">Hutch-1 Control Protocase</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#o2-main-and-remote-units">O2 Main and Remote Units</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#beacons">Beacons</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#ionizing-radiation-monitor">Ionizing Radiation Monitor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#beacons">Beacons</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ionizing-radiation-monitoring-gui">Ionizing Radiation Monitoring GUI</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#ionizing-radiation-emergency-stop-buttons">Ionizing Radiation Emergency Stop Buttons</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#search-procedure-for-securing-hutch-1">Search Procedure for Securing Hutch-1</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#controlling-the-beam-status-in-hutch-1">Controlling the Beam Status in Hutch-1</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#putting-hutch-1-into-a-non-secure-state">Putting Hutch-1 into a Non-Secure State</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#hutch-1-radiation-survey-procedure">Hutch-1 Radiation Survey Procedure</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Hutch-1_laser.html">Hutch-1 Laser Interlock System User Manual</a></li>
@@ -122,6 +120,7 @@
 It covers the hazard indicators, control protocase, and beacons in Hutch-1 Control.
 The control protocase allows users to view and change the secure state of Vault-1, arm the accelerator and transmitters, and monitor area monitors.
 The beacons indicate the enabled state of RF and ionizing radiation emergency stop buttons.</p>
+<hr class="docutils" />
 <section id="hutch-1-ionizing-radiation-hazard-indicators">
 <h2>Hutch-1 Ionizing Radiation Hazard Indicators</h2>
 <p>This section will cover the ionizing radiation hazard indicators in Hutch-1 Control.
@@ -173,9 +172,8 @@ The Hutch-1 west wall and Astrella enclosure O2 remote units are located in Hutc
 <p class="table-caption"><strong>Figure 2:</strong> This is the O2 sensor pair.</p>
 </div>
 </section>
-</section>
 <section id="beacons">
-<h2>Beacons</h2>
+<h3>Beacons</h3>
 <p>In Hutch-1 Control, there are two beacons that show ionizing radiation hazards.
 There is one for the <span class="math notranslate nohighlight">\(O_{2}\)</span> levels and one for the ionizing radiation emergency stop button.</p>
 <table class="docutils align-center">
@@ -212,8 +210,9 @@ There is one for the <span class="math notranslate nohighlight">\(O_{2}\)</span>
 </tr>
 </tbody>
 </table>
-<section id="ionizing-radiation-monitor">
-<h3>Ionizing Radiation Monitor</h3>
+</section>
+<section id="ionizing-radiation-monitoring-gui">
+<h3>Ionizing Radiation Monitoring GUI</h3>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>The ionizing radiation monitor may go through changes in the near future.
@@ -221,6 +220,7 @@ This section will be updated when those changes are made.</p>
 </div>
 </section>
 </section>
+<hr class="docutils" />
 <section id="ionizing-radiation-emergency-stop-buttons">
 <h2>Ionizing Radiation Emergency Stop Buttons</h2>
 <p>Throughout the CXLS suite there are ionizing radiation emergency stop buttons.
@@ -246,6 +246,7 @@ There is also laser emergency stop buttons that will only cut power to their spe
 <p class="table-caption"><strong>Figure 4:</strong> This is the ionizing radiation emergency stop button in both states.</p>
 </div>
 </section>
+<hr class="docutils" />
 <section id="search-procedure-for-securing-hutch-1">
 <h2>Search Procedure for Securing Hutch-1</h2>
 <p>To be able to operate the double tungsten shutters, Hutch-1 must be searched and secured.
@@ -290,6 +291,7 @@ Once the door is fully closed and actuating the door switches the SECURE PERIMET
 </figcaption>
 </figure>
 </section>
+<hr class="docutils" />
 <section id="controlling-the-beam-status-in-hutch-1">
 <h2>Controlling the Beam Status in Hutch-1</h2>
 <p>Once Hutch-1 is searched and secured, the beam stop can be opened by turning the BEAM STOP OPEN key on the Hutch-1 Control IONIZING RADIATION INTERLOCK protocase, the lamp should turn <span class="green">green</span> when the stop is open.
@@ -314,16 +316,10 @@ The BEAM SELECT lamp shows what has been selected, and the BEAM STATUS lamp show
 <p class="table-caption"><strong>Figure 9:</strong> This is the Hutch-1 Control IONIZING RADIATION INTERLOCK protocase when either shutter is open. When the beam stop is open a shutter will automatically open to whatever beam select is set to before hand.</p>
 </div>
 </section>
+<hr class="docutils" />
 <section id="putting-hutch-1-into-a-non-secure-state">
 <h2>Putting Hutch-1 into a Non-Secure State</h2>
 <p>Once work in Hutch-1 is completed and is no longer required to be in a secure state, press the BEAM STOP RESET button on the Hutch-1 IONIZING RADIATION INTERLOCK protocase and open the shield door.</p>
-</section>
-<section id="hutch-1-radiation-survey-procedure">
-<h2>Hutch-1 Radiation Survey Procedure</h2>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>As of now, there is no ionizing radiation survey procedure for Hutch-1.</p>
-</div>
 </section>
 </section>
 
@@ -338,7 +334,9 @@ The BEAM SELECT lamp shows what has been selected, and the BEAM STATUS lamp show
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2024, Eric Everett.</p>
+    <p>&#169; Copyright 2024, Eric Everett.
+      <span class="lastupdated">Last updated on Feb 29, 2024.
+      </span></p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

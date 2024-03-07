@@ -14,6 +14,9 @@ The control protocase allows the users to view the override state of the laser e
 The VIEWMARQ display provides a quick overview of the laser hazard status in Vault-1.
 The beacons are used to indicate the state of laser hazards in Vault-1 and the laser enclosures.
 
+-----
+
+
 Laser-1 Laser Hazard Warning Indicators
 ---------------------------------------
 
@@ -260,6 +263,9 @@ When the e-stop is pressed, the LED in the center will turn on.
 To reset the e-stop, twist the button clockwise.
 
 
+-----
+
+
 Arming Laser-1 Laser Systems
 ----------------------------
 
@@ -402,6 +408,8 @@ After this, the Dira can be properly armed from the arming panel.
     Here you can see where the issue arises, causing a need for the Dira to be reset before it can be armed again.
 
 
+-----
+
 
 Arming Auxiliary hazards
 ------------------------
@@ -409,6 +417,9 @@ Arming Auxiliary hazards
 .. note::
 
     The auxiliary hazards are not currently in use.
+
+
+-----
 
 
 Disarming the Laser Interlock System

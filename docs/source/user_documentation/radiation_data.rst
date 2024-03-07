@@ -7,6 +7,9 @@ Ionizing Radiation Surveys and Results
 
 This section provides a summary of the radiation data that has been collected in the CXLS suite. 
 
+-----
+
+
 Routine Radiation Survey of Vault-1 and Beam Line
 -------------------------------------------------
 
@@ -63,12 +66,15 @@ Below is a summary of the data collected from the radiation surveys.
    **Figure 6:** Dose rate distribution in Vault-1.
    Note that there is one point that was taken after a long beam time near 1200, however the vast majority of the points are below 20 uSv/hr.
 
+
+-----
+
+
 Radiation Characterization Survey of Vault-1
 --------------------------------------------
 
-After the Apantec area monitors were installed, and the software was developed to communicate and collect data from these devices, a survey was taken of Vault-1. 
+After the Apantec area monitors were installed, and the software was developed to communicate and collect data from these devices, a survey was taken of Vault-1 and perimeter areas. 
 The Apantec area monitor in Vault-1 was made mobile and placed around various locations in Vault-1. 
-Data from the surrounding area detector were also collected. 
 Below are the map of the detector locations and the summary of the data. 
 
 
@@ -95,26 +101,36 @@ Below are the map of the detector locations and the summary of the data.
      - Comparison of the XELERA simulations with the actual measurements at 200 pC.  :white-cell:`===============`
 
 
+.. table-caption::
+   **Figure 8:** This figure shows the XELERA simulation data compared to the measured results. 
+
+
 .. list-table::
    :align: center
 
    * - .. image:: /images/radiation_survey/Vault-1_readings_1.png
          :align: center
+         :scale: 45 %
      
      - .. image:: /images/radiation_survey/Vault-1_readings_2.png
          :align: center
+         :scale: 45 %
      
      - .. image:: /images/radiation_survey/Vault-1_readings_3.png
          :align: center
+         :scale: 45 %
 
      - .. image:: /images/radiation_survey/Vault-1_readings_4.png
          :align: center
+         :scale: 45 %
 
      - .. image:: /images/radiation_survey/Vault-1_readings_5.png
          :align: center
+         :scale: 45 %
 
      - .. image:: /images/radiation_survey/Vault-1_readings_6.png
          :align: center 
+         :scale: 45 %
 
    * - Radiation survey readings at Vault-1. :white-cell:`=======================================================`
      - Radiation survey readings at Vault-1. :white-cell:`=======================================================`
@@ -122,6 +138,15 @@ Below are the map of the detector locations and the summary of the data.
      - Radiation survey readings at Vault-1. :white-cell:`=======================================================`
      - Radiation survey readings at Vault-1. :white-cell:`=======================================================`
      - Radiation survey readings at Vault-1. :white-cell:`=======================================================`
+
+
+.. table-caption::
+   **Figure 9:** This figure shows the average radiation gamma and neutron reading at different locations and configurations, as well as the projections to full beam charge specs.
+
+
+-----
+
+
 
 Radiation Characterization Survey of Hutch-1
 --------------------------------------------
@@ -134,17 +159,17 @@ Below are the maps of the detectors, the beam charge and energy, and the summary
 .. figure:: /images/radiation_survey/Hutch-1_sensor_positions_1.png
    :align: center
    
-   **Figure 8:** This is the map of the locations where Hutch-1 radiation meter was placed.
+   **Figure 10:** This is the map of the locations where Hutch-1 radiation meter was placed.
 
 .. figure:: /images/radiation_survey/Hutch-1_sensor_positions_2.png
    :align: center
    
-   **Figure 9:** This is the map of the locations where Hutch-1 radiation meter was placed.
+   **Figure 11:** This is the map of the locations where Hutch-1 radiation meter was placed.
 
 .. figure:: /images/radiation_survey/Hutch-1_beam_levels.png
    :align: center
    
-   **Figure 10:** This is the map of the beam levels in Hutch-1.
+   **Figure 12:** This is the map of the beam levels in Hutch-1.
 
 .. list-table::
     :align: center 
@@ -169,3 +194,7 @@ Below are the maps of the detectors, the beam charge and energy, and the summary
       - Radiation in Hutch-1 behind the detector chamber. Spikes when POP10 is in and collimated shutter open.
       - Radiation in Hutch-1 near the penetration points. Spikes when downstream pop screens are in and a shutter is open. 
       - Radiation in Hutch-1 inside the experiment chamber. Spikes when downstream pop screens are in and collimated shutter is open. 
+
+
+.. table-caption::
+   **Figure 13:** This figure is showing the only data where above background radiation was measured.

@@ -15,6 +15,8 @@ The following falls under the scope of this testing procedure:
 - Ionizing radiation monitoring interlocks.
 
 
+-----
+
 Starting Conditions
 -------------------
 
@@ -93,6 +95,8 @@ The default state for testing the Vault-1 ionizing radiation interlock system is
 
 ..    Vault-1 search buttons on
 
+-----
+
 
 Testing Unsecure Vault-1 Conditions
 -----------------------------------
@@ -117,6 +121,7 @@ When Vault-1 is in a non-secure state, neither the accelerator nor the transmitt
 
    **Figure 4:** Vault-1 Control west panel relays for arming the accelerator and transmitters.
 
+-----
 
 Searching Procedure
 -------------------
@@ -165,6 +170,8 @@ Searching Procedure
 
    **Figure 7:** Vault-1 Control west panel when the Vault-1 shield door is closed, turing on relay R1.
 
+
+-----
 
 Arming the Accelerator and transmitters
 ---------------------------------------
@@ -277,6 +284,9 @@ Arming the Accelerator and transmitters
    **Figure 12:** These are the VIEWMARQ displays in Vault-1 Control and Accelerator Lab when the RF is armed.
 
 
+-----
+
+
 Overriding and Resetting Transmitters and Accelerator
 -----------------------------------------------------
 
@@ -322,6 +332,8 @@ Overriding and Resetting Transmitters and Accelerator
 
    **Figure 13:** Vault-1 Control west panel relays for overriding the transmitters.
 
+-----
+
 
 Timing out the Shield Door and Search sequence
 ----------------------------------------------
@@ -335,7 +347,7 @@ Timing out the Shield Door and Search sequence
 #. Go through the search procedure again except do not close the shield door and allow the system to trip.
    After :red:`x`, the search lamps should turn :red:`red`.
 
-
+-----
 
 
 Return to Starting Conditions

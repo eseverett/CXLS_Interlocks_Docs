@@ -20,6 +20,7 @@ If any of the LEDs are not on, there is an error occurring.
 
 .. pdfbutton:: IDEM_safety_relay_manual.pdf
 
+-----
 
 Resolved Issues
 ---------------

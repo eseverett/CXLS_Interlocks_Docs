@@ -10,8 +10,8 @@
     <div style="margin-bottom: 25px;"></div>   
 
 
-Welcome to the CXLS Interlock System Documentation's documentation!
-===================================================================
+Welcome to the CXLS Interlock System documentation!
+===================================================
 
 .. toctree::
    :maxdepth: 2
@@ -23,6 +23,8 @@ About This Documentation
 The purpose of this documentation is to provide a complete guide to the CXLS interlock system. 
 This document will outline user guides to all interlock subsystems, as well as provide documentation on testing and troubleshooting the system.
 
+-----
+
 CXLS Facility Overview
 ----------------------
 
@@ -32,6 +34,8 @@ CXLS Facility Overview
 
 |small_space|
 
+-----
+
 Ionizing Radiation Hazards
 --------------------------
 
@@ -39,6 +43,8 @@ In the CXLS linear accelerator, relativistic electrons can interact with materia
 These Coulomb interactions between the relativistic electrons and atomic nuclei within these materials cause the electrons to experience acceleration and release a high energy photon. 
 This process is known as Bremsstrahlung. These emitted gamma rays can then interact with nuclei and through the process of photodisintegration neutron radiation is produced. 
 These processes cause elevated radiation felids in Vault-1 and Hutch-1. 
+
+-----
 
 Laser Hazards
 -------------
@@ -48,6 +54,8 @@ A UV laser is used at the photocathode to eject electrons in bunches via the pho
 Once these electrons are at relativistic speeds, they collide with an IR laser and through inverse Compton scattering produce hard x-ray pulses. 
 These x-rays will interact with a test sample in pump-prove configuration where the pump laser can produce light in the THz spectrum. 
 Due to these high power lasers throughout the facility, laser enclosures have been designed to create laser safe areas while lasers are operational. 
+
+-----
 
 Interlocks System
 -----------------

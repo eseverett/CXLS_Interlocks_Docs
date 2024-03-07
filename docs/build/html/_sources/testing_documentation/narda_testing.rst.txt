@@ -9,6 +9,8 @@ Narda Smarts II Microwave Sensor
 
 The purpose of this procedure is to validate the functionality of the Vault-1 and Hutch-1 Narda Smarts II Microwave Sensor.
 
+-----
+
 Starting Conditions
 -------------------
 
@@ -37,6 +39,8 @@ Starting Conditions
     :scale: 20 %
 
     **Figure 2:** These are the yellow and blue contact blocks in the Vault-1 Control west panel that correspond to the Narda meters.
+
+-----
 
 Testing
 -------

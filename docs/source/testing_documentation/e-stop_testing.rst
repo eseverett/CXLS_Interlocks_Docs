@@ -9,6 +9,10 @@ Ionizing Radiation Emergency Stop Testing Protocol
 The objective of this testing procedure is to verify the functionality of the ionizing radiation emergency stop button system. 
 This system is used to cut power to the transmitters from a high-power state during an emergency.
 
+
+-----
+
+
 Starting Conditions
 -------------------
 
@@ -102,6 +106,10 @@ Starting Conditions
     If there are only some diagnostic LEDs on, the relay is in a fault state, and must be troubleshooted. 
 
 
+
+-----
+
+
 Testing
 -------
 
@@ -147,6 +155,9 @@ Testing
     **Figure 4:** These are the VIEWMARQ displays in Vault-1 Control and Accelerator Lab when an ionizing radiation e-stop is pressed.
 
 
+-----
+
+
 Emergency Tungsten Shutter Crash
 --------------------------------
 
@@ -158,6 +169,9 @@ Emergency Tungsten Shutter Crash
 
     - Hutch-1 Control IONIZING RADIATION INTERLOCK protocase lamps for BEAM STATUS turn :red:`red`. 
     - The DIVERGENT shutter (closest, upside down shutter) is closed. 
+
+
+-----
 
 High Power Transmitter Crash
 ----------------------------

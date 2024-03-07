@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
+    <meta property="article:modified_time" content="2024-03-04T12:49:24-07:00" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vault-1 Ionizing Radiation Interlock System User Manual &mdash; CXLS Interlock System Documentation 2024 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -26,7 +27,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Vault-1 Laser Interlock System User Manual" href="Vault-1_laser.html" />
-    <link rel="prev" title="Welcome to the CXLS Interlock System Documentation’s documentation!" href="../index.html" /> 
+    <link rel="prev" title="Welcome to the CXLS Interlock System documentation!" href="../index.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -53,7 +54,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#viewmarq-displays">VIEWMARQ displays</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#beacons">Beacons</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#o2-main-and-remote-units">O2 Main and Remote Units</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ionizing-radiation-monitor">Ionizing Radiation Monitor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ionizing-radiation-monitoring-gui">Ionizing Radiation Monitoring GUI</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#ionizing-radiation-emergency-stop-buttons">Ionizing Radiation Emergency Stop Buttons</a></li>
@@ -127,6 +128,7 @@ It covers the hazard indicators, control protocase, VIEWMARQ displays, and beaco
 The control protocase allows users to view and change the secure state of Vault-1, arm the accelerator and transmitters, and view area monitor statuses.
 The VIEWMARQ displays provide information on the ionizing radiation hazard status, laser hazards, and the secure state of Vault-1.
 The beacons indicate the state of RF and ionizing radiation emergency stop buttons.</p>
+<hr class="docutils" />
 <section id="vault-1-ionizing-radiation-hazard-indicators">
 <h2>Vault-1 Ionizing Radiation Hazard Indicators</h2>
 <p>This section will cover the ionizing radiation hazard indicators in Vault-1 Control and Accelerator Lab.
@@ -307,8 +309,8 @@ The Vault-1 remote unit is in Vault-1 Control and the RF-1 remote unit is in the
 <p class="table-caption"><strong>Figure 5:</strong> This is the O2 sensor pair.</p>
 </div>
 </section>
-<section id="ionizing-radiation-monitor">
-<h3>Ionizing Radiation Monitor</h3>
+<section id="ionizing-radiation-monitoring-gui">
+<h3>Ionizing Radiation Monitoring GUI</h3>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>The ionizing radiation monitor may go through changes in the near future.
@@ -316,6 +318,7 @@ This section will be updated when those changes are made.</p>
 </div>
 </section>
 </section>
+<hr class="docutils" />
 <section id="ionizing-radiation-emergency-stop-buttons">
 <h2>Ionizing Radiation Emergency Stop Buttons</h2>
 <p>Throughout the CXLS suite there are ionizing radiation emergency stop buttons.
@@ -341,6 +344,7 @@ There is also laser emergency stop buttons that will only cut power to their spe
 <p class="table-caption"><strong>Figure 6:</strong> This is the ionizing radiation emergency stop button in both states.</p>
 </div>
 </section>
+<hr class="docutils" />
 <section id="search-procedure-for-securing-vault-1">
 <h2>Search Procedure for Securing Vault-1</h2>
 <p>To arm the accelerator and transmitters, Vault-1 must be searched and secured.
@@ -390,6 +394,7 @@ Once the door is fully closed and actuating the door switches the SHIELD DOOR la
 </figcaption>
 </figure>
 </section>
+<hr class="docutils" />
 <section id="arming-the-accelerator-and-transmitters">
 <h2>Arming the Accelerator and Transmitters</h2>
 <section id="non-armable-states">
@@ -433,20 +438,22 @@ At this state the transmitters can be set to trig and power can be enabled into 
 </div>
 </section>
 </section>
+<hr class="docutils" />
 <section id="putting-vault-1-into-a-non-secure-state">
 <h2>Putting Vault-1 into a Non-Secure State</h2>
 <p>Once the transmitters are no longer triggering, the accelerator and transmitters can be disarmed.
 This can be done by pressing the ACCELERATOR RESET button on the Vault-1 Control IONIZING RADIATION INTERLOCK protocase, where all <span class="green">green</span> STATUS lamps will turn <span class="red">red</span>.
 This will keep Vault-1 in a secure state while disarming the accelerator and transmitters.
 To put Vault-1 into a non-secure state, simply opening the shield door will disarm the system and turn all <span class="green">green</span> STATUS and PERIMETER lamps will turn <span class="red">red</span>.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
 <p>2 minutes must pass from the transmitters being brought to a safe state and the accelerator being disarmed before the Vault-1 door can be opened.</p>
 </div>
 </section>
+<hr class="docutils" />
 <section id="vault-1-radiation-survey-procedure">
 <h2>Vault-1 Radiation Survey Procedure</h2>
-<p>For Vault-1 to be cleared for open entry, it must first be surveyed for ionizing radiation.</p>
+<p>For Vault-1 to be cleared for open entry, it must first be surveyed for elevated levels of ionizing radiation.</p>
 <table class="docutils align-center">
 <tbody>
 <tr class="row-odd"><td><a class="reference internal image-reference" href="../_images/dosimeter.png"><img alt="../_images/dosimeter.png" class="align-center" src="../_images/dosimeter.png" style="width: 462.0px; height: 368.4px;" /></a>
@@ -475,18 +482,19 @@ This unit will alarm if the surveyor is exposed to more than 5 mrem/hr.</p>
 </td>
 </tr>
 <tr class="row-even"><td><p>Ludlum 23 electronic personal dosimeter. <span class="white-cell">================================================</span></p></td>
-<td><p>Wearing the electronic personal dosimeter. <span class="white-cell">==============================================</span></p></td>
+<td><p>When wearing your EPD the screen must face your body. <span class="white-cell">===================================</span></p></td>
 <td><p>Draw holding the Ludlum 23. <span class="white-cell">=============================================================</span></p></td>
 </tr>
 </tbody>
 </table>
 <div class="tight-table-caption-container docutils container">
-<p class="table-caption"><strong>Figure 15:</strong> This is the Ludlum 23 electronic personal dosimeter, how it is to be worn, and the draw holding the Ludlum 23. This draw holding the units is located at the desk to teh left when entering the Accelerator Lab.</p>
+<p class="table-caption"><strong>Figure 15:</strong> This is the Ludlum 23 electronic personal dosimeter, how it is to be worn, and the draw holding the Ludlum 23. This draw holding the units is located at the desk to the left when entering the Accelerator Lab.</p>
 </div>
-<p>To perform the survey, the Ludlum 9DP is used to measure the gamma dose rate.
+<p>The survey is performed using the Ludlum 9DP to measure gamma radiation.
 Once Vault-1 shield door is opened, they surveyor should slowly enter, watching the readings.
-Go down the beam line, slowly scanning around inch away from the beam line and fill in the survey sheet.
-If any element reads above 20 µR/hr, scan from 30 cm away to verify the general area is not above background from normal viewing distance.</p>
+Go down the beam line, slowly scanning as close as reasonably possible.
+If any element reads above 20 µR/hr, scan from 30 cm away to verify the general area is not above background.
+Take note of any areas that are showing elevated levels and what the 9DP is reading.</p>
 <table class="docutils align-center">
 <tbody>
 <tr class="row-odd"><td><a class="reference internal image-reference" href="../_images/Ludlum_9DP.png"><img alt="../_images/Ludlum_9DP.png" class="align-center" src="../_images/Ludlum_9DP.png" style="width: 415.2px; height: 345.59999999999997px;" /></a>
@@ -502,9 +510,9 @@ If any element reads above 20 µR/hr, scan from 30 cm away to verify the general
 <div class="tight-table-caption-container docutils container">
 <p class="table-caption"><strong>Figure 16:</strong> This is the Ludlum 9DP pressurized ionization chamber and the cabinet holding the Ludlum 9DP.</p>
 </div>
-<p>Once the Vault-1 radiation survey is completed, and it is verified that there are no elevated levels of ionizing radiation, Vault-1 can be entered by anyone.
-Enter the readings into the designated spread sheet and sign the survey sheet.</p>
+<p>Once the Vault-1 radiation survey is completed, and it is verified that there are no elevated levels of ionizing radiation, Vault-1 can be entered by anyone.</p>
 </section>
+<hr class="docutils" />
 <section id="overriding-the-transmitters-to-work-in-an-armed-state">
 <h2>Overriding the Transmitters to Work in an Armed State</h2>
 <p>When the transmitters are armed, attempting to remove the side panels for maintenance will cause the transmitters to lose power.
@@ -534,14 +542,16 @@ In this state, working on the armed transmitters will not cause the interlocks t
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../index.html" class="btn btn-neutral float-left" title="Welcome to the CXLS Interlock System Documentation’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../index.html" class="btn btn-neutral float-left" title="Welcome to the CXLS Interlock System documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="Vault-1_laser.html" class="btn btn-neutral float-right" title="Vault-1 Laser Interlock System User Manual" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2024, Eric Everett.</p>
+    <p>&#169; Copyright 2024, Eric Everett.
+      <span class="lastupdated">Last updated on Mar 04, 2024.
+      </span></p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

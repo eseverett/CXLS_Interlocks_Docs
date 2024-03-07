@@ -14,9 +14,10 @@ The following fall under the scope of this testing procedure:
 - Trouble tungsten shutter control. 
 - Ionizing radiation monitoring interlocks.
 
+-----
 
 Starting Conditions
-------------------- 
+-------------------
 
 The default state for testing of the Hutch-1 ionizing radiation interlock system is in a completely disarmed state.
 
@@ -138,6 +139,9 @@ The default state for testing of the Hutch-1 ionizing radiation interlock system
     Additionally, the other double tungsten shutter is rotated 180 degrees around the beam pipe from this one.
     Because it is rotated, the contact being on the upper sensors is the closed position for the other shutter. 
 
+-----
+
+
 Search Procedure
 ----------------
 
@@ -171,6 +175,8 @@ Search Procedure
 
     **Figure 6:** This is the Hutch-1 Control IONIZING RADIATION INTERLOCK protocase when Hutch-1 is secured.
 
+
+-----
 
 
 Changing Beam Status
@@ -221,6 +227,8 @@ Changing Beam Status
     **Figure 7:** This is the Hutch-1 Control IONIZING RADIATION INTERLOCK protocase when either shutter is open. 
     When the beam stop is open a shutter will automatically open to whatever beam select is set to before hand. 
 
+
+-----
 
 Returning to Starting Conditions
 --------------------------------

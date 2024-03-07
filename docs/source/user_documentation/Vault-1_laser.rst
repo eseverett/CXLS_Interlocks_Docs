@@ -16,6 +16,9 @@ The control protocase allows the users to view the override state of the laser e
 The VIEWMARQ display provides a quick overview of the laser hazard status in Vault-1.
 The beacons are used to indicate the state of laser hazards in Vault-1 and the laser enclosures.
 
+-----
+
+
 Vault-1 Laser Hazard Indicators
 -------------------------------
 
@@ -342,6 +345,8 @@ Those only serve the purpose of crashing the transmitters and are not located on
 When the e-stop is pressed, the LED in the center will turn on.
 To reset the e-stop, twist the button clockwise.
 
+-----
+
 
 Arming Vault-1 Laser Systems
 ----------------------------
@@ -493,7 +498,7 @@ It is important to note that Vault-1 will disarm itself and shutter all exposed 
   **Figure 16:** These are the laser safety system modules for arming Vault-1 in armed and unarmed states.
 
 
-
+-----
 
 
 User Laser Enclosure Interlock Protocases for Overriding Interlocks and Manual Shutter Control
@@ -553,6 +558,9 @@ At this point, the LOCAL INTERLOCK CONTACT CONTROL interlock modules can be arme
 .. table-caption::
   **Figure 17:** These are the laser safety system modules for arming Vault-1 in armed and unarmed states.
 
+
+
+-----
 
 Disarming the Laser Interlock System
 ------------------------------------

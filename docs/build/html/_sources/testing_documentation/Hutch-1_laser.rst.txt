@@ -11,7 +11,7 @@ Hutch-1 Laser Interlock System Testing Protocol
 
 The purpose of this document is to describe the testing protocol for the Hutch-1 laser interlock system including the interlocks for the Astrella laser and enclosure. 
 
-
+-----
 
 Starting Conditions
 -------------------
@@ -110,7 +110,7 @@ Starting Conditions
     **Figure 6:** Astrella enclosure showing all e-stops off.
 
 
-
+-----
 
 Arming Hutch-1 as a Laser Lab
 -----------------------------
@@ -169,7 +169,7 @@ Arming Hutch-1 as a Laser Lab
 
     **Figure 9:** Hutch-1 Control Entry Keypad showing INTERLOCKED.
 
-
+-----
 
 Arming the Astrella Enclosure and Laser 
 ---------------------------------------
@@ -263,7 +263,7 @@ Arming the Astrella Enclosure and Laser
     **Figure 11:** Astrella enclosure showing the room interlock module armed.
 
 
-
+-----
 
 Administrative Override on the Astrella Enclosure
 -------------------------------------------------
@@ -302,6 +302,8 @@ Administrative Override on the Astrella Enclosure
     **Figure 13:** Astrella enclosure showing the INTERLOCK OVERRIDE panel set to OVERRIDE.
 
 
+-----
+
 Safe Astrella E-Stop Test
 -------------------------
 
@@ -313,6 +315,9 @@ Safe Astrella E-Stop Test
 
 #. Verify that the Astrella power supply is cut off.
 
+
+-----
+
 Crashing the Astrella
 ---------------------
 
@@ -321,6 +326,7 @@ Crashing the Astrella
 
 #. If 6 months have passed, arm the Astrella laser and use one the the Astrella laser e-stop to crash the laser and verify that power has been cut. 
 
+-----
 
 Return to Starting Conditions
 -----------------------------

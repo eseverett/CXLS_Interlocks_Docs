@@ -12,6 +12,8 @@ Vault-1 Laser Interlock System Testing Protocol
 The purpose of this testing procedure if the Verify the functionality of the Vault-1 laser interlock system including arming Vault-1 as a laser lab, and arming the Pharos system.
 Additionally, the administrative override on the Pharos and Dira enclosures will be tested.
 
+-----
+
 Starting Conditions
 -------------------
 
@@ -142,6 +144,8 @@ Starting Conditions
     **Figure 7:** This is the laser e-stop button when the system is in a safe state.
 
 
+-----
+
 
 Arming Vault-1 as a Laser Lab
 -----------------------------
@@ -200,6 +204,7 @@ Arming Vault-1 as a Laser Lab
     **Figure 10:** This is the Vault-1 entry modules when the system is armed.
 
 
+-----
 
 
 Arming the Pharos Enclosure and Laser
@@ -273,7 +278,7 @@ Arming the Pharos Enclosure and Laser
     **Figure 13:** This is the laser e-stop button when the system is armed.
 
 
-
+-----
 
 Safe Pharos E-Stop Test
 -----------------------
@@ -288,6 +293,8 @@ Safe Pharos E-Stop Test
 #. Verify that the Pharos power supply is cut off.
 
 
+
+-----
 
 Administrative Override on the Pharos Enclosure
 -----------------------------------------------
@@ -355,6 +362,8 @@ Administrative Override on the Pharos Enclosure
 
     **Figure 15:** This is the Pharos LASER ENCLOSURE INTERLOCK protocase when the system is overridden.
 
+-----
+
 
 Arming the Dira Enclosure and Laser
 -----------------------------------
@@ -366,6 +375,9 @@ Arming the Dira Enclosure and Laser
 
 #. Change the Dira LASER ENCLOSURE INTERLOCK protocase INTERLOCK OVERRIDE key from INTERLOCK to OVERRIDE. 
    The STATUS LED remains :green:`green`. Change back to INTERLOCK.
+
+
+-----
 
 
 Administrative Override on the Dira Enclosure
@@ -434,6 +446,8 @@ Administrative Override on the Dira Enclosure
     **Figure 17:** This is the Dira LASER ENCLOSURE INTERLOCK protocase when the system is overridden.
 
 
+-----
+
 
 Crashing the Dira Laser
 -------------------------
@@ -443,6 +457,9 @@ Crashing the Dira Laser
  
 #. If 6 months have passed, arm the Pharos laser, and use one of the laser e-stops to crash the laser and verify that power has been cut. 
 
+
+
+-----
 
 Return to Starting Conditions
 -----------------------------

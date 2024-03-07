@@ -15,7 +15,7 @@ The VIEWMARQ displays provide information on the ionizing radiation hazard statu
 The beacons indicate the state of RF and ionizing radiation emergency stop buttons. 
 
 
-
+-----
 
 Vault-1 Ionizing Radiation Hazard Indicators
 --------------------------------------------
@@ -235,12 +235,16 @@ The Vault-1 remote unit is in Vault-1 Control and the RF-1 remote unit is in the
     **Figure 5:** This is the O2 sensor pair. 
 
 
-Ionizing Radiation Monitor
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+Ionizing Radiation Monitoring GUI
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. note:: 
     The ionizing radiation monitor may go through changes in the near future.
     This section will be updated when those changes are made.
+
+
+-----
+
 
 Ionizing Radiation Emergency Stop Buttons
 -----------------------------------------
@@ -282,6 +286,10 @@ There is also laser emergency stop buttons that will only cut power to their spe
 
 .. table-caption:: 
     **Figure 6:** This is the ionizing radiation emergency stop button in both states.
+
+
+-----
+
 
 Search Procedure for Securing Vault-1
 -------------------------------------
@@ -348,6 +356,10 @@ Once the door is fully closed and actuating the door switches the SHIELD DOOR la
 
     **Figure 11:** This is the Vault-1 Control Ionizing Radiation Protocase when the shield door is closed.
 
+
+-----
+
+
 Arming the Accelerator and Transmitters
 ---------------------------------------
 
@@ -407,6 +419,8 @@ The accelerator and transmitters can be disarmed by pressing the ACCELERATOR RES
 
 
 
+-----
+
 Putting Vault-1 into a Non-Secure State
 ---------------------------------------
 
@@ -415,13 +429,17 @@ This can be done by pressing the ACCELERATOR RESET button on the Vault-1 Control
 This will keep Vault-1 in a secure state while disarming the accelerator and transmitters.
 To put Vault-1 into a non-secure state, simply opening the shield door will disarm the system and turn all :green:`green` STATUS and PERIMETER lamps will turn :red:`red`.
 
-.. note::
+.. warning::
      2 minutes must pass from the transmitters being brought to a safe state and the accelerator being disarmed before the Vault-1 door can be opened.
+
+
+-----
+
 
 Vault-1 Radiation Survey Procedure
 ----------------------------------
 
-For Vault-1 to be cleared for open entry, it must first be surveyed for ionizing radiation. 
+For Vault-1 to be cleared for open entry, it must first be surveyed for elevated levels of ionizing radiation. 
 
 
 .. .. figure:: /images/radiation_survey/dosimeter.png
@@ -490,12 +508,12 @@ This unit will alarm if the surveyor is exposed to more than 5 mrem/hr.
             :align: center
 
     * - Ludlum 23 electronic personal dosimeter. :white-cell:`================================================`
-      - Wearing the electronic personal dosimeter. :white-cell:`==============================================`
+      - When wearing your EPD the screen must face your body. :white-cell:`===================================`
       - Draw holding the Ludlum 23. :white-cell:`=============================================================`
 
 .. table-caption::
     **Figure 15:** This is the Ludlum 23 electronic personal dosimeter, how it is to be worn, and the draw holding the Ludlum 23.
-    This draw holding the units is located at the desk to teh left when entering the Accelerator Lab.
+    This draw holding the units is located at the desk to the left when entering the Accelerator Lab.
 
 
 .. .. figure:: /images/radiation_survey/draw_holding_ludlum.png
@@ -504,10 +522,11 @@ This unit will alarm if the surveyor is exposed to more than 5 mrem/hr.
 ..     **Figure 16:** This is the draw holding the Ludlum 9DP.
 
 
-To perform the survey, the Ludlum 9DP is used to measure the gamma dose rate.
+The survey is performed using the Ludlum 9DP to measure gamma radiation. 
 Once Vault-1 shield door is opened, they surveyor should slowly enter, watching the readings. 
-Go down the beam line, slowly scanning around inch away from the beam line and fill in the survey sheet.
-If any element reads above 20 µR/hr, scan from 30 cm away to verify the general area is not above background from normal viewing distance. 
+Go down the beam line, slowly scanning as close as reasonably possible. 
+If any element reads above 20 µR/hr, scan from 30 cm away to verify the general area is not above background. 
+Take note of any areas that are showing elevated levels and what the 9DP is reading.
 
 
 .. .. figure:: /images/radiation_survey/Ludlum_9DP.png
@@ -541,9 +560,9 @@ If any element reads above 20 µR/hr, scan from 30 cm away to verify the general
 
 
 Once the Vault-1 radiation survey is completed, and it is verified that there are no elevated levels of ionizing radiation, Vault-1 can be entered by anyone.
-Enter the readings into the designated spread sheet and sign the survey sheet.
 
 
+-----
 
 
 Overriding the Transmitters to Work in an Armed State
