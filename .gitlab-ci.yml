@@ -6,6 +6,7 @@ pages:
     - pip install sphinx
     - pip install sphinx_rtd_theme
     - pip install sphinxcontrib-video
+    - pip install sphinx_last_updated_by_git
     - sphinx-build -b html docs/source/ public
   artifacts:
     paths:
