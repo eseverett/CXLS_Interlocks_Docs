@@ -110,8 +110,6 @@ Redundancy is built into the system to increase reliability, as well as fail saf
    This documentation is a work in progress. 
 
 
-
-
 .. Indices and tables
 .. ==================
 
