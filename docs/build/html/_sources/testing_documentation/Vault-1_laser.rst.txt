@@ -119,25 +119,25 @@ Starting Conditions
     **Figure 3:** This is the Vault-1 entry modules when the system is in a safe state.
 
 
-.. figure:: /images/user_docs/Vault-1_Laser/Vault-1_unarmed.jpg
+.. figure:: /images/user_docs/Vault-1_laser/Vault-1_unarmed.jpg
     :align: center
     :scale: 20 %
 
     **Figure 4:** This is the Vault-1 laser control module when the system is in a safe state.
 
-.. figure:: /images/user_docs/Vault-1_Laser/Pharos_protocase.jpg
+.. figure:: /images/user_docs/Vault-1_laser/Pharos_protocase.jpg
     :align: center
     :scale: 20 %
 
     **Figure 5:** This is the Pharos enclosure laser warning module when the system is in a safe state.
 
-.. figure:: /images/user_docs/Vault-1_Laser/Dira_protocase.jpg
+.. figure:: /images/user_docs/Vault-1_laser/Dira_protocase.jpg
     :align: center
     :scale: 20 %
 
     **Figure 6:** This is the Dira enclosure laser warning module when the system is in a safe state.   
 
-.. figure:: /images/user_docs/Vault-1_Laser/laser_e-stop_off.jpg
+.. figure:: /images/user_docs/Vault-1_laser/laser_e-stop_off.jpg
     :align: center
     :scale: 20 %
 
@@ -185,19 +185,19 @@ Arming Vault-1 as a Laser Lab
     - The Vault-1 room arming module should show :orange:`ROOM CRASHED (CANNOT ARM)`, then :green:`ROOM DISABLED (READY TO ARM)` once the door is closed.
 
 
-.. figure:: /images/user_docs/Vault-1_Laser/Vault-1_armed.jpg
+.. figure:: /images/user_docs/Vault-1_laser/Vault-1_armed.jpg
     :align: center
     :scale: 20 %
 
     **Figure 8:** This is the Vault-1 laser control module when the system is armed.
 
-.. figure:: /images/user_docs/Vault-1_Laser/Vault-1_VIEWMARQ_laser_hazard.jpg
+.. figure:: /images/user_docs/Vault-1_laser/Vault-1_VIEWMARQ_laser_hazard.jpg
     :align: center
     :scale: 20 %
 
     **Figure 9:** This is the Vault-1 Control VIEWMARQ display when the system is armed.
 
-.. figure:: /images/user_docs/Vault-1_Laser/Vault-1_entry_armed.jpg
+.. figure:: /images/user_docs/Vault-1_laser/Vault-1_entry_armed.jpg
     :align: center
     :scale: 20 %
 
@@ -249,11 +249,11 @@ Arming the Pharos Enclosure and Laser
 .. list-table:: 
     :align: center 
 
-    * - .. image:: /images/user_docs/Vault-1_Laser/Pharos_enclosure_unarmed.jpg
+    * - .. image:: /images/user_docs/Vault-1_laser/Pharos_enclosure_unarmed.jpg
           :scale: 20 %
           :align: center
 
-      - .. image:: /images/user_docs/Vault-1_Laser/Pharos_enclosure_armed.jpg
+      - .. image:: /images/user_docs/Vault-1_laser/Pharos_enclosure_armed.jpg
           :scale: 20 %
           :align: center
 
@@ -264,7 +264,7 @@ Arming the Pharos Enclosure and Laser
     **Figure 11:** These are the Pharos enclosure laser warning modules when the system is unarmed and armed.
 
 
-.. figure:: /images/testing_documentation/Vault-1_Laser/Vault-1_Control_VIEWMARQ_Pharos_armed_hazard.jpg
+.. figure:: /images/testing_documentation/Vault-1_laser/Vault-1_Control_VIEWMARQ_Pharos_armed_hazard.jpg
     :align: center
     :scale: 20 %
 
@@ -350,7 +350,7 @@ Administrative Override on the Pharos Enclosure
    The VIEWMARQ display and beacon stacks show a non-override status.
 
 
-.. figure:: /images/testing_documentation/Vault-1_Laser/Vault-1_Control_VIEWMARQ_Pharos_override.jpg
+.. figure:: /images/testing_documentation/Vault-1_laser/Vault-1_Control_VIEWMARQ_Pharos_override.jpg
     :align: center
     :scale: 20 %
 
